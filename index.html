@@ -1,50 +1,115 @@
+<!DOCTYPE html>
 <html ng-app>
     <head><title>Liga Typerów</title>
         <script src="http://code.angularjs.org/1.2.9/angular.min.js"></script>
         <style>
-            .odd {
+            .even {
                 background-color: #FFF;
             }
-            .even {
+            .odd {
                 background-color: #ccc;
             }
             table{
                 border: 1px solid #ccc;
+				text-align: center;
             }
+			table th{
+				//color: #FFF;
+				//background-color: #555;
+				padding: 3px;
+				vertical-align: top;
+				width: 100px;
+            }
+			table td {
+				padding: 7px 5px;
+				vertical-align: top;
+				width: 100px;
+			}
             .main{
-                margin: 10px auto;
-                width:350px;
+                margin: 30px;
+                width: 1000px;
                 border: 1px solid #ccc;
                 padding: 20px;    
             }
+			body, p, h1, h2, h3, h4, table, td, th, ul, ol, textarea, input {
+				font-family: verdana,helvetica,arial,sans-serif;
+			}
         </style>
     </head>
     <body>
         <div class='main'>
+			<div class='standings'>
+				<table ng-init="tipsters = ['Ola', 'dmin', 'Zajo', 'Asia', 'Zdre', 'Kamiloss']" >
+					<thead>
+						<tr>
+							<th style="background-color: #fff;" rowspan = 3/>
+							<th>BRA</th>
+						</tr>
+						<tr>
+							<th>---</th>
+						</tr>
+						<tr>
+							<th>CHO</th>
+						</tr>
+					</thead>
+					<tr ng-repeat="name in tipsters" ng-class-odd="'odd'" ng-class-even="'even'">
+						<td>{{name}}</td>
+						<td><input type=number" size="1">:<input type=number" size="1"></td>
+						<td><input type=number" size="1">:<input type=number" size="1"></td>
+					</tr>
+				</table>
+				
+			</div>
+			
+			<!--
 			<div class='group'>
 				<p>
 				<table ng-init="groupA = ['Brazylia', 'Chorwacja', 'Meksyk', 'Kamerun']" >
 					<th>GRUPA A</th>
 					<tr ng-repeat="name in groupA" ng-class-odd="'odd'" ng-class-even="'even'">
-						<td style="width:300px">{{name}}</td>
+						<td>{{name}}</td>
 					</tr>
 				</table>
+				<div class="match">
+					12 czerwca, 22:00 Brazylia - Chorwacja<div class="result"><input type=number" size="1" readonly="true">:<input type=number" size="1"></div>
+				</div>
+					<br>
+					13 czerwca, 18:00 Meksyk - Kamerun <input type=number" size="1">:<input type=number" size="1" readonly="true">
+					<br>
+					17 czerwca, 21:00 Brazylia - Meksyk <input type=number" size="1">:<input type=number" size="1" readonly="true">
+					<br>
+					18 czerwca, 24:00 Kamerun - Chorwacja <input type=number" size="1">:<input type=number" size="1" readonly="true">
+					<br>
+					23 czerwca, 22:00 Kamerun - Brazylia <input type=number" size="1">:<input type=number" size="1" readonly="true">
+					<br>
+					23 czerwca, 22:00 Chorwacja - Meksyk <input type=number" size="1">:<input type=number" size="1" readonly="true">
 			</div>
 			<div class='group'>
 				<p>
 				<table ng-init="groupB = ['Hiszpania', 'Holandia', 'Chile', 'Australia']" >
 					<th>GRUPA B</th>
 					<tr ng-repeat="name in groupB" ng-class-odd="'odd'" ng-class-even="'even'">
-						<td style="width:300px">{{name}}</td>
+						<td>{{name}}</td>
 					</tr>
 				</table>
+				13 czerwca, 21:00 Hiszpania - Holandia <input type=number" size="1" readonly="true">:<input type=number" size="1">
+				<br>
+				13 czerwca, 4:00 Chile - Australia <input type=number" size="1" readonly="true">:<input type=number" size="1">
+				<br>
+				18 czerwca, 21:00 Hiszpania - Chile <input type=number" size="1" readonly="true">:<input type=number" size="1">
+				<br>
+				18 czerwca, 18:00 Holandia - Australia <input type=number" size="1" readonly="true">:<input type=number" size="1">
+				<br>
+				23 czerwca, 18:00 Hiszpania - Australia <input type=number" size="1" readonly="true">:<input type=number" size="1">
+				<br>
+				23 czerwca, 18:00 Holandia - Chile <input type=number" size="1" readonly="true">:<input type=number" size="1">
 			</div>
 			<div class='group'>
 				<p>
 				<table ng-init="groupC = ['Kolumbia', 'Grecja', 'Wybrzeże Kości Słoniowej', 'Japonia']" >
 					<th>GRUPA C</th>
 					<tr ng-repeat="name in groupC" ng-class-odd="'odd'" ng-class-even="'even'">
-						<td style="width:300px">{{name}}</td>
+						<td>{{name}}</td>
 					</tr>
 				</table>
 			</div>
@@ -53,7 +118,7 @@
 				<table ng-init="groupD = ['Urugwaj', 'Kostaryka', 'Anglia', 'Włochy']" >
 					<th>GRUPA D</th>
 					<tr ng-repeat="name in groupD" ng-class-odd="'odd'" ng-class-even="'even'">
-						<td style="width:300px">{{name}}</td>
+						<td>{{name}}</td>
 					</tr>
 				</table>
 			</div>
@@ -62,7 +127,7 @@
 				<table ng-init="groupE = ['Szwajcaria', 'Ekwador', 'Francja', 'Honduras']" >
 					<th>GRUPA E</th>
 					<tr ng-repeat="name in groupE" ng-class-odd="'odd'" ng-class-even="'even'">
-						<td style="width:300px">{{name}}</td>
+						<td>{{name}}</td>
 					</tr>
 				</table>
 			</div>
@@ -71,7 +136,7 @@
 				<table ng-init="groupF = ['Argentyna', 'Bośnia i Hercegowina', 'Iran', 'Nigeria']" >
 					<th>GRUPA F</th>
 					<tr ng-repeat="name in groupF" ng-class-odd="'odd'" ng-class-even="'even'">
-						<td style="width:300px">{{name}}</td>
+						<td>{{name}}</td>
 					</tr>
 				</table>
 			</div>
@@ -80,7 +145,7 @@
 				<table ng-init="groupG = ['Niemcy', 'Portugalia', 'Ghana', 'USA']" >
 					<th>GRUPA G</th>
 					<tr ng-repeat="name in groupG" ng-class-odd="'odd'" ng-class-even="'even'">
-						<td style="width:300px">{{name}}</td>
+						<td>{{name}}</td>
 					</tr>
 				</table>
 			</div>
@@ -89,10 +154,11 @@
 				<table ng-init="groupH = ['Belgia', 'Algieria', 'Rosja', 'Korea Południowa']" >
 					<th>GRUPA H</th>
 					<tr ng-repeat="name in groupH" ng-class-odd="'odd'" ng-class-even="'even'">
-						<td style="width:300px">{{name}}</td>
+						<td>{{name}}</td>
 					</tr>
 				</table>
 			</div>
+		-->
         </div>
     </body>
 </html>
