@@ -26,7 +26,7 @@
 				width: 100px;
 			}
             .main{
-                margin: 30px;
+                margin: 10px auto;
                 width: 1000px;
                 border: 1px solid #ccc;
                 padding: 20px;    
@@ -37,23 +37,48 @@
         </style>
     </head>
     <body>
+		<h2 style="text-align: center;">Liga typerów Brazylia 2014</h2>
         <div class='main'>
+			<h4 style="text-align: center;">Runda 1</h4>
 			<div class='standings'>
 				<table ng-init="tipsters = ['Ola', 'dmin', 'Zajo', 'Asia', 'Zdre', 'Kamiloss']" >
 					<thead>
 						<tr>
 							<th style="background-color: #fff;" rowspan = 3/>
 							<th>BRA</th>
+							<th>MEK</th>
+							<th>HIS</th>
+							<th>CHI</th>
+							<th>KOL</th>
+							<th>URU</th>
+							<th>ANG</th>
+							<th>WYB</th>
 						</tr>
 						<tr>
+							<th ng-repeat="n in tipsters">---</th>
+							<th>---</th>
 							<th>---</th>
 						</tr>
 						<tr>
 							<th>CHO</th>
+							<th>KAM</th>
+							<th>HOL</th>
+							<th>AUS</th>
+							<th>GRE</th>
+							<th>KOS</th>
+							<th>WŁO</th>
+							<th>JAP</th>
+							<th rowspan = 3>Punkty</th>
 						</tr>
 					</thead>
 					<tr ng-repeat="name in tipsters" ng-class-odd="'odd'" ng-class-even="'even'">
 						<td>{{name}}</td>
+						<td><input type=number" size="1">:<input type=number" size="1"></td>
+						<td><input type=number" size="1">:<input type=number" size="1"></td>
+						<td><input type=number" size="1">:<input type=number" size="1"></td>
+						<td><input type=number" size="1">:<input type=number" size="1"></td>
+						<td><input type=number" size="1">:<input type=number" size="1"></td>
+						<td><input type=number" size="1">:<input type=number" size="1"></td>
 						<td><input type=number" size="1">:<input type=number" size="1"></td>
 						<td><input type=number" size="1">:<input type=number" size="1"></td>
 					</tr>
