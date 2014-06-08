@@ -1,8 +1,8 @@
 <!DOCTYPE html>
+<meta charset="utf-8">
 <html ng-app>
     <head><title>Liga Typerów</title>
-        <script src="http://code.angularjs.org/1.2.9/angular.min.js"></script>
-        <style>
+ 	<style>
             .even {
                 background-color: #FFF;
             }
@@ -25,55 +25,117 @@
 				vertical-align: top;
 				width: 100px;
 			}
+	 input {
+	  text-align: center;
+	  }
+		tr:nth-child(even) {background: #FFF}
+		tr:nth-child(odd) {background: #CCC}
             .main{
                 margin: 10px auto;
                 width: 1000px;
                 border: 1px solid #ccc;
                 padding: 20px;    
             }
+            .rules{
+                margin: 10px auto;
+                width: 1000px;
+                padding: 20px;    
+            }
 			body, p, h1, h2, h3, h4, table, td, th, ul, ol, textarea, input {
 				font-family: verdana,helvetica,arial,sans-serif;
 			}
         </style>
+        <script src="http://code.angularjs.org/1.2.9/angular.min.js"></script>
+	<script>
+	  function Ctrl($scope) {
+	  $scope.gracze = ['Ola', 'dmin', 'Zajo', 'Asia', 'Zdre', 'Kamiloss'];
+  	  $scope.round1 = [['BRA', 'MEK', 'HIS', 'CHI', 'KOL', 'URU', 'ANG', 'WKS'], ['CHO', 'KAM', 'HOL', 'AUS', 'GRE', 'KOS', 'WŁO', 'JAP']];
+	  }
+
+	  var map = new Object(); // or var map = {};
+		  map['BRA'] = "flags/brazil.png";
+		  map['MEK'] = "flags/mexico.png";
+		  map['HIS'] = "flags/spain.png";
+		  map['CHI'] = "flags/chile.png";
+		  map['KOL'] = "flags/colombia.png";
+		  map['URU'] = "flags/uruguay.png";
+		  map['ANG'] = "flags/england.png";
+		  map['WKS'] = "flags/cote_d'ivoire.png";
+		  map['CHO'] = "flags/croatia.png";
+		  map['KAM'] = "flags/cameroon.png";
+		  map['HOL'] = "flags/netherlands.png";
+		  map['AUS'] = "flags/australia.png";
+		  map['GRE'] = "flags/greece.png";
+		  map['KOS'] = "flags/costa_rica.png";
+		  map['WŁO'] = "flags/italy.png";
+		  map['JAP'] = "flags/japan.png";
+	mapa[1, 2, 3, 4, 5, 6, 7, 8];
+function get(k) {
+return mapa(k);
+}
+	</script>
+
     </head>
     <body>
-		<h2 style="text-align: center;">Liga typerów Brazylia 2014</h2>
-        Regulamin
+	<h2 style="text-align: center;">Liga typerów Brazylia 2014</h2>
+        <div class="rules" style="text-align: left;">
+		<b>Zasady:</b>
+		<br>			
+		4pkt - dokładne trafienie wyniku
+		<br>
+		3pkt - trafienie zwycięzcy i różnicy bramek
+		<br>		
+		2pkt - trafienie zwycięzcy
+		<br>		
+		W przypadku remisu:
+		<br>		
+		4pkt - dokładne trafienie wyniku
+		<br>		
+		2pkt - trafienie remisu, ale nie liczby bramek 	
+	</div>
         <div class='main'>
 			<h4 style="text-align: center;">Runda 1</h4>
 			<div class='standings'>
-				<table ng-init="tipsters = ['Ola', 'dmin', 'Zajo', 'Asia', 'Zdre', 'Kamiloss']" >
+<!--
+<div ng-controller="Ctrl">
+<div ng-repeat="innerList in round1" ng-init="outerIndex = $index">
+  <div ng-repeat="value in innerList" ng-init="innerIndex = $index">
+     <span class="example-init">round1[ {{outerIndex}} ][ {{innerIndex}} ] = {{value}}; window["get"]({{value}});</span>
+  </div>
+</div>
+</div>
+-->
+				<table ng-init="tipsters = ['Ola', 'dmin', 'Zajo', 'Asia', 'Zdre', 'Kamiloss', 'bojer']" >
 					<thead>
 						<tr>
 							<th style="background-color: #fff;" rowspan="3">
-							<th><img height="15" width="22" src="flags/22px-Flag_of_Brazil.svg.png" alt=""></img>BRA</th>
-							<th><img height="15" width="22" src="flags/22px_Flag_of_Mexico.svg.png" alt=""></img>MEK</th>
-							<th>HIS</th>
-							<th>CHI</th>
-							<th>KOL</th>
-							<th>URU</th>
-							<th>ANG</th>
-							<th>WYB</th>
+							<th><img height="15" width="22" src="flags/brazil.png" alt=""></img>BRA</th>
+							<th><img height="15" width="22" src="flags/mexico.png" alt=""></img>MEK</th>
+							<th><img height="15" width="22" src="flags/spain.png" alt="">HIS</th>
+							<th><img height="15" width="22" src="flags/chile.png" alt="">CHI</th>
+							<th><img height="15" width="22" src="flags/colombia.png" alt="">KOL</th>
+							<th><img height="15" width="22" src="flags/uruguay.png" alt="">URU</th>
+							<th><img height="15" width="22" src="flags/england.png" alt="">ANG</th>
+							<th><img height="15" width="22" src="flags/cote_d'ivoire.png" alt="">WKS</th>
 						</tr>
 						<tr>
 							<th ng-repeat="n in tipsters">---</th>
 							<th>---</th>
-							<th>---</th>
 						</tr>
 						<tr>
-							<th><img height="15" width="22" src="flags/Flag_of_Croatia.svg.png" alt=""></img>CHO</th>
-							<th><img height="15" width="22" src="flags/Flag_of_Cameroon.svg.png" alt=""></img>KAM</th>
-							<th>HOL</th>
-							<th>AUS</th>
-							<th>GRE</th>
-							<th>KOS</th>
-							<th>WŁO</th>
-							<th>JAP</th>
+							<th><img height="15" width="22" src="flags/croatia.png" alt=""></img>CHO</th>
+							<th><img height="15" width="22" src="flags/cameroon.png" alt=""></img>KAM</th>
+							<th><img height="15" width="22" src="flags/netherlands.png" alt="">HOL</th>
+							<th><img height="15" width="22" src="flags/australia.png" alt="">AUS</th>
+							<th><img height="15" width="22" src="flags/greece.png" alt="">GRE</th>
+							<th><img height="15" width="22" src="flags/costa_rica.png" alt="">KOS</th>
+							<th><img height="15" width="22" src="flags/italy.png" alt="">WŁO</th>
+							<th><img height="15" width="22" src="flags/japan.png" alt="">JAP</th>
 							<th rowspan = 3>Punkty</th>
 						</tr>
 					</thead>
-					<tr ng-repeat="name in tipsters" ng-class-odd="'odd'" ng-class-even="'even'">
-						<td>{{name}}</td>
+					<tr>
+						<td>Ola</td>
 						<td><input type=number" size="1">:<input type=number" size="1"></td>
 						<td><input type=number" size="1">:<input type=number" size="1"></td>
 						<td><input type=number" size="1">:<input type=number" size="1"></td>
@@ -82,110 +144,87 @@
 						<td><input type=number" size="1">:<input type=number" size="1"></td>
 						<td><input type=number" size="1">:<input type=number" size="1"></td>
 						<td><input type=number" size="1">:<input type=number" size="1"></td>
+						<td>0</td>
+					</tr>
+					<tr>
+						<td>Dmin</td>
+						<td><input type=number" size="1" value="2" disabled="true">:<input type=number" size="1" value="0" disabled="true"></td>
+						<td><input type=number" size="1" value="1" disabled="true">:<input type=number" size="1" value="2" disabled="true"></td>
+						<td><input type=number" size="1" value="1" disabled="true">:<input type=number" size="1" value="2" disabled="true"><sup>1</sup></td>
+						<td><input type=number" size="1" value="0" disabled="true">:<input type=number" size="1" value="0" disabled="true"></td>
+						<td><input type=number" size="1" value="0" disabled="true">:<input type=number" size="1" value="0" disabled="true"></td>
+						<td><input type=number" size="1" value="3" disabled="true">:<input type=number" size="1" value="0" disabled="true"></td>
+						<td><input type=number" size="1" value="2" disabled="true">:<input type=number" size="1" value="2" disabled="true"><sup>2</sup></td>
+						<td><input type=number" size="1" value="2" disabled="true">:<input type=number" size="1" value="0" disabled="true"></td>
+						<td>0</td>
+					</tr>
+					<tr>
+						<td>Zajo</td>
+						<td><input type=number" size="1" value="2" disabled="true">:<input type=number" size="1" value="1" disabled="true"></td>
+						<td><input type=number" size="1" value="0" disabled="true">:<input type=number" size="1" value="0" disabled="true"></td>
+						<td><input type=number" size="1" value="1" disabled="true">:<input type=number" size="1" value="0" disabled="true"></td>
+						<td><input type=number" size="1" value="3" disabled="true">:<input type=number" size="1" value="1" disabled="true"></td>
+						<td><input type=number" size="1" value="2" disabled="true">:<input type=number" size="1" value="0" disabled="true"></td>
+						<td><input type=number" size="1" value="3" disabled="true">:<input type=number" size="1" value="0" disabled="true"></td>
+						<td><input type=number" size="1" value="0" disabled="true">:<input type=number" size="1" value="1" disabled="true"></td>
+						<td><input type=number" size="1" value="2" disabled="true">:<input type=number" size="1" value="3" disabled="true"></td>
+						<td>0</td>
+					</tr>
+					<tr>
+						<td>Asia</td>
+						<td><input type=number" size="1">:<input type=number" size="1"></td>
+						<td><input type=number" size="1">:<input type=number" size="1"></td>
+						<td><input type=number" size="1">:<input type=number" size="1"></td>
+						<td><input type=number" size="1">:<input type=number" size="1"></td>
+						<td><input type=number" size="1">:<input type=number" size="1"></td>
+						<td><input type=number" size="1">:<input type=number" size="1"></td>
+						<td><input type=number" size="1">:<input type=number" size="1"></td>
+						<td><input type=number" size="1">:<input type=number" size="1"></td>
+						<td>0</td>
+					</tr>
+					<tr>
+						<td>Zdre</td>
+						<td><input type=number" size="1">:<input type=number" size="1"></td>
+						<td><input type=number" size="1">:<input type=number" size="1"></td>
+						<td><input type=number" size="1">:<input type=number" size="1"></td>
+						<td><input type=number" size="1">:<input type=number" size="1"></td>
+						<td><input type=number" size="1">:<input type=number" size="1"></td>
+						<td><input type=number" size="1">:<input type=number" size="1"></td>
+						<td><input type=number" size="1">:<input type=number" size="1"></td>
+						<td><input type=number" size="1">:<input type=number" size="1"></td>
+						<td>0</td>
+					</tr>
+					<tr>
+						<td>Kamiloss</td>
+						<td><input type=number" size="1">:<input type=number" size="1"></td>
+						<td><input type=number" size="1">:<input type=number" size="1"></td>
+						<td><input type=number" size="1">:<input type=number" size="1"></td>
+						<td><input type=number" size="1">:<input type=number" size="1"></td>
+						<td><input type=number" size="1">:<input type=number" size="1"></td>
+						<td><input type=number" size="1">:<input type=number" size="1"></td>
+						<td><input type=number" size="1">:<input type=number" size="1"></td>
+						<td><input type=number" size="1">:<input type=number" size="1"></td>
+						<td>0</td>
+					</tr>
+					<tr>
+						<td>bojler</td>
+						<td><input type=number" size="1">:<input type=number" size="1"></td>
+						<td><input type=number" size="1">:<input type=number" size="1"></td>
+						<td><input type=number" size="1">:<input type=number" size="1"></td>
+						<td><input type=number" size="1">:<input type=number" size="1"></td>
+						<td><input type=number" size="1">:<input type=number" size="1"></td>
+						<td><input type=number" size="1">:<input type=number" size="1"></td>
+						<td><input type=number" size="1">:<input type=number" size="1"></td>
+						<td><input type=number" size="1">:<input type=number" size="1"></td>
+						<td>0</td>
 					</tr>
 				</table>
-				
+			<i><sup>1</sup> w myśl zasady typuj przeciwko wskazaniom</i>
+			<br>
+			<i><sup>2</sup> pomimo że rozum podpowiada słabość anglików</i>
 			</div>
-			
-			<!--
-			<div class='group'>
-				<p>
-				<table ng-init="groupA = ['Brazylia', 'Chorwacja', 'Meksyk', 'Kamerun']" >
-					<th>GRUPA A</th>
-					<tr ng-repeat="name in groupA" ng-class-odd="'odd'" ng-class-even="'even'">
-						<td>{{name}}</td>
-					</tr>
-				</table>
-				<div class="match">
-					12 czerwca, 22:00 Brazylia - Chorwacja<div class="result"><input type=number" size="1" readonly="true">:<input type=number" size="1"></div>
-				</div>
-					<br>
-					13 czerwca, 18:00 Meksyk - Kamerun <input type=number" size="1">:<input type=number" size="1" readonly="true">
-					<br>
-					17 czerwca, 21:00 Brazylia - Meksyk <input type=number" size="1">:<input type=number" size="1" readonly="true">
-					<br>
-					18 czerwca, 24:00 Kamerun - Chorwacja <input type=number" size="1">:<input type=number" size="1" readonly="true">
-					<br>
-					23 czerwca, 22:00 Kamerun - Brazylia <input type=number" size="1">:<input type=number" size="1" readonly="true">
-					<br>
-					23 czerwca, 22:00 Chorwacja - Meksyk <input type=number" size="1">:<input type=number" size="1" readonly="true">
-			</div>
-			<div class='group'>
-				<p>
-				<table ng-init="groupB = ['Hiszpania', 'Holandia', 'Chile', 'Australia']" >
-					<th>GRUPA B</th>
-					<tr ng-repeat="name in groupB" ng-class-odd="'odd'" ng-class-even="'even'">
-						<td>{{name}}</td>
-					</tr>
-				</table>
-				13 czerwca, 21:00 Hiszpania - Holandia <input type=number" size="1" readonly="true">:<input type=number" size="1">
-				<br>
-				13 czerwca, 4:00 Chile - Australia <input type=number" size="1" readonly="true">:<input type=number" size="1">
-				<br>
-				18 czerwca, 21:00 Hiszpania - Chile <input type=number" size="1" readonly="true">:<input type=number" size="1">
-				<br>
-				18 czerwca, 18:00 Holandia - Australia <input type=number" size="1" readonly="true">:<input type=number" size="1">
-				<br>
-				23 czerwca, 18:00 Hiszpania - Australia <input type=number" size="1" readonly="true">:<input type=number" size="1">
-				<br>
-				23 czerwca, 18:00 Holandia - Chile <input type=number" size="1" readonly="true">:<input type=number" size="1">
-			</div>
-			<div class='group'>
-				<p>
-				<table ng-init="groupC = ['Kolumbia', 'Grecja', 'Wybrzeże Kości Słoniowej', 'Japonia']" >
-					<th>GRUPA C</th>
-					<tr ng-repeat="name in groupC" ng-class-odd="'odd'" ng-class-even="'even'">
-						<td>{{name}}</td>
-					</tr>
-				</table>
-			</div>
-			<div class='group'>
-				<p>
-				<table ng-init="groupD = ['Urugwaj', 'Kostaryka', 'Anglia', 'Włochy']" >
-					<th>GRUPA D</th>
-					<tr ng-repeat="name in groupD" ng-class-odd="'odd'" ng-class-even="'even'">
-						<td>{{name}}</td>
-					</tr>
-				</table>
-			</div>
-			<div class='group'>
-				<p>
-				<table ng-init="groupE = ['Szwajcaria', 'Ekwador', 'Francja', 'Honduras']" >
-					<th>GRUPA E</th>
-					<tr ng-repeat="name in groupE" ng-class-odd="'odd'" ng-class-even="'even'">
-						<td>{{name}}</td>
-					</tr>
-				</table>
-			</div>
-			<div class='group'>
-				<p>
-				<table ng-init="groupF = ['Argentyna', 'Bośnia i Hercegowina', 'Iran', 'Nigeria']" >
-					<th>GRUPA F</th>
-					<tr ng-repeat="name in groupF" ng-class-odd="'odd'" ng-class-even="'even'">
-						<td>{{name}}</td>
-					</tr>
-				</table>
-			</div>
-			<div class='group'>
-				<p>
-				<table ng-init="groupG = ['Niemcy', 'Portugalia', 'Ghana', 'USA']" >
-					<th>GRUPA G</th>
-					<tr ng-repeat="name in groupG" ng-class-odd="'odd'" ng-class-even="'even'">
-						<td>{{name}}</td>
-					</tr>
-				</table>
-			</div>
-			<div class='group'>
-				<p>
-				<table ng-init="groupH = ['Belgia', 'Algieria', 'Rosja', 'Korea Południowa']" >
-					<th>GRUPA H</th>
-					<tr ng-repeat="name in groupH" ng-class-odd="'odd'" ng-class-even="'even'">
-						<td>{{name}}</td>
-					</tr>
-				</table>
-			</div>
-		-->
         </div>
+
 <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
   (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -195,6 +234,7 @@
   ga('create', 'UA-51714890-1', 'zdrenis.github.io');
   ga('send', 'pageview');
 
-</script>    
-	</body>
+</script>
+    
+</body>
 </html>
