@@ -85,13 +85,13 @@ return mapa(k);
 		<br>
 		3pkt - trafienie zwycięzcy i różnicy bramek
 		<br>		
-		2pkt - trafienie zwycięzcy
+		2pkt - trafienie zwycięzcy z błędną różnicą bramkową
 		<br>		
 		W przypadku remisu:
 		<br>		
 		4pkt - dokładne trafienie wyniku
 		<br>		
-		2pkt - trafienie remisu, ale nie liczby bramek 	
+		2pkt - trafienie remisu z błędną liczbą bramek 	
 	</div>
         <div class='main'>
 			<h4 style="text-align: center;">Runda 1</h4>
@@ -184,14 +184,14 @@ return mapa(k);
 					</tr>
 					<tr>
 						<td>Zdre</td>
-						<td><input type=number" size="1">:<input type=number" size="1"></td>
-						<td><input type=number" size="1">:<input type=number" size="1"></td>
-						<td><input type=number" size="1">:<input type=number" size="1"></td>
-						<td><input type=number" size="1">:<input type=number" size="1"></td>
-						<td><input type=number" size="1">:<input type=number" size="1"></td>
-						<td><input type=number" size="1">:<input type=number" size="1"></td>
-						<td><input type=number" size="1">:<input type=number" size="1"></td>
-						<td><input type=number" size="1">:<input type=number" size="1"></td>
+						<td><input type=number" size="1" value="1" disabled="true">:<input type=number" size="1" value="0" disabled="true"></td>
+						<td><input type=number" size="1" value="2" disabled="true">:<input type=number" size="1" value="1" disabled="true"></td>
+						<td><input type=number" size="1" value="1" disabled="true">:<input type=number" size="1" value="1" disabled="true"></td>
+						<td><input type=number" size="1" value="2" disabled="true">:<input type=number" size="1" value="2" disabled="true"></td>
+						<td><input type=number" size="1" value="2" disabled="true">:<input type=number" size="1" value="2" disabled="true"></td>
+						<td><input type=number" size="1" value="2" disabled="true">:<input type=number" size="1" value="2" disabled="true"></td>
+						<td><input type=number" size="1" value="2" disabled="true">:<input type=number" size="1" value="2" disabled="true"></td>
+						<td><input type=number" size="1" value="2" disabled="true">:<input type=number" size="1" value="2" disabled="true"></td>
 						<td>0</td>
 					</tr>
 					<tr>
