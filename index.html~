@@ -118,8 +118,8 @@ return mapa(k);
 							<th><img height="15" width="22" src="flags/cote_d'ivoire.png" alt="">WKS</th>
 						</tr>
 						<tr>
+							<th>1:1</th>
 							<th ng-repeat="n in tipsters">---</th>
-							<th>---</th>
 						</tr>
 						<tr>
 							<th><img height="15" width="22" src="flags/croatia.png" alt=""></img>CHO</th>
@@ -145,7 +145,7 @@ return mapa(k);
 					</thead>
 					<tr>
 						<td>Ola</td>
-						<td><input type=number" size="1" value="0" disabled="true">:<input type=number" size="1" value="1" disabled="true"></td>
+						<td><input type=number" size="1" value="0" disabled="true">:<input type=number" size="1" value="1" disabled="true"><span style="color: red;">0</span></td>
 						<td><input type=number" size="1" value="0" disabled="true">:<input type=number" size="1" value="0" disabled="true"></td>
 						<td><input type=number" size="1" value="3" disabled="true">:<input type=number" size="1" value="2" disabled="true"></td>
 						<td><input type=number" size="1" value="1" disabled="true">:<input type=number" size="1" value="0" disabled="true"></td>
@@ -157,7 +157,7 @@ return mapa(k);
 					</tr>
 					<tr>
 						<td>Dmin</td>
-						<td><input type=number" size="1" value="2" disabled="true">:<input type=number" size="1" value="0" disabled="true"></td>
+						<td><input type=number" size="1" value="2" disabled="true">:<input type=number" size="1" value="0" disabled="true"><span style="color: red;">0</span></td>
 						<td><input type=number" size="1" value="1" disabled="true">:<input type=number" size="1" value="2" disabled="true"></td>
 						<td><input type=number" size="1" value="1" disabled="true">:<input type=number" size="1" value="2" disabled="true"><sup>1</sup></td>
 						<td><input type=number" size="1" value="0" disabled="true">:<input type=number" size="1" value="0" disabled="true"></td>
@@ -169,7 +169,7 @@ return mapa(k);
 					</tr>
 					<tr>
 						<td>Zajo</td>
-						<td><input type=number" size="1" value="2" disabled="true">:<input type=number" size="1" value="1" disabled="true"></td>
+						<td><input type=number" size="1" value="2" disabled="true">:<input type=number" size="1" value="1" disabled="true"><span style="color: red;">0</span></td>
 						<td><input type=number" size="1" value="0" disabled="true">:<input type=number" size="1" value="0" disabled="true"></td>
 						<td><input type=number" size="1" value="1" disabled="true">:<input type=number" size="1" value="0" disabled="true"></td>
 						<td><input type=number" size="1" value="3" disabled="true">:<input type=number" size="1" value="1" disabled="true"></td>
@@ -182,7 +182,7 @@ return mapa(k);
 					<tr>
 					<!-- BRAZYLIA, HISZPANIA, URUGWAJ, WKS, EKWADOR, ARGENTYNA, PORTUGALIA, BELGIA ARGENTYNA - król strzelców -->
 						<td>Asia</td> 
-						<td><input type=number" size="1" value="1" disabled="true">:<input type=number" size="1" value="1" disabled="true"></td>
+						<td><input type=number" size="1" value="1" disabled="true">:<input type=number" size="1" value="1" disabled="true"><span style="color: red;">4</span></td>
 						<td><input type=number" size="1" value="1" disabled="true">:<input type=number" size="1" value="1" disabled="true"></td>
 						<td><input type=number" size="1" value="2" disabled="true">:<input type=number" size="1" value="0" disabled="true"></td>
 						<td><input type=number" size="1" value="2" disabled="true">:<input type=number" size="1" value="1" disabled="true"></td>
@@ -190,11 +190,11 @@ return mapa(k);
 						<td><input type=number" size="1" value="2" disabled="true">:<input type=number" size="1" value="1" disabled="true"></td>
 						<td><input type=number" size="1" value="1" disabled="true">:<input type=number" size="1" value="1" disabled="true"></td>
 						<td><input type=number" size="1" value="2" disabled="true">:<input type=number" size="1" value="1" disabled="true"></td>
-						<td>0</td>
+						<td>4</td>
 					</tr>
 					<tr>
 						<td>Zdre</td>
-						<td><input type=number" size="1" value="1" disabled="true">:<input type=number" size="1" value="0" disabled="true"></td>
+						<td><input type=number" size="1" value="1" disabled="true">:<input type=number" size="1" value="0" disabled="true"><span style="color: red;">0</span></td>
 						<td><input type=number" size="1" value="2" disabled="true">:<input type=number" size="1" value="1" disabled="true"></td>
 						<td><input type=number" size="1" value="1" disabled="true">:<input type=number" size="1" value="1" disabled="true"></td>
 						<td><input type=number" size="1" value="1" disabled="true">:<input type=number" size="1" value="0" disabled="true"></td>
@@ -206,7 +206,7 @@ return mapa(k);
 					</tr>
 					<tr>
 						<td>Kamiloss</td>
-						<td><input type=number" size="1" value="3" disabled="true">:<input type=number" size="1" value="1" disabled="true"></td>
+						<td><input type=number" size="1" value="3" disabled="true">:<input type=number" size="1" value="1" disabled="true"><span style="color: red;">0</span></td>
 						<td><input type=number" size="1">:<input type=number" size="1"></td>
 						<td><input type=number" size="1">:<input type=number" size="1"></td>
 						<td><input type=number" size="1">:<input type=number" size="1"></td>
@@ -217,15 +217,15 @@ return mapa(k);
 						<td>0</td>
 					</tr>
 					<tr>
-						<td>bojler</td>
-						<td><input type=number" size="1">:<input type=number" size="1"></td>
-						<td><input type=number" size="1">:<input type=number" size="1"></td>
-						<td><input type=number" size="1">:<input type=number" size="1"></td>
-						<td><input type=number" size="1">:<input type=number" size="1"></td>
-						<td><input type=number" size="1">:<input type=number" size="1"></td>
-						<td><input type=number" size="1">:<input type=number" size="1"></td>
-						<td><input type=number" size="1">:<input type=number" size="1"></td>
-						<td><input type=number" size="1">:<input type=number" size="1"></td>
+						<td>Bojler</td>
+						<td><input type=number" size="1" value="2" disabled="true">:<input type=number" size="1" value="0" disabled="true"><span style="color: red;"> 0</span></td>
+						<td><input type=number" size="1" value="2" disabled="true">:<input type=number" size="1" value="1" disabled="true"></td>
+						<td><input type=number" size="1" value="3" disabled="true">:<input type=number" size="1" value="0" disabled="true"></td>
+						<td><input type=number" size="1" value="2" disabled="true">:<input type=number" size="1" value="0" disabled="true"></td>
+						<td><input type=number" size="1" value="1" disabled="true">:<input type=number" size="1" value="1" disabled="true"></td>
+						<td><input type=number" size="1" value="3" disabled="true">:<input type=number" size="1" value="0" disabled="true"></td>
+						<td><input type=number" size="1" value="0" disabled="true">:<input type=number" size="1" value="2" disabled="true"></td>
+						<td><input type=number" size="1" value="2" disabled="true">:<input type=number" size="1" value="0" disabled="true"></td>
 						<td>0</td>
 					</tr>
 				</table>
@@ -236,27 +236,27 @@ return mapa(k);
 <div class="rules" style="text-align: left;">
 		<b>Zasady:</b>
 		<br>			
-		<img height="22" width="22" src="img/ball.png" alt="">
-		<img height="22" width="22" src="img/ball.png" alt="">
-		<img height="22" width="22" src="img/ball.png" alt="">
-		<img height="22" width="22" src="img/ball.png" alt=""> - dokładne trafienie wyniku
+		<img height="22" width="22" src="img/soccerball.jpg" alt="">
+		<img height="22" width="22" src="img/soccerball.jpg" alt="">
+		<img height="22" width="22" src="img/soccerball.jpg" alt="">
+		<img height="22" width="22" src="img/soccerball.jpg" alt=""> - dokładne trafienie wyniku
 		<br>
-		<img height="22" width="22" src="img/ball.png" alt="">
-		<img height="22" width="22" src="img/ball.png" alt="">
-		<img height="22" width="22" src="img/ball.png" alt=""> - trafienie zwycięzcy i różnicy bramek
+		<img height="22" width="22" src="img/soccerball.jpg" alt="">
+		<img height="22" width="22" src="img/soccerball.jpg" alt="">
+		<img height="22" width="22" src="img/soccerball.jpg" alt=""> - trafienie zwycięzcy i różnicy bramek
 		<br>		
-		<img height="22" width="22" src="img/ball.png" alt="">
-		<img height="22" width="22" src="img/ball.png" alt=""> - trafienie zwycięzcy z błędną różnicą bramkową
+		<img height="22" width="22" src="img/soccerball.jpg" alt="">
+		<img height="22" width="22" src="img/soccerball.jpg" alt=""> - trafienie zwycięzcy z błędną różnicą bramkową
 		<br>		
 		W przypadku remisu:
 		<br>		
-		<img height="22" width="22" src="img/ball.png" alt="">
-		<img height="22" width="22" src="img/ball.png" alt="">
-		<img height="22" width="22" src="img/ball.png" alt="">
-		<img height="22" width="22" src="img/ball.png" alt=""> - dokładne trafienie wyniku
+		<img height="22" width="22" src="img/soccerball.jpg" alt="">
+		<img height="22" width="22" src="img/soccerball.jpg" alt="">
+		<img height="22" width="22" src="img/soccerball.jpg" alt="">
+		<img height="22" width="22" src="img/soccerball.jpg" alt=""> - dokładne trafienie wyniku
 		<br>		
-		<img height="22" width="22" src="img/ball.png" alt="">
-		<img height="22" width="22" src="img/ball.png" alt=""> - trafienie remisu z błędną liczbą bramek 	
+		<img height="22" width="22" src="img/soccerball.jpg" alt="">
+		<img height="22" width="22" src="img/soccerball.jpg" alt=""> - trafienie remisu z błędną liczbą bramek 	
 	</div>
 
 
@@ -277,6 +277,9 @@ return mapa(k);
   ga('send', 'pageview');
 
 </script>
-    
+<!--GRUPA A BRA, 
+KNIE
+1NIE
+2HISZPANIA -->
 </body>
 </html>
