@@ -2,7 +2,13 @@
 <meta charset="utf-8">
 <html ng-app>
     <head><title>Liga Typerów</title>
+<!--
+body {
+    background: #000000 url(img/background.jpg) no-repeat;
+}
+-->
  	<style>
+
 	   footer {
             width: 100%;
             bottom: 0;
@@ -10,10 +16,10 @@
 	    text-align: center;
         }
             .even {
-                background-color: #FFF;
+                background-color: #ffff00;
             }
             .odd {
-                background-color: #ccc;
+                background-color: #008000;
             }
             table{
                 border: 1px solid #ccc;
@@ -37,9 +43,10 @@
 		tr:nth-child(even) {background: #FFF}
 		tr:nth-child(odd) {background: #CCC}
             .main{
+		background: white;
                 margin: 10px auto;
                 width: 1000px;
-                border: 1px solid #ccc;
+                border: 1px #ccc;
                 padding: 20px;    
             }
             .rules{
@@ -163,15 +170,15 @@ return mapa(k);
 						<td>0</td>
 					</tr>
 					<tr>
-						<td>Asia</td>
-						<td><input type=number" size="1">:<input type=number" size="1"></td>
-						<td><input type=number" size="1">:<input type=number" size="1"></td>
-						<td><input type=number" size="1">:<input type=number" size="1"></td>
-						<td><input type=number" size="1">:<input type=number" size="1"></td>
-						<td><input type=number" size="1">:<input type=number" size="1"></td>
-						<td><input type=number" size="1">:<input type=number" size="1"></td>
-						<td><input type=number" size="1">:<input type=number" size="1"></td>
-						<td><input type=number" size="1">:<input type=number" size="1"></td>
+						<td>Asia</td> BRAZYLIA, HISZPANIA, URUGWAJ, WKS, EKWADOR, ARGENTYNA, PORTUGALIA, BELGIA ARGENTYNA - król strzelców
+						<td><input type=number" size="1" value="1" disabled="true">:<input type=number" size="1" value="1" disabled="true"></td>
+						<td><input type=number" size="1" value="1" disabled="true">:<input type=number" size="1" value="1" disabled="true"></td>
+						<td><input type=number" size="1" value="2" disabled="true">:<input type=number" size="1" value="0" disabled="true"></td>
+						<td><input type=number" size="1" value="2" disabled="true">:<input type=number" size="1" value="1" disabled="true"></td>
+						<td><input type=number" size="1" value="1" disabled="true">:<input type=number" size="1" value="0" disabled="true"></td>
+						<td><input type=number" size="1" value="2" disabled="true">:<input type=number" size="1" value="1" disabled="true"></td>
+						<td><input type=number" size="1" value="1" disabled="true">:<input type=number" size="1" value="1" disabled="true"></td>
+						<td><input type=number" size="1" value="2" disabled="true">:<input type=number" size="1" value="1" disabled="true"></td>
 						<td>0</td>
 					</tr>
 					<tr>
@@ -215,7 +222,6 @@ return mapa(k);
 			<br>
 			<i><sup>2</sup> pomimo że rozum podpowiada słabość anglików</i>
 			</div>
-        </div>
 <div class="rules" style="text-align: left;">
 		<b>Zasady:</b>
 		<br>			
@@ -247,6 +253,8 @@ return mapa(k);
   <p>Mailto: <a href="mailto:zdrenis@gmail.com">
   zdrenis@gmail.com</a>.</p>
 </footer> 
+        </div>
+
 
 <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
