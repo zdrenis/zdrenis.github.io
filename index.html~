@@ -165,7 +165,7 @@ return mapa(k);
 						<td><input type=number" size="1" value="3" disabled="true">:<input type=number" size="1" value="0" disabled="true"></td>
 						<td><input type=number" size="1" value="2" disabled="true">:<input type=number" size="1" value="2" disabled="true"><sup>2</sup></td>
 						<td><input type=number" size="1" value="2" disabled="true">:<input type=number" size="1" value="0" disabled="true"></td>
-						<td>0</td>
+						<td>3</td>
 					</tr>
 					<tr>
 						<td>Zajo</td>
@@ -177,7 +177,7 @@ return mapa(k);
 						<td><input type=number" size="1" value="3" disabled="true">:<input type=number" size="1" value="0" disabled="true"></td>
 						<td><input type=number" size="1" value="0" disabled="true">:<input type=number" size="1" value="1" disabled="true"></td>
 						<td><input type=number" size="1" value="2" disabled="true">:<input type=number" size="1" value="3" disabled="true"></td>
-						<td>0</td>
+						<td>2</td>
 					</tr>
 					<tr>
 					<!-- BRAZYLIA, HISZPANIA, URUGWAJ, WKS, EKWADOR, ARGENTYNA, PORTUGALIA, BELGIA ARGENTYNA - król strzelców -->
@@ -190,7 +190,7 @@ return mapa(k);
 						<td><input type=number" size="1" value="2" disabled="true">:<input type=number" size="1" value="1" disabled="true"></td>
 						<td><input type=number" size="1" value="1" disabled="true">:<input type=number" size="1" value="1" disabled="true"></td>
 						<td><input type=number" size="1" value="2" disabled="true">:<input type=number" size="1" value="1" disabled="true"></td>
-						<td>4</td>
+						<td>0</td>
 					</tr>
 					<tr>
 						<td>Zdre</td>
@@ -202,7 +202,7 @@ return mapa(k);
 						<td><input type=number" size="1" value="2" disabled="true">:<input type=number" size="1" value="0" disabled="true"></td>
 						<td><input type=number" size="1" value="1" disabled="true">:<input type=number" size="1" value="1" disabled="true"></td>
 						<td><input type=number" size="1" value="1" disabled="true">:<input type=number" size="1" value="1" disabled="true"></td>
-						<td>0</td>
+						<td>2</td>
 					</tr>
 					<tr>
 						<td>Kamiloss</td>
@@ -214,7 +214,7 @@ return mapa(k);
 						<td><input type=number" size="1">:<input type=number" size="1"></td>
 						<td><input type=number" size="1">:<input type=number" size="1"></td>
 						<td><input type=number" size="1">:<input type=number" size="1"></td>
-						<td>0</td>
+						<td>4</td>
 					</tr>
 					<tr>
 						<td>Bojler</td>
@@ -226,13 +226,133 @@ return mapa(k);
 						<td><input type=number" size="1" value="3" disabled="true">:<input type=number" size="1" value="0" disabled="true"></td>
 						<td><input type=number" size="1" value="0" disabled="true">:<input type=number" size="1" value="2" disabled="true"></td>
 						<td><input type=number" size="1" value="2" disabled="true">:<input type=number" size="1" value="0" disabled="true"></td>
-						<td>0</td>
+						<td>3</td>
 					</tr>
 				</table>
 			<i><sup>1</sup> w myśl zasady typuj przeciwko wskazaniom</i>
 			<br>
 			<i><sup>2</sup> pomimo że rozum podpowiada słabość anglików</i>
 			</div>
+
+
+
+
+
+<h4 style="text-align: center;">Runda 2</h4>
+			<div class='standings'>
+				<table ng-init="tipsters = ['Ola', 'dmin', 'Zajo', 'Asia', 'Zdre', 'Kamiloss', 'bojer']" >
+					<thead>
+						<tr>
+							<th style="background-color: #fff;" rowspan="4">
+							<th><img height="15" width="22" src="flags/switzerland.png" alt=""></img>SZW</th>
+							<th><img height="15" width="22" src="flags/france.png" alt=""></img>FRA</th>
+							<th><img height="15" width="22" src="flags/argentina.png" alt="">ARG</th>
+							<th><img height="15" width="22" src="flags/germany.png" alt="">NIE</th>
+							<th><img height="15" width="22" src="flags/iran.png" alt="">IRA</th>
+							<th><img height="15" width="22" src="flags/ghana.png" alt="">GHA</th>
+						</tr>
+						<tr>
+							<th>---</th>
+							<th>---</th>
+							<th>---</th>
+							<th>---</th>
+							<th>---</th>
+							<th>---</th>
+						</tr>
+						<tr>
+							<th><img height="15" width="22" src="flags/ecuador.png" alt=""></img>EKW</th>
+							<th><img height="15" width="22" src="flags/honduras.png" alt=""></img>HON</th>
+							<th><img height="15" width="22" src="flags/bosnia_and_herzegovina.png" alt="">BOS</th>
+							<th><img height="15" width="22" src="flags/portugal.png" alt="">POR</th>
+							<th><img height="15" width="22" src="flags/nigeria.png" alt="">NIG</th>
+							<th><img height="15" width="22" src="flags/usa.png" alt="">USA</th>
+						</tr>
+						<tr>
+							<th><small>2.45	| 3.10 | 3.10</small></th>
+							<th><small>1.33	| 4.80 | 11.0</small></th>
+							<th><small>1.40	| 4.70 | 8.00</small></th>
+							<th><small>2.15	| 3.25 | 3.60</small></th>
+							<th><small>3.50	| 3.20 | 2.20</small></th>
+							<th><small>2.60	| 3.20 | 2.80</small></th>
+							<th rowspan = 4>Punkty</th>
+						</tr>
+					</thead>
+					<tr>
+						<td>Ola</td>
+						<td><input type=number" size="1" value="" disabled="true">:<input type=number" size="1" value="" disabled="true"></td>
+						<td><input type=number" size="1" value="" disabled="true">:<input type=number" size="1" value="" disabled="true"></td>
+						<td><input type=number" size="1" value="" disabled="true">:<input type=number" size="1" value="" disabled="true"></td>
+						<td><input type=number" size="1" value="" disabled="true">:<input type=number" size="1" value="" disabled="true"></td>
+						<td><input type=number" size="1" value="" disabled="true">:<input type=number" size="1" value="" disabled="true"></td>
+						<td><input type=number" size="1" value="" disabled="true">:<input type=number" size="1" value="" disabled="true"></td>
+						<td>0</td>
+					</tr>
+					<tr>
+						<td>Dmin</td>
+						<td><input type=number" size="1" value="" disabled="true">:<input type=number" size="1" value="" disabled="true"></td>
+						<td><input type=number" size="1" value="" disabled="true">:<input type=number" size="1" value="" disabled="true"></td>
+						<td><input type=number" size="1" value="" disabled="true">:<input type=number" size="1" value="" disabled="true"></td>
+						<td><input type=number" size="1" value="" disabled="true">:<input type=number" size="1" value="" disabled="true"></td>
+						<td><input type=number" size="1" value="" disabled="true">:<input type=number" size="1" value="" disabled="true"></td>
+						<td><input type=number" size="1" value="" disabled="true">:<input type=number" size="1" value="" disabled="true"></td>
+						<td>0</td>
+					</tr>
+					<tr>
+						<td>Zajo</td>
+						<td><input type=number" size="1" value="" disabled="true">:<input type=number" size="1" value="" disabled="true"></td>
+						<td><input type=number" size="1" value="" disabled="true">:<input type=number" size="1" value="" disabled="true"></td>
+						<td><input type=number" size="1" value="" disabled="true">:<input type=number" size="1" value="" disabled="true"></td>
+						<td><input type=number" size="1" value="" disabled="true">:<input type=number" size="1" value="" disabled="true"></td>
+						<td><input type=number" size="1" value="" disabled="true">:<input type=number" size="1" value="" disabled="true"></td>
+						<td><input type=number" size="1" value="" disabled="true">:<input type=number" size="1" value="" disabled="true"></td>
+						<td>0</td>
+					</tr>
+					<tr>
+					<!-- BRAZYLIA, HISZPANIA, URUGWAJ, WKS, EKWADOR, ARGENTYNA, PORTUGALIA, BELGIA ARGENTYNA - król strzelców -->
+						<td>Asia</td> 
+						<td><input type=number" size="1" value="" disabled="true">:<input type=number" size="1" value="" disabled="true"></td>
+						<td><input type=number" size="1" value="" disabled="true">:<input type=number" size="1" value="" disabled="true"></td>
+						<td><input type=number" size="1" value="" disabled="true">:<input type=number" size="1" value="" disabled="true"></td>
+						<td><input type=number" size="1" value="" disabled="true">:<input type=number" size="1" value="" disabled="true"></td>
+						<td><input type=number" size="1" value="" disabled="true">:<input type=number" size="1" value="" disabled="true"></td>
+						<td><input type=number" size="1" value="" disabled="true">:<input type=number" size="1" value="" disabled="true"></td>
+						<td>0</td>
+					</tr>
+					<tr>
+						<td>Zdre</td>
+						<td><input type=number" size="1" value="" disabled="true">:<input type=number" size="1" value="" disabled="true"></td>
+						<td><input type=number" size="1" value="" disabled="true">:<input type=number" size="1" value="" disabled="true"></td>
+						<td><input type=number" size="1" value="" disabled="true">:<input type=number" size="1" value="" disabled="true"></td>
+						<td><input type=number" size="1" value="" disabled="true">:<input type=number" size="1" value="" disabled="true"></td>
+						<td><input type=number" size="1" value="" disabled="true">:<input type=number" size="1" value="" disabled="true"></td>
+						<td><input type=number" size="1" value="" disabled="true">:<input type=number" size="1" value="" disabled="true"></td>
+						<td>0</td>
+					</tr>
+					<tr>
+						<td>Kamiloss</td>
+						<td><input type=number" size="1" value="" disabled="true">:<input type=number" size="1" value="" disabled="true"></td>
+						<td><input type=number" size="1">:<input type=number" size="1"></td>
+						<td><input type=number" size="1">:<input type=number" size="1"></td>
+						<td><input type=number" size="1">:<input type=number" size="1"></td>
+						<td><input type=number" size="1">:<input type=number" size="1"></td>
+						<td><input type=number" size="1">:<input type=number" size="1"></td>
+						<td>0</td>
+					</tr>
+					<tr>
+						<td>Bojler</td>
+						<td><input type=number" size="1" value="" disabled="true">:<input type=number" size="1" value="" disabled="true"></td>
+						<td><input type=number" size="1" value="" disabled="true">:<input type=number" size="1" value="" disabled="true"></td>
+						<td><input type=number" size="1" value="" disabled="true">:<input type=number" size="1" value="" disabled="true"></td>
+						<td><input type=number" size="1" value="" disabled="true">:<input type=number" size="1" value="" disabled="true"></td>
+						<td><input type=number" size="1" value="" disabled="true">:<input type=number" size="1" value="" disabled="true"></td>
+						<td><input type=number" size="1" value="" disabled="true">:<input type=number" size="1" value="" disabled="true"></td>
+						<td>0</td>
+					</tr>
+				</table>
+
+
+
+
 <div class="rules" style="text-align: left;">
 		<b>Zasady:</b>
 		<br>			
