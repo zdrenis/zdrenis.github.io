@@ -356,27 +356,27 @@ return mapa(k);
 <div class="rules" style="text-align: left;">
 		<b>Zasady:</b>
 		<br>			
-		<img height="22" width="22" src="img/soccerball.jpg" alt="">
-		<img height="22" width="22" src="img/soccerball.jpg" alt="">
-		<img height="22" width="22" src="img/soccerball.jpg" alt="">
-		<img height="22" width="22" src="img/soccerball.jpg" alt=""> - dokładne trafienie wyniku
+		<img height="22" width="22" src="img/ball.png" alt="">
+		<img height="22" width="22" src="img/ball.png" alt="">
+		<img height="22" width="22" src="img/ball.png" alt="">
+		<img height="22" width="22" src="img/ball.png" alt=""> - dokładne trafienie wyniku
 		<br>
-		<img height="22" width="22" src="img/soccerball.jpg" alt="">
-		<img height="22" width="22" src="img/soccerball.jpg" alt="">
-		<img height="22" width="22" src="img/soccerball.jpg" alt=""> - trafienie zwycięzcy i różnicy bramek
+		<img height="22" width="22" src="img/ball.png" alt="">
+		<img height="22" width="22" src="img/ball.png" alt="">
+		<img height="22" width="22" src="img/ball.png" alt=""> - trafienie zwycięzcy i różnicy bramek
 		<br>		
-		<img height="22" width="22" src="img/soccerball.jpg" alt="">
-		<img height="22" width="22" src="img/soccerball.jpg" alt=""> - trafienie zwycięzcy z błędną różnicą bramkową
+		<img height="22" width="22" src="img/ball.png" alt="">
+		<img height="22" width="22" src="img/ball.png" alt=""> - trafienie zwycięzcy z błędną różnicą bramkową
 		<br>		
 		W przypadku remisu:
 		<br>		
-		<img height="22" width="22" src="img/soccerball.jpg" alt="">
-		<img height="22" width="22" src="img/soccerball.jpg" alt="">
-		<img height="22" width="22" src="img/soccerball.jpg" alt="">
-		<img height="22" width="22" src="img/soccerball.jpg" alt=""> - dokładne trafienie wyniku
+		<img height="22" width="22" src="img/ball.png" alt="">
+		<img height="22" width="22" src="img/ball.png" alt="">
+		<img height="22" width="22" src="img/ball.png" alt="">
+		<img height="22" width="22" src="img/ball.png" alt=""> - dokładne trafienie wyniku
 		<br>		
-		<img height="22" width="22" src="img/soccerball.jpg" alt="">
-		<img height="22" width="22" src="img/soccerball.jpg" alt=""> - trafienie remisu z błędną liczbą bramek 	
+		<img height="22" width="22" src="img/ball.png" alt="">
+		<img height="22" width="22" src="img/ball.png" alt=""> - trafienie remisu z błędną liczbą bramek 	
 	</div>
 
 
