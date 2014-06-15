@@ -43,17 +43,16 @@ body {
 			}
 			
 	 input {
-	  text-align: center;
-	  color: #3E4095; // blue
-	  //color: #00A859; // green
+			text-align: center;
+			color: #3E4095; // blue
 	  }
 		tr:nth-child(even) {background: #FFF}
 		tr:nth-child(odd) {background: #CCC}
-            .main{
+        .main{
 		background: white;
                 margin: 10px auto;
                 width: 1000px;
-                border: 1px solid #ccc;
+                border: 1px #ccc;
                 padding: 20px;    
             }
             .rules{
@@ -73,6 +72,12 @@ body {
 		position: relative;
 		top: -33px;
 		left: -25px;
+	}
+	#totals
+	{
+		position: relative;
+		top: -975px;
+		left: 920px;
 	}
 	@font-face {
 	font-family: 'brasil2014';
@@ -134,15 +139,6 @@ return mapa(k);
         <div class='main'>
 			<h4 style="text-align: center;">Runda 1</h4>
 			<div class='standings'>
-<!--
-<div ng-controller="Ctrl">
-<div ng-repeat="innerList in round1" ng-init="outerIndex = $index">
-  <div ng-repeat="value in innerList" ng-init="innerIndex = $index">
-     <span class="example-init">round1[ {{outerIndex}} ][ {{innerIndex}} ] = {{value}}; window["get"]({{value}});</span>
-  </div>
-</div>
-</div>
--->
 				<table ng-init="tipsters = ['Ola', 'dmin', 'Zajo', 'Asia', 'Zdre', 'Kamiloss', 'bojer']" >
 					<thead>
 						<tr>
@@ -273,7 +269,6 @@ return mapa(k);
 						<td><input size="1" value="2" disabled="true">-<input size="1" value="0" disabled="true"><span style="color: #00A859;"> 2</span></td>
 						<td class="points"><b>13</b></td>
 					</tr>
-					</div>
 				</table>
 			<div id="cup1"><img height="30" width="30" src="img/cup.png" alt=""></img></div>
 			</div>
@@ -393,7 +388,7 @@ return mapa(k);
 						<td class="points">4</td>
 					</tr>
 				</table>
-
+				</div>
 
 			<h4 style="text-align: center;">Runda 3</h4>
 			<div class='standings'>
@@ -508,7 +503,7 @@ return mapa(k);
 				
 
 
-<div class="rules" style="text-align: left;">
+	<div class="rules" style="text-align: left;">
 		<b>Zasady:</b>
 		<br>			
 		<img height="22" width="22" src="img/ball.png" alt="">
@@ -534,13 +529,60 @@ return mapa(k);
 		<img height="22" width="22" src="img/ball.png" alt=""> - trafienie remisu z błędną liczbą bramek 	
 	</div>
 
-
 <footer>
   <p>Mailto: <a href="mailto:zdrenis@gmail.com">
   zdrenis@gmail.com</a></p>
 </footer> 
-        </div>
-
+</div>
+				<div id="totals">
+				<table class="totals">
+					<tr>
+						<th></th>
+						<th>RAZEM</th>
+						<th></th>
+					</tr>
+					<tr>
+					<th>Miejsce</th>
+					<th>Typer</th>
+					<th>Suma</th>
+					</tr>
+					<tr>
+						<td>1</td>
+						<td>Kamiloss</td>
+						<td>19</td>
+					</tr>
+					<tr>
+						<td>2</td>
+						<td>Bojler</td>
+						<td>17</td>
+					</tr>
+					<tr>
+						<td>3</td>
+						<td>Zajo</td>
+						<td>16</td>
+					</tr>
+					<tr>
+						<td>4</td>
+						<td>Asia</td>
+						<td>15</td>
+					</tr>
+					<tr>
+						<td>5</td>
+						<td>Ola</td>
+						<td>11</td>
+					</tr>
+					<tr>
+						<td></td>
+						<td>Dmin</td>
+						<td>11</td>
+					</tr>
+					<tr>
+						<td>7</td>
+						<td>Zdre</td>
+						<td>9</td>
+					</tr>
+				</table>
+				</div>
 
 <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
