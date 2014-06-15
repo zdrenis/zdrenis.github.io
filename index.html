@@ -81,9 +81,6 @@ body {
 		border: 2px dotted #ccc;
 		padding: 20px;
 		width: 200px;
-		<!--[if IE]>
-		top: -1125px;
-		<![endif]-->
 	}
 @font-face {
     font-family: 'brasil_14regular';
@@ -114,6 +111,20 @@ body {
 	background: -ms-linear-gradient(top, lightyellow, gold);
 	}
         </style>
+		
+	<!--[if IE]>
+	<style type="text/css">
+	#totals
+	{
+		position: relative;
+		left: 880px;
+		border: 2px dotted #ccc;
+		padding: 20px;
+		width: 200px;
+		top: -1125px;
+	}
+</style>
+<![endif]-->
         <script src="http://code.angularjs.org/1.2.9/angular.min.js"></script>
 	<script>
 	  function Ctrl($scope) {
