@@ -23,7 +23,7 @@ body {
             }
         table{
                 border: 1px #ccc;
-				text-align: center;
+		text-align: center; 
             }
 		table th{
 				padding: 3px;
@@ -37,8 +37,8 @@ body {
 				width: 100px;
 				color: #3E4095; // blue
 			}
-			.points {
-				width: 40px;
+	.points {
+			width: 40px;
 				color: red;
 			}
 			
@@ -53,7 +53,7 @@ body {
                 margin: 10px auto;
                 width: 1000px;
                 border: 1px #ccc;
-                padding: 20px;    
+                padding: 20px;
             }
             .rules{
                 margin: 10px auto;
@@ -66,6 +66,10 @@ body {
 			input, th, td, table, h1, h2, h3, h4, span {
 				font-family: brasil_14regular,verdana;
 			}
+	.standings1 {
+		position: relative;
+		left: -100px;	
+	}
 			
 	#cup1
 	{
@@ -161,8 +165,8 @@ return mapa(k);
 	<h2 style="text-align: center;">Liga typerow Brazylia 2014</h2>
         <div class='main'>
 		
-		<h4 style="text-align: center;">Runda 2</h4>
-			<div class='standings'>
+			<div class='standings2'>
+				<h4 style="text-align: center;">Runda 2</h4>
 				<table ng-init="tipsters = ['Ola', 'dmin', 'Zajo', 'Asia', 'Zdre', 'Kamiloss', 'bojer']" >
 					<thead>
 						<tr>
@@ -274,8 +278,8 @@ return mapa(k);
 				</table>
 				</div>
 		
-			<h4 style="text-align: center;">Runda 1</h4>
-			<div class='standings'>
+			<div class='standings1'>
+				<h4 style="text-align: center;">Runda 1</h4>
 				<table ng-init="tipsters = ['Ola', 'dmin', 'Zajo', 'Asia', 'Zdre', 'Kamiloss', 'bojer']" >
 					<thead>
 						<tr>
