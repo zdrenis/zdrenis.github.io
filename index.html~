@@ -177,7 +177,7 @@ return mapa(k);
 						<tr>
 							<th>2-1</th>
 							<th>3-0</th>
-							<th>2-1</th>
+							<th>1-0</th>
 							<th>---</th>
 							<th>---</th>
 							<th>---</th>
@@ -224,22 +224,22 @@ return mapa(k);
 						<td>Zajo</td>
 						<td><input size="1" value="1" disabled="true">-<input size="1" value="0" disabled="true"><span style="color: #00A859;"> 3</span></td>
 						<td><input size="1" value="4" disabled="true">-<input size="1" value="0" disabled="true"><span style="color: #00A859;"> 2</span></td>
-						<td><input size="1" value="2" disabled="true">-<input size="1" value="1" disabled="true"><span style="color: #00A859;"> 4</span></td>
+						<td><input size="1" value="2" disabled="true">-<input size="1" value="1" disabled="true"><span style="color: #00A859;"> 3</span></td>
 						<td><input size="1" value="1" disabled="true">-<input size="1" value="0" disabled="true"></td>
 						<td><input size="1" value="1" disabled="true">-<input size="1" value="2" disabled="true"></td>
 						<td><input size="1" value="2" disabled="true">-<input size="1" value="2" disabled="true"></td>
-						<td class="points">9</td>
+						<td class="points">8</td>
 					</tr>
 					<tr>
 					<!-- BRAZYLIA, HISZPANIA, URUGWAJ, WKS, EKWADOR, ARGENTYNA, PORTUGALIA, BELGIA ARGENTYNA - król strzelców -->
 						<td>Asia</td> 
 						<td><input size="1" value="1" disabled="true">-<input size="1" value="0" disabled="true"><span style="color: #00A859;"> 3</span></td>
 						<td><input size="1" value="3" disabled="true">-<input size="1" value="0" disabled="true"><span style="color: #00A859;"> 4</span></td>
-						<td><input size="1" value="2" disabled="true">-<input size="1" value="1" disabled="true"><span style="color: #00A859;"> 4</span></td>
+						<td><input size="1" value="2" disabled="true">-<input size="1" value="1" disabled="true"><span style="color: #00A859;"> 3</span></td>
 						<td><input size="1" value="1" disabled="true">-<input size="1" value="2" disabled="true"></td>
 						<td><input size="1" value="1" disabled="true">-<input size="1" value="1" disabled="true"></td>
 						<td><input size="1" value="1" disabled="true">-<input size="1" value="1" disabled="true"></td>
-						<td class="points">11</td>
+						<td class="points">10</td>
 					</tr>
 					<tr>
 						<td>Zdre</td>
@@ -573,18 +573,18 @@ return mapa(k);
 					</tr>
 					<tr>
 						<td style="color: black;">2</td>
-						<td>Zajo</td>
-						<td class="points">20</td>
-					</tr>
-					<tr>
-						<td style="color: black;">3</td>
 						<td>Bojler</td>
 						<td class="points">19</td>
 					</tr>
 					<tr>
 						<td style="color: black;"></td>
-						<td>Asia</td>
+						<td>Zajo</td>
 						<td class="points">19</td>
+					</tr>
+					<tr>
+						<td style="color: black;">4</td>
+						<td>Asia</td>
+						<td class="points">18</td>
 					</tr>
 					<tr>
 						<td style="color: black;">5</td>
