@@ -178,7 +178,7 @@ return mapa(k);
 							<th>2-1</th>
 							<th>3-0</th>
 							<th>2-1</th>
-							<th>3-0</th>
+							<th>4-0</th>
 							<th>---</th>
 							<th>---</th>
 						</tr>
@@ -569,17 +569,17 @@ return mapa(k);
 					<tr id="angle">
 						<td style="color: black;">1</td>
 						<td>Kamiloss</td>
-						<td class="points">21</td>
+						<td class="points">23</td>
 					</tr>
 					<tr>
 						<td style="color: black;">2</td>
 						<td>Zajo</td>
-						<td class="points">20</td>
+						<td class="points">23</td>
 					</tr>
 					<tr>
 						<td style="color: black;">3</td>
 						<td>Bojler</td>
-						<td class="points">19</td>
+						<td class="points">21</td>
 					</tr>
 					<tr>
 						<td style="color: black;"></td>
