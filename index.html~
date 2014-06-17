@@ -190,7 +190,7 @@ return mapa(k);
 							<th>2-1</th>
 							<th>4-0</th>
 							<th>0-0</th>
-							<th>0-1</th>
+							<th>1-2</th>
 						</tr>
 						<tr>
 							<th><img height="15" width="22" src="flags/ecuador.png" alt=""></img>EKW</th>
@@ -268,8 +268,8 @@ return mapa(k);
 						<td><input size="1" value="3" disabled="true">-<input size="1" value="1" disabled="true"><span style="color: #00A859;"> 2</span></td>
 						<td><input size="1" value="3" disabled="true">-<input size="1" value="2" disabled="true"><span style="color: #00A859;"> 2</span></td>
 						<td><input size="1" value="0" disabled="true">-<input size="1" value="1" disabled="true"><span style="color: #00A859;"> 0</span></td>
-						<td><input size="1" value="1" disabled="true">-<input size="1" value="2" disabled="true"><span style="color: #00A859;"> 3</span></td>
-						<td class="points"><b>15</b></td>
+						<td><input size="1" value="1" disabled="true">-<input size="1" value="2" disabled="true"><span style="color: #00A859;"> 4</span></td>
+						<td class="points"><b>16</b></td>
 					</tr>
 					<tr>
 						<td>Bojler</td>
@@ -579,8 +579,8 @@ return mapa(k);
 						<td style="color: black;">1</td>
 						<td>Kamiloss</td>
 						<td>11</td>
-						<td>15</td>
-						<td class="points">26</td>
+						<td>16</td>
+						<td class="points">27</td>
 					</tr>
 					<tr>
 						<td style="color: black;">2</td>
