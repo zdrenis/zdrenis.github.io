@@ -567,6 +567,7 @@ return mapa(k);
 </div>
 				<div id="totals">
 				<table class="totals">
+					<tr></tr>
 					<tr>
 					<th>Miejsce</th>
 					<th>Typer</th>
