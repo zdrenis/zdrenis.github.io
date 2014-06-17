@@ -72,7 +72,7 @@ body {
 	}
 	.ttd {
 	    width: 40px;
-	    horizontal-align: right;
+	    text-align: right;
 	}
 			
 	#cup1
