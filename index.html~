@@ -87,10 +87,16 @@ body {
 		top: -70px;
 		left: -25px;
 	}
+	#cup3
+	{
+		position: relative;
+		top: -107px;
+		left: -25px;
+	}
 	#totals
 	{
 		position: relative;
-		top: -1490px;
+		top: -1530px;
 		left: 880px;
 		border: 2px dotted #ccc;
 		padding: 20px;
@@ -246,12 +252,12 @@ return mapa(k);
 					</tr>
 					<tr>
 						<td>Asia</td> 
-						<td><input size="1" value="" disabled="true">-<input size="1" value="" disabled="true"><span style="color: #00A859;"> </span></td>
-						<td><input size="1" value="" disabled="true">-<input size="1" value="" disabled="true"><span style="color: #00A859;"> </span></td>
-						<td><input size="1" value="" disabled="true">-<input size="1" value="" disabled="true"><span style="color: #00A859;"> </span></td>
-						<td><input size="1" value="" disabled="true">-<input size="1" value="" disabled="true"></td>
-						<td><input size="1" value="" disabled="true">-<input size="1" value="" disabled="true"></td>
-						<td><input size="1" value="" disabled="true">-<input size="1" value="" disabled="true"></td>
+						<td><input size="1" value="2" disabled="true">-<input size="1" value="1" disabled="true"><span style="color: #00A859;"> </span></td>
+						<td><input size="1" value="1" disabled="true">-<input size="1" value="1" disabled="true"><span style="color: #00A859;"> </span></td>
+						<td><input size="1" value="1" disabled="true">-<input size="1" value="1" disabled="true"><span style="color: #00A859;"> </span></td>
+						<td><input size="1" value="3" disabled="true">-<input size="1" value="1" disabled="true"></td>
+						<td><input size="1" value="1" disabled="true">-<input size="1" value="2" disabled="true"></td>
+						<td><input size="1" value="1" disabled="true">-<input size="1" value="3" disabled="true"></td>
 						<td class="points"></td>
 					</tr>
 					<tr>
@@ -288,7 +294,7 @@ return mapa(k);
 		
 		
 <h4 style="text-align: center;">Runda 3</h4>
-			<div class='standings'>
+			<div class='standings3'>
 				<table ng-init="tipsters = ['Ola', 'dmin', 'Zajo', 'Asia', 'Zdre', 'Kamiloss', 'bojer']" >
 					<thead>
 						<tr>
@@ -306,7 +312,7 @@ return mapa(k);
 							<th>1-1</th>
 							<th>2-3</th>
 							<th>0-2</th>
-							<th>---</th>
+							<th>0-0</th>
 						</tr>
 						<tr>
 							<th><img height="15" width="22" src="flags/algeria.png" alt=""></img>ALG</th>
@@ -333,7 +339,7 @@ return mapa(k);
 						<td><input size="1" value="2" disabled="true">-<input size="1" value="1" disabled="true"><span style="color: #00A859;"> 0</span></td>
 						<td><input size="1" value="1" disabled="true">-<input size="1" value="3" disabled="true"><span style="color: #00A859;"> 2</span></td>
 						<td><input size="1" value="2" disabled="true">-<input size="1" value="1" disabled="true"><span style="color: #00A859;"> 0</span></td>
-						<td><input size="1" value="0" disabled="true">-<input size="1" value="2" disabled="true"></td>
+						<td><input size="1" value="0" disabled="true">-<input size="1" value="2" disabled="true"><span style="color: #00A859;"> 0</span></td>
 						<td class="points">4</td>
 					</tr>
 					<tr>
@@ -343,7 +349,7 @@ return mapa(k);
 						<td><input size="1" value="2" disabled="true">-<input size="1" value="1" disabled="true"><span style="color: #00A859;"> 0</span></td>
 						<td><input size="1" value="0" disabled="true">-<input size="1" value="4" disabled="true"><span style="color: #00A859;"> 2</span></td>
 						<td><input size="1" value="3" disabled="true">-<input size="1" value="0" disabled="true"><span style="color: #00A859;"> 0</span></td>
-						<td><input size="1" value="0" disabled="true">-<input size="1" value="2" disabled="true"></td>
+						<td><input size="1" value="0" disabled="true">-<input size="1" value="2" disabled="true"><span style="color: #00A859;"> 0</span></td>
 						<td class="points">4</td>
 					</tr>
 					<tr>
@@ -353,7 +359,7 @@ return mapa(k);
 						<td><input size="1" value="3" disabled="true">-<input size="1" value="1" disabled="true"><span style="color: #00A859;"> 0</span></td>
 						<td><input size="1" value="0" disabled="true">-<input size="1" value="2" disabled="true"><span style="color: #00A859;"> 2</span></td>
 						<td><input size="1" value="1" disabled="true">-<input size="1" value="0" disabled="true"><span style="color: #00A859;"> 0</span></td>
-						<td><input size="1" value="1" disabled="true">-<input size="1" value="3" disabled="true"></td>
+						<td><input size="1" value="1" disabled="true">-<input size="1" value="3" disabled="true"><span style="color: #00A859;"> 0</span></td>
 						<td class="points">4</td>
 					</tr>
 					<tr>
@@ -363,18 +369,18 @@ return mapa(k);
 						<td><input size="1" value="2" disabled="true">-<input size="1" value="0" disabled="true"><span style="color: #00A859;"> 0</span></td>
 						<td><input size="1" value="0" disabled="true">-<input size="1" value="2" disabled="true"><span style="color: #00A859;"> 2</span></td>
 						<td><input size="1" value="3" disabled="true">-<input size="1" value="0" disabled="true"><span style="color: #00A859;"> 0</span></td>
-						<td><input size="1" value="0" disabled="true">-<input size="1" value="2" disabled="true"></td>
+						<td><input size="1" value="0" disabled="true">-<input size="1" value="2" disabled="true"><span style="color: #00A859;"> 0</span></td>
 						<td class="points">4</td>
 					</tr>
-					<tr>
+					<tr id="angle">
 						<td>Zdre</td>
 						<td><input size="1" value="2" disabled="true">-<input size="1" value="0" disabled="true"><span style="color: #00A859;"> 2</span></td>
 						<td><input size="1" value="1" disabled="true">-<input size="1" value="1" disabled="true"><span style="color: #00A859;"> 2</span></td>
 						<td><input size="1" value="2" disabled="true">-<input size="1" value="1" disabled="true"><span style="color: #00A859;"> 0</span></td>
 						<td><input size="1" value="0" disabled="true">-<input size="1" value="2" disabled="true"><span style="color: #00A859;"> 2</span></td>
 						<td><input size="1" value="1" disabled="true">-<input size="1" value="0" disabled="true"><span style="color: #00A859;"> 0</span></td>
-						<td><input size="1" value="0" disabled="true">-<input size="1" value="2" disabled="true"></td>
-						<td class="points">6</td>
+						<td><input size="1" value="0" disabled="true">-<input size="1" value="2" disabled="true"><span style="color: #00A859;"> 0</span></td>
+						<td class="points"><b>6</b></td>
 					</tr>
 					<tr>
 						<td>Kamiloss</td>
@@ -383,7 +389,7 @@ return mapa(k);
 						<td><input size="1" value="2" disabled="true">-<input size="1" value="1" disabled="true"><span style="color: #00A859;"> 0</span></td>
 						<td><input size="1" value="0" disabled="true">-<input size="1" value="3" disabled="true"><span style="color: #00A859;"> 2</span></td>
 						<td><input size="1" value="3" disabled="true">-<input size="1" value="1" disabled="true"><span style="color: #00A859;"> 0</span></td>
-						<td><input size="1" value="1" disabled="true">-<input size="1" value="2" disabled="true"></td>
+						<td><input size="1" value="1" disabled="true">-<input size="1" value="2" disabled="true"><span style="color: #00A859;"> 0</span></td>
 						<td class="points">4</td>
 					</tr>
 					<tr>
@@ -393,10 +399,12 @@ return mapa(k);
 						<td><input size="1" value="2" disabled="true">-<input size="1" value="0" disabled="true"><span style="color: #00A859;"> 0</span></td>
 						<td><input size="1" value="0" disabled="true">-<input size="1" value="3" disabled="true"><span style="color: #00A859;"> 2</span></td>
 						<td><input size="1" value="3" disabled="true">-<input size="1" value="0" disabled="true"><span style="color: #00A859;"> 0</span></td>
-						<td><input size="1" value="0" disabled="true">-<input size="1" value="2" disabled="true"></td>
+						<td><input size="1" value="0" disabled="true">-<input size="1" value="2" disabled="true"><span style="color: #00A859;"> 0</span></td>
 						<td class="points">4</td>
 					</tr>
 				</table>
+			<div id="cup3"><img height="30" width="30" src="img/cup.png" alt=""></img></div>
+			</div>
 		
 			<div class='standings2'>
 				<h4 style="text-align: center;">Runda 2</h4>
@@ -735,7 +743,7 @@ return mapa(k);
 						<td>Zdre</td>
 						<td class="tdd">7</td>
 						<td class="tdd">4</td>
-						<td class="tdd">6</td>
+						<td class="tdd">6<img height="15" width="15" src="img/cup.png" alt=""></img></td>
 						<td class="points">17</td>
 					</tr>
 					<tr>
