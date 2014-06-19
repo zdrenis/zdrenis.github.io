@@ -68,7 +68,7 @@ body {
 			}
 	.standings1 {
 		position: relative;
-		left: -100px;	
+		left: -50px;	
 	}
 	.ttd {
 	    width: 40px;
@@ -743,7 +743,7 @@ return mapa(k);
 						<td>Zdre</td>
 						<td class="tdd">7</td>
 						<td class="tdd">4</td>
-						<td class="tdd">6<img height="15" width="15" src="img/cup.png" alt=""></img></td>
+						<td class="tdd">8<img height="15" width="15" src="img/cup.png" alt=""></img></td>
 						<td class="points">19</td>
 					</tr>
 					<tr>
