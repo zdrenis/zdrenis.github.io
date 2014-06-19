@@ -51,7 +51,7 @@ body {
         .main{
 		background: white;
                 margin: 10px auto;
-                width: 1000px;
+                width: 1100px;
                 border: 1px #ccc;
                 padding: 20px;
             }
@@ -96,7 +96,7 @@ body {
 	#totals
 	{
 		position: relative;
-		top: -1530px;
+		top: -2000px;
 		left: 880px;
 		border: 2px dotted #ccc;
 		padding: 20px;
@@ -312,7 +312,7 @@ return mapa(k);
 							<th>1-1</th>
 							<th>2-3</th>
 							<th>0-2</th>
-							<th>0-3</th>
+							<th>0-4</th>
 						</tr>
 						<tr>
 							<th><img height="15" width="22" src="flags/algeria.png" alt=""></img>ALG</th>
