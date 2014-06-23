@@ -27,14 +27,14 @@ body {
             }
 		table th{
 				padding: 3px;
-				vertical-align: top;
+				vertical-align: center;
 				width: 100px;
 				color: black;
             }
 		table td {
 				padding: 5px 5px;
-				vertical-align: top;
-				width: 100px;
+				vertical-align: center;
+				width: 110px;
 				color: #3E4095; // blue
 			}
 	.points {
@@ -51,7 +51,7 @@ body {
         .main{
 		background: white;
                 margin: 10px auto;
-                width: 1100px;
+                width: 1150px;
                 border: 1px #ccc;
                 padding: 20px;
             }
@@ -71,36 +71,6 @@ body {
 	    text-align: right;
 	}
 			
-	#cup1
-	{
-		position: relative;
-		top: -33px;
-		left: -25px;
-	}
-	#cup2
-	{
-		position: relative;
-		top: -70px;
-		left: -25px;
-	}
-	#cup3
-	{
-		position: relative;
-		top: -100px;
-		left: -25px;
-	}
-	#cup4
-	{
-		position: relative;
-		top: -133px;
-		left: -25px;
-	}
-	#cup5
-	{
-		position: relative;
-		top: -165px;
-		left: -25px;
-	}
 	#totals
 	{
 		position: relative;
@@ -475,16 +445,13 @@ return mapa(k);
 				</table>		
 				</div>
 				
-				
-				
-				
-				
+
 			<h4 style="text-align: center;">Runda 6</h4>
 			<div class='standings6'>
 				<table>
 					<thead>
 						<tr>
-							<th style="background-color: #fff;" rowspan="4">
+							<th style="background-color: #fff;" rowspan="4"></th>
 							<th><img height="15" width="22" src="flags/australia.png" alt=""></img>AUS</th>
 							<th><img height="15" width="22" src="flags/netherlands.png" alt=""></img>HOL</th>
 							<th><img height="15" width="22" src="flags/cameroon.png" alt="">KAM</th>
@@ -497,7 +464,7 @@ return mapa(k);
 						<tr>
 							<th>0-3</th>
 							<th>2-0</th>
-							<th>0-1</th>
+							<th>1-2</th>
 							<th>0-0</th>
 							<th>---</th>
 							<th>---</th>
@@ -602,7 +569,7 @@ return mapa(k);
 						<td>Bojler</td>
 						<td><input size="1" value="2" disabled="true">-<input size="1" value="0" disabled="true"><span style="color: #00A859;"> 0</span></td>
 						<td><input size="1" value="2" disabled="true">-<input size="1" value="1" disabled="true"><span style="color: #00A859;"> 2</span></td>
-						<td><input size="1" value="0" disabled="true">-<input size="1" value="2" disabled="true"><span style="color: #00A859;"> 2</span></td>
+						<td><input size="1" value="0" disabled="true">-<input size="1" value="2" disabled="true"><span style="color: #00A859;"> 2W</span></td>
 						<td><input size="1" value="2" disabled="true">-<input size="1" value="1" disabled="true"><span style="color: #00A859;"> 0</span></td>
 						<td><input size="1" value="1" disabled="true">-<input size="1" value="0" disabled="true"><span style="color: #00A859;"> </span></td>
 						<td><input size="1" value="0" disabled="true">-<input size="1" value="1" disabled="true"><span style="color: #00A859;"> </span></td>
@@ -674,7 +641,7 @@ return mapa(k);
 						<td class="points">6</td>
 					</tr>
 					<tr id="angle">
-						<td style="width: 110px;">Surowy Krupier</td>
+						<td style="width: 150px;">Surowy Krupier <img height="25" width="25" src="img/cup.png" alt=""></img></td>
 						<td><input size="1" value="4" disabled="true">-<input size="1" value="0" disabled="true"><span style="color: #00A859;"> 2</span></td>
 						<td><input size="1" value="1" disabled="true">-<input size="1" value="1" disabled="true"><span style="color: #00A859;"> 2</span></td>
 						<td><input size="1" value="0" disabled="true">-<input size="1" value="1" disabled="true"><span style="color: #00A859;"> 0</span></td>
@@ -723,8 +690,7 @@ return mapa(k);
 						<td><input size="1" value="2" disabled="true">-<input size="1" value="0" disabled="true"><span style="color: #00A859;"> 0</span></td>
 						<td class="points">2</td>
 					</tr>
-				</table>
-				<div id="cup5"><img height="30" width="30" src="img/cup.png" alt=""></img></div>				
+				</table>			
 				</div>
 
 		
@@ -798,7 +764,7 @@ return mapa(k);
 						<td class="points">0</td>
 					</tr>
 					<tr id="angle">
-						<td>Asia</td> 
+						<td>Asia <img height="25" width="25" src="img/cup.png" alt=""></img></td>
 						<td><input size="1" value="2" disabled="true">-<input size="1" value="1" disabled="true"><span style="color: #00A859;"> 4</span></td>
 						<td><input size="1" value="1" disabled="true">-<input size="1" value="1" disabled="true"><span style="color: #00A859;"> 0</span></td>
 						<td><input size="1" value="1" disabled="true">-<input size="1" value="1" disabled="true"><span style="color: #00A859;"> 2</span></td>
@@ -838,10 +804,9 @@ return mapa(k);
 						<td class="points">2</td>
 					</tr>
 				</table>		
-				<div id="cup4"><img height="30" width="30" src="img/cup.png" alt=""></img></div>
 				</div>
 		
-<h4 style="text-align: center;">Runda 3</h4>
+			<h4 style="text-align: center;">Runda 3</h4>
 			<div class='standings3'>
 				<table ng-init="tipsters = ['Ola', 'dmin', 'Zajo', 'Asia', 'Zdre', 'Kamiloss', 'bojer']" >
 					<thead>
@@ -921,7 +886,7 @@ return mapa(k);
 						<td class="points">6</td>
 					</tr>
 					<tr id="angle">
-						<td>Zdre</td>
+						<td>Zdre <img height="25" width="25" src="img/cup.png" alt=""></img></td>
 						<td><input size="1" value="2" disabled="true">-<input size="1" value="0" disabled="true"><span style="color: #00A859;"> 2</span></td>
 						<td><input size="1" value="1" disabled="true">-<input size="1" value="1" disabled="true"><span style="color: #00A859;"> 2</span></td>
 						<td><input size="1" value="2" disabled="true">-<input size="1" value="1" disabled="true"><span style="color: #00A859;"> 0</span></td>
@@ -951,7 +916,6 @@ return mapa(k);
 						<td class="points">6</td>
 					</tr>
 				</table>
-			<div id="cup3"><img height="30" width="30" src="img/cup.png" alt=""></img></div>
 			</div>
 		
 			<div class='standings2'>
@@ -1044,7 +1008,7 @@ return mapa(k);
 						<td class="points">4</td>
 					</tr>
 					<tr id="angle">
-						<td>Kamiloss</td>
+						<td>Kamiloss <img height="25" width="25" src="img/cup.png" alt=""></img></td>
 						<td><input size="1" value="2" disabled="true">-<input size="1" value="1" disabled="true"><span style="color: #00A859;"> 4</span></td>
 						<td><input size="1" value="3" disabled="true">-<input size="1" value="0" disabled="true"><span style="color: #00A859;"> 4</span></td>
 						<td><input size="1" value="3" disabled="true">-<input size="1" value="1" disabled="true"><span style="color: #00A859;"> 2</span></td>
@@ -1064,7 +1028,6 @@ return mapa(k);
 						<td class="points">8</td>
 					</tr>
 				</table>
-			<div id="cup2"><img height="30" width="30" src="img/cup.png" alt=""></img></div>
 				</div>
 		
 			<div class='standings1'>
@@ -1188,7 +1151,7 @@ return mapa(k);
 						<td class="points">11</td>
 					</tr>
 					<tr id="angle">
-						<td>Bojler</td>
+						<td>Bojler <img height="25" width="25" src="img/cup.png" alt=""></img></td>
 						<td><input size="1" value="2" disabled="true">-<input size="1" value="0" disabled="true"><span style="color: #00A859;"> 3</span></td>
 						<td><input size="1" value="2" disabled="true">-<input size="1" value="1" disabled="true"><span style="color: #00A859;"> 3</span></td>
 						<td><input size="1" value="3" disabled="true">-<input size="1" value="0" disabled="true"><span style="color: #00A859;"> 0</span></td>
@@ -1200,7 +1163,6 @@ return mapa(k);
 						<td class="points"><b>13</b></td>
 					</tr>
 				</table>
-			<div id="cup1"><img height="30" width="30" src="img/cup.png" alt=""></img></div>
 			</div>
 
 	<div class="rules" style="text-align: left;">
