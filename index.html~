@@ -201,6 +201,7 @@ return mapa(k);
 					<th class="tdd">III</th>
 					<th class="tdd">IV</th>
 					<th class="tdd">V</th>
+					<th class="tdd">VI</th>
 					<th>Suma</th>
 					</tr>
 					<tr id="angle">
@@ -211,6 +212,7 @@ return mapa(k);
 						<td class="tdd">6</td>
 						<td class="tdd">6</td>
 						<td class="tdd">6</td>
+						<td class="tdd"></td>
 						<td class="points">45</td>
 					</tr>
 					<tr>
@@ -221,6 +223,7 @@ return mapa(k);
 						<td class="tdd">6</td>
 						<td class="tdd">10<img height="15" width="15" src="img/cup.png" alt=""></img></td>
 						<td class="tdd">5</td>
+						<td class="tdd"></td>
 						<td class="points">42</td>
 					</tr>
 					<tr>
@@ -231,6 +234,7 @@ return mapa(k);
 						<td class="tdd">6</td>
 						<td class="tdd">0</td>
 						<td class="tdd">7<img height="15" width="15" src="img/cup.png" alt=""></img></td>
+						<td class="tdd"></td>
 						<td class="points">35</td>
 					</tr>
 					<tr>
@@ -241,6 +245,7 @@ return mapa(k);
 						<td class="tdd">6</td>
 						<td class="tdd">8</td>
 						<td class="tdd">6</td>
+						<td class="tdd"></td>
 						<td class="points">33</td>
 					</tr>
 					<tr>
@@ -251,6 +256,7 @@ return mapa(k);
 						<td class="tdd">6</td>
 						<td class="tdd">2</td>
 						<td class="tdd">2</td>
+						<td class="tdd"></td>
 						<td class="points">31</td>
 					</tr>
 					<tr>
@@ -261,6 +267,7 @@ return mapa(k);
 						<td class="tdd">6</td>
 						<td class="tdd">8</td>
 						<td class="tdd">6</td>
+						<td class="tdd"></td>
 						<td class="points">31</td>
 					</tr>
 					<tr>
@@ -271,6 +278,7 @@ return mapa(k);
 						<td class="tdd">8<img height="15" width="15" src="img/cup.png" alt=""></img></td>
 						<td class="tdd">4</td>
 						<td class="tdd">4</td>
+						<td class="tdd"></td>
 						<td class="points">27</td>
 					</tr>
 				</table>
