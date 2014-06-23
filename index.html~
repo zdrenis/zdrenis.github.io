@@ -33,7 +33,7 @@ body {
             }
 		table td {
 				padding: 5px 5px;
-				vertical-align: center;
+				vertical-align: left;
 				width: 110px;
 				color: #3E4095; // blue
 			}
