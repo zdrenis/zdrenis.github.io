@@ -444,7 +444,7 @@ return mapa(k);
 					</tr>
 				</table>		
 				</div>
-
+<!--
 			<h4 style="text-align: center;">Runda 7</h4>
 			<div class='standings7'>
 				<table>
@@ -579,7 +579,7 @@ return mapa(k);
 				</table>			
 				</div>
 				
-
+-->
 			<h4 style="text-align: center;">Runda 6</h4>
 			<div class='standings6'>
 				<table>
