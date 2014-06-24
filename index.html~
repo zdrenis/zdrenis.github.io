@@ -183,9 +183,9 @@ return mapa(k);
 						<td class="tdd">6</td>
 						<td class="tdd">6</td>
 						<td class="tdd">6</td>
-						<td class="tdd">8</td>
+						<td class="tdd">11</td>
 						<td class="tdd">4</td>
-						<td class="points">57</td>
+						<td class="points">60</td>
 					</tr>
 					<tr>
 						<td style="color: black;">2</td>
@@ -201,6 +201,18 @@ return mapa(k);
 					</tr>
 					<tr>
 						<td style="color: black;">3</td>
+						<td>Dmin</td>
+						<td class="tdd">7</td>
+						<td class="tdd">4</td>
+						<td class="tdd">6</td>
+						<td class="tdd">8</td>
+						<td class="tdd">6</td>
+						<td class="tdd">10</td>
+						<td class="tdd">4</td>
+						<td class="points">45</td>
+					</tr>
+					<tr>
+						<td style="color: black;">4</td>
 						<td>Zajo</td>
 						<td class="tdd">11</td>
 						<td class="tdd">11</td>
@@ -212,7 +224,19 @@ return mapa(k);
 						<td class="points">44</td>
 					</tr>
 					<tr>
-						<td style="color: black;">4</td>
+						<td style="color: black;">5</td>
+						<td>Ola</td>
+						<td class="tdd">9</td>
+						<td class="tdd">4</td>
+						<td class="tdd">6</td>
+						<td class="tdd">8</td>
+						<td class="tdd">6</td>
+						<td class="tdd">9</td>
+						<td class="tdd">0</td>
+						<td class="points">42</td>
+					</tr>
+					<tr>
+						<td style="color: black;">6</td>
 						<td>Zdre</td>
 						<td class="tdd">7</td>
 						<td class="tdd">4</td>
@@ -224,19 +248,7 @@ return mapa(k);
 						<td class="points">41</td>
 					</tr>
 					<tr>
-						<td style="color: black;"></td>
-						<td>Dmin</td>
-						<td class="tdd">7</td>
-						<td class="tdd">4</td>
-						<td class="tdd">6</td>
-						<td class="tdd">8</td>
-						<td class="tdd">6</td>
-						<td class="tdd">6</td>
-						<td class="tdd">4</td>
-						<td class="points">41</td>
-					</tr>
-					<tr>
-						<td style="color: black;">6</td>
+						<td style="color: black;">7</td>
 						<td>Bojler</td>
 						<td class="tdd">13<img height="15" width="15" src="img/cup.png" alt=""></img></td>
 						<td class="tdd">8</td>
@@ -246,18 +258,6 @@ return mapa(k);
 						<td class="tdd">4</td>
 						<td class="tdd">4</td>
 						<td class="points">39</td>
-					</tr>
-					<tr>
-						<td style="color: black;">7</td>
-						<td>Ola</td>
-						<td class="tdd">9</td>
-						<td class="tdd">4</td>
-						<td class="tdd">6</td>
-						<td class="tdd">8</td>
-						<td class="tdd">6</td>
-						<td class="tdd">5</td>
-						<td class="tdd">0</td>
-						<td class="points">38</td>
 					</tr>
 				</table>
 				</div>
