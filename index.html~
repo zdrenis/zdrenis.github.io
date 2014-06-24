@@ -603,7 +603,7 @@ return mapa(k);
 							<th>0-1</th>
 							<th>0-0</th>
 							<th>1-2</th>
-							<th>1-0</th>
+							<th>1-1</th>
 						</tr>
 						<tr>
 							<th><img height="15" width="22" src="flags/spain.png" alt=""></img>HIS</th>
@@ -684,8 +684,8 @@ return mapa(k);
 						<td><input size="1" value="1" disabled="true">-<input size="1" value="1" disabled="true"><span style="color: #00A859;"> 0</span></td>
 						<td><input size="1" value="0" disabled="true">-<input size="1" value="1" disabled="true"><span style="color: #00A859;"> 0</span></td>
 						<td><input size="1" value="1" disabled="true">-<input size="1" value="2" disabled="true"><span style="color: #00A859;"> 4</span></td>
-						<td><input size="1" value="1" disabled="true">-<input size="1" value="1" disabled="true"><span style="color: #00A859;"> 0</span></td>
-						<td class="points">10</td>
+						<td><input size="1" value="1" disabled="true">-<input size="1" value="1" disabled="true"><span style="color: #00A859;"> 4</span></td>
+						<td class="points">14</td>
 					</tr>
 					<tr>
 						<td>Kamiloss</td>
