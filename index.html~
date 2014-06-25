@@ -172,6 +172,7 @@ return mapa(k);
 					<th class="tdd">IV</th>
 					<th class="tdd">V</th>
 					<th class="tdd">VI</th>
+					<th class="tdd">VII</th>
 					<th class="tdd">PD</th>
 					<th>Suma</th>
 					</tr>
@@ -184,8 +185,9 @@ return mapa(k);
 						<td class="tdd">6</td>
 						<td class="tdd">6</td>
 						<td class="tdd">13<img height="15" width="15" src="img/cup.png" alt=""></img></td>
+						<td class="tdd">4</td>
 						<td class="tdd">8</td>
-						<td class="points">66</td>
+						<td class="points">70</td>
 					</tr>
 					<tr>
 						<td style="color: black;">2</td>
@@ -196,8 +198,9 @@ return mapa(k);
 						<td class="tdd">10<img height="15" width="15" src="img/cup.png" alt=""></img></td>
 						<td class="tdd">5</td>
 						<td class="tdd">6</td>
+						<td class="tdd">2</td>
 						<td class="tdd">4</td>
-						<td class="points">52</td>
+						<td class="points">54</td>
 					</tr>
 					<tr>
 						<td style="color: black;">3</td>
@@ -208,8 +211,9 @@ return mapa(k);
 						<td class="tdd">8</td>
 						<td class="tdd">6</td>
 						<td class="tdd">12</td>
+						<td class="tdd">5</td>
 						<td class="tdd">4</td>
-						<td class="points">47</td>
+						<td class="points">52</td>
 					</tr>
 					<tr>
 						<td style="color: black;">4</td>
@@ -220,8 +224,9 @@ return mapa(k);
 						<td class="tdd">0</td>
 						<td class="tdd">7<img height="15" width="15" src="img/cup.png" alt=""></img></td>
 						<td class="tdd">5</td>
+						<td class="tdd">3</td>
 						<td class="tdd">4</td>
-						<td class="points">44</td>
+						<td class="points">47</td>
 					</tr>
 					<tr>
 						<td style="color: black;">5</td>
@@ -232,8 +237,9 @@ return mapa(k);
 						<td class="tdd">4</td>
 						<td class="tdd">4</td>
 						<td class="tdd">8</td>
+						<td class="tdd">5</td>
 						<td class="tdd">8</td>
-						<td class="points">43</td>
+						<td class="points">48</td>
 					</tr>
 					<tr>
 						<td style="color: black;">6</td>
@@ -244,8 +250,9 @@ return mapa(k);
 						<td class="tdd">8</td>
 						<td class="tdd">6</td>
 						<td class="tdd">9</td>
+						<td class="tdd">5</td>
 						<td class="tdd">0</td>
-						<td class="points">42</td>
+						<td class="points">47</td>
 					</tr>
 					<tr>
 						<td style="color: black;">7</td>
@@ -257,7 +264,8 @@ return mapa(k);
 						<td class="tdd">2</td>
 						<td class="tdd">6</td>
 						<td class="tdd">4</td>
-						<td class="points">41</td>
+						<td class="tdd">4</td>
+						<td class="points">45</td>
 					</tr>
 				</table>
 				</div>
@@ -295,7 +303,7 @@ return mapa(k);
 							<th><img height="15" width="22" src="flags/colombia.png" alt=""></img></th>
 							<th><img height="15" width="22" src="flags/costa_rica.png" alt=""></img></th>
 							<th></th>
-							<th></th>
+							<th><img height="15" width="22" src="flags/argentina.png" alt=""></img></th>
 							<th></th>
 							<th></th>
 							<th></th>
@@ -315,7 +323,7 @@ return mapa(k);
 						<td><img height="15" width="22" src="flags/greece.png" alt=""></img><span style="color: #00A859;"> 0</span></td>
 						<td><img height="15" width="22" src="flags/italy.png" alt=""></img><span style="color: #00A859;"> 0</span></td>
 						<td><img height="15" width="22" src="flags/france.png" alt=""></img><span style="color: #00A859;"> </span></td>
-						<td><img height="15" width="22" src="flags/argentina.png" alt=""></img><span style="color: #00A859;"> </span></td>
+						<td><img height="15" width="22" src="flags/argentina.png" alt=""></img><span style="color: #00A859;"> 4</span></td>
 						<td><img height="15" width="22" src="flags/germany.png" alt=""></img><span style="color: #00A859;"> </span></td>
 						<td><img height="15" width="22" src="flags/belgium.png" alt=""></img><span style="color: #00A859;"> </span></td>
 						<td><img height="15" width="22" src="flags/netherlands.png" alt=""></img><span style="color: #00A859;"> </span></td>
@@ -325,7 +333,7 @@ return mapa(k);
 						<td><img height="15" width="22" src="flags/germany.png" alt=""></img><span style="color: #00A859;"> </span></td>
 						<td><img height="15" width="22" src="flags/spain.png" alt=""></img><span style="color: #00A859;"> </span></td>
 						<td><img height="15" width="22" src="flags/germany.png" alt=""></img><span style="color: #00A859;"> </span></td>
-						<td class="points">0</td>
+						<td class="points">4</td>
 					</tr>
 					<tr>
 						<td>Dmin</td>
@@ -334,7 +342,7 @@ return mapa(k);
 						<td><img height="15" width="22" src="flags/cote_d'ivoire.png" alt=""></img><span style="color: #00A859;"> 0</span></td>
 						<td><img height="15" width="22" src="flags/italy.png" alt=""></img><span style="color: #00A859;"> 0</span></td>
 						<td><img height="15" width="22" src="flags/france.png" alt=""></img><span style="color: #00A859;"> </span></td>
-						<td><img height="15" width="22" src="flags/argentina.png" alt=""></img><span style="color: #00A859;"> </span></td>
+						<td><img height="15" width="22" src="flags/argentina.png" alt=""></img><span style="color: #00A859;"> 4</span></td>
 						<td><img height="15" width="22" src="flags/germany.png" alt=""></img><span style="color: #00A859;"> </span></td>
 						<td><img height="15" width="22" src="flags/russia.png" alt=""></img><span style="color: #00A859;"> </span></td>
 						<td><img height="15" width="22" src="flags/england.png" alt=""></img><span style="color: #00A859;"> </span></td>
@@ -344,7 +352,7 @@ return mapa(k);
 						<td><img height="15" width="22" src="flags/netherlands.png" alt=""></img><span style="color: #00A859;"> </span></td>
 						<td><img height="15" width="22" src="flags/germany.png" alt=""></img><span style="color: #00A859;"> </span></td>
 						<td><img height="15" width="22" src="flags/argentina.png" alt=""></img><span style="color: #00A859;"> </span></td>
-						<td class="points">4</td>
+						<td class="points">8</td>
 					</tr>
 					<tr>
 						<td>Zajo</td>
@@ -353,7 +361,7 @@ return mapa(k);
 						<td><img height="15" width="22" src="flags/japan.png" alt=""></img><span style="color: #00A859;"> 0</span></td>
 						<td><img height="15" width="22" src="flags/italy.png" alt=""></img><span style="color: #00A859;"> 0</span></td>
 						<td><img height="15" width="22" src="flags/france.png" alt=""></img><span style="color: #00A859;"> </span></td>
-						<td><img height="15" width="22" src="flags/argentina.png" alt=""></img><span style="color: #00A859;"> </span></td>
+						<td><img height="15" width="22" src="flags/argentina.png" alt=""></img><span style="color: #00A859;"> 4</span></td>
 						<td><img height="15" width="22" src="flags/germany.png" alt=""></img><span style="color: #00A859;"> </span></td>
 						<td><img height="15" width="22" src="flags/russia.png" alt=""></img><span style="color: #00A859;"> </span></td>
 						<td><img height="15" width="22" src="flags/spain.png" alt=""></img><span style="color: #00A859;"> </span></td>
@@ -363,7 +371,7 @@ return mapa(k);
 						<td><img height="15" width="22" src="flags/spain.png" alt=""></img><span style="color: #00A859;"> </span></td>
 						<td><img height="15" width="22" src="flags/brazil.png" alt=""></img><span style="color: #00A859;"> </span></td>
 						<td><img height="15" width="22" src="flags/argentina.png" alt=""></img><span style="color: #00A859;"> </span></td>
-						<td class="points">4</td>
+						<td class="points">8</td>
 					</tr>
 					<tr>
 						<!-- BRAZYLIA, HISZPANIA, URUGWAJ, WKS, EKWADOR, ARGENTYNA, PORTUGALIA, BELGIA ARGENTYNA - król strzelców -->
@@ -373,7 +381,7 @@ return mapa(k);
 						<td><img height="15" width="22" src="flags/cote_d'ivoire.png" alt=""></img><span style="color: #00A859;"> 0</span></td>
 						<td><img height="15" width="22" src="flags/uruguay.png" alt=""></img><span style="color: #00A859;"> 0</span></td>
 						<td><img height="15" width="22" src="flags/ecuador.png" alt=""></img><span style="color: #00A859;"> </span></td>
-						<td><img height="15" width="22" src="flags/argentina.png" alt=""></img><span style="color: #00A859;"> </span></td>
+						<td><img height="15" width="22" src="flags/argentina.png" alt=""></img><span style="color: #00A859;"> 4</span></td>
 						<td><img height="15" width="22" src="flags/portugal.png" alt=""></img><span style="color: #00A859;"> </span></td>
 						<td><img height="15" width="22" src="flags/belgium.png" alt=""></img><span style="color: #00A859;"> </span></td>
 						<td><img height="15" width="22" src="flags/brazil.png" alt=""></img><span style="color: #00A859;"> </span></td>
@@ -383,7 +391,7 @@ return mapa(k);
 						<td><img height="15" width="22" src="flags/brazil.png" alt=""></img><span style="color: #00A859;"> </span></td>
 						<td><img height="15" width="22" src="flags/brazil.png" alt=""></img><span style="color: #00A859;"> </span></td>
 						<td><img height="15" width="22" src="flags/argentina.png" alt=""></img><span style="color: #00A859;"> </span></td>
-						<td class="points">4</td>
+						<td class="points">8</td>
 					</tr>
 					<tr>
 						<td>Zdre</td>
@@ -392,7 +400,7 @@ return mapa(k);
 						<td><img height="15" width="22" src="flags/cote_d'ivoire.png" alt=""></img><span style="color: #00A859;"> 0</span></td>
 						<td><img height="15" width="22" src="flags/italy.png" alt=""></img><span style="color: #00A859;"> 0</span></td>
 						<td><img height="15" width="22" src="flags/france.png" alt=""></img><span style="color: #00A859;"> </span></td>
-						<td><img height="15" width="22" src="flags/argentina.png" alt=""></img><span style="color: #00A859;"> </span></td>
+						<td><img height="15" width="22" src="flags/argentina.png" alt=""></img><span style="color: #00A859;"> 4</span></td>
 						<td><img height="15" width="22" src="flags/germany.png" alt=""></img><span style="color: #00A859;"> </span></td>
 						<td><img height="15" width="22" src="flags/belgium.png" alt=""></img><span style="color: #00A859;"> </span></td>
 						<td><img height="15" width="22" src="flags/brazil.png" alt=""></img><span style="color: #00A859;"> </span></td>
@@ -402,7 +410,7 @@ return mapa(k);
 						<td><img height="15" width="22" src="flags/brazil.png" alt=""></img><span style="color: #00A859;"> </span></td>
 						<td><img height="15" width="22" src="flags/brazil.png" alt=""></img><span style="color: #00A859;"> </span></td>
 						<td><img height="15" width="22" src="flags/argentina.png" alt=""></img><span style="color: #00A859;"> </span></td>
-						<td class="points">8</td>
+						<td class="points">12</td>
 					</tr>
 					<tr>
 						<td>Kamiloss</td>
@@ -411,7 +419,7 @@ return mapa(k);
 						<td><img height="15" width="22" src="flags/colombia.png" alt=""></img><span style="color: #00A859;"> 4</span></td>
 						<td><img height="15" width="22" src="flags/uruguay.png" alt=""></img><span style="color: #00A859;"> 0</span></td>
 						<td><img height="15" width="22" src="flags/france.png" alt=""></img><span style="color: #00A859;"> </span></td>
-						<td><img height="15" width="22" src="flags/argentina.png" alt=""></img><span style="color: #00A859;"> </span></td>
+						<td><img height="15" width="22" src="flags/argentina.png" alt=""></img><span style="color: #00A859;"> 4</span></td>
 						<td><img height="15" width="22" src="flags/germany.png" alt=""></img><span style="color: #00A859;"> </span></td>
 						<td><img height="15" width="22" src="flags/russia.png" alt=""></img><span style="color: #00A859;"> </span></td>
 						<td><img height="15" width="22" src="flags/germany.png" alt=""></img><span style="color: #00A859;"> </span></td>
@@ -421,7 +429,7 @@ return mapa(k);
 						<td><img height="15" width="22" src="flags/spain.png" alt=""></img><span style="color: #00A859;"> </span></td>
 						<td><img height="15" width="22" src="flags/germany.png" alt=""></img><span style="color: #00A859;"> </span></td>
 						<td><img height="15" width="22" src="flags/germany.png" alt=""></img><span style="color: #00A859;"> </span></td>
-						<td class="points">8</td>
+						<td class="points">12</td>
 					</tr>
 					<tr>
 						<td>Bojler</td>
@@ -430,7 +438,7 @@ return mapa(k);
 						<td><img height="15" width="22" src="flags/cote_d'ivoire.png" alt=""></img><span style="color: #00A859;"> 0</span></td>
 						<td><img height="15" width="22" src="flags/italy.png" alt=""></img><span style="color: #00A859;"> 0</span></td>
 						<td><img height="15" width="22" src="flags/france.png" alt=""></img><span style="color: #00A859;"> </span></td>
-						<td><img height="15" width="22" src="flags/argentina.png" alt=""></img><span style="color: #00A859;"> </span></td>
+						<td><img height="15" width="22" src="flags/argentina.png" alt=""></img><span style="color: #00A859;"> 4</span></td>
 						<td><img height="15" width="22" src="flags/germany.png" alt=""></img><span style="color: #00A859;"> </span></td>
 						<td><img height="15" width="22" src="flags/russia.png" alt=""></img><span style="color: #00A859;"> </span></td>
 						<td><img height="15" width="22" src="flags/netherlands.png" alt=""></img><span style="color: #00A859;"> </span></td>
@@ -440,7 +448,7 @@ return mapa(k);
 						<td><img height="15" width="22" src="flags/germany.png" alt=""></img><span style="color: #00A859;"> </span></td>
 						<td><img height="15" width="22" src="flags/spain.png" alt=""></img><span style="color: #00A859;"> </span></td>
 						<td><img height="15" width="22" src="flags/germany.png" alt=""></img><span style="color: #00A859;"> </span></td>
-						<td class="points">4</td>
+						<td class="points">8</td>
 					</tr>
 				</table>		
 				</div>
@@ -461,8 +469,8 @@ return mapa(k);
 							<th><img height="15" width="22" src="flags/algeria.png" alt="">ALG</th>
 						</tr>
 						<tr>
-							<th>2-2</th>
-							<th>1-0</th>
+							<th>2-3</th>
+							<th>3-1</th>
 							<th>---</th>
 							<th>---</th>
 							<th>---</th>
@@ -494,31 +502,31 @@ return mapa(k);
 					</thead>
 					<tr>
 						<td>Ola</td>
-						<td><input size="1" value="1" disabled="true">-<input size="1" value="2" disabled="true"><span style="color: #00A859;"> 0</span></td>
-						<td><input size="1" value="1" disabled="true">-<input size="1" value="0" disabled="true"><span style="color: #00A859;"> 4</span></td>
+						<td><input size="1" value="1" disabled="true">-<input size="1" value="2" disabled="true"><span style="color: #00A859;"> 3</span></td>
+						<td><input size="1" value="1" disabled="true">-<input size="1" value="0" disabled="true"><span style="color: #00A859;"> 2</span></td>
 						<td><input size="1" value="2" disabled="true">-<input size="1" value="0" disabled="true"><span style="color: #00A859;"> </span></td>
 						<td><input size="1" value="1" disabled="true">-<input size="1" value="1" disabled="true"><span style="color: #00A859;"> </span></td>
 						<td><input size="1" value="1" disabled="true">-<input size="1" value="0" disabled="true"><span style="color: #00A859;"> </span></td>
 						<td><input size="1" value="1" disabled="true">-<input size="1" value="3" disabled="true"><span style="color: #00A859;"> </span></td>
 						<td><input size="1" value="0" disabled="true">-<input size="1" value="1" disabled="true"><span style="color: #00A859;"> </span></td>
 						<td><input size="1" value="" disabled="true">-<input size="1" value="" disabled="true"><span style="color: #00A859;"> </span></td>
-						<td class="points">4</td>
+						<td class="points">5</td>
 					</tr>
 					<tr>
 						<td>Dmin</td>
-						<td><input size="1" value="0" disabled="true">-<input size="1" value="2" disabled="true"><span style="color: #00A859;"> 0</span></td>
-						<td><input size="1" value="2" disabled="true">-<input size="1" value="0" disabled="true"><span style="color: #00A859;"> 2</span></td>
+						<td><input size="1" value="0" disabled="true">-<input size="1" value="2" disabled="true"><span style="color: #00A859;"> 2</span></td>
+						<td><input size="1" value="2" disabled="true">-<input size="1" value="0" disabled="true"><span style="color: #00A859;"> 3</span></td>
 						<td><input size="1" value="1" disabled="true">-<input size="1" value="2" disabled="true"><span style="color: #00A859;"> </span></td>
 						<td><input size="1" value="1" disabled="true">-<input size="1" value="2" disabled="true"><span style="color: #00A859;"> </span></td>
 						<td><input size="1" value="2" disabled="true">-<input size="1" value="1" disabled="true"><span style="color: #00A859;"> </span></td>
 						<td><input size="1" value="2" disabled="true">-<input size="1" value="2" disabled="true"><span style="color: #00A859;"> </span></td>
 						<td><input size="1" value="0" disabled="true">-<input size="1" value="2" disabled="true"><span style="color: #00A859;"> </span></td>
 						<td><input size="1" value="" disabled="true">-<input size="1" value="" disabled="true"><span style="color: #00A859;"> </span></td>
-						<td class="points">2</td>
+						<td class="points">5</td>
 					</tr>
 					<tr>
 						<td>Zajo</td>
-						<td><input size="1" value="1" disabled="true">-<input size="1" value="2" disabled="true"><span style="color: #00A859;"> 0</span></td>
+						<td><input size="1" value="1" disabled="true">-<input size="1" value="2" disabled="true"><span style="color: #00A859;"> 3</span></td>
 						<td><input size="1" value="1" disabled="true">-<input size="1" value="1" disabled="true"><span style="color: #00A859;"> 0</span></td>
 						<td><input size="1" value="1" disabled="true">-<input size="1" value="2" disabled="true"><span style="color: #00A859;"> </span></td>
 						<td><input size="1" value="1" disabled="true">-<input size="1" value="3" disabled="true"><span style="color: #00A859;"> </span></td>
@@ -526,11 +534,11 @@ return mapa(k);
 						<td><input size="1" value="1" disabled="true">-<input size="1" value="2" disabled="true"><span style="color: #00A859;"> </span></td>
 						<td><input size="1" value="1" disabled="true">-<input size="1" value="2" disabled="true"><span style="color: #00A859;"> </span></td>
 						<td><input size="1" value="1" disabled="true">-<input size="1" value="1" disabled="true"><span style="color: #00A859;"> </span></td>
-						<td class="points">0</td>
+						<td class="points">3</td>
 					</tr>
 					<tr>
 						<td>Asia</td> 
-						<td><input size="1" value="1" disabled="true">-<input size="1" value="3" disabled="true"><span style="color: #00A859;"> 0</span></td>
+						<td><input size="1" value="1" disabled="true">-<input size="1" value="3" disabled="true"><span style="color: #00A859;"> 2</span></td>
 						<td><input size="1" value="1" disabled="true">-<input size="1" value="1" disabled="true"><span style="color: #00A859;"> 0</span></td>
 						<td><input size="1" value="0" disabled="true">-<input size="1" value="2" disabled="true"><span style="color: #00A859;"> </span></td>
 						<td><input size="1" value="0" disabled="true">-<input size="1" value="2" disabled="true"><span style="color: #00A859;"> </span></td>
@@ -538,24 +546,24 @@ return mapa(k);
 						<td><input size="1" value="1" disabled="true">-<input size="1" value="3" disabled="true"><span style="color: #00A859;"> </span></td>
 						<td><input size="1" value="0" disabled="true">-<input size="1" value="2" disabled="true"><span style="color: #00A859;"> </span></td>
 						<td><input size="1" value="2" disabled="true">-<input size="1" value="1" disabled="true"><span style="color: #00A859;"> </span></td>
-						<td class="points">0</td>
+						<td class="points">2</td>
 					</tr>
 					<tr>
 						<td>Zdre</td>
-						<td><input size="1" value="1" disabled="true">-<input size="1" value="2" disabled="true"><span style="color: #00A859;"> 0</span></td>
-						<td><input size="1" value="1" disabled="true">-<input size="1" value="0" disabled="true"><span style="color: #00A859;"> 4</span></td>
+						<td><input size="1" value="1" disabled="true">-<input size="1" value="2" disabled="true"><span style="color: #00A859;"> 3</span></td>
+						<td><input size="1" value="1" disabled="true">-<input size="1" value="0" disabled="true"><span style="color: #00A859;"> 2</span></td>
 						<td><input size="1" value="1" disabled="true">-<input size="1" value="3" disabled="true"><span style="color: #00A859;"> </span></td>
 						<td><input size="1" value="1" disabled="true">-<input size="1" value="1" disabled="true"><span style="color: #00A859;"> </span></td>
 						<td><input size="1" value="1" disabled="true">-<input size="1" value="1" disabled="true"><span style="color: #00A859;"> </span></td>
 						<td><input size="1" value="1" disabled="true">-<input size="1" value="1" disabled="true"><span style="color: #00A859;"> </span></td>
 						<td><input size="1" value="1" disabled="true">-<input size="1" value="2" disabled="true"><span style="color: #00A859;"> </span></td>
 						<td><input size="1" value="1" disabled="true">-<input size="1" value="2" disabled="true"><span style="color: #00A859;"> </span></td>
-						<td class="points">4</td>
+						<td class="points">5</td>
 					</tr>
 					<tr>
 						<td>Kamiloss</td>
-						<td><input size="1" value="0" disabled="true">-<input size="1" value="3" disabled="true"><span style="color: #00A859;"> 0</span></td>
-						<td><input size="1" value="1" disabled="true">-<input size="1" value="0" disabled="true"><span style="color: #00A859;"> 4</span></td>
+						<td><input size="1" value="0" disabled="true">-<input size="1" value="3" disabled="true"><span style="color: #00A859;"> 2</span></td>
+						<td><input size="1" value="1" disabled="true">-<input size="1" value="0" disabled="true"><span style="color: #00A859;"> 2</span></td>
 						<td><input size="1" value="2" disabled="true">-<input size="1" value="1" disabled="true"><span style="color: #00A859;"> </span></td>
 						<td><input size="1" value="1" disabled="true">-<input size="1" value="3" disabled="true"><span style="color: #00A859;"> </span></td>
 						<td><input size="1" value="" disabled="true">-<input size="1" value="" disabled="true"><span style="color: #00A859;"> </span></td>
@@ -566,8 +574,8 @@ return mapa(k);
 					</tr>
 					<tr>
 						<td>Bojler</td>
-						<td><input size="1" value="0" disabled="true">-<input size="1" value="2" disabled="true"><span style="color: #00A859;"> 0</span></td>
-						<td><input size="1" value="1" disabled="true">-<input size="1" value="0" disabled="true"><span style="color: #00A859;"> 4</span></td>
+						<td><input size="1" value="0" disabled="true">-<input size="1" value="2" disabled="true"><span style="color: #00A859;"> 2</span></td>
+						<td><input size="1" value="1" disabled="true">-<input size="1" value="0" disabled="true"><span style="color: #00A859;"> 2</span></td>
 						<td><input size="1" value="" disabled="true">-<input size="1" value="" disabled="true"><span style="color: #00A859;"> </span></td>
 						<td><input size="1" value="" disabled="true">-<input size="1" value="" disabled="true"><span style="color: #00A859;"> </span></td>
 						<td><input size="1" value="" disabled="true">-<input size="1" value="" disabled="true"><span style="color: #00A859;"> </span></td>
