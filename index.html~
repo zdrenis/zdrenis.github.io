@@ -190,7 +190,7 @@ return mapa(k);
 						<td class="points">86</td>
 					</tr>
 					<tr>
-						<td style="color: black;">3</td>
+						<td style="color: black;">2</td>
 						<td>Zdre</td>
 						<td class="tdd">7</td>
 						<td class="tdd">4</td>
@@ -203,7 +203,7 @@ return mapa(k);
 						<td class="points">74</td>
 					</tr>
 					<tr>
-						<td style="color: black;">4</td>
+						<td style="color: black;"></td>
 						<td>Ola</td>
 						<td class="tdd">9</td>
 						<td class="tdd">4</td>
