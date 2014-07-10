@@ -206,22 +206,6 @@ return mapa(k);
 					</tr>
 					<tr>
 						<td style="color: black;">2</td>
-						<td>Asia</td>
-						<td class="tdd">8</td>
-						<td class="tdd">13</td>
-						<td class="tdd">6</td>
-						<td class="tdd">10<img height="15" width="15" src="img/cup.png" alt=""></img></td>
-						<td class="tdd">5</td>
-						<td class="tdd">6</td>
-						<td class="tdd">8</td>
-						<td class="tdd">21</td>
-						<td class="tdd">10</td>
-						<td class="tdd">0</td>
-						<td class="tdd">24</td>
-						<td class="points">111</td>
-					</tr>
-					<tr>
-						<td style="color: black;"></td>
 						<td>Zdre</td>
 						<td class="tdd">7</td>
 						<td class="tdd">4</td>
@@ -232,9 +216,25 @@ return mapa(k);
 						<td class="tdd">15</td>
 						<td class="tdd">18</td>
 						<td class="tdd">5</td>
-						<td class="tdd">2</td>
+						<td class="tdd">4<img height="15" width="15" src="img/cup.png" alt=""></img></td>
 						<td class="tdd">36</td>
-						<td class="points">111</td>
+						<td class="points">113</td>
+					</tr>
+					<tr>
+						<td style="color: black;">3</td>
+						<td>Asia</td>
+						<td class="tdd">8</td>
+						<td class="tdd">13</td>
+						<td class="tdd">6</td>
+						<td class="tdd">10<img height="15" width="15" src="img/cup.png" alt=""></img></td>
+						<td class="tdd">5</td>
+						<td class="tdd">6</td>
+						<td class="tdd">8</td>
+						<td class="tdd">21</td>
+						<td class="tdd">10</td>
+						<td class="tdd">2</td>
+						<td class="tdd">24</td>
+						<td class="points">113</td>
 					</tr>
 					<tr>
 						<td style="color: black;">4</td>
@@ -248,12 +248,12 @@ return mapa(k);
 						<td class="tdd">15</td>
 						<td class="tdd">22<img height="15" width="15" src="img/cup.png" alt=""></img></td>
 						<td class="tdd">3</td>
-						<td class="tdd">0</td>
+						<td class="tdd">2</td>
 						<td class="tdd">28</td>
-						<td class="points">108</td>
+						<td class="points">110</td>
 					</tr>
 					<tr>
-						<td style="color: black;">5</td>
+						<td style="color: black;"></td>
 						<td>Ola</td>
 						<td class="tdd">9</td>
 						<td class="tdd">4</td>
@@ -264,9 +264,9 @@ return mapa(k);
 						<td class="tdd">16<img height="15" width="15" src="img/cup.png" alt=""></img></td>
 						<td class="tdd">17</td>
 						<td class="tdd">7</td>
-						<td class="tdd">2</td>
+						<td class="tdd">4<img height="15" width="15" src="img/cup.png" alt=""></img></td>
 						<td class="tdd">24</td>
-						<td class="points">108</td>
+						<td class="points">110</td>
 					</tr>
 					<tr>
 						<td style="color: black;">6</td>
@@ -496,7 +496,7 @@ return mapa(k);
 						</tr>
 						<tr>
 							<th>1-7</th>
-							<th>---</th>
+							<th>0-0 k. 2-4</th>
 						</tr>
 						<tr>
 							<th><img height="15" width="22" src="flags/germany.png" alt=""></img>NIE</th>
@@ -508,46 +508,46 @@ return mapa(k);
 							<th rowspan = 4 class="points">Pkt</th>
 						</tr>
 					</thead>
-					<tr>
-						<td>Ola</td>
+					<tr id="angle">
+						<td>Ola <img height="25" width="25" src="img/cup.png" alt=""></img></td>
 						<td><input size="1" value="0" disabled="true">-<input size="1" value="1" disabled="true"><span style="color: #00A859;"> 2</span></td>
-						<td><input size="1" value="0" disabled="true">-<input size="1" value="1" disabled="true"><span style="color: #00A859;"> </span></td>
-						<td class="points">2</td>
+						<td><input size="1" value="0" disabled="true">-<input size="1" value="1" disabled="true"><span style="color: #00A859;"> 2</span></td>
+						<td class="points">4</td>
 					</tr>
 					<tr>
 						<td>Dmin</td>
 						<td><input size="1" value="0" disabled="true">-<input size="1" value="1" disabled="true"><span style="color: #00A859;"> 2</span></td>
-						<td><input size="1" value="1" disabled="true">-<input size="1" value="0" disabled="true"><span style="color: #00A859;"> </span></td>
+						<td><input size="1" value="1" disabled="true">-<input size="1" value="0" disabled="true"><span style="color: #00A859;"> 0</span></td>
 						<td class="points">2</td>
 					</tr>
 					<tr>
 						<td>Zajo</td>
 						<td><input size="1" value="2" disabled="true">-<input size="1" value="1" disabled="true"><span style="color: #00A859;"> 0</span></td>
-						<td><input size="1" value="1" disabled="true">-<input size="1" value="2" disabled="true"><span style="color: #00A859;"> </span></td>
-						<td class="points">0</td>
+						<td><input size="1" value="1" disabled="true">-<input size="1" value="2" disabled="true"><span style="color: #00A859;"> 2</span></td>
+						<td class="points">2</td>
 					</tr>
 					<tr>
 						<td>Asia</td> 
 						<td><input size="1" value="1" disabled="true">-<input size="1" value="0" disabled="true"><span style="color: #00A859;"> 0</span></td>
-						<td><input size="1" value="2" disabled="true">-<input size="1" value="3" disabled="true"><span style="color: #00A859;"> </span></td>
-						<td class="points">0</td>
-					</tr>
-					<tr>
-						<td>Zdre</td>
-						<td><input size="1" value="1" disabled="true">-<input size="1" value="2" disabled="true"><span style="color: #00A859;"> 2</span></td>
-						<td><input size="1" value="1" disabled="true">-<input size="1" value="2" disabled="true"><span style="color: #00A859;"> </span></td>
+						<td><input size="1" value="2" disabled="true">-<input size="1" value="3" disabled="true"><span style="color: #00A859;"> 2</span></td>
 						<td class="points">2</td>
+					</tr>
+					<tr id="angle">
+						<td>Zdre <img height="25" width="25" src="img/cup.png" alt=""></img></td>
+						<td><input size="1" value="1" disabled="true">-<input size="1" value="2" disabled="true"><span style="color: #00A859;"> 2</span></td>
+						<td><input size="1" value="1" disabled="true">-<input size="1" value="2" disabled="true"><span style="color: #00A859;"> 2</span></td>
+						<td class="points">4</td>
 					</tr>
 					<tr>
 						<td>Kamiloss</td>
 						<td><input size="1" value="1" disabled="true">-<input size="1" value="2" disabled="true"><span style="color: #00A859;"> 2</span></td>
-						<td><input size="1" value="3" disabled="true">-<input size="1" value="2" disabled="true"><span style="color: #00A859;"> </span></td>
+						<td><input size="1" value="3" disabled="true">-<input size="1" value="2" disabled="true"><span style="color: #00A859;"> 0</span></td>
 						<td class="points">2</td>
 					</tr>
 					<tr>
 						<td>Bojler</td>
 						<td><input size="1" value="1" disabled="true">-<input size="1" value="2" disabled="true"><span style="color: #00A859;"> 2</span></td>
-						<td><input size="1" value="2" disabled="true">-<input size="1" value="1" disabled="true"><span style="color: #00A859;"> </span></td>
+						<td><input size="1" value="2" disabled="true">-<input size="1" value="1" disabled="true"><span style="color: #00A859;"> 0</span></td>
 						<td class="points">2</td>
 					</tr>
 				</table>			
