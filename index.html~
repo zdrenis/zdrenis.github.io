@@ -382,7 +382,7 @@ return mapa(k);
 						<td><img height="15" width="22" src="flags/england.png" alt=""></img><span style="color: #00A859;"> 0</span></td>
 						<td><img height="15" width="22" src="flags/usa.png" alt=""></img><span style="color: #00A859;"> 0</span></td>
 						<td><img height="15" width="22" src="flags/netherlands.png" alt=""></img><span style="color: #00A859;"> 4</span></td>
-						<td><img height="15" width="22" src="flags/netherlands.png" alt=""></img><span style="color: #00A859;"> </span></td>
+						<td><img height="15" width="22" src="flags/netherlands.png" alt=""></img><span style="color: #00A859;"> 0</span></td>
 						<td><img height="15" width="22" src="flags/germany.png" alt=""></img><span style="color: #00A859;"> </span></td>
 						<td><img height="15" width="22" src="flags/argentina.png" alt=""></img><span style="color: #00A859;"> </span></td>
 						<td class="points">24</td>
