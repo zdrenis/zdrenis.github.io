@@ -79,6 +79,11 @@ body {
 		position: relative;
 		left: 320px;
 	}
+
+	.standings11 {
+		position: relative;
+		left: 320px;
+	}
 			
 	#totals
 	{
