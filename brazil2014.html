@@ -1,0 +1,1766 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<html ng-app>
+    <head><title>Liga Typerów</title>
+<!--
+body {
+    background: #000000 url(img/background.jpg) no-repeat;
+}
+-->
+ 	<style>
+
+	   footer {
+            width: 100%;
+            bottom: 0;
+            position: relative;
+	    text-align: center;
+        }
+        .even {
+                background-color: #ffff00;
+            }
+        .odd {
+                background-color: #008000;
+            }
+        table{
+                border: 1px #ccc;
+		text-align: center; 
+            }
+		table th{
+				padding: 3px;
+				vertical-align: center;
+				width: 100px;
+				color: black;
+            }
+		table td {
+				padding: 5px 5px;
+				vertical-align: left;
+				width: 110px;
+				color: #3E4095; // blue
+			}
+	.points {
+			width: 40px;
+				color: red;
+			}
+			
+	 input {
+			text-align: center;
+			color: #3E4095; // blue
+	  }
+		tr:nth-child(even) {background: #FFF}
+		tr:nth-child(odd) {background: #CCC}
+        .main{
+		background: white;
+                margin: 10px auto;
+                width: 1150px;
+                border: 1px #ccc;
+                padding: 20px;
+            }
+            .rules{
+                margin: 10px auto;
+                width: 1000px;
+                padding: 20px;    
+            }
+			body, p, ul, ol, textarea {
+				font-family: verdana,helvetica,arial,sans-serif;
+			}
+			input, th, td, table, h1, h2, h3, h4, span {
+				font-family: brasil_14regular,verdana;
+			}
+	.ttd {
+	    width: 40px;
+	    text-align: right;
+	}
+	.standings9 {
+		position: relative;
+		left: 200px;
+	}
+	
+	.standings10 {
+		position: relative;
+		left: 320px;
+	}
+
+	.standings11 {
+		position: relative;
+		left: 320px;
+	}
+	
+	.standingsExtra {
+		position: relative;
+		width: 1550px;
+		left: -150px;
+	}
+			
+	#totals
+	{
+		position: relative;
+		//top: -2400px;
+		left: 200px;
+		//border: 2px dotted #ccc;
+		padding: 20px;
+		width: 700px;
+	}
+@font-face {
+    font-family: 'brasil_14regular';
+    src: url('font/brasil2014-webfont.eot');
+    src: url('font/brasil2014-webfont.eot?#iefix') format('embedded-opentype'),
+         url('font/brasil2014-webfont.woff') format('woff'),
+         url('font/brasil2014-webfont.ttf') format('truetype'),
+         url('font/brasil2014-webfont.svg#brasil_14regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+	#angle {
+	background: lightyellow;
+	
+	/* W3C Standard */
+	background: linear-gradient(top, lightyellow, gold);
+	
+	/* Safari and Google Chrome */
+	background: -webkit-linear-gradient(top, lightyellow, gold);
+	
+	/* Firefox */
+	background: -moz-linear-gradient(top, lightyellow, gold);
+	
+	/* Opera */
+	background: -o-linea-gradient(top, lightyellow, gold);
+
+	/* Internet Explorer */
+	background: -ms-linear-gradient(top, lightyellow, gold);
+	}
+        </style>
+		
+	<!--[if IE]>
+	<style type="text/css">
+	#totals
+	{
+		position: relative;
+		left: 880px;
+		border: 2px dotted #ccc;
+		padding: 20px;
+		width: 200px;
+		top: -1125px;
+	}
+</style>
+<![endif]-->
+        <script src="http://code.angularjs.org/1.2.9/angular.min.js"></script>
+	<script>
+	  function Ctrl($scope) {
+	  $scope.gracze = ['Ola', 'dmin', 'Zajo', 'Asia', 'Zdre', 'Kamiloss'];
+  	  $scope.round1 = [['BRA', 'MEK', 'HIS', 'CHI', 'KOL', 'URU', 'ANG', 'WKS'], ['CHO', 'KAM', 'HOL', 'AUS', 'GRE', 'KOS', 'WŁO', 'JAP']];
+	  }
+
+	  var map = new Object(); // or var map = {};
+		  map['BRA'] = "flags/brazil.png";
+		  map['MEK'] = "flags/mexico.png";
+		  map['HIS'] = "flags/spain.png";
+		  map['CHI'] = "flags/chile.png";
+		  map['KOL'] = "flags/colombia.png";
+		  map['URU'] = "flags/uruguay.png";
+		  map['ANG'] = "flags/england.png";
+		  map['WKS'] = "flags/cote_d'ivoire.png";
+		  map['CHO'] = "flags/croatia.png";
+		  map['KAM'] = "flags/cameroon.png";
+		  map['HOL'] = "flags/netherlands.png";
+		  map['AUS'] = "flags/australia.png";
+		  map['GRE'] = "flags/greece.png";
+		  map['KOS'] = "flags/costa_rica.png";
+		  map['WŁO'] = "flags/italy.png";
+		  map['JAP'] = "flags/japan.png";
+	mapa[1, 2, 3, 4, 5, 6, 7, 8];
+function get(k) {
+return mapa(k);
+}
+	</script>
+
+    </head>
+    <body>
+	<div style="text-align: center;"><img style="vertical-align: middle;" src="img/logo.jpg" alt=""></div>
+
+	<h2 style="text-align: center;">Liga typerow Brazylia 2014</h2>
+        <div class='main'>
+		
+				<div id="totals">
+				<table class="totals">
+					<tr></tr>
+					<tr>
+					<th></th>
+					<th>Typer</th>
+					<th class="tdd">I</th>
+					<th class="tdd">II</th>
+					<th class="tdd">III</th>
+					<th class="tdd">IV</th>
+					<th class="tdd">V</th>
+					<th class="tdd">VI</th>
+					<th class="tdd">VII</th>
+					<th class="tdd">1/8</th>
+					<th class="tdd">1/4</th>
+					<th class="tdd">1/2</th>
+					<th class="tdd">F</th>
+					<th class="tdd">PD</th>
+					<th>Suma</th>
+					</tr>
+					<tr id="angle">
+						<td style="color: black;">1</td>
+						<td>Kamiloss</td>
+						<td class="tdd">11</td>
+						<td class="tdd" style="vertical-align: right">16<img height="15" width="15" src="img/cup.png" alt=""></img></td>
+						<td class="tdd">6</td>
+						<td class="tdd">6</td>
+						<td class="tdd">6</td>
+						<td class="tdd">13<img height="15" width="15" src="img/cup.png" alt=""></img></td>
+						<td class="tdd">8</td>
+						<td class="tdd">18</td>
+						<td class="tdd">13<img height="15" width="15" src="img/cup.png" alt=""></img></td>
+						<td class="tdd">2</td>
+						<td class="tdd">0</td>
+						<td class="tdd">36<img height="15" width="15" src="img/cup.png" alt=""></img></td>
+						<td class="points">135</td>
+					</tr>
+					<tr>
+						<td style="color: black;">2</td>
+						<td>Zajo</td>
+						<td class="tdd">11</td>
+						<td class="tdd">11</td>
+						<td class="tdd">6</td>
+						<td class="tdd">0</td>
+						<td class="tdd">7<img height="15" width="15" src="img/cup.png" alt=""></img></td>
+						<td class="tdd">5</td>
+						<td class="tdd">15</td>
+						<td class="tdd">22<img height="15" width="15" src="img/cup.png" alt=""></img></td>
+						<td class="tdd">3</td>
+						<td class="tdd">2</td>
+						<td class="tdd">6<img height="15" width="15" src="img/cup.png" alt=""></img></td>
+						<td class="tdd">28</td>
+						<td class="points">116</td>
+					</tr>
+					<tr>
+						<td style="color: black;"></td>
+						<td>Zdre</td>
+						<td class="tdd">7</td>
+						<td class="tdd">4</td>
+						<td class="tdd">8<img height="15" width="15" src="img/cup.png" alt=""></img></td>
+						<td class="tdd">4</td>
+						<td class="tdd">4</td>
+						<td class="tdd">8</td>
+						<td class="tdd">15</td>
+						<td class="tdd">18</td>
+						<td class="tdd">5</td>
+						<td class="tdd">4<img height="15" width="15" src="img/cup.png" alt=""></img></td>
+						<td class="tdd">3</td>	
+						<td class="tdd">36<img height="15" width="15" src="img/cup.png" alt=""></img></td>
+						<td class="points">116</td>
+					</tr>
+					<tr>
+						<td style="color: black;">4</td>
+						<td>Dmin</td>
+						<td class="tdd">7</td>
+						<td class="tdd">4</td>
+						<td class="tdd">6</td>
+						<td class="tdd">8</td>
+						<td class="tdd">6</td>
+						<td class="tdd">12</td>
+						<td class="tdd">13</td>
+						<td class="tdd">20</td>
+						<td class="tdd">5</td>
+						<td class="tdd">2</td>
+						<td class="tdd">5</td>
+						<td class="tdd">28</td>
+						<td class="points">116</td>
+					</tr>
+					<tr>
+						<td style="color: black;">5</td>
+						<td>Asia</td>
+						<td class="tdd">8</td>
+						<td class="tdd">13</td>
+						<td class="tdd">6</td>
+						<td class="tdd">10<img height="15" width="15" src="img/cup.png" alt=""></img></td>
+						<td class="tdd">5</td>
+						<td class="tdd">6</td>
+						<td class="tdd">8</td>
+						<td class="tdd">21</td>
+						<td class="tdd">10</td>
+						<td class="tdd">2</td>
+						<td class="tdd">0</td>
+						<td class="tdd">24</td>
+						<td class="points">113</td>
+					</tr>
+					<tr>
+						<td style="color: black;">6</td>
+						<td>Ola</td>
+						<td class="tdd">9</td>
+						<td class="tdd">4</td>
+						<td class="tdd">6</td>
+						<td class="tdd">8</td>
+						<td class="tdd">6</td>
+						<td class="tdd">9</td>
+						<td class="tdd">16<img height="15" width="15" src="img/cup.png" alt=""></img></td>
+						<td class="tdd">17</td>
+						<td class="tdd">7</td>
+						<td class="tdd">4<img height="15" width="15" src="img/cup.png" alt=""></img></td>
+						<td class="tdd">2</td>
+						<td class="tdd">24</td>
+						<td class="points">112</td>
+					</tr>
+					<tr>
+						<td style="color: black;">7</td>
+						<td>Bojler</td>
+						<td class="tdd">13<img height="15" width="15" src="img/cup.png" alt=""></img></td>
+						<td class="tdd">8</td>
+						<td class="tdd">6</td>
+						<td class="tdd">2</td>
+						<td class="tdd">2</td>
+						<td class="tdd">6</td>
+						<td class="tdd">11</td>
+						<td class="tdd">20</td>
+						<td class="tdd">6</td>
+						<td class="tdd">2</td>
+						<td class="tdd">4</td>
+						<td class="tdd">24</td>
+						<td class="points">104</td>
+					</tr>
+				</table>
+				</div>
+				
+		<h4 style="text-align: center;">Pytania dodatkowe</h2>
+			<div class='standingsExtra'>
+				<table>
+					<thead>
+
+						<tr>
+							<th rowspan=3 width="100"/>
+							<th colspan=8>ZWYCIEZCY GRUP</th>
+							<th colspan=4>POLFINALISCI</th>
+							<th rowspan=2>WICEMISTRZ</th>
+							<th rowspan=2>MISTRZ</th>
+							<th rowspan=2>KROL STRZ.</th>
+						</tr>
+						<tr>
+							<th>A</th>
+							<th>B</th>
+							<th>C</th>
+							<th>D</th>
+							<th>E</th>
+							<th>F</th>
+							<th>G</th>
+							<th>H</th>
+							<th>1</th>
+							<th>2</th>
+							<th>3</th>
+							<th>4</th>
+						</tr>
+						<tr>
+							<th><img height="15" width="22" src="flags/brazil.png" alt=""></img></th>
+							<th><img height="15" width="22" src="flags/netherlands.png" alt=""></img></th>
+							<th><img height="15" width="22" src="flags/colombia.png" alt=""></img></th>
+							<th><img height="15" width="22" src="flags/costa_rica.png" alt=""></img></th>
+							<th><img height="15" width="22" src="flags/france.png" alt=""></img></th>
+							<th><img height="15" width="22" src="flags/argentina.png" alt=""></img></th>
+							<th><img height="15" width="22" src="flags/germany.png" alt=""></th>
+							<th><img height="15" width="22" src="flags/belgium.png" alt=""></th>
+							<th><img height="15" width="22" src="flags/germany.png" alt=""></th>
+							<th><img height="15" width="22" src="flags/brazil.png" alt=""></th>
+							<th><img height="15" width="22" src="flags/argentina.png" alt=""></th>
+							<th><img height="15" width="22" src="flags/netherlands.png" alt=""></th>
+							<th><img height="15" width="22" src="flags/argentina.png" alt=""></th>
+							<th><img height="15" width="22" src="flags/germany.png" alt=""></th>
+							<th><img height="15" width="22" src="flags/colombia.png" alt=""></th>
+							<th rowspan=2 class="points">Pkt</th>
+						</tr>
+					</thead>
+					<tr>
+						<td width="100">Ola</td>
+						<td><img height="15" width="22" src="flags/croatia.png" alt=""></img><span style="color: #00A859;"> 0</span></td>
+						<td><img height="15" width="22" src="flags/spain.png" alt=""></img><span style="color: #00A859;"> 0</span></td>
+						<td><img height="15" width="22" src="flags/greece.png" alt=""></img><span style="color: #00A859;"> 0</span></td>
+						<td><img height="15" width="22" src="flags/italy.png" alt=""></img><span style="color: #00A859;"> 0</span></td>
+						<td><img height="15" width="22" src="flags/france.png" alt=""></img><span style="color: #00A859;"> 4</span></td>
+						<td><img height="15" width="22" src="flags/argentina.png" alt=""></img><span style="color: #00A859;"> 4</span></td>
+						<td><img height="15" width="22" src="flags/germany.png" alt=""></img><span style="color: #00A859;"> 4</span></td>
+						<td><img height="15" width="22" src="flags/belgium.png" alt=""></img><span style="color: #00A859;"> 4</span></td>
+						<td><img height="15" width="22" src="flags/germany.png" alt=""></img><span style="color: #00A859;"> 4</span></td>
+						<td><img height="15" width="22" src="flags/spain.png" alt=""></img><span style="color: #00A859;"> 0</span></td>
+						<td><img height="15" width="22" src="flags/belgium.png" alt=""></img><span style="color: #00A859;"> 0</span></td>
+						<td><img height="15" width="22" src="flags/netherlands.png" alt=""></img><span style="color: #00A859;"> 4</span></td>
+						<td><img height="15" width="22" src="flags/germany.png" alt=""></img><span style="color: #00A859;"> 0</span></td>
+						<td><img height="15" width="22" src="flags/spain.png" alt=""></img><span style="color: #00A859;"> 0</span></td>
+						<td><img height="15" width="22" src="flags/germany.png" alt=""></img><span style="color: #00A859;"> 0</span></td>
+						<td class="points">24</td>
+					</tr>
+					<tr>
+						<td width="100">Dmin</td>
+						<td><img height="15" width="22" src="flags/brazil.png" alt=""></img><span style="color: #00A859;"> 4</span></td>
+						<td><img height="15" width="22" src="flags/spain.png" alt=""></img><span style="color: #00A859;"> 0</span></td>
+						<td><img height="15" width="22" src="flags/cote_d'ivoire.png" alt=""></img><span style="color: #00A859;"> 0</span></td>
+						<td><img height="15" width="22" src="flags/italy.png" alt=""></img><span style="color: #00A859;"> 0</span></td>
+						<td><img height="15" width="22" src="flags/france.png" alt=""></img><span style="color: #00A859;"> 4</span></td>
+						<td><img height="15" width="22" src="flags/argentina.png" alt=""></img><span style="color: #00A859;"> 4</span></td>
+						<td><img height="15" width="22" src="flags/germany.png" alt=""></img><span style="color: #00A859;"> 4</span></td>
+						<td><img height="15" width="22" src="flags/russia.png" alt=""></img><span style="color: #00A859;"> 0</span></td>
+						<td><img height="15" width="22" src="flags/germany.png" alt=""></img><span style="color: #00A859;"> 4</span></td>
+						<td><img height="15" width="22" src="flags/england.png" alt=""></img><span style="color: #00A859;"> 0</span></td>
+						<td><img height="15" width="22" src="flags/usa.png" alt=""></img><span style="color: #00A859;"> 0</span></td>
+						<td><img height="15" width="22" src="flags/netherlands.png" alt=""></img><span style="color: #00A859;"> 4</span></td>
+						<td><img height="15" width="22" src="flags/netherlands.png" alt=""></img><span style="color: #00A859;"> 0</span></td>
+						<td><img height="15" width="22" src="flags/germany.png" alt=""></img><span style="color: #00A859;"> 4</span></td>
+						<td><img height="15" width="22" src="flags/argentina.png" alt=""></img><span style="color: #00A859;"> 0</span></td>
+						<td class="points">28</td>
+					</tr>
+					<tr>
+						<td width="100">Zajo</td>
+						<td><img height="15" width="22" src="flags/brazil.png" alt=""></img><span style="color: #00A859;"> 4</span></td>
+						<td><img height="15" width="22" src="flags/spain.png" alt=""></img><span style="color: #00A859;"> 0</span></td>
+						<td><img height="15" width="22" src="flags/japan.png" alt=""></img><span style="color: #00A859;"> 0</span></td>
+						<td><img height="15" width="22" src="flags/italy.png" alt=""></img><span style="color: #00A859;"> 0</span></td>
+						<td><img height="15" width="22" src="flags/france.png" alt=""></img><span style="color: #00A859;"> 4</span></td>
+						<td><img height="15" width="22" src="flags/argentina.png" alt=""></img><span style="color: #00A859;"> 4</span></td>
+						<td><img height="15" width="22" src="flags/germany.png" alt=""></img><span style="color: #00A859;"> 4</span></td>
+						<td><img height="15" width="22" src="flags/russia.png" alt=""></img><span style="color: #00A859;"> 0</span></td>
+						<td><img height="15" width="22" src="flags/germany.png" alt=""></img><span style="color: #00A859;"> 4</span></td>
+						<td><img height="15" width="22" src="flags/brazil.png" alt=""></img><span style="color: #00A859;"> 4</span></td>
+						<td><img height="15" width="22" src="flags/argentina.png" alt=""></img><span style="color: #00A859;"> 4</span></td>
+						<td><img height="15" width="22" src="flags/spain.png" alt=""></img><span style="color: #00A859;"> 0</span></td>
+						<td><img height="15" width="22" src="flags/spain.png" alt=""></img><span style="color: #00A859;"> 0</span></td>
+						<td><img height="15" width="22" src="flags/brazil.png" alt=""></img><span style="color: #00A859;"> 0</span></td>
+						<td><img height="15" width="22" src="flags/argentina.png" alt=""></img><span style="color: #00A859;"> 0</span></td>
+						<td class="points">28</td>
+					</tr>
+					<tr>
+						<td width="100">Asia</td> 
+						<td><img height="15" width="22" src="flags/brazil.png" alt=""></img><span style="color: #00A859;"> 4</span></td>
+						<td><img height="15" width="22" src="flags/spain.png" alt=""></img><span style="color: #00A859;"> 0</span></td>
+						<td><img height="15" width="22" src="flags/cote_d'ivoire.png" alt=""></img><span style="color: #00A859;"> 0</span></td>
+						<td><img height="15" width="22" src="flags/uruguay.png" alt=""></img><span style="color: #00A859;"> 0</span></td>
+						<td><img height="15" width="22" src="flags/ecuador.png" alt=""></img><span style="color: #00A859;"> 0</span></td>
+						<td><img height="15" width="22" src="flags/argentina.png" alt=""></img><span style="color: #00A859;"> 4</span></td>
+						<td><img height="15" width="22" src="flags/portugal.png" alt=""></img><span style="color: #00A859;"> 0</span></td>
+						<td><img height="15" width="22" src="flags/belgium.png" alt=""></img><span style="color: #00A859;"> 4</span></td>
+						<td><img height="15" width="22" src="flags/germany.png" alt=""></img><span style="color: #00A859;"> 4</span></td>
+						<td><img height="15" width="22" src="flags/brazil.png" alt=""></img><span style="color: #00A859;"> 4</span></td>
+						<td><img height="15" width="22" src="flags/argentina.png" alt=""></img><span style="color: #00A859;"> 4</span></td>
+						<td><img height="15" width="22" src="flags/italy.png" alt=""></img><span style="color: #00A859;"> 0</span></td>
+						<td><img height="15" width="22" src="flags/brazil.png" alt=""></img><span style="color: #00A859;"> 0</span></td>
+						<td><img height="15" width="22" src="flags/brazil.png" alt=""></img><span style="color: #00A859;"> 0</span></td>
+						<td><img height="15" width="22" src="flags/argentina.png" alt=""></img><span style="color: #00A859;"> 0</span></td>
+						<td class="points">24</td>
+					</tr>
+					<tr id="angle">
+						<td width="100">Zdre <img height="25" width="25" src="img/cup.png" alt=""></img></td>
+						<td><img height="15" width="22" src="flags/brazil.png" alt=""></img><span style="color: #00A859;"> 4</span></td>
+						<td><img height="15" width="22" src="flags/netherlands.png" alt=""></img><span style="color: #00A859;"> 4</span></td>
+						<td><img height="15" width="22" src="flags/cote_d'ivoire.png" alt=""></img><span style="color: #00A859;"> 0</span></td>
+						<td><img height="15" width="22" src="flags/italy.png" alt=""></img><span style="color: #00A859;"> 0</span></td>
+						<td><img height="15" width="22" src="flags/france.png" alt=""></img><span style="color: #00A859;"> 4</span></td>
+						<td><img height="15" width="22" src="flags/argentina.png" alt=""></img><span style="color: #00A859;"> 4</span></td>
+						<td><img height="15" width="22" src="flags/germany.png" alt=""></img><span style="color: #00A859;"> 4</span></td>
+						<td><img height="15" width="22" src="flags/belgium.png" alt=""></img><span style="color: #00A859;"> 4</span></td>
+						<td><img height="15" width="22" src="flags/germany.png" alt=""></img><span style="color: #00A859;"> 4</span></td>
+						<td><img height="15" width="22" src="flags/brazil.png" alt=""></img><span style="color: #00A859;"> 4</span></td>
+						<td><img height="15" width="22" src="flags/argentina.png" alt=""></img><span style="color: #00A859;"> 4</span></td>
+						<td><img height="15" width="22" src="flags/italy.png" alt=""></img><span style="color: #00A859;"> 0</span></td>
+						<td><img height="15" width="22" src="flags/brazil.png" alt=""></img><span style="color: #00A859;"> 0</span></td>
+						<td><img height="15" width="22" src="flags/brazil.png" alt=""></img><span style="color: #00A859;"> 0</span></td>
+						<td><img height="15" width="22" src="flags/argentina.png" alt=""></img><span style="color: #00A859;"> 0</span></td>
+						<td class="points">36</td>
+					</tr>
+					<tr id="angle">
+						<td width="100">Kamiloss <img height="25" width="25" src="img/cup.png" alt=""></img></td>
+						<td><img height="15" width="22" src="flags/brazil.png" alt=""></img><span style="color: #00A859;"> 4</span></td>
+						<td><img height="15" width="22" src="flags/spain.png" alt=""></img><span style="color: #00A859;"> 0</span></td>
+						<td><img height="15" width="22" src="flags/colombia.png" alt=""></img><span style="color: #00A859;"> 4</span></td>
+						<td><img height="15" width="22" src="flags/uruguay.png" alt=""></img><span style="color: #00A859;"> 0</span></td>
+						<td><img height="15" width="22" src="flags/france.png" alt=""></img><span style="color: #00A859;"> 4</span></td>
+						<td><img height="15" width="22" src="flags/argentina.png" alt=""></img><span style="color: #00A859;"> 4</span></td>
+						<td><img height="15" width="22" src="flags/germany.png" alt=""></img><span style="color: #00A859;"> 4</span></td>
+						<td><img height="15" width="22" src="flags/russia.png" alt=""></img><span style="color: #00A859;"> 0</span></td>
+						<td><img height="15" width="22" src="flags/germany.png" alt=""></img><span style="color: #00A859;"> 4</span></td>
+						<td><img height="15" width="22" src="flags/brazil.png" alt=""></img><span style="color: #00A859;"> 4</span></td>
+						<td><img height="15" width="22" src="flags/spain.png" alt=""></img><span style="color: #00A859;"> 0</span></td>
+						<td><img height="15" width="22" src="flags/netherlands.png" alt=""></img><span style="color: #00A859;"> 4</span></td>
+						<td><img height="15" width="22" src="flags/spain.png" alt=""></img><span style="color: #00A859;"> 0</span></td>
+						<td><img height="15" width="22" src="flags/germany.png" alt=""></img><span style="color: #00A859;"> 4</span></td>
+						<td><img height="15" width="22" src="flags/germany.png" alt=""></img><span style="color: #00A859;"> 0</span></td>
+						<td class="points">36</td>
+					</tr>
+					<tr>
+						<td width="100">Bojler</td>
+						<td><img height="15" width="22" src="flags/brazil.png" alt=""></img><span style="color: #00A859;"> 4</span></td>
+						<td><img height="15" width="22" src="flags/spain.png" alt=""></img><span style="color: #00A859;"> 0</span></td>
+						<td><img height="15" width="22" src="flags/cote_d'ivoire.png" alt=""></img><span style="color: #00A859;"> 0</span></td>
+						<td><img height="15" width="22" src="flags/italy.png" alt=""></img><span style="color: #00A859;"> 0</span></td>
+						<td><img height="15" width="22" src="flags/france.png" alt=""></img><span style="color: #00A859;"> 4</span></td>
+						<td><img height="15" width="22" src="flags/argentina.png" alt=""></img><span style="color: #00A859;"> 4</span></td>
+						<td><img height="15" width="22" src="flags/germany.png" alt=""></img><span style="color: #00A859;"> 4</span></td>
+						<td><img height="15" width="22" src="flags/russia.png" alt=""></img><span style="color: #00A859;"> 0</span></td>
+						<td><img height="15" width="22" src="flags/germany.png" alt=""></img><span style="color: #00A859;"> 4</span></td>
+						<td><img height="15" width="22" src="flags/spain.png" alt=""></img><span style="color: #00A859;"> 0</span></td>
+						<td><img height="15" width="22" src="flags/russia.png" alt=""></img><span style="color: #00A859;"> 0</span></td>
+						<td><img height="15" width="22" src="flags/netherlands.png" alt=""></img><span style="color: #00A859;"> 4</span></td>
+						<td><img height="15" width="22" src="flags/germany.png" alt=""></img><span style="color: #00A859;"> 0</span></td>
+						<td><img height="15" width="22" src="flags/spain.png" alt=""></img><span style="color: #00A859;"> 0</span></td>
+						<td><img height="15" width="22" src="flags/germany.png" alt=""></img><span style="color: #00A859;"> 0</span></td>
+						<td class="points">24</td>
+					</tr>
+				</table>		
+				</div>
+
+			<h4 style="text-align: center;">Finały</h4>
+			<div class='standings11'>
+				<table>
+					<thead>
+						<tr>
+							<th style="background-color: #fff;" rowspan="4"></th>
+							<th><img height="15" width="22" src="flags/brazil.png" alt=""></img>BRA</th>
+							<th><img height="15" width="22" src="flags/germany.png" alt=""></img>NIE</th>
+						</tr>
+						<tr>
+							<th>0-3</th>
+							<th>1-0</th>
+						</tr>
+						<tr>
+							<th><img height="15" width="22" src="flags/netherlands.png" alt=""></img>HOL</th>
+							<th><img height="15" width="22" src="flags/argentina.png" alt=""></img>ARG</th>
+						</tr>
+						<tr>
+							<th><small>2.25	/ 3.50 / 3.00</small></th>
+							<th><small>2.25 / 3.25 / 3.35</small></th>
+							<th rowspan = 4 class="points">Pkt</th>
+						</tr>
+					</thead>
+					<tr>
+						<td>Ola</td>
+						<td><input size="1" value="1" disabled="true">-<input size="1" value="2" disabled="true"><span style="color: #00A859;"> 2</span></td>
+						<td><input size="1" value="1" disabled="true">-<input size="1" value="2" disabled="true"><span style="color: #00A859;"> 0</span></td>
+						<td class="points">2</td>
+					</tr>
+					<tr>
+						<td>Dmin</td>
+						<td><input size="1" value="1" disabled="true">-<input size="1" value="4" disabled="true"><span style="color: #00A859;"> 3</span></td>
+						<td><input size="1" value="4" disabled="true">-<input size="1" value="1" disabled="true"><span style="color: #00A859;"> 2</span></td>
+						<td class="points">5</td>
+					</tr>
+					<tr id="angle">
+						<td>Zajo <img height="25" width="25" src="img/cup.png" alt=""></img></td>
+						<td><input size="1" value="1" disabled="true">-<input size="1" value="2" disabled="true"><span style="color: #00A859;"> 2</span></td>
+						<td><input size="1" value="1" disabled="true">-<input size="1" value="0" disabled="true"><span style="color: #00A859;"> 4</span></td>
+						<td class="points">6</td>
+					</tr>
+					<tr>
+						<td>Asia</td> 
+						<td><input size="1" value="2" disabled="true">-<input size="1" value="1" disabled="true"><span style="color: #00A859;"> 0</span></td>
+						<td><input size="1" value="1" disabled="true">-<input size="1" value="2" disabled="true"><span style="color: #00A859;"> 0</span></td>
+						<td class="points">0</td>
+					</tr>
+					<tr>
+						<td>Zdre</td>
+						<td><input size="1" value="2" disabled="true">-<input size="1" value="1" disabled="true"><span style="color: #00A859;"> 0</span></td>
+						<td><input size="1" value="2" disabled="true">-<input size="1" value="1" disabled="true"><span style="color: #00A859;"> 3</span></td>
+						<td class="points">3</td>
+					<tr>
+						<td>Kamiloss</td>
+						<td><input size="1" value="" disabled="true">-<input size="1" value="" disabled="true"><span style="color: #00A859;"> 0</span></td>
+						<td><input size="1" value="" disabled="true">-<input size="1" value="" disabled="true"><span style="color: #00A859;"> 0</span></td>
+						<td class="points">0</td>
+					</tr>
+					<tr>
+						<td>Bojler</td>
+						<td><input size="1" value="0" disabled="true">-<input size="1" value="1" disabled="true"><span style="color: #00A859;"> 2</span></td>
+						<td><input size="1" value="2" disabled="true">-<input size="1" value="0" disabled="true"><span style="color: #00A859;"> 2</span></td>
+						<td class="points">4</td>
+					</tr>
+				</table>			
+				</div>
+			
+			<h4 style="text-align: center;">1/2</h4>
+			<div class='standings10'>
+				<table>
+					<thead>
+						<tr>
+							<th style="background-color: #fff;" rowspan="4"></th>
+							<th><img height="15" width="22" src="flags/brazil.png" alt=""></img>BRA</th>
+							<th><img height="15" width="22" src="flags/netherlands.png" alt=""></img>HOL</th>
+						</tr>
+						<tr>
+							<th>1-7</th>
+							<th>0-0 k. 2-4</th>
+						</tr>
+						<tr>
+							<th><img height="15" width="22" src="flags/germany.png" alt=""></img>NIE</th>
+							<th><img height="15" width="22" src="flags/argentina.png" alt=""></img>ARG</th>
+						</tr>
+						<tr>
+							<th><small>2.75	/ 3.20 / 2.65</small></th>
+							<th><small>3.10	/ 3.20 / 2.40</small></th>
+							<th rowspan = 4 class="points">Pkt</th>
+						</tr>
+					</thead>
+					<tr id="angle">
+						<td>Ola <img height="25" width="25" src="img/cup.png" alt=""></img></td>
+						<td><input size="1" value="0" disabled="true">-<input size="1" value="1" disabled="true"><span style="color: #00A859;"> 2</span></td>
+						<td><input size="1" value="0" disabled="true">-<input size="1" value="1" disabled="true"><span style="color: #00A859;"> 2</span></td>
+						<td class="points"><b>4</b></td>
+					</tr>
+					<tr>
+						<td>Dmin</td>
+						<td><input size="1" value="0" disabled="true">-<input size="1" value="1" disabled="true"><span style="color: #00A859;"> 2</span></td>
+						<td><input size="1" value="1" disabled="true">-<input size="1" value="0" disabled="true"><span style="color: #00A859;"> 0</span></td>
+						<td class="points">2</td>
+					</tr>
+					<tr>
+						<td>Zajo</td>
+						<td><input size="1" value="2" disabled="true">-<input size="1" value="1" disabled="true"><span style="color: #00A859;"> 0</span></td>
+						<td><input size="1" value="1" disabled="true">-<input size="1" value="2" disabled="true"><span style="color: #00A859;"> 2</span></td>
+						<td class="points">2</td>
+					</tr>
+					<tr>
+						<td>Asia</td> 
+						<td><input size="1" value="1" disabled="true">-<input size="1" value="0" disabled="true"><span style="color: #00A859;"> 0</span></td>
+						<td><input size="1" value="2" disabled="true">-<input size="1" value="3" disabled="true"><span style="color: #00A859;"> 2</span></td>
+						<td class="points">2</td>
+					</tr>
+					<tr id="angle">
+						<td>Zdre <img height="25" width="25" src="img/cup.png" alt=""></img></td>
+						<td><input size="1" value="1" disabled="true">-<input size="1" value="2" disabled="true"><span style="color: #00A859;"> 2</span></td>
+						<td><input size="1" value="1" disabled="true">-<input size="1" value="2" disabled="true"><span style="color: #00A859;"> 2</span></td>
+						<td class="points"><b>4</b></td>
+					</tr>
+					<tr>
+						<td>Kamiloss</td>
+						<td><input size="1" value="1" disabled="true">-<input size="1" value="2" disabled="true"><span style="color: #00A859;"> 2</span></td>
+						<td><input size="1" value="3" disabled="true">-<input size="1" value="2" disabled="true"><span style="color: #00A859;"> 0</span></td>
+						<td class="points">2</td>
+					</tr>
+					<tr>
+						<td>Bojler</td>
+						<td><input size="1" value="1" disabled="true">-<input size="1" value="2" disabled="true"><span style="color: #00A859;"> 2</span></td>
+						<td><input size="1" value="2" disabled="true">-<input size="1" value="1" disabled="true"><span style="color: #00A859;"> 0</span></td>
+						<td class="points">2</td>
+					</tr>
+				</table>			
+				</div>
+			
+			<h4 style="text-align: center;">1/4</h4>
+			<div class='standings9'>
+				<table>
+					<thead>
+						<tr>
+							<th style="background-color: #fff;" rowspan="4"></th>
+							<th><img height="15" width="22" src="flags/france.png" alt=""></img>FRA</th>
+							<th><img height="15" width="22" src="flags/brazil.png" alt=""></img>BRA</th>
+							<th><img height="15" width="22" src="flags/argentina.png" alt="">ARG</th>
+							<th><img height="15" width="22" src="flags/netherlands.png" alt="">HOL</th>
+						</tr>
+						<tr>
+							<th>0-1</th>
+							<th>2-1</th>
+							<th>1-0</th>
+							<th>0-0 k. 4-3</th>
+						</tr>
+						<tr>
+							<th><img height="15" width="22" src="flags/germany.png" alt=""></img>NIE</th>
+							<th><img height="15" width="22" src="flags/colombia.png" alt=""></img>KOL</th>
+							<th><img height="15" width="22" src="flags/belgium.png" alt="">BEL</th>
+							<th><img height="15" width="22" src="flags/costa_rica.png" alt="">KOS</th>
+						</tr>
+						<tr>
+							<th><small>3.10	/ 3.20 / 2.40</small></th>
+							<th><small>1.82	/ 3.55 / 4.50</small></th>
+							<th><small>2.10	/ 3.35 / 3.60</small></th>
+							<th><small>1.48	/ 4.30 / 7.00</small></th>
+							<th rowspan = 4 class="points">Pkt</th>
+						</tr>
+					</thead>
+					<tr>
+						<td>Ola</td>
+						<td><input size="1" value="0" disabled="true">-<input size="1" value="1" disabled="true"><span style="color: #00A859;"> 4</span></td>
+						<td><input size="1" value="0" disabled="true">-<input size="1" value="1" disabled="true"><span style="color: #00A859;"> 0</span></td>
+						<td><input size="1" value="0" disabled="true">-<input size="1" value="1" disabled="true"><span style="color: #00A859;"> 0</span></td>
+						<td><input size="1" value="2" disabled="true">-<input size="1" value="1" disabled="true"><span style="color: #00A859;"> 3</span></td>
+						<td class="points">7</td>
+					</tr>
+					<tr>
+						<td>Dmin</td>
+						<td><input size="1" value="1" disabled="true">-<input size="1" value="2" disabled="true"><span style="color: #00A859;"> 3</span></td>
+						<td><input size="1" value="1" disabled="true">-<input size="1" value="2" disabled="true"><span style="color: #00A859;"> 0</span></td>
+						<td><input size="1" value="1" disabled="true">-<input size="1" value="2" disabled="true"><span style="color: #00A859;"> 0</span></td>
+						<td><input size="1" value="2" disabled="true">-<input size="1" value="0" disabled="true"><span style="color: #00A859;"> 2</span></td>
+						<td class="points">5</td>
+					</tr>
+					<tr>
+						<td>Zajo</td>
+						<td><input size="1" value="2" disabled="true">-<input size="1" value="1" disabled="true"><span style="color: #00A859;"> 0</span></td>
+						<td><input size="1" value="1" disabled="true">-<input size="1" value="2" disabled="true"><span style="color: #00A859;"> 0</span></td>
+						<td><input size="1" value="1" disabled="true">-<input size="1" value="2" disabled="true"><span style="color: #00A859;"> 0</span></td>
+						<td><input size="1" value="1" disabled="true">-<input size="1" value="0" disabled="true"><span style="color: #00A859;"> 3</span></td>
+						<td class="points">3</td>
+					</tr>
+					<tr>
+						<td>Asia</td> 
+						<td><input size="1" value="0" disabled="true">-<input size="1" value="2" disabled="true"><span style="color: #00A859;"> 2</span></td>
+						<td><input size="1" value="2" disabled="true">-<input size="1" value="0" disabled="true"><span style="color: #00A859;"> 2</span></td>
+						<td><input size="1" value="1" disabled="true">-<input size="1" value="0" disabled="true"><span style="color: #00A859;"> 4</span></td>
+						<td><input size="1" value="3" disabled="true">-<input size="1" value="1" disabled="true"><span style="color: #00A859;"> 2</span></td>
+						<td class="points">10</td>
+					</tr>
+					<tr>
+						<td>Zdre</td>
+						<td><input size="1" value="1" disabled="true">-<input size="1" value="2" disabled="true"><span style="color: #00A859;"> 3</span></td>
+						<td><input size="1" value="1" disabled="true">-<input size="1" value="2" disabled="true"><span style="color: #00A859;"> 0</span></td>
+						<td><input size="1" value="1" disabled="true">-<input size="1" value="2" disabled="true"><span style="color: #00A859;"> 0</span></td>
+						<td><input size="1" value="3" disabled="true">-<input size="1" value="0" disabled="true"><span style="color: #00A859;"> 2</span></td>
+						<td class="points">5</td>
+					</tr>
+					<tr id="angle">
+						<td>Kamiloss <img height="25" width="25" src="img/cup.png" alt=""></img></td>
+						<td><input size="1" value="0" disabled="true">-<input size="1" value="2" disabled="true"><span style="color: #00A859;"> 2</span></td>
+						<td><input size="1" value="2" disabled="true">-<input size="1" value="1" disabled="true"><span style="color: #00A859;"> 4</span></td>
+						<td><input size="1" value="1" disabled="true">-<input size="1" value="0" disabled="true"><span style="color: #00A859;"> 4</span></td>
+						<td><input size="1" value="3" disabled="true">-<input size="1" value="2" disabled="true"><span style="color: #00A859;"> 3</span></td>
+						<td class="points"><b>13</b></td>
+					</tr>
+					<tr>
+						<td>Bojler</td>
+						<td><input size="1" value="1" disabled="true">-<input size="1" value="2" disabled="true"><span style="color: #00A859;"> 3</span></td>
+						<td><input size="1" value="0" disabled="true">-<input size="1" value="1" disabled="true"><span style="color: #00A859;"> 0</span></td>
+						<td><input size="1" value="0" disabled="true">-<input size="1" value="2" disabled="true"><span style="color: #00A859;"> 0</span></td>
+						<td><input size="1" value="1" disabled="true">-<input size="1" value="0" disabled="true"><span style="color: #00A859;"> 3</span></td>
+						<td class="points">6</td>
+					</tr>
+				</table>			
+				</div>
+			
+				
+			<h4 style="text-align: center;">1/8</h4>
+			<div class='standings8'>
+				<table>
+					<thead>
+						<tr>
+							<th style="background-color: #fff;" rowspan="4"></th>
+							<th><img height="15" width="22" src="flags/brazil.png" alt=""></img>BRA</th>
+							<th><img height="15" width="22" src="flags/colombia.png" alt=""></img>KOL</th>
+							<th><img height="15" width="22" src="flags/netherlands.png" alt="">HOL</th>
+							<th><img height="15" width="22" src="flags/costa_rica.png" alt="">KOS</th>
+							<th><img height="15" width="22" src="flags/france.png" alt="">FRA</th>
+							<th><img height="15" width="22" src="flags/germany.png" alt="">NIE</th>
+							<th><img height="15" width="22" src="flags/argentina.png" alt="">ARG</th>
+							<th><img height="15" width="22" src="flags/belgium.png" alt="">BEL</th>
+						</tr>
+						<tr>
+							<th>1-1 k. 3-2</th>
+							<th>2-0</th>
+							<th>2-1</th>
+							<th>1-1 k. 5-3</th>
+							<th>2-0</th>
+							<th>2-1</th>
+							<th>1-0</th>
+							<th>2-1</th>
+						</tr>
+						<tr>
+							<th><img height="15" width="22" src="flags/chile.png" alt=""></img>CHI</th>
+							<th><img height="15" width="22" src="flags/uruguay.png" alt=""></img>URU</th>
+							<th><img height="15" width="22" src="flags/mexico.png" alt="">MEK</th>
+							<th><img height="15" width="22" src="flags/greece.png" alt="">GRE</th>
+							<th><img height="15" width="22" src="flags/nigeria.png" alt="">NIG</th>
+							<th><img height="15" width="22" src="flags/algeria.png" alt="">ALG</th>
+							<th><img height="15" width="22" src="flags/switzerland.png" alt="">SZW</th>
+							<th><img height="15" width="22" src="flags/usa.png" alt="">USA</th>
+						</tr>
+						<tr>
+							<th><small>1.65	/ 3.75 / 5.00</small></th>
+							<th><small>2.00	/ 3.40 / 3.85</small></th>
+							<th><small>2.10	/ 3.40 / 3.60</small></th>
+							<th><small>2.45	/ 3.10 / 3.15</small></th>
+							<th><small>1.47	/ 4.20 / 7.50</small></th>
+							<th><small>1.30	/ 5.50 / 10.0</small></th>
+							<th><small>1.50	/ 4.10 / 7.00</small></th>
+							<th><small>1.85	/ 3.50 / 4.40</small></th>
+							<th rowspan = 4 class="points">Pkt</th>
+						</tr>
+					</thead>
+					<tr>
+						<td>Ola</td>
+						<td><input size="1" value="0" disabled="true">-<input size="1" value="1" disabled="true"><span style="color: #00A859;"> 0</span></td>
+						<td><input size="1" value="2" disabled="true">-<input size="1" value="1" disabled="true"><span style="color: #00A859;"> 2</span></td>
+						<td><input size="1" value="2" disabled="true">-<input size="1" value="0" disabled="true"><span style="color: #00A859;"> 2</span></td>
+						<td><input size="1" value="1" disabled="true">-<input size="1" value="0" disabled="true"><span style="color: #00A859;"> 2</span></td>
+						<td><input size="1" value="2" disabled="true">-<input size="1" value="1" disabled="true"><span style="color: #00A859;"> 2</span></td>
+						<td><input size="1" value="1" disabled="true">-<input size="1" value="0" disabled="true"><span style="color: #00A859;"> 3</span></td>
+						<td><input size="1" value="4" disabled="true">-<input size="1" value="3" disabled="true"><span style="color: #00A859;"> 3</span></td>
+						<td><input size="1" value="1" disabled="true">-<input size="1" value="0" disabled="true"><span style="color: #00A859;"> 3</span></td>
+						<td class="points">17</td>
+					</tr>
+					<tr>
+						<td>Dmin</td>
+						<td><input size="1" value="2" disabled="true">-<input size="1" value="0" disabled="true"><span style="color: #00A859;"> 2</span></td>
+						<td><input size="1" value="2" disabled="true">-<input size="1" value="1" disabled="true"><span style="color: #00A859;"> 2</span></td>
+						<td><input size="1" value="3" disabled="true">-<input size="1" value="0" disabled="true"><span style="color: #00A859;"> 2</span></td>
+						<td><input size="1" value="1" disabled="true">-<input size="1" value="0" disabled="true"><span style="color: #00A859;"> 2</span></td>
+						<td><input size="1" value="3" disabled="true">-<input size="1" value="0" disabled="true"><span style="color: #00A859;"> 2</span></td>
+						<td><input size="1" value="2" disabled="true">-<input size="1" value="1" disabled="true"><span style="color: #00A859;"> 4</span></td>
+						<td><input size="1" value="3" disabled="true">-<input size="1" value="2" disabled="true"><span style="color: #00A859;"> 3</span></td>
+						<td><input size="1" value="1" disabled="true">-<input size="1" value="0" disabled="true"><span style="color: #00A859;"> 3</span></td>
+						<td class="points">20</td>
+					</tr>
+					<tr id="angle">
+						<td>Zajo <img height="25" width="25" src="img/cup.png" alt=""></img></td>
+						<td><input size="1" value="2" disabled="true">-<input size="1" value="1" disabled="true"><span style="color: #00A859;"> 3</span></td>
+						<td><input size="1" value="2" disabled="true">-<input size="1" value="1" disabled="true"><span style="color: #00A859;"> 2</span></td>
+						<td><input size="1" value="1" disabled="true">-<input size="1" value="0" disabled="true"><span style="color: #00A859;"> 3</span></td>
+						<td><input size="1" value="1" disabled="true">-<input size="1" value="0" disabled="true"><span style="color: #00A859;"> 2</span></td>
+						<td><input size="1" value="3" disabled="true">-<input size="1" value="1" disabled="true"><span style="color: #00A859;"> 3</span></td>
+						<td><input size="1" value="3" disabled="true">-<input size="1" value="0" disabled="true"><span style="color: #00A859;"> 2</span></td>
+						<td><input size="1" value="2" disabled="true">-<input size="1" value="1" disabled="true"><span style="color: #00A859;"> 3</span></td>
+						<td><input size="1" value="2" disabled="true">-<input size="1" value="1" disabled="true"><span style="color: #00A859;"> 4</span></td>
+						<td class="points"><b>22</b></td>
+					</tr>
+					<tr>
+						<td>Asia</td> 
+						<td><input size="1" value="2" disabled="true">-<input size="1" value="1" disabled="true"><span style="color: #00A859;"> 3</span></td>
+						<td><input size="1" value="2" disabled="true">-<input size="1" value="1" disabled="true"><span style="color: #00A859;"> 2</span></td>
+						<td><input size="1" value="2" disabled="true">-<input size="1" value="1" disabled="true"><span style="color: #00A859;"> 4</span></td>
+						<td><input size="1" value="1" disabled="true">-<input size="1" value="0" disabled="true"><span style="color: #00A859;"> 2</span></td>
+						<td><input size="1" value="2" disabled="true">-<input size="1" value="1" disabled="true"><span style="color: #00A859;"> 2</span></td>
+						<td><input size="1" value="3" disabled="true">-<input size="1" value="1" disabled="true"><span style="color: #00A859;"> 2</span></td>
+						<td><input size="1" value="2" disabled="true">-<input size="1" value="0" disabled="true"><span style="color: #00A859;"> 2</span></td>
+						<td><input size="1" value="2" disabled="true">-<input size="1" value="1" disabled="true"><span style="color: #00A859;"> 4</span></td>
+						<td class="points">21</td>
+					</tr>
+					<tr>
+						<td>Zdre</td>
+						<td><input size="1" value="2" disabled="true">-<input size="1" value="1" disabled="true"><span style="color: #00A859;"> 3</span></td>
+						<td><input size="1" value="1" disabled="true">-<input size="1" value="0" disabled="true"><span style="color: #00A859;"> 2</span></td>
+						<td><input size="1" value="2" disabled="true">-<input size="1" value="1" disabled="true"><span style="color: #00A859;"> 4</span></td>
+						<td><input size="1" value="0" disabled="true">-<input size="1" value="1" disabled="true"><span style="color: #00A859;"> 0</span></td>
+						<td><input size="1" value="2" disabled="true">-<input size="1" value="1" disabled="true"><span style="color: #00A859;"> 2</span></td>
+						<td><input size="1" value="2" disabled="true">-<input size="1" value="0" disabled="true"><span style="color: #00A859;"> 2</span></td>
+						<td><input size="1" value="3" disabled="true">-<input size="1" value="1" disabled="true"><span style="color: #00A859;"> 2</span></td>
+						<td><input size="1" value="1" disabled="true">-<input size="1" value="0" disabled="true"><span style="color: #00A859;"> 3</span></td>
+						<td class="points">18</td>
+					</tr>
+					<tr>
+						<td>Kamiloss</td>
+						<td><input size="1" value="3" disabled="true">-<input size="1" value="2" disabled="true"><span style="color: #00A859;"> 3</span></td>
+						<td><input size="1" value="1" disabled="true">-<input size="1" value="2" disabled="true"><span style="color: #00A859;"> 0</span></td>
+						<td><input size="1" value="3" disabled="true">-<input size="1" value="2" disabled="true"><span style="color: #00A859;"> 3</span></td>
+						<td><input size="1" value="2" disabled="true">-<input size="1" value="0" disabled="true"><span style="color: #00A859;"> 3</span></td>
+						<td><input size="1" value="2" disabled="true">-<input size="1" value="0" disabled="true"><span style="color: #00A859;"> 4</span></td>
+						<td><input size="1" value="2" disabled="true">-<input size="1" value="0" disabled="true"><span style="color: #00A859;"> 2</span></td>
+						<td><input size="1" value="2" disabled="true">-<input size="1" value="1" disabled="true"><span style="color: #00A859;"> 3</span></td>
+						<td><input size="1" value="1" disabled="true">-<input size="1" value="2" disabled="true"><span style="color: #00A859;"> 0</span></td>
+						<td class="points">18</td>
+					</tr>
+					<tr>
+						<td>Bojler</td>
+						<td><input size="1" value="1" disabled="true">-<input size="1" value="0" disabled="true"><span style="color: #00A859;"> 3</span></td>
+						<td><input size="1" value="2" disabled="true">-<input size="1" value="1" disabled="true"><span style="color: #00A859;"> 2</span></td>
+						<td><input size="1" value="2" disabled="true">-<input size="1" value="1" disabled="true"><span style="color: #00A859;"> 4</span></td>
+						<td><input size="1" value="0" disabled="true">-<input size="1" value="1" disabled="true"><span style="color: #00A859;"> 0</span></td>
+						<td><input size="1" value="3" disabled="true">-<input size="1" value="0" disabled="true"><span style="color: #00A859;"> 2</span></td>
+						<td><input size="1" value="3" disabled="true">-<input size="1" value="0" disabled="true"><span style="color: #00A859;"> 2</span></td>
+						<td><input size="1" value="1" disabled="true">-<input size="1" value="0" disabled="true"><span style="color: #00A859;"> 4</span></td>
+						<td><input size="1" value="1" disabled="true">-<input size="1" value="0" disabled="true"><span style="color: #00A859;"> 3</span></td>
+						<td class="points">20</td>
+					</tr>
+				</table>			
+				</div>
+				
+
+			<h4 style="text-align: center;">Runda 7</h4>
+			<div class='standings7'>
+				<table>
+					<thead>
+						<tr>
+							<th style="background-color: #fff;" rowspan="4"></th>
+							<th><img height="15" width="22" src="flags/nigeria.png" alt=""></img>NIG</th>
+							<th><img height="15" width="22" src="flags/bosnia_and_herzegovina.png" alt=""></img>BOS</th>
+							<th><img height="15" width="22" src="flags/honduras.png" alt="">HON</th>
+							<th><img height="15" width="22" src="flags/ecuador.png" alt="">EKW</th>
+							<th><img height="15" width="22" src="flags/portugal.png" alt="">POR</th>
+							<th><img height="15" width="22" src="flags/usa.png" alt="">USA</th>
+							<th><img height="15" width="22" src="flags/south_korea.png" alt="">KOR</th>
+							<th><img height="15" width="22" src="flags/algeria.png" alt="">ALG</th>
+						</tr>
+						<tr>
+							<th>2-3</th>
+							<th>3-1</th>
+							<th>0-3</th>
+							<th>0-0</th>
+							<th>2-1</th>
+							<th>0-1</th>
+							<th>0-1</th>
+							<th>1-1</th>
+						</tr>
+						<tr>
+							<th><img height="15" width="22" src="flags/argentina.png" alt=""></img>ARG</th>
+							<th><img height="15" width="22" src="flags/iran.png" alt=""></img>IRA</th>
+							<th><img height="15" width="22" src="flags/switzerland.png" alt="">SZW</th>
+							<th><img height="15" width="22" src="flags/france.png" alt="">FRA</th>
+							<th><img height="15" width="22" src="flags/ghana.png" alt="">GHA</th>
+							<th><img height="15" width="22" src="flags/germany.png" alt="">NIE</th>
+							<th><img height="15" width="22" src="flags/belgium.png" alt="">BEL</th>
+							<th><img height="15" width="22" src="flags/russia.png" alt="">ROS</th>
+						</tr>
+						<tr>
+							<th><small>8.00	/ 3.80 / 1.50</small></th>
+							<th><small>2.10 / 3.40 / 3.55</small></th>
+							<th><small>8.00 / 4.50 / 1.42</small></th>
+							<th><small>4.50	/ 3.65 / 1.80</small></th>
+							<th><small>2.15	/ 3.80 / 3.10</small></th>
+							<th><small>9.50	/ 2.60 / 1.75</small></th>
+							<th><small>4.80	/ 3.65 / 1.75</small></th>
+							<th><small>3.55	/ 3.40 / 2.10</small></th>
+							<th rowspan = 4 class="points">Pkt</th>
+						</tr>
+					</thead>
+					<tr id="angle">
+						<td>Ola <img height="25" width="25" src="img/cup.png" alt=""></img></td>
+						<td><input size="1" value="1" disabled="true">-<input size="1" value="2" disabled="true"><span style="color: #00A859;"> 3</span></td>
+						<td><input size="1" value="1" disabled="true">-<input size="1" value="0" disabled="true"><span style="color: #00A859;"> 2</span></td>
+						<td><input size="1" value="2" disabled="true">-<input size="1" value="0" disabled="true"><span style="color: #00A859;"> 0</span></td>
+						<td><input size="1" value="1" disabled="true">-<input size="1" value="1" disabled="true"><span style="color: #00A859;"> 2</span></td>
+						<td><input size="1" value="1" disabled="true">-<input size="1" value="0" disabled="true"><span style="color: #00A859;"> 3</span></td>
+						<td><input size="1" value="1" disabled="true">-<input size="1" value="3" disabled="true"><span style="color: #00A859;"> 2</span></td>
+						<td><input size="1" value="0" disabled="true">-<input size="1" value="1" disabled="true"><span style="color: #00A859;"> 4</span></td>
+						<td><input size="1" value="1" disabled="true">-<input size="1" value="0" disabled="true"><span style="color: #00A859;"> 0</span></td>
+						<td class="points"><b>16</b></td>
+					</tr>
+					<tr>
+						<td>Dmin</td>
+						<td><input size="1" value="0" disabled="true">-<input size="1" value="2" disabled="true"><span style="color: #00A859;"> 2</span></td>
+						<td><input size="1" value="2" disabled="true">-<input size="1" value="0" disabled="true"><span style="color: #00A859;"> 3</span></td>
+						<td><input size="1" value="1" disabled="true">-<input size="1" value="2" disabled="true"><span style="color: #00A859;"> 2</span></td>
+						<td><input size="1" value="1" disabled="true">-<input size="1" value="2" disabled="true"><span style="color: #00A859;"> 0</span></td>
+						<td><input size="1" value="2" disabled="true">-<input size="1" value="1" disabled="true"><span style="color: #00A859;"> 4</span></td>
+						<td><input size="1" value="2" disabled="true">-<input size="1" value="2" disabled="true"><span style="color: #00A859;"> 0</span></td>
+						<td><input size="1" value="0" disabled="true">-<input size="1" value="2" disabled="true"><span style="color: #00A859;"> 2</span></td>
+						<td><input size="1" value="1" disabled="true">-<input size="1" value="0" disabled="true"><span style="color: #00A859;"> 0</span></td>
+						<td class="points">13</td>
+					</tr>
+					<tr>
+						<td>Zajo</td>
+						<td><input size="1" value="1" disabled="true">-<input size="1" value="2" disabled="true"><span style="color: #00A859;"> 3</span></td>
+						<td><input size="1" value="1" disabled="true">-<input size="1" value="1" disabled="true"><span style="color: #00A859;"> 0</span></td>
+						<td><input size="1" value="1" disabled="true">-<input size="1" value="2" disabled="true"><span style="color: #00A859;"> 2</span></td>
+						<td><input size="1" value="1" disabled="true">-<input size="1" value="3" disabled="true"><span style="color: #00A859;"> 0</span></td>
+						<td><input size="1" value="1" disabled="true">-<input size="1" value="2" disabled="true"><span style="color: #00A859;"> 0</span></td>
+						<td><input size="1" value="1" disabled="true">-<input size="1" value="2" disabled="true"><span style="color: #00A859;"> 3</span></td>
+						<td><input size="1" value="1" disabled="true">-<input size="1" value="2" disabled="true"><span style="color: #00A859;"> 3</span></td>
+						<td><input size="1" value="1" disabled="true">-<input size="1" value="1" disabled="true"><span style="color: #00A859;"> 4</span></td>
+						<td class="points">15</td>
+					</tr>
+					<tr>
+						<td>Asia</td> 
+						<td><input size="1" value="1" disabled="true">-<input size="1" value="3" disabled="true"><span style="color: #00A859;"> 2</span></td>
+						<td><input size="1" value="1" disabled="true">-<input size="1" value="1" disabled="true"><span style="color: #00A859;"> 0</span></td>
+						<td><input size="1" value="0" disabled="true">-<input size="1" value="2" disabled="true"><span style="color: #00A859;"> 2</span></td>
+						<td><input size="1" value="0" disabled="true">-<input size="1" value="2" disabled="true"><span style="color: #00A859;"> 0</span></td>
+						<td><input size="1" value="1" disabled="true">-<input size="1" value="1" disabled="true"><span style="color: #00A859;"> 0</span></td>
+						<td><input size="1" value="1" disabled="true">-<input size="1" value="3" disabled="true"><span style="color: #00A859;"> 2</span></td>
+						<td><input size="1" value="0" disabled="true">-<input size="1" value="2" disabled="true"><span style="color: #00A859;"> 2</span></td>
+						<td><input size="1" value="2" disabled="true">-<input size="1" value="1" disabled="true"><span style="color: #00A859;"> 0</span></td>
+						<td class="points">8</td>
+					</tr>
+					<tr>
+						<td>Zdre</td>
+						<td><input size="1" value="1" disabled="true">-<input size="1" value="2" disabled="true"><span style="color: #00A859;"> 3</span></td>
+						<td><input size="1" value="1" disabled="true">-<input size="1" value="0" disabled="true"><span style="color: #00A859;"> 2</span></td>
+						<td><input size="1" value="1" disabled="true">-<input size="1" value="3" disabled="true"><span style="color: #00A859;"> 2</span></td>
+						<td><input size="1" value="1" disabled="true">-<input size="1" value="1" disabled="true"><span style="color: #00A859;"> 2</span></td>
+						<td><input size="1" value="1" disabled="true">-<input size="1" value="1" disabled="true"><span style="color: #00A859;"> 0</span></td>
+						<td><input size="1" value="1" disabled="true">-<input size="1" value="2" disabled="true"><span style="color: #00A859;"> 3</span></td>
+						<td><input size="1" value="1" disabled="true">-<input size="1" value="2" disabled="true"><span style="color: #00A859;"> 3</span></td>
+						<td><input size="1" value="1" disabled="true">-<input size="1" value="2" disabled="true"><span style="color: #00A859;"> 0</span></td>
+						<td class="points">15</td>
+					</tr>
+					<tr>
+						<td>Kamiloss</td>
+						<td><input size="1" value="0" disabled="true">-<input size="1" value="3" disabled="true"><span style="color: #00A859;"> 2</span></td>
+						<td><input size="1" value="1" disabled="true">-<input size="1" value="0" disabled="true"><span style="color: #00A859;"> 2</span></td>
+						<td><input size="1" value="2" disabled="true">-<input size="1" value="1" disabled="true"><span style="color: #00A859;"> 0</span></td>
+						<td><input size="1" value="1" disabled="true">-<input size="1" value="3" disabled="true"><span style="color: #00A859;"> 0</span></td>
+						<td><input size="1" value="2" disabled="true">-<input size="1" value="2" disabled="true"><span style="color: #00A859;"> 0</span></td>
+						<td><input size="1" value="1" disabled="true">-<input size="1" value="3" disabled="true"><span style="color: #00A859;"> 2</span></td>
+						<td><input size="1" value="0" disabled="true">-<input size="1" value="2" disabled="true"><span style="color: #00A859;"> 2</span></td>
+						<td><input size="1" value="2" disabled="true">-<input size="1" value="1" disabled="true"><span style="color: #00A859;"> 0</span></td>
+						<td class="points">8</td>
+					</tr>
+					<tr>
+						<td>Bojler</td>
+						<td><input size="1" value="0" disabled="true">-<input size="1" value="2" disabled="true"><span style="color: #00A859;"> 2</span></td>
+						<td><input size="1" value="1" disabled="true">-<input size="1" value="0" disabled="true"><span style="color: #00A859;"> 2</span></td>
+						<td><input size="1" value="0" disabled="true">-<input size="1" value="2" disabled="true"><span style="color: #00A859;"> 2</span></td>
+						<td><input size="1" value="0" disabled="true">-<input size="1" value="2" disabled="true"><span style="color: #00A859;"> 0</span></td>
+						<td><input size="1" value="0" disabled="true">-<input size="1" value="1" disabled="true"><span style="color: #00A859;"> 0</span></td>
+						<td><input size="1" value="1" disabled="true">-<input size="1" value="2" disabled="true"><span style="color: #00A859;"> 3</span></td>
+						<td><input size="1" value="0" disabled="true">-<input size="1" value="2" disabled="true"><span style="color: #00A859;"> 2</span></td>
+						<td><input size="1" value="2" disabled="true">-<input size="1" value="1" disabled="true"><span style="color: #00A859;"> 0</span></td>
+						<td class="points">11</td>
+					</tr>
+				</table>			
+				</div>
+				
+
+			<h4 style="text-align: center;">Runda 6</h4>
+			<div class='standings6'>
+				<table>
+					<thead>
+						<tr>
+							<th style="background-color: #fff;" rowspan="4"></th>
+							<th><img height="15" width="22" src="flags/australia.png" alt=""></img>AUS</th>
+							<th><img height="15" width="22" src="flags/netherlands.png" alt=""></img>HOL</th>
+							<th><img height="15" width="22" src="flags/cameroon.png" alt="">KAM</th>
+							<th><img height="15" width="22" src="flags/croatia.png" alt="">CHO</th>
+							<th><img height="15" width="22" src="flags/italy.png" alt="">WŁO</th>
+							<th><img height="15" width="22" src="flags/costa_rica.png" alt="">KOS</th>
+							<th><img height="15" width="22" src="flags/japan.png" alt="">JAP</th>
+							<th><img height="15" width="22" src="flags/greece.png" alt="">GRE</th>
+						</tr>
+						<tr>
+							<th>0-3</th>
+							<th>2-0</th>
+							<th>1-4</th>
+							<th>1-3</th>
+							<th>0-1</th>
+							<th>0-0</th>
+							<th>1-4</th>
+							<th>2-1</th>
+						</tr>
+						<tr>
+							<th><img height="15" width="22" src="flags/spain.png" alt=""></img>HIS</th>
+							<th><img height="15" width="22" src="flags/chile.png" alt=""></img>CHI</th>
+							<th><img height="15" width="22" src="flags/brazil.png" alt="">BRA</th>
+							<th><img height="15" width="22" src="flags/mexico.png" alt="">MEK</th>
+							<th><img height="15" width="22" src="flags/uruguay.png" alt="">URU</th>
+							<th><img height="15" width="22" src="flags/england.png" alt="">ANG</th>
+							<th><img height="15" width="22" src="flags/colombia.png" alt="">KOL</th>
+							<th><img height="15" width="22" src="flags/cote_d'ivoire.png" alt="">WKS</th>
+						</tr>
+						<tr>
+							<th><small>8.00	/ 4.90 / 1.38</small></th>
+							<th><small>2.55	/ 3.40 / 2.75</small></th>
+							<th><small>20.0	/ 9.00 / 1.12</small></th>
+							<th><small>2.50	/ 3.40 / 2.85</small></th>
+							<th><small>2.65	/ 3.25 / 2.70</small></th>
+							<th><small>4.10	/ 3.70 / 1.85</small></th>
+							<th><small>3.10	/ 3.40 / 2.30</small></th>
+							<th><small>3.75	/ 3.50 / 2.00</small></th>
+							<th rowspan = 4 class="points">Pkt</th>
+						</tr>
+					</thead>
+					<tr>
+						<td>Ola</td>
+						<td><input size="1" value="1" disabled="true">-<input size="1" value="0" disabled="true"><span style="color: #00A859;"> 0</span></td>
+						<td><input size="1" value="2" disabled="true">-<input size="1" value="1" disabled="true"><span style="color: #00A859;"> 2</span></td>
+						<td><input size="1" value="0" disabled="true">-<input size="1" value="3" disabled="true"><span style="color: #00A859;"> 3</span></td>
+						<td><input size="1" value="2" disabled="true">-<input size="1" value="1" disabled="true"><span style="color: #00A859;"> 0</span></td>
+						<td><input size="1" value="0" disabled="true">-<input size="1" value="1" disabled="true"><span style="color: #00A859;"> 4</span></td>
+						<td><input size="1" value="1" disabled="true">-<input size="1" value="2" disabled="true"><span style="color: #00A859;"> 0</span></td>
+						<td><input size="1" value="1" disabled="true">-<input size="1" value="1" disabled="true"><span style="color: #00A859;"> 0</span></td>
+						<td><input size="1" value="0" disabled="true">-<input size="1" value="1" disabled="true"><span style="color: #00A859;"> 0</span></td>
+						<td class="points">9</td>
+					</tr>
+					<tr>
+						<td>Dmin</td>
+						<td><input size="1" value="2" disabled="true">-<input size="1" value="0" disabled="true"><span style="color: #00A859;"> 0</span></td>
+						<td><input size="1" value="3" disabled="true">-<input size="1" value="1" disabled="true"><span style="color: #00A859;"> 3</span></td>
+						<td><input size="1" value="0" disabled="true">-<input size="1" value="3" disabled="true"><span style="color: #00A859;"> 3</span></td>
+						<td><input size="1" value="2" disabled="true">-<input size="1" value="1" disabled="true"><span style="color: #00A859;"> 0</span></td>
+						<td><input size="1" value="0" disabled="true">-<input size="1" value="1" disabled="true"><span style="color: #00A859;"> 4</span></td>
+						<td><input size="1" value="3" disabled="true">-<input size="1" value="1" disabled="true"><span style="color: #00A859;"> 0</span></td>
+						<td><input size="1" value="1" disabled="true">-<input size="1" value="2" disabled="true"><span style="color: #00A859;"> 2</span></td>
+						<td><input size="1" value="0" disabled="true">-<input size="1" value="2" disabled="true"><span style="color: #00A859;"> 0</span></td>
+						<td class="points">12</td>
+					</tr>
+					<tr>
+						<td>Zajo</td>
+						<td><input size="1" value="1" disabled="true">-<input size="1" value="2" disabled="true"><span style="color: #00A859;"> 2</span></td>
+						<td><input size="1" value="1" disabled="true">-<input size="1" value="1" disabled="true"><span style="color: #00A859;"> 0</span></td>
+						<td><input size="1" value="0" disabled="true">-<input size="1" value="3" disabled="true"><span style="color: #00A859;"> 3</span></td>
+						<td><input size="1" value="1" disabled="true">-<input size="1" value="1" disabled="true"><span style="color: #00A859;"> 0</span></td>
+						<td><input size="1" value="2" disabled="true">-<input size="1" value="1" disabled="true"><span style="color: #00A859;"> 0</span></td>
+						<td><input size="1" value="1" disabled="true">-<input size="1" value="2" disabled="true"><span style="color: #00A859;"> 0</span></td>
+						<td><input size="1" value="1" disabled="true">-<input size="1" value="1" disabled="true"><span style="color: #00A859;"> 0</span></td>
+						<td><input size="1" value="1" disabled="true">-<input size="1" value="2" disabled="true"><span style="color: #00A859;"> 0</span></td>
+						<td class="points">5</td>
+					</tr>
+					<tr>
+						<td>Asia</td> 
+						<td><input size="1" value="1" disabled="true">-<input size="1" value="3" disabled="true"><span style="color: #00A859;"> 2</span></td>
+						<td><input size="1" value="1" disabled="true">-<input size="1" value="1" disabled="true"><span style="color: #00A859;"> 0</span></td>
+						<td><input size="1" value="0" disabled="true">-<input size="1" value="4" disabled="true"><span style="color: #00A859;"> 2</span></td>
+						<td><input size="1" value="1" disabled="true">-<input size="1" value="1" disabled="true"><span style="color: #00A859;"> 0</span></td>
+						<td><input size="1" value="2" disabled="true">-<input size="1" value="1" disabled="true"><span style="color: #00A859;"> 0</span></td>
+						<td><input size="1" value="2" disabled="true">-<input size="1" value="0" disabled="true"><span style="color: #00A859;"> 0</span></td>
+						<td><input size="1" value="1" disabled="true">-<input size="1" value="2" disabled="true"><span style="color: #00A859;"> 2</span></td>
+						<td><input size="1" value="1" disabled="true">-<input size="1" value="2" disabled="true"><span style="color: #00A859;"> 0</span></td>
+						<td class="points">6</td>
+					</tr>
+					<tr>
+						<td>Zdre</td>
+						<td><input size="1" value="0" disabled="true">-<input size="1" value="3" disabled="true"><span style="color: #00A859;"> 4</span></td>
+						<td><input size="1" value="1" disabled="true">-<input size="1" value="1" disabled="true"><span style="color: #00A859;"> 0</span></td>
+						<td><input size="1" value="0" disabled="true">-<input size="1" value="2" disabled="true"><span style="color: #00A859;"> 2</span></td>
+						<td><input size="1" value="2" disabled="true">-<input size="1" value="1" disabled="true"><span style="color: #00A859;"> 0</span></td>
+						<td><input size="1" value="1" disabled="true">-<input size="1" value="1" disabled="true"><span style="color: #00A859;"> 0</span></td>
+						<td><input size="1" value="0" disabled="true">-<input size="1" value="1" disabled="true"><span style="color: #00A859;"> 0</span></td>
+						<td><input size="1" value="1" disabled="true">-<input size="1" value="2" disabled="true"><span style="color: #00A859;"> 2</span></td>
+						<td><input size="1" value="1" disabled="true">-<input size="1" value="1" disabled="true"><span style="color: #00A859;"> 0</span></td>
+						<td class="points">8</td>
+					</tr>
+					<tr id="angle">
+						<td>Kamiloss <img height="25" width="25" src="img/cup.png" alt=""></img></td>
+						<td><input size="1" value="0" disabled="true">-<input size="1" value="2" disabled="true"><span style="color: #00A859;"> 2</span></td>
+						<td><input size="1" value="3" disabled="true">-<input size="1" value="2" disabled="true"><span style="color: #00A859;"> 2</span></td>
+						<td><input size="1" value="0" disabled="true">-<input size="1" value="2" disabled="true"><span style="color: #00A859;"> 2</span></td>
+						<td><input size="1" value="1" disabled="true">-<input size="1" value="2" disabled="true"><span style="color: #00A859;"> 2</span></td>
+						<td><input size="1" value="1" disabled="true">-<input size="1" value="2" disabled="true"><span style="color: #00A859;"> 3</span></td>
+						<td><input size="1" value="1" disabled="true">-<input size="1" value="2" disabled="true"><span style="color: #00A859;"> 0</span></td>
+						<td><input size="1" value="0" disabled="true">-<input size="1" value="1" disabled="true"><span style="color: #00A859;"> 2</span></td>
+						<td><input size="1" value="0" disabled="true">-<input size="1" value="1" disabled="true"><span style="color: #00A859;"> 0</span></td>
+						<td class="points"><b>13</b></td>
+					</tr>
+					<tr>
+						<td>Bojler</td>
+						<td><input size="1" value="2" disabled="true">-<input size="1" value="0" disabled="true"><span style="color: #00A859;"> 0</span></td>
+						<td><input size="1" value="2" disabled="true">-<input size="1" value="1" disabled="true"><span style="color: #00A859;"> 2</span></td>
+						<td><input size="1" value="0" disabled="true">-<input size="1" value="2" disabled="true"><span style="color: #00A859;"> 2</span></td>
+						<td><input size="1" value="2" disabled="true">-<input size="1" value="1" disabled="true"><span style="color: #00A859;"> 0</span></td>
+						<td><input size="1" value="1" disabled="true">-<input size="1" value="0" disabled="true"><span style="color: #00A859;"> 0</span></td>
+						<td><input size="1" value="0" disabled="true">-<input size="1" value="1" disabled="true"><span style="color: #00A859;"> 0</span></td>
+						<td><input size="1" value="0" disabled="true">-<input size="1" value="2" disabled="true"><span style="color: #00A859;"> 2</span></td>
+						<td><input size="1" value="0" disabled="true">-<input size="1" value="0" disabled="true"><span style="color: #00A859;"> 0</span></td>
+						<td class="points">6</td>
+					</tr>
+				</table>			
+				</div>
+		
+		
+		<h4 style="text-align: center;">Runda 5</h4>
+			<div class='standings5'>
+				<table>
+					<thead>
+						<tr>
+							<th style="background-color: #fff;" rowspan="4">
+							<th><img height="15" width="22" src="flags/argentina.png" alt=""></img>ARG</th>
+							<th><img height="15" width="22" src="flags/germany.png" alt=""></img>GER</th>
+							<th><img height="15" width="22" src="flags/nigeria.png" alt="">NIG</th>
+							<th><img height="15" width="22" src="flags/belgium.png" alt="">BEL</th>
+							<th><img height="15" width="22" src="flags/south_korea.png" alt="">KOR</th>
+							<th><img height="15" width="22" src="flags/usa.png" alt="">USA</th>
+						</tr>
+						<tr>
+							<th>1-0</th>
+							<th>2-2</th>
+							<th>1-0</th>
+							<th>1-0</th>
+							<th>2-4</th>
+							<th>2-2</th>
+						</tr>
+						<tr>
+							<th><img height="15" width="22" src="flags/iran.png" alt=""></img>IRA</th>
+							<th><img height="15" width="22" src="flags/ghana.png" alt=""></img>GHA</th>
+							<th><img height="15" width="22" src="flags/bosnia_and_herzegovina.png" alt="">BOS</th>
+							<th><img height="15" width="22" src="flags/russia.png" alt="">ROS</th>
+							<th><img height="15" width="22" src="flags/algeria.png" alt="">ALG</th>
+							<th><img height="15" width="22" src="flags/portugal.png" alt="">POR</th>
+						</tr>
+						<tr>
+							<th><small>1.12	/ 9.00 / 21.0</small></th>
+							<th><small>1.27	/ 6.00 / 10.0</small></th>
+							<th><small>4.30	/ 3.60 / 1.85</small></th>
+							<th><small>1.95	/ 3.50 / 3.90</small></th>
+							<th><small>2.30	/ 3.20 / 3.30</small></th>
+							<th><small>5.00	/ 3.80 / 1.70</small></th>
+							<th rowspan = 4 class="points">Pkt</th>
+						</tr>
+					</thead>
+					<tr>
+						<td>Ola</td>					
+						<td><input size="1" value="3" disabled="true">-<input size="1" value="1" disabled="true"><span style="color: #00A859;"> 2</span></td>
+						<td><input size="1" value="4" disabled="true">-<input size="1" value="1" disabled="true"><span style="color: #00A859;"> 0</span></td>
+						<td><input size="1" value="1" disabled="true">-<input size="1" value="2" disabled="true"><span style="color: #00A859;"> 0</span></td>
+						<td><input size="1" value="2" disabled="true">-<input size="1" value="0" disabled="true"><span style="color: #00A859;"> 2</span></td>
+						<td><input size="1" value="0" disabled="true">-<input size="1" value="1" disabled="true"><span style="color: #00A859;"> 2</span></td>
+						<td><input size="1" value="0" disabled="true">-<input size="1" value="1" disabled="true"><span style="color: #00A859;"> 0</span></td>
+						<td class="points">6</td>
+					</tr>
+					<tr>
+						<td>Dmin</td>
+						<td><input size="1" value="4" disabled="true">-<input size="1" value="0" disabled="true"><span style="color: #00A859;"> 2</span></td>
+						<td><input size="1" value="3" disabled="true">-<input size="1" value="0" disabled="true"><span style="color: #00A859;"> 0</span></td>
+						<td><input size="1" value="0" disabled="true">-<input size="1" value="2" disabled="true"><span style="color: #00A859;"> 0</span></td>
+						<td><input size="1" value="1" disabled="true">-<input size="1" value="1" disabled="true"><span style="color: #00A859;"> 0</span></td>
+						<td><input size="1" value="1" disabled="true">-<input size="1" value="1" disabled="true"><span style="color: #00A859;"> 0</span></td>
+						<td><input size="1" value="2" disabled="true">-<input size="1" value="2" disabled="true"><span style="color: #00A859;"> 4</span></td>
+						<td class="points">6</td>
+					</tr>
+					<tr id="angle">
+						<td style="width: 150px;">Surowy Krupier <img height="25" width="25" src="img/cup.png" alt=""></img></td>
+						<td><input size="1" value="4" disabled="true">-<input size="1" value="0" disabled="true"><span style="color: #00A859;"> 2</span></td>
+						<td><input size="1" value="1" disabled="true">-<input size="1" value="1" disabled="true"><span style="color: #00A859;"> 2</span></td>
+						<td><input size="1" value="0" disabled="true">-<input size="1" value="1" disabled="true"><span style="color: #00A859;"> 0</span></td>
+						<td><input size="1" value="2" disabled="true">-<input size="1" value="1" disabled="true"><span style="color: #00A859;"> 3</span></td>
+						<td><input size="1" value="1" disabled="true">-<input size="1" value="1" disabled="true"><span style="color: #00A859;"> 0</span></td>
+						<td><input size="1" value="1" disabled="true">-<input size="1" value="2" disabled="true"><span style="color: #00A859;"> 0</span></td>
+						<td class="points"><b>7</b></td>
+					</tr>
+					<tr>
+						<td>Asia</td> 
+						<td><input size="1" value="4" disabled="true">-<input size="1" value="1" disabled="true"><span style="color: #00A859;"> 2</span></td>
+						<td><input size="1" value="2" disabled="true">-<input size="1" value="0" disabled="true"><span style="color: #00A859;"> 0</span></td>
+						<td><input size="1" value="1" disabled="true">-<input size="1" value="2" disabled="true"><span style="color: #00A859;"> 0</span></td>
+						<td><input size="1" value="2" disabled="true">-<input size="1" value="1" disabled="true"><span style="color: #00A859;"> 3</span></td>
+						<td><input size="1" value="1" disabled="true">-<input size="1" value="1" disabled="true"><span style="color: #00A859;"> 0</span></td>
+						<td><input size="1" value="2" disabled="true">-<input size="1" value="3" disabled="true"><span style="color: #00A859;"> 0</span></td>
+						<td class="points">5</td>
+					</tr>
+					<tr>
+						<td>Zdre</td>
+						<td><input size="1" value="3" disabled="true">-<input size="1" value="0" disabled="true"><span style="color: #00A859;"> 2</span></td>
+						<td><input size="1" value="2" disabled="true">-<input size="1" value="0" disabled="true"><span style="color: #00A859;"> 0</span></td>
+						<td><input size="1" value="1" disabled="true">-<input size="1" value="2" disabled="true"><span style="color: #00A859;"> 0</span></td>
+						<td><input size="1" value="1" disabled="true">-<input size="1" value="1" disabled="true"><span style="color: #00A859;"> 0</span></td>
+						<td><input size="1" value="2" disabled="true">-<input size="1" value="1" disabled="true"><span style="color: #00A859;"> 0</span></td>
+						<td><input size="1" value="1" disabled="true">-<input size="1" value="1" disabled="true"><span style="color: #00A859;"> 2</span></td>
+						<td class="points">4</td>
+					</tr>
+					<tr>
+						<td>Kamiloss</td>
+						<td><input size="1" value="3" disabled="true">-<input size="1" value="0" disabled="true"><span style="color: #00A859;"> 2</span></td>
+						<td><input size="1" value="3" disabled="true">-<input size="1" value="0" disabled="true"><span style="color: #00A859;"> 0</span></td>
+						<td><input size="1" value="1" disabled="true">-<input size="1" value="2" disabled="true"><span style="color: #00A859;"> 0</span></td>
+						<td><input size="1" value="1" disabled="true">-<input size="1" value="0" disabled="true"><span style="color: #00A859;"> 4</span></td>
+						<td><input size="1" value="1" disabled="true">-<input size="1" value="0" disabled="true"><span style="color: #00A859;"> 0</span></td>
+						<td><input size="1" value="1" disabled="true">-<input size="1" value="2" disabled="true"><span style="color: #00A859;"> 0</span></td>
+						<td class="points">6</td>
+					</tr>
+					<tr>
+						<td>Bojler</td>
+						<td><input size="1" value="3" disabled="true">-<input size="1" value="0" disabled="true"><span style="color: #00A859;"> 2</span></td>
+						<td><input size="1" value="3" disabled="true">-<input size="1" value="0" disabled="true"><span style="color: #00A859;"> 0</span></td>
+						<td><input size="1" value="0" disabled="true">-<input size="1" value="2" disabled="true"><span style="color: #00A859;"> 0</span></td>
+						<td><input size="1" value="1" disabled="true">-<input size="1" value="2" disabled="true"><span style="color: #00A859;"> 0</span></td>
+						<td><input size="1" value="1" disabled="true">-<input size="1" value="0" disabled="true"><span style="color: #00A859;"> 0</span></td>
+						<td><input size="1" value="2" disabled="true">-<input size="1" value="0" disabled="true"><span style="color: #00A859;"> 0</span></td>
+						<td class="points">2</td>
+					</tr>
+				</table>			
+				</div>
+
+		
+<h4 style="text-align: center;">Runda 4</h4>
+			<div class='standings4'>
+				<table>
+					<thead>
+						<tr>
+							<th style="background-color: #fff;" rowspan="4">
+							<th><img height="15" width="22" src="flags/colombia.png" alt=""></img>KOL</th>
+							<th><img height="15" width="22" src="flags/uruguay.png" alt=""></img>URU</th>
+							<th><img height="15" width="22" src="flags/japan.png" alt="">JAP</th>
+							<th><img height="15" width="22" src="flags/italy.png" alt="">WŁO</th>
+							<th><img height="15" width="22" src="flags/switzerland.png" alt="">SZW</th>
+							<th><img height="15" width="22" src="flags/honduras.png" alt="">HON</th>
+						</tr>
+						<tr>
+							<th>2-1</th>
+							<th>2-1</th>
+							<th>0-0</th>
+							<th>0-1</th>
+							<th>2-5</th>
+							<th>1-2</th>
+						</tr>
+						<tr>
+							<th><img height="15" width="22" src="flags/cote_d'ivoire.png" alt=""></img>WKS</th>
+							<th><img height="15" width="22" src="flags/england.png" alt=""></img>ANG</th>
+							<th><img height="15" width="22" src="flags/greece.png" alt="">GRE</th>
+							<th><img height="15" width="22" src="flags/costa_rica.png" alt="">KOS</th>
+							<th><img height="15" width="22" src="flags/france.png" alt="">FRA</th>
+							<th><img height="15" width="22" src="flags/ecuador.png" alt="">EKW</th>
+						</tr>
+						<tr>
+							<th><small>2.10	/ 3.35 / 3.60</small></th>
+							<th><small>3.50	/ 3.35 / 2.15</small></th>
+							<th><small>2.10	/ 3.30 / 3.65</small></th>
+							<th><small>1.50	/ 4.30 / 6.50</small></th>
+							<th><small>4.75	/ 3.65 / 1.75</small></th>
+							<th><small>5.60	/ 4.00 / 1.60</small></th>
+							<th rowspan = 4 class="points">Pkt</th>
+						</tr>
+					</thead>
+					<tr>
+						<td>Ola</td>
+						<td><input size="1" value="1" disabled="true">-<input size="1" value="0" disabled="true"><span style="color: #00A859;"> 3</span></td>
+						<td><input size="1" value="0" disabled="true">-<input size="1" value="2" disabled="true"><span style="color: #00A859;"> 0</span></td>
+						<td><input size="1" value="1" disabled="true">-<input size="1" value="0" disabled="true"><span style="color: #00A859;"> 0</span></td>
+						<td><input size="1" value="3" disabled="true">-<input size="1" value="1" disabled="true"><span style="color: #00A859;"> 0</span></td>
+						<td><input size="1" value="0" disabled="true">-<input size="1" value="2" disabled="true"><span style="color: #00A859;"> 2</span></td>
+						<td><input size="1" value="0" disabled="true">-<input size="1" value="1" disabled="true"><span style="color: #00A859;"> 3</span></td>
+						<td class="points">8</td>
+					</tr>
+					<tr>
+						<td>Dmin</td>
+						<td><input size="1" value="2" disabled="true">-<input size="1" value="0" disabled="true"><span style="color: #00A859;"> 2</span></td>
+						<td><input size="1" value="0" disabled="true">-<input size="1" value="2" disabled="true"><span style="color: #00A859;"> 0</span></td>
+						<td><input size="1" value="2" disabled="true">-<input size="1" value="0" disabled="true"><span style="color: #00A859;"> 0</span></td>
+						<td><input size="1" value="3" disabled="true">-<input size="1" value="0" disabled="true"><span style="color: #00A859;"> 0</span></td>
+						<td><input size="1" value="0" disabled="true">-<input size="1" value="3" disabled="true"><span style="color: #00A859;"> 3</span></td>
+						<td><input size="1" value="0" disabled="true">-<input size="1" value="1" disabled="true"><span style="color: #00A859;"> 3</span></td>
+						<td class="points">8</td>
+					</tr>
+					<tr>
+						<td>Zajo</td>
+						<td><input size="1" value="2" disabled="true">-<input size="1" value="2" disabled="true"><span style="color: #00A859;"> 0</span></td>
+						<td><input size="1" value="1" disabled="true">-<input size="1" value="2" disabled="true"><span style="color: #00A859;"> 0</span></td>
+						<td><input size="1" value="2" disabled="true">-<input size="1" value="1" disabled="true"><span style="color: #00A859;"> 0</span></td>
+						<td><input size="1" value="2" disabled="true">-<input size="1" value="0" disabled="true"><span style="color: #00A859;"> 0</span></td>
+						<td><input size="1" value="0" disabled="true">-<input size="1" value="0" disabled="true"><span style="color: #00A859;"> 0</span></td>
+						<td><input size="1" value="1" disabled="true">-<input size="1" value="1" disabled="true"><span style="color: #00A859;"> 0</span></td>
+						<td class="points">0</td>
+					</tr>
+					<tr id="angle">
+						<td>Asia <img height="25" width="25" src="img/cup.png" alt=""></img></td>
+						<td><input size="1" value="2" disabled="true">-<input size="1" value="1" disabled="true"><span style="color: #00A859;"> 4</span></td>
+						<td><input size="1" value="1" disabled="true">-<input size="1" value="1" disabled="true"><span style="color: #00A859;"> 0</span></td>
+						<td><input size="1" value="1" disabled="true">-<input size="1" value="1" disabled="true"><span style="color: #00A859;"> 2</span></td>
+						<td><input size="1" value="3" disabled="true">-<input size="1" value="1" disabled="true"><span style="color: #00A859;"> 0</span></td>
+						<td><input size="1" value="1" disabled="true">-<input size="1" value="2" disabled="true"><span style="color: #00A859;"> 2</span></td>
+						<td><input size="1" value="1" disabled="true">-<input size="1" value="3" disabled="true"><span style="color: #00A859;"> 2</span></td>
+						<td class="points"><b>10</b></td>
+					</tr>
+					<tr>
+						<td>Zdre</td>
+						<td><input size="1" value="1" disabled="true">-<input size="1" value="1" disabled="true"><span style="color: #00A859;"> 0</span></td>
+						<td><input size="1" value="1" disabled="true">-<input size="1" value="2" disabled="true"><span style="color: #00A859;"> 0</span></td>
+						<td><input size="1" value="1" disabled="true">-<input size="1" value="1" disabled="true"><span style="color: #00A859;"> 2</span></td>
+						<td><input size="1" value="2" disabled="true">-<input size="1" value="0" disabled="true"><span style="color: #00A859;"> 0</span></td>
+						<td><input size="1" value="1" disabled="true">-<input size="1" value="1" disabled="true"><span style="color: #00A859;"> 0</span></td>
+						<td><input size="1" value="0" disabled="true">-<input size="1" value="2" disabled="true"><span style="color: #00A859;"> 2</span></td>
+						<td class="points">4</td>
+					</tr>
+					<tr>
+						<td>Kamiloss</td>
+						<td><input size="1" value="2" disabled="true">-<input size="1" value="1" disabled="true"><span style="color: #00A859;"> 4</span></td>
+						<td><input size="1" value="0" disabled="true">-<input size="1" value="2" disabled="true"><span style="color: #00A859;"> 0</span></td>
+						<td><input size="1" value="1" disabled="true">-<input size="1" value="0" disabled="true"><span style="color: #00A859;"> 0</span></td>
+						<td><input size="1" value="2" disabled="true">-<input size="1" value="1" disabled="true"><span style="color: #00A859;"> 0</span></td>
+						<td><input size="1" value="0" disabled="true">-<input size="1" value="1" disabled="true"><span style="color: #00A859;"> 2</span></td>
+						<td><input size="1" value="2" disabled="true">-<input size="1" value="1" disabled="true"><span style="color: #00A859;"> 0</span></td>
+						<td class="points">6</td>
+					</tr>
+					<tr>
+						<td>Bojler</td>
+						<td><input size="1" value="0" disabled="true">-<input size="1" value="2" disabled="true"><span style="color: #00A859;"> 0</span></td>
+						<td><input size="1" value="1" disabled="true">-<input size="1" value="2" disabled="true"><span style="color: #00A859;"> 0</span></td>
+						<td><input size="1" value="1" disabled="true">-<input size="1" value="0" disabled="true"><span style="color: #00A859;"> 0</span></td>
+						<td><input size="1" value="2" disabled="true">-<input size="1" value="0" disabled="true"><span style="color: #00A859;"> 0</span></td>
+						<td><input size="1" value="0" disabled="true">-<input size="1" value="2" disabled="true"><span style="color: #00A859;"> 2</span></td>
+						<td><input size="1" value="0" disabled="true">-<input size="1" value="0" disabled="true"><span style="color: #00A859;"> 0</span></td>
+						<td class="points">2</td>
+					</tr>
+				</table>		
+				</div>
+		
+			<h4 style="text-align: center;">Runda 3</h4>
+			<div class='standings3'>
+				<table ng-init="tipsters = ['Ola', 'dmin', 'Zajo', 'Asia', 'Zdre', 'Kamiloss', 'bojer']" >
+					<thead>
+						<tr>
+							<th style="background-color: #fff;" rowspan="4">
+							<th><img height="15" width="22" src="flags/belgium.png" alt=""></img>BEL</th>
+							<th><img height="15" width="22" src="flags/brazil.png" alt=""></img>BRA</th>
+							<th><img height="15" width="22" src="flags/russia.png" alt="">ROS</th>
+							<th><img height="15" width="22" src="flags/australia.png" alt="">AUS</th>
+							<th><img height="15" width="22" src="flags/spain.png" alt="">HIS</th>
+							<th><img height="15" width="22" src="flags/cameroon.png" alt="">KAM</th>
+						</tr>
+						<tr>
+							<th>2-1</th>
+							<th>0-0</th>
+							<th>1-1</th>
+							<th>2-3</th>
+							<th>0-2</th>
+							<th>0-4</th>
+						</tr>
+						<tr>
+							<th><img height="15" width="22" src="flags/algeria.png" alt=""></img>ALG</th>
+							<th><img height="15" width="22" src="flags/mexico.png" alt=""></img>MEK</th>
+							<th><img height="15" width="22" src="flags/south_korea.png" alt="">KOR</th>
+							<th><img height="15" width="22" src="flags/netherlands.png" alt="">HOL</th>
+							<th><img height="15" width="22" src="flags/chile.png" alt="">CHI</th>
+							<th><img height="15" width="22" src="flags/croatia.png" alt="">CHO</th>
+						</tr>
+						<tr>
+							<th><small>1.47	/ 4.10 / 8.00</small></th>
+							<th><small>1.30	/ 5.50 / 10.0</small></th>
+							<th><small>2.25	/ 3.10 / 3.50</small></th>
+							<th><small>12.5	/ 5.75 / 1.25</small></th>
+							<th><small>1.70	/ 3.75 / 5.00</small></th>
+							<th><small>5.50	/ 3.60 / 1.70</small></th>
+							<th rowspan = 4 class="points">Pkt</th>
+						</tr>
+					</thead>
+					<tr>
+						<td>Ola</td>
+						<td><input size="1" value="3" disabled="true">-<input size="1" value="1" disabled="true"><span style="color: #00A859;"> 2</span></td>
+						<td><input size="1" value="2" disabled="true">-<input size="1" value="1" disabled="true"><span style="color: #00A859;"> 0</span></td>
+						<td><input size="1" value="2" disabled="true">-<input size="1" value="1" disabled="true"><span style="color: #00A859;"> 0</span></td>
+						<td><input size="1" value="1" disabled="true">-<input size="1" value="3" disabled="true"><span style="color: #00A859;"> 2</span></td>
+						<td><input size="1" value="2" disabled="true">-<input size="1" value="1" disabled="true"><span style="color: #00A859;"> 0</span></td>
+						<td><input size="1" value="0" disabled="true">-<input size="1" value="2" disabled="true"><span style="color: #00A859;"> 2</span></td>
+						<td class="points">6</td>
+					</tr>
+					<tr>
+						<td>Dmin</td>
+						<td><input size="1" value="3" disabled="true">-<input size="1" value="0" disabled="true"><span style="color: #00A859;"> 2</span></td>
+						<td><input size="1" value="3" disabled="true">-<input size="1" value="1" disabled="true"><span style="color: #00A859;"> 0</span></td>
+						<td><input size="1" value="2" disabled="true">-<input size="1" value="1" disabled="true"><span style="color: #00A859;"> 0</span></td>
+						<td><input size="1" value="0" disabled="true">-<input size="1" value="4" disabled="true"><span style="color: #00A859;"> 2</span></td>
+						<td><input size="1" value="3" disabled="true">-<input size="1" value="0" disabled="true"><span style="color: #00A859;"> 0</span></td>
+						<td><input size="1" value="0" disabled="true">-<input size="1" value="2" disabled="true"><span style="color: #00A859;"> 2</span></td>
+						<td class="points">6</td>
+					</tr>
+					<tr>
+						<td>Zajo</td>
+						<td><input size="1" value="2" disabled="true">-<input size="1" value="0" disabled="true"><span style="color: #00A859;"> 2</span></td>
+						<td><input size="1" value="1" disabled="true">-<input size="1" value="0" disabled="true"><span style="color: #00A859;"> 0</span></td>
+						<td><input size="1" value="3" disabled="true">-<input size="1" value="1" disabled="true"><span style="color: #00A859;"> 0</span></td>
+						<td><input size="1" value="0" disabled="true">-<input size="1" value="2" disabled="true"><span style="color: #00A859;"> 2</span></td>
+						<td><input size="1" value="1" disabled="true">-<input size="1" value="0" disabled="true"><span style="color: #00A859;"> 0</span></td>
+						<td><input size="1" value="1" disabled="true">-<input size="1" value="3" disabled="true"><span style="color: #00A859;"> 2</span></td>
+						<td class="points">6</td>
+					</tr>
+					<tr>
+						<td>Asia</td> 
+						<td><input size="1" value="3" disabled="true">-<input size="1" value="0" disabled="true"><span style="color: #00A859;"> 2</span></td>
+						<td><input size="1" value="2" disabled="true">-<input size="1" value="0" disabled="true"><span style="color: #00A859;"> 0</span></td>
+						<td><input size="1" value="2" disabled="true">-<input size="1" value="0" disabled="true"><span style="color: #00A859;"> 0</span></td>
+						<td><input size="1" value="0" disabled="true">-<input size="1" value="2" disabled="true"><span style="color: #00A859;"> 2</span></td>
+						<td><input size="1" value="3" disabled="true">-<input size="1" value="0" disabled="true"><span style="color: #00A859;"> 0</span></td>
+						<td><input size="1" value="0" disabled="true">-<input size="1" value="2" disabled="true"><span style="color: #00A859;"> 2</span></td>
+						<td class="points">6</td>
+					</tr>
+					<tr id="angle">
+						<td>Zdre <img height="25" width="25" src="img/cup.png" alt=""></img></td>
+						<td><input size="1" value="2" disabled="true">-<input size="1" value="0" disabled="true"><span style="color: #00A859;"> 2</span></td>
+						<td><input size="1" value="1" disabled="true">-<input size="1" value="1" disabled="true"><span style="color: #00A859;"> 2</span></td>
+						<td><input size="1" value="2" disabled="true">-<input size="1" value="1" disabled="true"><span style="color: #00A859;"> 0</span></td>
+						<td><input size="1" value="0" disabled="true">-<input size="1" value="2" disabled="true"><span style="color: #00A859;"> 2</span></td>
+						<td><input size="1" value="1" disabled="true">-<input size="1" value="0" disabled="true"><span style="color: #00A859;"> 0</span></td>
+						<td><input size="1" value="0" disabled="true">-<input size="1" value="2" disabled="true"><span style="color: #00A859;"> 2</span></td>
+						<td class="points"><b>8</b></td>
+					</tr>
+					<tr>
+						<td>Kamiloss</td>
+						<td><input size="1" value="3" disabled="true">-<input size="1" value="0" disabled="true"><span style="color: #00A859;"> 2</span></td>
+						<td><input size="1" value="3" disabled="true">-<input size="1" value="1" disabled="true"><span style="color: #00A859;"> 0</span></td>
+						<td><input size="1" value="2" disabled="true">-<input size="1" value="1" disabled="true"><span style="color: #00A859;"> 0</span></td>
+						<td><input size="1" value="0" disabled="true">-<input size="1" value="3" disabled="true"><span style="color: #00A859;"> 2</span></td>
+						<td><input size="1" value="3" disabled="true">-<input size="1" value="1" disabled="true"><span style="color: #00A859;"> 0</span></td>
+						<td><input size="1" value="1" disabled="true">-<input size="1" value="2" disabled="true"><span style="color: #00A859;"> 2</span></td>
+						<td class="points">6</td>
+					</tr>
+					<tr>
+						<td>Bojler</td>
+						<td><input size="1" value="2" disabled="true">-<input size="1" value="0" disabled="true"><span style="color: #00A859;"> 2</span></td>
+						<td><input size="1" value="2" disabled="true">-<input size="1" value="1" disabled="true"><span style="color: #00A859;"> 0</span></td>
+						<td><input size="1" value="2" disabled="true">-<input size="1" value="0" disabled="true"><span style="color: #00A859;"> 0</span></td>
+						<td><input size="1" value="0" disabled="true">-<input size="1" value="3" disabled="true"><span style="color: #00A859;"> 2</span></td>
+						<td><input size="1" value="3" disabled="true">-<input size="1" value="0" disabled="true"><span style="color: #00A859;"> 0</span></td>
+						<td><input size="1" value="0" disabled="true">-<input size="1" value="2" disabled="true"><span style="color: #00A859;"> 2</span></td>
+						<td class="points">6</td>
+					</tr>
+				</table>
+			</div>
+		
+			<div class='standings2'>
+				<h4 style="text-align: center;">Runda 2</h4>
+				<table ng-init="tipsters = ['Ola', 'dmin', 'Zajo', 'Asia', 'Zdre', 'Kamiloss', 'bojer']" >
+					<thead>
+						<tr>
+							<th style="background-color: #fff;" rowspan="4">
+							<th><img height="15" width="22" src="flags/switzerland.png" alt=""></img>SZW</th>
+							<th><img height="15" width="22" src="flags/france.png" alt=""></img>FRA</th>
+							<th><img height="15" width="22" src="flags/argentina.png" alt="">ARG</th>
+							<th><img height="15" width="22" src="flags/germany.png" alt="">NIE</th>
+							<th><img height="15" width="22" src="flags/iran.png" alt="">IRA</th>
+							<th><img height="15" width="22" src="flags/ghana.png" alt="">GHA</th>
+						</tr>
+						<tr>
+							<th>2-1</th>
+							<th>3-0</th>
+							<th>2-1</th>
+							<th>4-0</th>
+							<th>0-0</th>
+							<th>1-2</th>
+						</tr>
+						<tr>
+							<th><img height="15" width="22" src="flags/ecuador.png" alt=""></img>EKW</th>
+							<th><img height="15" width="22" src="flags/honduras.png" alt=""></img>HON</th>
+							<th><img height="15" width="22" src="flags/bosnia_and_herzegovina.png" alt="">BOS</th>
+							<th><img height="15" width="22" src="flags/portugal.png" alt="">POR</th>
+							<th><img height="15" width="22" src="flags/nigeria.png" alt="">NIG</th>
+							<th><img height="15" width="22" src="flags/usa.png" alt="">USA</th>
+						</tr>
+						<tr>
+							<th><small>2.45	/ 3.10 / 3.10</small></th>
+							<th><small>1.33	/ 4.80 / 11.0</small></th>
+							<th><small>1.40	/ 4.70 / 8.00</small></th>
+							<th><small>2.15	/ 3.25 / 3.60</small></th>
+							<th><small>3.50	/ 3.20 / 2.20</small></th>
+							<th><small>2.60	/ 3.20 / 2.80</small></th>
+							<th rowspan=4 class="points">Pkt</th>
+						</tr>
+					</thead>
+					<tr>
+						<td>Ola</td>
+						<td><input size="1" value="1" disabled="true">-<input size="1" value="1" disabled="true"><span style="color: #00A859;"> 0</span></td>
+						<td><input size="1" value="2" disabled="true">-<input size="1" value="0" disabled="true"><span style="color: #00A859;"> 2</span></td>
+						<td><input size="1" value="3" disabled="true">-<input size="1" value="1" disabled="true"><span style="color: #00A859;"> 2</span></td>
+						<td><input size="1" value="1" disabled="true">-<input size="1" value="1" disabled="true"><span style="color: #00A859;"> 0</span></td>
+						<td><input size="1" value="0" disabled="true">-<input size="1" value="1" disabled="true"><span style="color: #00A859;"> 0</span></td>
+						<td><input size="1" value="2" disabled="true">-<input size="1" value="1" disabled="true"><span style="color: #00A859;"> 0</span></td>
+						<td class="points">4</td>
+					</tr>
+					<tr>
+						<td>Dmin</td>
+						<td><input size="1" value="1" disabled="true">-<input size="1" value="1" disabled="true"><span style="color: #00A859;"> 0</span></td>
+						<td><input size="1" value="3" disabled="true">-<input size="1" value="0" disabled="true"><span style="color: #00A859;"> 4</span></td>
+						<td><input size="1" value="2" disabled="true">-<input size="1" value="2" disabled="true"><span style="color: #00A859;"> 0</span></td>
+						<td><input size="1" value="2" disabled="true">-<input size="1" value="2" disabled="true"><span style="color: #00A859;"> 0</span></td>
+						<td><input size="1" value="0" disabled="true">-<input size="1" value="3" disabled="true"><span style="color: #00A859;"> 0</span></td>
+						<td><input size="1" value="1" disabled="true">-<input size="1" value="1" disabled="true"><span style="color: #00A859;"> 0</span></td>
+						<td class="points">4</td>
+					</tr>
+					<tr>
+						<td>Zajo</td>
+						<td><input size="1" value="1" disabled="true">-<input size="1" value="0" disabled="true"><span style="color: #00A859;"> 3</span></td>
+						<td><input size="1" value="4" disabled="true">-<input size="1" value="0" disabled="true"><span style="color: #00A859;"> 2</span></td>
+						<td><input size="1" value="2" disabled="true">-<input size="1" value="1" disabled="true"><span style="color: #00A859;"> 4</span></td>
+						<td><input size="1" value="1" disabled="true">-<input size="1" value="0" disabled="true"><span style="color: #00A859;"> 2</span></td>
+						<td><input size="1" value="1" disabled="true">-<input size="1" value="2" disabled="true"><span style="color: #00A859;"> 0</span></td>
+						<td><input size="1" value="2" disabled="true">-<input size="1" value="2" disabled="true"><span style="color: #00A859;"> 0</span></td>
+						<td class="points">11</td>
+					</tr>
+					<tr>
+						<td>Asia</td> 
+						<td><input size="1" value="1" disabled="true">-<input size="1" value="0" disabled="true"><span style="color: #00A859;"> 3</span></td>
+						<td><input size="1" value="3" disabled="true">-<input size="1" value="0" disabled="true"><span style="color: #00A859;"> 4</span></td>
+						<td><input size="1" value="2" disabled="true">-<input size="1" value="1" disabled="true"><span style="color: #00A859;"> 4</span></td>
+						<td><input size="1" value="1" disabled="true">-<input size="1" value="2" disabled="true"><span style="color: #00A859;"> 0</span></td>
+						<td><input size="1" value="1" disabled="true">-<input size="1" value="1" disabled="true"><span style="color: #00A859;"> 2</span></td>
+						<td><input size="1" value="1" disabled="true">-<input size="1" value="1" disabled="true"><span style="color: #00A859;"> 0</span></td>
+						<td class="points">13</td>
+					</tr>
+					<tr>
+						<td>Zdre</td>
+						<td><input size="1" value="1" disabled="true">-<input size="1" value="1" disabled="true"><span style="color: #00A859;"> 0</span></td>
+						<td><input size="1" value="2" disabled="true">-<input size="1" value="0" disabled="true"><span style="color: #00A859;"> 2</span></td>
+						<td><input size="1" value="3" disabled="true">-<input size="1" value="1" disabled="true"><span style="color: #00A859;"> 2</span></td>
+						<td><input size="1" value="1" disabled="true">-<input size="1" value="1" disabled="true"><span style="color: #00A859;"> 0</span></td>
+						<td><input size="1" value="0" disabled="true">-<input size="1" value="2" disabled="true"><span style="color: #00A859;"> 0</span></td>
+						<td><input size="1" value="1" disabled="true">-<input size="1" value="1" disabled="true"><span style="color: #00A859;"> 0</span></td>
+						<td class="points">4</td>
+					</tr>
+					<tr id="angle">
+						<td>Kamiloss <img height="25" width="25" src="img/cup.png" alt=""></img></td>
+						<td><input size="1" value="2" disabled="true">-<input size="1" value="1" disabled="true"><span style="color: #00A859;"> 4</span></td>
+						<td><input size="1" value="3" disabled="true">-<input size="1" value="0" disabled="true"><span style="color: #00A859;"> 4</span></td>
+						<td><input size="1" value="3" disabled="true">-<input size="1" value="1" disabled="true"><span style="color: #00A859;"> 2</span></td>
+						<td><input size="1" value="3" disabled="true">-<input size="1" value="2" disabled="true"><span style="color: #00A859;"> 2</span></td>
+						<td><input size="1" value="0" disabled="true">-<input size="1" value="1" disabled="true"><span style="color: #00A859;"> 0</span></td>
+						<td><input size="1" value="1" disabled="true">-<input size="1" value="2" disabled="true"><span style="color: #00A859;"> 4</span></td>
+						<td class="points"><b>16</b></td>
+					</tr>
+					<tr>
+						<td>Bojler</td>
+						<td><input size="1" value="0" disabled="true">-<input size="1" value="1" disabled="true"><span style="color: #00A859;"> 0</span></td>
+						<td><input size="1" value="3" disabled="true">-<input size="1" value="0" disabled="true"><span style="color: #00A859;"> 4</span></td>
+						<td><input size="1" value="2" disabled="true">-<input size="1" value="0" disabled="true"><span style="color: #00A859;"> 2</span></td>
+						<td><input size="1" value="2" disabled="true">-<input size="1" value="0" disabled="true"><span style="color: #00A859;"> 2</span></td>
+						<td><input size="1" value="0" disabled="true">-<input size="1" value="1" disabled="true"><span style="color: #00A859;"> 0</span></td>
+						<td><input size="1" value="1" disabled="true">-<input size="1" value="1" disabled="true"><span style="color: #00A859;"> 0</span></td>
+						<td class="points">8</td>
+					</tr>
+				</table>
+				</div>
+		
+			<div class='standings1'>
+				<h4 style="text-align: center;">Runda 1</h4>
+				<table ng-init="tipsters = ['Ola', 'dmin', 'Zajo', 'Asia', 'Zdre', 'Kamiloss', 'bojer']" >
+					<thead>
+						<tr>
+							<th style="background-color: #fff;" rowspan="4">
+							<th><img height="15" width="22" src="flags/brazil.png" alt=""></img>BRA</th>
+							<th><img height="15" width="22" src="flags/mexico.png" alt=""></img>MEK</th>
+							<th><img height="15" width="22" src="flags/spain.png" alt="">HIS</th>
+							<th><img height="15" width="22" src="flags/chile.png" alt="">CHI</th>
+							<th><img height="15" width="22" src="flags/colombia.png" alt="">KOL</th>
+							<th><img height="15" width="22" src="flags/uruguay.png" alt="">URU</th>
+							<th><img height="15" width="22" src="flags/england.png" alt="">ANG</th>
+							<th><img height="15" width="22" src="flags/cote_d'ivoire.png" alt="">WKS</th>
+						</tr>
+						<tr>
+							<th>3-1</th>
+							<th>1-0</th>
+							<th>1-5</th>
+							<th>3-1</th>
+							<th>3-0</th>
+							<th>1-3</th>
+							<th>1-2</th>
+							<th>2-1</th>
+						</tr>
+						<tr>
+							<th><img height="15" width="22" src="flags/croatia.png" alt=""></img>CHO</th>
+							<th><img height="15" width="22" src="flags/cameroon.png" alt=""></img>KAM</th>
+							<th><img height="15" width="22" src="flags/netherlands.png" alt="">HOL</th>
+							<th><img height="15" width="22" src="flags/australia.png" alt="">AUS</th>
+							<th><img height="15" width="22" src="flags/greece.png" alt="">GRE</th>
+							<th><img height="15" width="22" src="flags/costa_rica.png" alt="">KOS</th>
+							<th><img height="15" width="22" src="flags/italy.png" alt="">WŁO</th>
+							<th><img height="15" width="22" src="flags/japan.png" alt="">JAP</th>
+						</tr>
+						<tr>
+							<th><small>1.30 / 5.25 / 12.0</th>
+							<th><small>2.20 / 3.25 / 3.50</small></th>
+							<th><small>1.85 / 3.25 / 4.85</small></th>
+							<th><small>1.47 / 4.15 / 7.50</small></th>
+							<th><small>1.80 / 3.25 / 5.25</small></th>
+							<th><small>1.40 / 4.50 / 8.50</small></th>
+							<th><small>3.00 / 3.05 / 2.55</small></th>
+							<th><small>2.60 / 3.15 / 2.85</small></th>
+							<th rowspan = 4 class="points">Pkt</th>
+						</tr>
+					</thead>
+					<tr>
+						<td>Ola</td>
+						<td><input size="1" value="0" disabled="true">-<input size="1" value="1" disabled="true"><span style="color: #00A859;"> 0</span></td>
+						<td><input size="1" value="0" disabled="true">-<input size="1" value="0" disabled="true"><span style="color: #00A859;"> 0</span></td>
+						<td><input size="1" value="3" disabled="true">-<input size="1" value="2" disabled="true"><span style="color: #00A859;"> 0</span></td>
+						<td><input size="1" value="1" disabled="true">-<input size="1" value="0" disabled="true"><span style="color: #00A859;"> 2</span></td>
+						<td><input size="1" value="0" disabled="true">-<input size="1" value="1" disabled="true"><span style="color: #00A859;"> 0</span></td>
+						<td><input size="1" value="2" disabled="true">-<input size="1" value="0" disabled="true"><span style="color: #00A859;"> 0</span></td>
+						<td><input size="1" value="1" disabled="true">-<input size="1" value="2" disabled="true"><span style="color: #00A859;"> 4</span></td>
+						<td><input size="1" value="1" disabled="true">-<input size="1" value="0" disabled="true"><span style="color: #00A859;"> 3</span></td>
+						<td class="points">9</td>
+					</tr>
+					<tr>
+						<td>Dmin</td>
+						<td><input size="1" value="2" disabled="true">-<input size="1" value="0" disabled="true"><span style="color: #00A859;"> 3</span></td>
+						<td><input size="1" value="1" disabled="tgrue">-<input size="1" value="2" "true"><span style="color: #00A859;"> 0</span></td>
+						<td><input size="1" value="1" disabled="true">-<input size="1" value="2" disabled="true"><span style="color: #00A859;"> 2</span></td>
+						<td><input size="1" value="0" disabled="true">-<input size="1" value="0" disabled="true"><span style="color: #00A859;"> 0</span></td>
+						<td><input size="1" value="0" disabled="true">-<input size="1" value="0" disabled="true"><span style="color: #00A859;"> 0</span></td>
+						<td><input size="1" value="3" disabled="true">-<input size="1" value="0" disabled="true"><span style="color: #00A859;"> 0</span></td>
+						<td><input size="1" value="2" disabled="true">-<input size="1" value="2" disabled="true"><span style="color: #00A859;"> 0</span></td>
+						<td><input size="1" value="2" disabled="true">-<input size="1" value="0" disabled="true"><span style="color: #00A859;"> 2</span></td>
+						<td class="points">7</td>
+					</tr>
+					<tr>
+						<td>Zajo</td>
+						<td><input size="1" value="2" disabled="true">-<input size="1" value="1" disabled="true"><span style="color: #00A859;"> 2</span></td>
+						<td><input size="1" value="0" disabled="true">-<input size="1" value="0" disabled="true"><span style="color: #00A859;"> 0</span></td>
+						<td><input size="1" value="1" disabled="true">-<input size="1" value="0" disabled="true"><span style="color: #00A859;"> 0</span></td>
+						<td><input size="1" value="3" disabled="true">-<input size="1" value="1" disabled="true"><span style="color: #00A859;"> 4</span></td>
+						<td><input size="1" value="2" disabled="true">-<input size="1" value="0" disabled="true"><span style="color: #00A859;"> 2</span></td>
+						<td><input size="1" value="3" disabled="true">-<input size="1" value="0" disabled="true"><span style="color: #00A859;"> 0</span></td>
+						<td><input size="1" value="0" disabled="true">-<input size="1" value="1" disabled="true"><span style="color: #00A859;"> 3</span></td>
+						<td><input size="1" value="2" disabled="true">-<input size="1" value="3" disabled="true"><span style="color: #00A859;"> 0</span></td>
+						<td class="points">11</td>
+					</tr>
+					<tr>
+					<!-- BRAZYLIA, HISZPANIA, URUGWAJ, WKS, EKWADOR, ARGENTYNA, PORTUGALIA, BELGIA ARGENTYNA - król strzelców -->
+						<td>Asia</td> 
+						<td><input size="1" value="1" disabled="true">-<input size="1" value="1" disabled="true"><span style="color: #00A859;"> 0</span></td>
+						<td><input size="1" value="1" disabled="true">-<input size="1" value="1" disabled="true"><span style="color: #00A859;"> 0</span></td>
+						<td><input size="1" value="2" disabled="true">-<input size="1" value="0" disabled="true"><span style="color: #00A859;"> 0</span></td>
+						<td><input size="1" value="2" disabled="true">-<input size="1" value="1" disabled="true"><span style="color: #00A859;"> 2</span></td>
+						<td><input size="1" value="1" disabled="true">-<input size="1" value="0" disabled="true"><span style="color: #00A859;"> 2</span></td>
+						<td><input size="1" value="2" disabled="true">-<input size="1" value="1" disabled="true"><span style="color: #00A859;"> 0</span></td>
+						<td><input size="1" value="1" disabled="true">-<input size="1" value="1" disabled="true"><span style="color: #00A859;"> 0</span></td>
+						<td><input size="1" value="2" disabled="true">-<input size="1" value="1" disabled="true"><span style="color: #00A859;"> 4</span></td>
+						<td class="points">8</td>
+					</tr>
+					<tr>
+						<td>Zdre</td>
+						<td><input size="1" value="1" disabled="true">-<input size="1" value="0" disabled="true"><span style="color: #00A859;"> 2</span></td>
+						<td><input size="1" value="2" disabled="true">-<input size="1" value="1" disabled="true"><span style="color: #00A859;"> 3</span></td>
+						<td><input size="1" value="1" disabled="true">-<input size="1" value="1" disabled="true"><span style="color: #00A859;"> 0</span></td>
+						<td><input size="1" value="1" disabled="true">-<input size="1" value="0" disabled="true"><span style="color: #00A859;"> 2</span></td>
+						<td><input size="1" value="1" disabled="true">-<input size="1" value="1" disabled="true"><span style="color: #00A859;"> 0</span></td>
+						<td><input size="1" value="2" disabled="true">-<input size="1" value="0" disabled="true"><span style="color: #00A859;"> 0</span></td>
+						<td><input size="1" value="1" disabled="true">-<input size="1" value="1" disabled="true"><span style="color: #00A859;"> 0</span></td>
+						<td><input size="1" value="1" disabled="true">-<input size="1" value="1" disabled="true"><span style="color: #00A859;"> 0</span></td>
+						<td class="points">7</td>
+					</tr>
+					<tr>
+						<td>Kamiloss</td>
+						<td><input size="1" value="3" disabled="true">-<input size="1" value="1" disabled="true"><span style="color: #00A859;"> 4</span></td>
+						<td><input size="1" value="2" disabled="true">-<input size="1" value="1" disabled="true"><span style="color: #00A859;"> 3</span></td>
+						<td><input size="1" value="3" disabled="true">-<input size="1" value="2" disabled="true"><span style="color: #00A859;"> 0</span></td>
+						<td><input size="1" value="1" disabled="true">-<input size="1" value="1" disabled="true"><span style="color: #00A859;"> 0</span></td>
+						<td><input size="1" value="0" disabled="true">-<input size="1" value="1" disabled="true"><span style="color: #00A859;"> 0</span></td>
+						<td><input size="1" value="4" disabled="true">-<input size="1" value="0" disabled="true"><span style="color: #00A859;"> 0</span></td>
+						<td><input size="1" value="1" disabled="true">-<input size="1" value="2" disabled="true"><span style="color: #00A859;"> 4</span></td>
+						<td><input size="1" value="0" disabled="true">-<input size="1" value="1" disabled="true"><span style="color: #00A859;"> 0</span></td>
+						<td class="points">11</td>
+					</tr>
+					<tr id="angle">
+						<td>Bojler <img height="25" width="25" src="img/cup.png" alt=""></img></td>
+						<td><input size="1" value="2" disabled="true">-<input size="1" value="0" disabled="true"><span style="color: #00A859;"> 3</span></td>
+						<td><input size="1" value="2" disabled="true">-<input size="1" value="1" disabled="true"><span style="color: #00A859;"> 3</span></td>
+						<td><input size="1" value="3" disabled="true">-<input size="1" value="0" disabled="true"><span style="color: #00A859;"> 0</span></td>
+						<td><input size="1" value="2" disabled="true">-<input size="1" value="0" disabled="true"><span style="color: #00A859;"> 3</span></td>
+						<td><input size="1" value="1" disabled="true">-<input size="1" value="1" disabled="true"><span style="color: #00A859;"> 0</span></td>
+						<td><input size="1" value="3" disabled="true">-<input size="1" value="0" disabled="true"><span style="color: #00A859;"> 0</span></td>
+						<td><input size="1" value="0" disabled="true">-<input size="1" value="2" disabled="true"><span style="color: #00A859;"> 2</span></td>
+						<td><input size="1" value="2" disabled="true">-<input size="1" value="0" disabled="true"><span style="color: #00A859;"> 2</span></td>
+						<td class="points"><b>13</b></td>
+					</tr>
+				</table>
+			</div>
+
+	<div class="rules" style="text-align: left;">
+		<b>Zasady:</b>
+		<br>			
+		<img height="22" width="22" src="img/ball.png" alt="">
+		<img height="22" width="22" src="img/ball.png" alt="">
+		<img height="22" width="22" src="img/ball.png" alt="">
+		<img height="22" width="22" src="img/ball.png" alt=""> - dokładne trafienie wyniku
+		<br>
+		<img height="22" width="22" src="img/ball.png" alt="">
+		<img height="22" width="22" src="img/ball.png" alt="">
+		<img height="22" width="22" src="img/ball.png" alt=""> - trafienie zwycięzcy i różnicy bramek
+		<br>		
+		<img height="22" width="22" src="img/ball.png" alt="">
+		<img height="22" width="22" src="img/ball.png" alt=""> - trafienie zwycięzcy z błędną różnicą bramkową
+		<br>		
+		W przypadku remisu:
+		<br>		
+		<img height="22" width="22" src="img/ball.png" alt="">
+		<img height="22" width="22" src="img/ball.png" alt="">
+		<img height="22" width="22" src="img/ball.png" alt="">
+		<img height="22" width="22" src="img/ball.png" alt=""> - dokładne trafienie wyniku
+		<br>		
+		<img height="22" width="22" src="img/ball.png" alt="">
+		<img height="22" width="22" src="img/ball.png" alt=""> - trafienie remisu z błędną liczbą bramek 	
+	</div>
+
+<footer>
+  <p>Mailto: <a href="mailto:zdrenis@gmail.com">
+  zdrenis@gmail.com</a></p>
+</footer> 
+</div>
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-51714890-1', 'zdrenis.github.io');
+  ga('send', 'pageview');
+
+</script>
+
+</body>
+</html>
