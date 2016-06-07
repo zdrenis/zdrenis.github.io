@@ -15,6 +15,13 @@
 			position: relative;
 			text-align: center;
 		}
+		
+		.vertical-text {
+			transform: rotate(-45deg);
+			color: red;
+			//transform-origin: left top 0;
+			//float: left;
+		}
 
 .watermark-footer {		
 		  background-image: url("img/france2016/watermark.png");
@@ -107,7 +114,8 @@
 		.standingsExtra {
 			position: relative;
 			margin: auto;
-			padding: 15px;
+			margin-top: 40px;
+			padding: 10px;
 			border-radius: 25px;
 			background-color: white;
 			width: 90%;
@@ -132,11 +140,11 @@
 	<div class='main'>
 
 					<div class='standingsExtra'>
-					<h4 style="text-align: center;">Pytania dodatkowe</h2>
+
 						<table>
 							<thead>
 								<tr style="background-color: #ccc;">
-									<th rowspan=3 width="80" style="background-color: #fff;"/>
+									<th rowspan=3 width="150" height="120" style="background-color: #fff;"><div class="vertical-text" >PYTANIA DODATKOWE</div></th>
 									<th colspan=6>ZWYCIĘZCY GRUP</th>
 									<th colspan=4>PÓŁFINALIŚCI</th>
 									<th rowspan=2>MISTRZ</th>
@@ -302,11 +310,10 @@
 					</div>
 
 					<div class='standings1'>
-						<h4 style="text-align: center;">Runda 1</h4>
 						<table>
 							<thead>
 								<tr>
-									<th rowspan="5" style="background-color: #fff;">
+										<th rowspan="5" style="background-color: #fff;"><div class="vertical-text" >RUNDA 1</div></th>
 										<th><small>10.06, 21:00</small></th>
 										<th><small>11.06, 15:00</small></th>
 										<th><small>11.06, 18:00</small></th>
