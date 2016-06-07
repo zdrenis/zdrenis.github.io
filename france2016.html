@@ -1,499 +1,499 @@
-<!DOCTYPE html>
-<meta charset="utf-8">
-<html ng-app>
-<head><title>Liga Typerów</title>
+	<!DOCTYPE html>
+	<meta charset="utf-8">
+	<html ng-app>
+	<head><title>Liga Typerów</title>
 
-	<style>
-		body {
-			background: #007cba url("img/bg_pattern.png") repeat scroll center top / 100% auto;
-			z-index: 1;
-			margin-bottom: 0px;
-		}
+		<style>
+			body {
+				background: #007cba url("img/bg_pattern.png") repeat scroll center top / 100% auto;
+				z-index: 1;
+				margin-bottom: 0px;
+			}
 
-		footer {
-			color: white;
-			position: relative;
-			text-align: center;
-		}
-		
-		.vertical-text {
-			transform: rotate(-45deg);
-		}
-		.vertical-text > span {
-		color: red;
-		}
+			footer {
+				color: white;
+				position: relative;
+				text-align: center;
+			}
+			
+			.vertical-text {
+				transform: rotate(-45deg);
+			}
+			.vertical-text > span {
+			color: red;
+			}
 
-.watermark-footer {		
-		  background-image: url("img/france2016/watermark.png");
-		  position: relative;
-    background-size: 738px auto;
-    height: 219px;
-    width: 738px;
-	margin: auto;
-	}
-		.even {
-			background-color: #ffff00;
+	.watermark-footer {		
+			  background-image: url("img/france2016/watermark.png");
+			  position: relative;
+	    background-size: 738px auto;
+	    height: 219px;
+	    width: 738px;
+		margin: auto;
 		}
-		.odd {
-			background-color: #FF0000;
-		}
-		table {
-			position: relative;
-			width: 100%;
-			vertical-align: center;
-			border: 1px #black;
-			text-align: center;
-		}
-		table th{
-			padding: 3px;
-			vertical-align: center;
-		}
-		table td {
-			//padding: 5px 5px;
-			width: 100px;
-			color: #3E4095; // blue
-		}
-		.points {
-			width: 40px;
-			color: black;
-		}
+			.even {
+				background-color: #ffff00;
+			}
+			.odd {
+				background-color: #FF0000;
+			}
+			table {
+				position: relative;
+				width: 100%;
+				vertical-align: center;
+				border: 1px #black;
+				text-align: center;
+			}
+			table th{
+				padding: 3px;
+				vertical-align: center;
+			}
+			table td {
+				//padding: 5px 5px;
+				width: 100px;
+				color: #3E4095; // blue
+			}
+			.points {
+				width: 40px;
+				color: black;
+			}
 
-		input {
-			text-align: center;
-			color: #3E4095; // blue
-		}
-		tr:nth-child(even) {background: #ccc;}
-		tr:nth-child(odd) {background: #fff;}
+			input {
+				text-align: center;
+				color: #3E4095; // blue
+			}
+			tr:nth-child(even) {background: #ccc;}
+			tr:nth-child(odd) {background: #fff;}
 
-		.main {
-			margin: auto;
-			bottom: 0;
-			margin-bottom: 0px;
-			width: 85%;
-			border: 1px #ccc;
-			opacity: 0.9;
-		}
-		body, p, ul, ol, textarea {
-			font-family: pfbeausanspro-regular,verdana;
-		}
-		input, th, td, table, h1, h2, h3, h4, span {
-			font-family: pfbeausanspro-regular,verdana;
-			color: #3E4095; // blue
-		}
-		.ttd {
-			width: 40px;
-			text-align: right;
-		}
-		
-		a:link {
-			color: white;
-		}
+			.main {
+				margin: auto;
+				bottom: 0;
+				margin-bottom: 0px;
+				width: 85%;
+				border: 1px #ccc;
+				opacity: 0.9;
+			}
+			body, p, ul, ol, textarea {
+				font-family: pfbeausanspro-regular,verdana;
+			}
+			input, th, td, table, h1, h2, h3, h4, span {
+				font-family: pfbeausanspro-regular,verdana;
+				color: #3E4095; // blue
+			}
+			.ttd {
+				width: 40px;
+				text-align: right;
+			}
+			
+			a:link {
+				color: white;
+			}
 
-		.rules{
-			background-color: white;
-			border-radius: 25px;
-			position: relative;
-			color: #3E4095;
-			margin: auto;
-			margin-top: 40px;
-			padding: 15px;
-			width: 30%;
-		}
+			.rules{
+				background-color: white;
+				border-radius: 25px;
+				position: relative;
+				color: #3E4095;
+				margin: auto;
+				margin-top: 40px;
+				padding: 15px;
+				width: 30%;
+			}
 
-		.standings1 {
-			position: relative;
-			margin-top: 40px;
-			margin-left: auto;
-			margin-right: auto;
-			border-radius: 25px;
-			width: 90%;
-			padding: 15px;
-			background-color: white;
-		}
+			.standings1 {
+				position: relative;
+				margin-top: 40px;
+				margin-left: auto;
+				margin-right: auto;
+				border-radius: 25px;
+				width: 90%;
+				padding: 15px;
+				background-color: white;
+			}
 
-		.standingsExtra {
-			position: relative;
-			margin: auto;
-			margin-top: 40px;
-			padding: 10px;
-			border-radius: 25px;
-			background-color: white;
-			width: 90%;
-		}
+			.standingsExtra {
+				position: relative;
+				margin: auto;
+				margin-top: 40px;
+				padding: 10px;
+				border-radius: 25px;
+				background-color: white;
+				width: 90%;
+			}
 
-		@font-face {
-			font-family: 'pfbeausanspro-regular';
-			src: url('font/france2016/pfbeausanspro-regular.eot');
-			src: url('font/france2016/pfbeausanspro-regular.woff') format('woff'),
-			url('font/france2016/pfbeausanspro-regular.ttf') format('truetype');
-			font-weight: normal;
-			font-style: normal;
-		}
+			@font-face {
+				font-family: 'pfbeausanspro-regular';
+				src: url('font/france2016/pfbeausanspro-regular.eot');
+				src: url('font/france2016/pfbeausanspro-regular.woff') format('woff'),
+				url('font/france2016/pfbeausanspro-regular.ttf') format('truetype');
+				font-weight: normal;
+				font-style: normal;
+			}
 
-	</style>
+		</style>
 
-</head>
-<body>
-	<div style="text-align: center;"><img style="vertical-align: middle;" width="522" height="207" src="img/france2016/logo.svg" alt=""></div>
+	</head>
+	<body>
+		<div style="text-align: center;"><img style="vertical-align: middle;" width="522" height="207" src="img/france2016/logo.svg" alt=""></div>
 
-	<h2 style="text-align: center; color:white">Liga typerów Francja 2016</h2>
-	<div class='main'>
+		<h2 style="text-align: center; color:white">Liga typerów Francja 2016</h2>
+		<div class='main'>
 
-					<div class='standingsExtra'>
+						<div class='standingsExtra'>
 
-						<table>
-							<thead>
-								<tr style="background-color: #ccc;">
-									<th rowspan=3 width="150" height="120" style="background-color: #fff;"><div class="vertical-text" ><span>PYTANIA DODATKOWE</span></div></th>
-									<th colspan=6>ZWYCIĘZCY GRUP</th>
-									<th colspan=4>PÓŁFINALIŚCI</th>
-									<th rowspan=2>MISTRZ</th>
-									<th rowspan=2>KRÓL STRZ.</th>
-								</tr>
-								<tr style="background-color: #fff;">
-									<th>A</th>
-									<th>B</th>
-									<th>C</th>
-									<th>D</th>
-									<th>E</th>
-									<th>F</th>
-									<th>1</th>
-									<th>2</th>
-									<th>3</th>
-									<th>4</th>
-								</tr>
-								<tr style="background-color: #ccc;">
-									<th></th>
-									<th></th>
-									<th></th>
-									<th></th>
-									<th></th>
-									<th></th>
-									<th></th>
-									<th></th>
-									<th></th>
-									<th></th>
-									<th></th>
-									<th></th>
-									<th rowspan="2" class="points">Pkt</th>
-								</tr>
-							</thead>
-							<tr>
-								<td width="80">Ola</td>
-								<td><span style="color: #00A859;"> </span></td>
-								<td><span style="color: #00A859;"> </span></td>
-								<td><span style="color: #00A859;"> </span></td>
-								<td><span style="color: #00A859;"> </span></td>
-								<td><span style="color: #00A859;"> </span></td>
-								<td><span style="color: #00A859;"> </span></td>
-								<td><span style="color: #00A859;"> </span></td>
-								<td><span style="color: #00A859;"> </span></td>
-								<td><span style="color: #00A859;"> </span></td>
-								<td><span style="color: #00A859;"> </span></td>
-								<td><span style="color: #00A859;"> </span></td>
-								<td><span style="color: #00A859;"> </span></td>
-								<td class="points"></td>
-							</tr>
-							<tr>
-								<td width="80">Dmin</td>
-								<td><span style="color: #00A859;"><img height="25" width="25" src="flags/france2016/france.png"></img></span></td>
-								<td><span style="color: #00A859;"><img height="25" width="25" src="flags/france2016/england.png"></img></span></td>
-								<td><span style="color: #00A859;"><img height="25" width="25" src="flags/france2016/poland.png"></img></span></td>
-								<td><span style="color: #00A859;"><img height="25" width="25" src="flags/france2016/spain.png"></img></span></td>
-								<td><span style="color: #00A859;"><img height="25" width="25" src="flags/france2016/italy.png"></img></span></td>
-								<td><span style="color: #00A859;"><img height="25" width="25" src="flags/france2016/portugal.png"></img></span></td>
-								<td><span style="color: #00A859;"><img height="25" width="25" src="flags/france2016/france.png"></img></span></td>
-								<td><span style="color: #00A859;"><img height="25" width="25" src="flags/france2016/spain.png"></img></span></td>
-								<td><span style="color: #00A859;"><img height="25" width="25" src="flags/france2016/italy.png"></img></span></td>
-								<td><span style="color: #00A859;"><img height="25" width="25" src="flags/france2016/poland.png"></img></span></td>
-								<td><span style="color: #00A859;"><img height="25" width="25" src="flags/france2016/germany.png"></img></span></td>
-								<td><span style="color: #00A859;"><img height="25" width="25" src="flags/france2016/poland.png"></img></span></td>
-								<td class="points"></td>
-							</tr>
-							<tr>
-								<td width="80">Zajo</td>
-								<td><span style="color: #00A859;"> </span></td>
-								<td><span style="color: #00A859;"> </span></td>
-								<td><span style="color: #00A859;"> </span></td>
-								<td><span style="color: #00A859;"> </span></td>
-								<td><span style="color: #00A859;"> </span></td>
-								<td><span style="color: #00A859;"> </span></td>
-								<td><span style="color: #00A859;"> </span></td>
-								<td><span style="color: #00A859;"> </span></td>
-								<td><span style="color: #00A859;"> </span></td>
-								<td><span style="color: #00A859;"> </span></td>
-								<td><span style="color: #00A859;"> </span></td>
-								<td><span style="color: #00A859;"> </span></td>
-								<td class="points"></td>
-							</tr>
-							<tr>
-								<td width="80">Asia</td>
-								<td><span style="color: #00A859;"> </span></td>
-								<td><span style="color: #00A859;"> </span></td>
-								<td><span style="color: #00A859;"> </span></td>
-								<td><span style="color: #00A859;"> </span></td>
-								<td><span style="color: #00A859;"> </span></td>
-								<td><span style="color: #00A859;"> </span></td>
-								<td><span style="color: #00A859;"> </span></td>
-								<td><span style="color: #00A859;"> </span></td>
-								<td><span style="color: #00A859;"> </span></td>
-								<td><span style="color: #00A859;"> </span></td>
-								<td><span style="color: #00A859;"> </span></td>
-								<td><span style="color: #00A859;"> </span></td>
-								<td class="points"></td>
-							</tr>
-							<tr>
-								<td width="80">Zdre</td>
-								<td><span style="color: #00A859;"><img height="25" width="25" src="flags/france2016/france.png"></img></span></td>
-								<td><span style="color: #00A859;"><img height="25" width="25" src="flags/france2016/england.png"></img></span></td>
-								<td><span style="color: #00A859;"><img height="25" width="25" src="flags/france2016/germany.png"></img></span></td>
-								<td><span style="color: #00A859;"><img height="25" width="25" src="flags/france2016/spain.png"></img></span></td>
-								<td><span style="color: #00A859;"><img height="25" width="25" src="flags/france2016/belgium.png"></img></span></td>
-								<td><span style="color: #00A859;"><img height="25" width="25" src="flags/france2016/austria.png"></img></span></td>
-								<td><span style="color: #00A859;"><img height="25" width="25" src="flags/france2016/spain.png"></img></span></td>
-								<td><span style="color: #00A859;"><img height="25" width="25" src="flags/france2016/france.png"></img></span></td>
-								<td><span style="color: #00A859;"><img height="25" width="25" src="flags/france2016/italy.png"></img></span></td>
-								<td><span style="color: #00A859;"><img height="25" width="25" src="flags/france2016/germany.png"></img></span></td>
-								<td><span style="color: #00A859;"><img height="25" width="25" src="flags/france2016/spain.png"></img></span></td>
-								<td><span style="color: #00A859;"><img height="25" width="25" src="flags/france2016/portugal.png"></img></span></td>
-								<td class="points"></td>
-							</tr>
-							<tr>
-								<td width="80"><img height="20" width="20" src="img/crown.png" alt="">Kamiloss</td>
-								<td><span style="color: #00A859;"> </span></td>
-								<td><span style="color: #00A859;"> </span></td>
-								<td><span style="color: #00A859;"> </span></td>
-								<td><span style="color: #00A859;"> </span></td>
-								<td><span style="color: #00A859;"> </span></td>
-								<td><span style="color: #00A859;"> </span></td>
-								<td><span style="color: #00A859;"> </span></td>
-								<td><span style="color: #00A859;"> </span></td>
-								<td><span style="color: #00A859;"> </span></td>
-								<td><span style="color: #00A859;"> </span></td>
-								<td><span style="color: #00A859;"> </span></td>
-								<td><span style="color: #00A859;"> </span></td>
-								<td class="points"></td>
-							</tr>
-							<tr>
-								<td width="80">Bojler</td>
-								<td><span style="color: #00A859;"> </span></td>
-								<td><span style="color: #00A859;"> </span></td>
-								<td><span style="color: #00A859;"> </span></td>
-								<td><span style="color: #00A859;"> </span></td>
-								<td><span style="color: #00A859;"> </span></td>
-								<td><span style="color: #00A859;"> </span></td>
-								<td><span style="color: #00A859;"> </span></td>
-								<td><span style="color: #00A859;"> </span></td>
-								<td><span style="color: #00A859;"> </span></td>
-								<td><span style="color: #00A859;"> </span></td>
-								<td><span style="color: #00A859;"> </span></td>
-								<td><span style="color: #00A859;"> </span></td>
-								<td class="points"></td>
-							</tr>
-							<tr>
-								<td width="80">Iwan</td>
-								<td><span style="color: #00A859;"> </span></td>
-								<td><span style="color: #00A859;"> </span></td>
-								<td><span style="color: #00A859;"> </span></td>
-								<td><span style="color: #00A859;"> </span></td>
-								<td><span style="color: #00A859;"> </span></td>
-								<td><span style="color: #00A859;"> </span></td>
-								<td><span style="color: #00A859;"> </span></td>
-								<td><span style="color: #00A859;"> </span></td>
-								<td><span style="color: #00A859;"> </span></td>
-								<td><span style="color: #00A859;"> </span></td>
-								<td><span style="color: #00A859;"> </span></td>
-								<td><span style="color: #00A859;"> </span></td>
-								<td class="points"></td>
-							</tr>
-						</table>
-					</div>
-
-					<div class='standings1'>
-						<table>
-							<thead>
-								<tr>
-										<th rowspan="5" style="background-color: #fff;"><div class="vertical-text" ><h3>RUNDA 1</h3></div></th>
-										<th><small>10.06, 21:00</small></th>
-										<th><small>11.06, 15:00</small></th>
-										<th><small>11.06, 18:00</small></th>
-										<th><small>11.06, 21:00</small></th>
-										<th><small>12.06, 15:00</small></th>
-										<th><small>12.06, 18:00</small></th>
-										<th><small>12.06, 21:00</small></th>
+							<table>
+								<thead>
+									<tr style="background-color: #ccc;">
+										<th rowspan=3 width="150" height="120" style="background-color: #fff;"><div class="vertical-text" ><span>PYTANIA DODATKOWE</span></div></th>
+										<th colspan=6>ZWYCIĘZCY GRUP</th>
+										<th colspan=4>PÓŁFINALIŚCI</th>
+										<th rowspan=2>MISTRZ</th>
+										<th rowspan=2>KRÓL STRZ.</th>
 									</tr>
-								<tr>
-										<th><img height="18" width="18" src="flags/france2016/france.png" alt=""></img>FRA</th>
-										<th><img height="18" width="18" src="flags/france2016/albania.png" alt=""></img>ALB</th>
-										<th><img height="18" width="18" src="flags/france2016/wales.png" alt="">WAL</th>
-										<th><img height="18" width="18" src="flags/france2016/england.png" alt="">ENG</th>
-										<th><img height="18" width="18" src="flags/france2016/turkey.png" alt="">TUR</th>
-										<th><img height="18" width="18" src="flags/france2016/poland.png" alt="">POL</th>
-										<th><img height="18" width="18" src="flags/france2016/germany.png" alt="">GER</th>
+									<tr style="background-color: #fff;">
+										<th>A</th>
+										<th>B</th>
+										<th>C</th>
+										<th>D</th>
+										<th>E</th>
+										<th>F</th>
+										<th>1</th>
+										<th>2</th>
+										<th>3</th>
+										<th>4</th>
 									</tr>
-									<tr>
-										<th>-</th>
-										<th>-</th>
-										<th>-</th>
-										<th>-</th>
-										<th>-</th>
-										<th>-</th>
-										<th>-</th>
-									</tr>
-									<tr>
-										<th><img height="18" width="18" src="flags/france2016/romania.png" alt=""></img>ROU</th>
-										<th><img height="18" width="18" src="flags/france2016/switzerland.png" alt=""></img>SUI</th>
-										<th><img height="18" width="18" src="flags/france2016/slovakia.png" alt="">SVK</th>
-										<th><img height="18" width="18" src="flags/france2016/russia.png" alt="">RUS</th>
-										<th><img height="18" width="18" src="flags/france2016/croatia.png" alt="">CRO</th>
-										<th><img height="18" width="18" src="flags/france2016/northern_ireland.png" alt="">NIR</th>
-										<th><img height="18" width="18" src="flags/france2016/ukraine.png" alt="">UKR</th>
-									</tr>
-									<tr>
-										<th><small>1.30	/ 4.85 / 12.50</small></th>
-										<th><small>5.25 / 3.35 / 1.75</small></th>
-										<th><small>2.65	/ 2.95 / 2.95</small></th>
-										<th><small>1.90	/ 3.35 / 4.40</small></th>
-										<th><small>3.60	/ 3.20 / 2.15</small></th>
-										<th><small>1.70	/ 3.55 / 5.50</small></th>
-										<th><small>1.55 / 4.10 / 6.50</small></th>
-										<th rowspan = 4 class="points">Pkt</th>
+									<tr style="background-color: #ccc;">
+										<th></th>
+										<th></th>
+										<th></th>
+										<th></th>
+										<th></th>
+										<th></th>
+										<th></th>
+										<th></th>
+										<th></th>
+										<th></th>
+										<th></th>
+										<th></th>
+										<th rowspan="2" class="points">Pkt</th>
 									</tr>
 								</thead>
 								<tr>
-									<td>Ola</td>
-									<td><input size="1" value="0" disabled="true">-<input size="1" value="1" disabled="false"><span style="color: #00A859;"> </span></td>
-									<td><input size="1" value="2" disabled="true">-<input size="1" value="1" disabled="false"><span style="color: #00A859;"> </span></td>
-									<td><input size="1" value="0" disabled="true">-<input size="1" value="1" disabled="false"><span style="color: #00A859;"> </span></td>
-									<td><input size="1" value="1" disabled="true">-<input size="1" value="0" disabled="true"><span style="color: #00A859;"> </span></td>
-									<td><input size="1" value="0" disabled="true">-<input size="1" value="0" disabled="true"><span style="color: #00A859;"> </span></td>
-									<td><input size="1" value="2" disabled="true">-<input size="1" value="1" disabled="true"><span style="color: #00A859;"> </span></td>
-									<td><input size="1" value="2" disabled="true">-<input size="1" value="0" disabled="true"><span style="color: #00A859;"> </span></td>
+									<td width="80">Ola</td>
+									<td><span style="color: #00A859;"> </span></td>
+									<td><span style="color: #00A859;"> </span></td>
+									<td><span style="color: #00A859;"> </span></td>
+									<td><span style="color: #00A859;"> </span></td>
+									<td><span style="color: #00A859;"> </span></td>
+									<td><span style="color: #00A859;"> </span></td>
+									<td><span style="color: #00A859;"> </span></td>
+									<td><span style="color: #00A859;"> </span></td>
+									<td><span style="color: #00A859;"> </span></td>
+									<td><span style="color: #00A859;"> </span></td>
+									<td><span style="color: #00A859;"> </span></td>
+									<td><span style="color: #00A859;"> </span></td>
 									<td class="points"></td>
 								</tr>
 								<tr>
-									<td>Dmin</td>
-									<td><input size="1" value="1" disabled="true">-<input size="1" value="1" disabled="true"><span style="color: #00A859;"> </span></td>
-									<td><input size="1" value="0" disabled="true">-<input size="1" value="2" disabled="true"><span style="color: #00A859;"> </span></td>
-									<td><input size="1" value="2" disabled="true">-<input size="1" value="0" disabled="true"><span style="color: #00A859;"> </span></td>
-									<td><input size="1" value="2" disabled="true">-<input size="1" value="0" disabled="true"><span style="color: #00A859;"> </span></td>
-									<td><input size="1" value="2" disabled="true">-<input size="1" value="0" disabled="true"><span style="color: #00A859;"> </span></td>
-									<td><input size="1" value="2" disabled="true">-<input size="1" value="0" disabled="true"><span style="color: #00A859;"> </span></td>
-									<td><input size="1" value="1" disabled="true">-<input size="1" value="0" disabled="true"><span style="color: #00A859;"> </span></td>
+									<td width="80">Dmin</td>
+									<td><span style="color: #00A859;"><img height="25" width="25" src="flags/france2016/france.png"></img></span></td>
+									<td><span style="color: #00A859;"><img height="25" width="25" src="flags/france2016/england.png"></img></span></td>
+									<td><span style="color: #00A859;"><img height="25" width="25" src="flags/france2016/poland.png"></img></span></td>
+									<td><span style="color: #00A859;"><img height="25" width="25" src="flags/france2016/spain.png"></img></span></td>
+									<td><span style="color: #00A859;"><img height="25" width="25" src="flags/france2016/italy.png"></img></span></td>
+									<td><span style="color: #00A859;"><img height="25" width="25" src="flags/france2016/portugal.png"></img></span></td>
+									<td><span style="color: #00A859;"><img height="25" width="25" src="flags/france2016/france.png"></img></span></td>
+									<td><span style="color: #00A859;"><img height="25" width="25" src="flags/france2016/spain.png"></img></span></td>
+									<td><span style="color: #00A859;"><img height="25" width="25" src="flags/france2016/italy.png"></img></span></td>
+									<td><span style="color: #00A859;"><img height="25" width="25" src="flags/france2016/poland.png"></img></span></td>
+									<td><span style="color: #00A859;"><img height="25" width="25" src="flags/france2016/germany.png"></img></span></td>
+									<td><span style="color: #00A859;"><img height="25" width="25" src="flags/france2016/poland.png"></img></span></td>
 									<td class="points"></td>
 								</tr>
 								<tr>
-									<td>Zajo</td>
-									<td><input size="1" value="" disabled="true">-<input size="1" value="" disabled="true"><span style="color: #00A859;"> </span></td>
-									<td><input size="1" value="" disabled="true">-<input size="1" value="" disabled="true"><span style="color: #00A859;"> </span></td>
-									<td><input size="1" value="" disabled="true">-<input size="1" value="" disabled="true"><span style="color: #00A859;"> </span></td>
-									<td><input size="1" value="" disabled="true">-<input size="1" value="" disabled="true"><span style="color: #00A859;"> </span></td>
-									<td><input size="1" value="" disabled="true">-<input size="1" value="" disabled="true"><span style="color: #00A859;"> </span></td>
-									<td><input size="1" value="" disabled="true">-<input size="1" value="" disabled="true"><span style="color: #00A859;"> </span></td>
-									<td><input size="1" value="" disabled="true">-<input size="1" value="" disabled="true"><span style="color: #00A859;"> </span></td>
+									<td width="80">Zajo</td>
+									<td><span style="color: #00A859;"> </span></td>
+									<td><span style="color: #00A859;"> </span></td>
+									<td><span style="color: #00A859;"> </span></td>
+									<td><span style="color: #00A859;"> </span></td>
+									<td><span style="color: #00A859;"> </span></td>
+									<td><span style="color: #00A859;"> </span></td>
+									<td><span style="color: #00A859;"> </span></td>
+									<td><span style="color: #00A859;"> </span></td>
+									<td><span style="color: #00A859;"> </span></td>
+									<td><span style="color: #00A859;"> </span></td>
+									<td><span style="color: #00A859;"> </span></td>
+									<td><span style="color: #00A859;"> </span></td>
 									<td class="points"></td>
 								</tr>
 								<tr>
-									<td>Asia</td>
-									<td><input size="1" value="" disabled="true">-<input size="1" value="" disabled="true"><span style="color: #00A859;"> </span></td>
-									<td><input size="1" value="" disabled="true">-<input size="1" value="" disabled="true"><span style="color: #00A859;"> </span></td>
-									<td><input size="1" value="" disabled="true">-<input size="1" value="" disabled="true"><span style="color: #00A859;"> </span></td>
-									<td><input size="1" value="" disabled="true">-<input size="1" value="" disabled="true"><span style="color: #00A859;"> </span></td>
-									<td><input size="1" value="" disabled="true">-<input size="1" value="" disabled="true"><span style="color: #00A859;"> </span></td>
-									<td><input size="1" value="" disabled="true">-<input size="1" value="" disabled="true"><span style="color: #00A859;"> </span></td>
-									<td><input size="1" value="" disabled="true">-<input size="1" value="" disabled="true"><span style="color: #00A859;"> </span></td>
+									<td width="80">Asia</td>
+									<td><span style="color: #00A859;"> </span></td>
+									<td><span style="color: #00A859;"> </span></td>
+									<td><span style="color: #00A859;"> </span></td>
+									<td><span style="color: #00A859;"> </span></td>
+									<td><span style="color: #00A859;"> </span></td>
+									<td><span style="color: #00A859;"> </span></td>
+									<td><span style="color: #00A859;"> </span></td>
+									<td><span style="color: #00A859;"> </span></td>
+									<td><span style="color: #00A859;"> </span></td>
+									<td><span style="color: #00A859;"> </span></td>
+									<td><span style="color: #00A859;"> </span></td>
+									<td><span style="color: #00A859;"> </span></td>
 									<td class="points"></td>
 								</tr>
 								<tr>
-									<td>Zdre</td>
-									<td><input size="1" value="2" disabled="true">-<input size="1" value="1" disabled="true"><span style="color: #00A859;"> </span></td>
-									<td><input size="1" value="0" disabled="true">-<input size="1" value="2" disabled="true"><span style="color: #00A859;"> </span></td>
-									<td><input size="1" value="1" disabled="true">-<input size="1" value="1" disabled="true"><span style="color: #00A859;"> </span></td>
-									<td><input size="1" value="1" disabled="true">-<input size="1" value="0" disabled="true"><span style="color: #00A859;"> </span></td>
-									<td><input size="1" value="1" disabled="true">-<input size="1" value="1" disabled="true"><span style="color: #00A859;"> </span></td>
-									<td><input size="1" value="2" disabled="true">-<input size="1" value="1" disabled="true"><span style="color: #00A859;"> </span></td>
-									<td><input size="1" value="2" disabled="true">-<input size="1" value="0" disabled="true"><span style="color: #00A859;"> </span></td>
+									<td width="80">Zdre</td>
+									<td><span style="color: #00A859;"><img height="25" width="25" src="flags/france2016/france.png"></img></span></td>
+									<td><span style="color: #00A859;"><img height="25" width="25" src="flags/france2016/england.png"></img></span></td>
+									<td><span style="color: #00A859;"><img height="25" width="25" src="flags/france2016/germany.png"></img></span></td>
+									<td><span style="color: #00A859;"><img height="25" width="25" src="flags/france2016/spain.png"></img></span></td>
+									<td><span style="color: #00A859;"><img height="25" width="25" src="flags/france2016/belgium.png"></img></span></td>
+									<td><span style="color: #00A859;"><img height="25" width="25" src="flags/france2016/austria.png"></img></span></td>
+									<td><span style="color: #00A859;"><img height="25" width="25" src="flags/france2016/spain.png"></img></span></td>
+									<td><span style="color: #00A859;"><img height="25" width="25" src="flags/france2016/france.png"></img></span></td>
+									<td><span style="color: #00A859;"><img height="25" width="25" src="flags/france2016/italy.png"></img></span></td>
+									<td><span style="color: #00A859;"><img height="25" width="25" src="flags/france2016/germany.png"></img></span></td>
+									<td><span style="color: #00A859;"><img height="25" width="25" src="flags/france2016/spain.png"></img></span></td>
+									<td><span style="color: #00A859;"><img height="25" width="25" src="flags/france2016/portugal.png"></img></span></td>
 									<td class="points"></td>
 								</tr>
 								<tr>
-									<td><img height="20" width="20" src="img/crown.png" alt="">Kamiloss</td>
-									<td><input size="1" value="" disabled="true">-<input size="1" value="" disabled="true"><span style="color: #00A859;"> </span></td>
-									<td><input size="1" value="" disabled="true">-<input size="1" value="" disabled="true"><span style="color: #00A859;"> </span></td>
-									<td><input size="1" value="" disabled="true">-<input size="1" value="" disabled="true"><span style="color: #00A859;"> </span></td>
-									<td><input size="1" value="" disabled="true">-<input size="1" value="" disabled="true"><span style="color: #00A859;"> </span></td>
-									<td><input size="1" value="" disabled="true">-<input size="1" value="" disabled="true"><span style="color: #00A859;"> </span></td>
-									<td><input size="1" value="" disabled="true">-<input size="1" value="" disabled="true"><span style="color: #00A859;"> </span></td>
-									<td><input size="1" value="" disabled="true">-<input size="1" value="" disabled="true"><span style="color: #00A859;"> </span></td>
+									<td width="80"><img height="20" width="20" src="img/crown.png" alt="">Kamiloss</td>
+									<td><span style="color: #00A859;"> </span></td>
+									<td><span style="color: #00A859;"> </span></td>
+									<td><span style="color: #00A859;"> </span></td>
+									<td><span style="color: #00A859;"> </span></td>
+									<td><span style="color: #00A859;"> </span></td>
+									<td><span style="color: #00A859;"> </span></td>
+									<td><span style="color: #00A859;"> </span></td>
+									<td><span style="color: #00A859;"> </span></td>
+									<td><span style="color: #00A859;"> </span></td>
+									<td><span style="color: #00A859;"> </span></td>
+									<td><span style="color: #00A859;"> </span></td>
+									<td><span style="color: #00A859;"> </span></td>
 									<td class="points"></td>
 								</tr>
 								<tr>
-									<td>Bojler</td>
-									<td><input size="1" value="" disabled="true">-<input size="1" value="" disabled="true"><span style="color: #00A859;"> </span></td>
-									<td><input size="1" value="" disabled="true">-<input size="1" value="" disabled="true"><span style="color: #00A859;"> </span></td>
-									<td><input size="1" value="" disabled="true">-<input size="1" value="" disabled="true"><span style="color: #00A859;"> </span></td>
-									<td><input size="1" value="" disabled="true">-<input size="1" value="" disabled="true"><span style="color: #00A859;"> </span></td>
-									<td><input size="1" value="" disabled="true">-<input size="1" value="" disabled="true"><span style="color: #00A859;"> </span></td>
-									<td><input size="1" value="" disabled="true">-<input size="1" value="" disabled="true"><span style="color: #00A859;"> </span></td>
-									<td><input size="1" value="" disabled="true">-<input size="1" value="" disabled="true"><span style="color: #00A859;"> </span></td>
+									<td width="80">Bojler</td>
+									<td><span style="color: #00A859;"> </span></td>
+									<td><span style="color: #00A859;"> </span></td>
+									<td><span style="color: #00A859;"> </span></td>
+									<td><span style="color: #00A859;"> </span></td>
+									<td><span style="color: #00A859;"> </span></td>
+									<td><span style="color: #00A859;"> </span></td>
+									<td><span style="color: #00A859;"> </span></td>
+									<td><span style="color: #00A859;"> </span></td>
+									<td><span style="color: #00A859;"> </span></td>
+									<td><span style="color: #00A859;"> </span></td>
+									<td><span style="color: #00A859;"> </span></td>
+									<td><span style="color: #00A859;"> </span></td>
 									<td class="points"></td>
 								</tr>
 								<tr>
-									<td>Iwan</td>
-									<td><input size="1" value="" disabled="true">-<input size="1" value="" disabled="true"><span style="color: #00A859;"> </span></td>
-									<td><input size="1" value="" disabled="true">-<input size="1" value="" disabled="true"><span style="color: #00A859;"> </span></td>
-									<td><input size="1" value="" disabled="true">-<input size="1" value="" disabled="true"><span style="color: #00A859;"> </span></td>
-									<td><input size="1" value="" disabled="true">-<input size="1" value="" disabled="true"><span style="color: #00A859;"> </span></td>
-									<td><input size="1" value="" disabled="true">-<input size="1" value="" disabled="true"><span style="color: #00A859;"> </span></td>
-									<td><input size="1" value="" disabled="true">-<input size="1" value="" disabled="true"><span style="color: #00A859;"> </span></td>
-									<td><input size="1" value="" disabled="true">-<input size="1" value="" disabled="true"><span style="color: #00A859;"> </span></td>
+									<td width="80">Iwan</td>
+									<td><span style="color: #00A859;"> </span></td>
+									<td><span style="color: #00A859;"> </span></td>
+									<td><span style="color: #00A859;"> </span></td>
+									<td><span style="color: #00A859;"> </span></td>
+									<td><span style="color: #00A859;"> </span></td>
+									<td><span style="color: #00A859;"> </span></td>
+									<td><span style="color: #00A859;"> </span></td>
+									<td><span style="color: #00A859;"> </span></td>
+									<td><span style="color: #00A859;"> </span></td>
+									<td><span style="color: #00A859;"> </span></td>
+									<td><span style="color: #00A859;"> </span></td>
+									<td><span style="color: #00A859;"> </span></td>
 									<td class="points"></td>
 								</tr>
 							</table>
 						</div>
 
-						<div class="rules" style="text-align: left;">
-							<b>Zasady:</b>
-							<br>
-							<img height="15" width="15" src="img/france2016/ball.png" alt="">
-							<img height="15" width="15" src="img/france2016/ball.png" alt="">
-							<img height="15" width="15" src="img/france2016/ball.png" alt="">
-							<img height="15" width="15" src="img/france2016/ball.png" alt=""> - dokładne trafienie wyniku
-							<br>
-							<img height="15" width="15" src="img/france2016/ball.png" alt="">
-							<img height="15" width="15" src="img/france2016/ball.png" alt="">
-							<img height="15" width="15" src="img/france2016/ball.png" alt=""> - trafienie zwycięzcy i różnicy bramek
-							<br>
-							<img height="15" width="15" src="img/france2016/ball.png" alt="">
-							<img height="15" width="15" src="img/france2016/ball.png" alt=""> - trafienie zwycięzcy z błędną różnicą bramkową
-							<br>
-							W przypadku remisu:
-							<br>
-							<img height="15" width="15" src="img/france2016/ball.png" alt="">
-							<img height="15" width="15" src="img/france2016/ball.png" alt="">
-							<img height="15" width="15" src="img/france2016/ball.png" alt="">
-							<img height="15" width="15" src="img/france2016/ball.png" alt=""> - dokładne trafienie wyniku
-							<br>
-							<img height="15" width="15" src="img/france2016/ball.png" alt="">
-							<img height="15" width="15" src="img/france2016/ball.png" alt=""> - trafienie remisu z błędną liczbą bramek
-						</div>
+						<div class='standings1'>
+							<table>
+								<thead>
+									<tr>
+											<th rowspan="5" style="background-color: #fff;"><div class="vertical-text" ><h3>RUNDA 1</h3></div></th>
+											<th><small>10.06, 21:00</small></th>
+											<th><small>11.06, 15:00</small></th>
+											<th><small>11.06, 18:00</small></th>
+											<th><small>11.06, 21:00</small></th>
+											<th><small>12.06, 15:00</small></th>
+											<th><small>12.06, 18:00</small></th>
+											<th><small>12.06, 21:00</small></th>
+										</tr>
+									<tr>
+											<th><img height="18" width="18" src="flags/france2016/france.png" alt=""></img>FRA</th>
+											<th><img height="18" width="18" src="flags/france2016/albania.png" alt=""></img>ALB</th>
+											<th><img height="18" width="18" src="flags/france2016/wales.png" alt="">WAL</th>
+											<th><img height="18" width="18" src="flags/france2016/england.png" alt="">ENG</th>
+											<th><img height="18" width="18" src="flags/france2016/turkey.png" alt="">TUR</th>
+											<th><img height="18" width="18" src="flags/france2016/poland.png" alt="">POL</th>
+											<th><img height="18" width="18" src="flags/france2016/germany.png" alt="">GER</th>
+										</tr>
+										<tr>
+											<th>-</th>
+											<th>-</th>
+											<th>-</th>
+											<th>-</th>
+											<th>-</th>
+											<th>-</th>
+											<th>-</th>
+										</tr>
+										<tr>
+											<th><img height="18" width="18" src="flags/france2016/romania.png" alt=""></img>ROU</th>
+											<th><img height="18" width="18" src="flags/france2016/switzerland.png" alt=""></img>SUI</th>
+											<th><img height="18" width="18" src="flags/france2016/slovakia.png" alt="">SVK</th>
+											<th><img height="18" width="18" src="flags/france2016/russia.png" alt="">RUS</th>
+											<th><img height="18" width="18" src="flags/france2016/croatia.png" alt="">CRO</th>
+											<th><img height="18" width="18" src="flags/france2016/northern_ireland.png" alt="">NIR</th>
+											<th><img height="18" width="18" src="flags/france2016/ukraine.png" alt="">UKR</th>
+										</tr>
+										<tr>
+											<th><small>1.30	/ 4.85 / 12.50</small></th>
+											<th><small>5.25 / 3.35 / 1.75</small></th>
+											<th><small>2.65	/ 2.95 / 2.95</small></th>
+											<th><small>1.90	/ 3.35 / 4.40</small></th>
+											<th><small>3.60	/ 3.20 / 2.15</small></th>
+											<th><small>1.70	/ 3.55 / 5.50</small></th>
+											<th><small>1.55 / 4.10 / 6.50</small></th>
+											<th rowspan = 4 class="points">Pkt</th>
+										</tr>
+									</thead>
+									<tr>
+										<td>Ola</td>
+										<td><input size="1" value="0" disabled="true">-<input size="1" value="1" disabled="false"><span style="color: #00A859;"> </span></td>
+										<td><input size="1" value="2" disabled="true">-<input size="1" value="1" disabled="false"><span style="color: #00A859;"> </span></td>
+										<td><input size="1" value="0" disabled="true">-<input size="1" value="1" disabled="false"><span style="color: #00A859;"> </span></td>
+										<td><input size="1" value="1" disabled="true">-<input size="1" value="0" disabled="true"><span style="color: #00A859;"> </span></td>
+										<td><input size="1" value="0" disabled="true">-<input size="1" value="0" disabled="true"><span style="color: #00A859;"> </span></td>
+										<td><input size="1" value="2" disabled="true">-<input size="1" value="1" disabled="true"><span style="color: #00A859;"> </span></td>
+										<td><input size="1" value="2" disabled="true">-<input size="1" value="0" disabled="true"><span style="color: #00A859;"> </span></td>
+										<td class="points"></td>
+									</tr>
+									<tr>
+										<td>Dmin</td>
+										<td><input size="1" value="1" disabled="true">-<input size="1" value="1" disabled="true"><span style="color: #00A859;"> </span></td>
+										<td><input size="1" value="0" disabled="true">-<input size="1" value="2" disabled="true"><span style="color: #00A859;"> </span></td>
+										<td><input size="1" value="2" disabled="true">-<input size="1" value="0" disabled="true"><span style="color: #00A859;"> </span></td>
+										<td><input size="1" value="2" disabled="true">-<input size="1" value="0" disabled="true"><span style="color: #00A859;"> </span></td>
+										<td><input size="1" value="2" disabled="true">-<input size="1" value="0" disabled="true"><span style="color: #00A859;"> </span></td>
+										<td><input size="1" value="2" disabled="true">-<input size="1" value="0" disabled="true"><span style="color: #00A859;"> </span></td>
+										<td><input size="1" value="1" disabled="true">-<input size="1" value="0" disabled="true"><span style="color: #00A859;"> </span></td>
+										<td class="points"></td>
+									</tr>
+									<tr>
+										<td>Zajo</td>
+										<td><input size="1" value="" disabled="true">-<input size="1" value="" disabled="true"><span style="color: #00A859;"> </span></td>
+										<td><input size="1" value="" disabled="true">-<input size="1" value="" disabled="true"><span style="color: #00A859;"> </span></td>
+										<td><input size="1" value="" disabled="true">-<input size="1" value="" disabled="true"><span style="color: #00A859;"> </span></td>
+										<td><input size="1" value="" disabled="true">-<input size="1" value="" disabled="true"><span style="color: #00A859;"> </span></td>
+										<td><input size="1" value="" disabled="true">-<input size="1" value="" disabled="true"><span style="color: #00A859;"> </span></td>
+										<td><input size="1" value="" disabled="true">-<input size="1" value="" disabled="true"><span style="color: #00A859;"> </span></td>
+										<td><input size="1" value="" disabled="true">-<input size="1" value="" disabled="true"><span style="color: #00A859;"> </span></td>
+										<td class="points"></td>
+									</tr>
+									<tr>
+										<td>Asia</td>
+										<td><input size="1" value="" disabled="true">-<input size="1" value="" disabled="true"><span style="color: #00A859;"> </span></td>
+										<td><input size="1" value="" disabled="true">-<input size="1" value="" disabled="true"><span style="color: #00A859;"> </span></td>
+										<td><input size="1" value="" disabled="true">-<input size="1" value="" disabled="true"><span style="color: #00A859;"> </span></td>
+										<td><input size="1" value="" disabled="true">-<input size="1" value="" disabled="true"><span style="color: #00A859;"> </span></td>
+										<td><input size="1" value="" disabled="true">-<input size="1" value="" disabled="true"><span style="color: #00A859;"> </span></td>
+										<td><input size="1" value="" disabled="true">-<input size="1" value="" disabled="true"><span style="color: #00A859;"> </span></td>
+										<td><input size="1" value="" disabled="true">-<input size="1" value="" disabled="true"><span style="color: #00A859;"> </span></td>
+										<td class="points"></td>
+									</tr>
+									<tr>
+										<td>Zdre</td>
+										<td><input size="1" value="2" disabled="true">-<input size="1" value="1" disabled="true"><span style="color: #00A859;"> </span></td>
+										<td><input size="1" value="0" disabled="true">-<input size="1" value="2" disabled="true"><span style="color: #00A859;"> </span></td>
+										<td><input size="1" value="1" disabled="true">-<input size="1" value="1" disabled="true"><span style="color: #00A859;"> </span></td>
+										<td><input size="1" value="1" disabled="true">-<input size="1" value="0" disabled="true"><span style="color: #00A859;"> </span></td>
+										<td><input size="1" value="1" disabled="true">-<input size="1" value="1" disabled="true"><span style="color: #00A859;"> </span></td>
+										<td><input size="1" value="2" disabled="true">-<input size="1" value="1" disabled="true"><span style="color: #00A859;"> </span></td>
+										<td><input size="1" value="2" disabled="true">-<input size="1" value="0" disabled="true"><span style="color: #00A859;"> </span></td>
+										<td class="points"></td>
+									</tr>
+									<tr>
+										<td><img height="20" width="20" src="img/crown.png" alt="">Kamiloss</td>
+										<td><input size="1" value="" disabled="true">-<input size="1" value="" disabled="true"><span style="color: #00A859;"> </span></td>
+										<td><input size="1" value="" disabled="true">-<input size="1" value="" disabled="true"><span style="color: #00A859;"> </span></td>
+										<td><input size="1" value="" disabled="true">-<input size="1" value="" disabled="true"><span style="color: #00A859;"> </span></td>
+										<td><input size="1" value="" disabled="true">-<input size="1" value="" disabled="true"><span style="color: #00A859;"> </span></td>
+										<td><input size="1" value="" disabled="true">-<input size="1" value="" disabled="true"><span style="color: #00A859;"> </span></td>
+										<td><input size="1" value="" disabled="true">-<input size="1" value="" disabled="true"><span style="color: #00A859;"> </span></td>
+										<td><input size="1" value="" disabled="true">-<input size="1" value="" disabled="true"><span style="color: #00A859;"> </span></td>
+										<td class="points"></td>
+									</tr>
+									<tr>
+										<td>Bojler</td>
+										<td><input size="1" value="" disabled="true">-<input size="1" value="" disabled="true"><span style="color: #00A859;"> </span></td>
+										<td><input size="1" value="" disabled="true">-<input size="1" value="" disabled="true"><span style="color: #00A859;"> </span></td>
+										<td><input size="1" value="" disabled="true">-<input size="1" value="" disabled="true"><span style="color: #00A859;"> </span></td>
+										<td><input size="1" value="" disabled="true">-<input size="1" value="" disabled="true"><span style="color: #00A859;"> </span></td>
+										<td><input size="1" value="" disabled="true">-<input size="1" value="" disabled="true"><span style="color: #00A859;"> </span></td>
+										<td><input size="1" value="" disabled="true">-<input size="1" value="" disabled="true"><span style="color: #00A859;"> </span></td>
+										<td><input size="1" value="" disabled="true">-<input size="1" value="" disabled="true"><span style="color: #00A859;"> </span></td>
+										<td class="points"></td>
+									</tr>
+									<tr>
+										<td>Iwan</td>
+										<td><input size="1" value="" disabled="true">-<input size="1" value="" disabled="true"><span style="color: #00A859;"> </span></td>
+										<td><input size="1" value="" disabled="true">-<input size="1" value="" disabled="true"><span style="color: #00A859;"> </span></td>
+										<td><input size="1" value="" disabled="true">-<input size="1" value="" disabled="true"><span style="color: #00A859;"> </span></td>
+										<td><input size="1" value="" disabled="true">-<input size="1" value="" disabled="true"><span style="color: #00A859;"> </span></td>
+										<td><input size="1" value="" disabled="true">-<input size="1" value="" disabled="true"><span style="color: #00A859;"> </span></td>
+										<td><input size="1" value="" disabled="true">-<input size="1" value="" disabled="true"><span style="color: #00A859;"> </span></td>
+										<td><input size="1" value="" disabled="true">-<input size="1" value="" disabled="true"><span style="color: #00A859;"> </span></td>
+										<td class="points"></td>
+									</tr>
+								</table>
+							</div>
 
-						<footer>
-							<p>Mailto: <a href="mailto:zdrenis@gmail.com">
-								zdrenis@gmail.com</a></p>
-								<div class="watermark-footer"></div>
-							</footer>
-						</div>
+							<div class="rules" style="text-align: left;">
+								<b>Zasady:</b>
+								<br>
+								<img height="15" width="15" src="img/france2016/ball.png" alt="">
+								<img height="15" width="15" src="img/france2016/ball.png" alt="">
+								<img height="15" width="15" src="img/france2016/ball.png" alt="">
+								<img height="15" width="15" src="img/france2016/ball.png" alt=""> - dokładne trafienie wyniku
+								<br>
+								<img height="15" width="15" src="img/france2016/ball.png" alt="">
+								<img height="15" width="15" src="img/france2016/ball.png" alt="">
+								<img height="15" width="15" src="img/france2016/ball.png" alt=""> - trafienie zwycięzcy i różnicy bramek
+								<br>
+								<img height="15" width="15" src="img/france2016/ball.png" alt="">
+								<img height="15" width="15" src="img/france2016/ball.png" alt=""> - trafienie zwycięzcy z błędną różnicą bramkową
+								<br>
+								W przypadku remisu:
+								<br>
+								<img height="15" width="15" src="img/france2016/ball.png" alt="">
+								<img height="15" width="15" src="img/france2016/ball.png" alt="">
+								<img height="15" width="15" src="img/france2016/ball.png" alt="">
+								<img height="15" width="15" src="img/france2016/ball.png" alt=""> - dokładne trafienie wyniku
+								<br>
+								<img height="15" width="15" src="img/france2016/ball.png" alt="">
+								<img height="15" width="15" src="img/france2016/ball.png" alt=""> - trafienie remisu z błędną liczbą bramek
+							</div>
 
-						<script>
-							(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-								(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-								m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-							})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+							<footer>
+								<p>Mailto: <a href="mailto:zdrenis@gmail.com">
+									zdrenis@gmail.com</a></p>
+									<div class="watermark-footer"></div>
+								</footer>
+							</div>
 
-							ga('create', 'UA-51714890-1', 'zdrenis.github.io');
-							ga('send', 'pageview');
+							<script>
+								(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+									(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+									m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+								})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
-						</script>
+								ga('create', 'UA-51714890-1', 'zdrenis.github.io');
+								ga('send', 'pageview');
 
-					</body>
-					</html>
+							</script>
+
+						</body>
+						</html>
