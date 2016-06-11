@@ -20,6 +20,10 @@
   animation: blinker 1s linear infinite;
 }
 
+.tip {
+    display: inline-block;
+}
+
 @keyframes blinker {  
   50% { opacity: 0.0; }
 }
@@ -39,12 +43,13 @@
               background-image: -moz-linear-gradient(top, red, #fa623f);
               background-image: -o-linear-gradient(top, red, #fa623f);
               background-image: linear-gradient(to bottom, red, #fa623f);
-              right: 3px;
+              //right: 3px;
               margin-left: 5px;
               color: white;
               text-shadow: 0 1px rgba(0, 0, 0, 0.25);
               border: 1px solid;
               border-radius: 10px;
+              //float: right;
             }
 
             .tipster_row input {
@@ -134,7 +139,7 @@
         margin-left: auto;
         margin-right: auto;
         border-radius: 25px;
-        width: 80%;
+        width: 85%;
         padding: 15px;
         background-color: white;
     }
@@ -378,8 +383,8 @@
      <tr style="background-color: #fff;">
          <th>2-1</th>
          <th>0-1</th>
-         <th class="blink_me">2-1</th>
-         <th>-</th>
+         <th>2-1</th>
+         <th class="blink_me">-</th>
          <th>-</th>
          <th>-</th>
          <th>-</th>
@@ -439,7 +444,7 @@
 </tr>
 <tr class="tipster_row">
   <td>Asia</td>
-  <td><input value="2">-<input size="1" value="1"><span>4</span></td>
+  <td><div class="tip"><input value="2">-<input value="1"><span>4</span></div></td>
   <td><input value="1">-<input size="1" value="2"><span>3</span></td>
   <td><input value="0">-<input size="1" value="1"><span>0</span></td>
   <td><input value="3">-<input size="1" value="1"></td>
