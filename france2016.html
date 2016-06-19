@@ -39,9 +39,8 @@
               background-image: -moz-linear-gradient(top, red, #fa623f);
               background-image: -o-linear-gradient(top, red, #fa623f);
               background-image: linear-gradient(to bottom, red, #fa623f);
-              margin-left: 3px;
-              margin-right: 3px;
-              margin-top: 3px;
+              margin-left: 2px;
+              margin-right: 2px;
               color: white;
               text-shadow: 0 1px rgba(0, 0, 0, 0.25);
               border: 1px solid;
@@ -52,6 +51,19 @@
                 width: 1em;
             }
 
+            .tipster_row img {
+            	position: relative;
+            	width: 23px;
+            	height: 23px;
+            	margin-top: 3px;
+            	margin-bottom: 1px;
+            }
+
+            .standingsExtra .tipster_row img ~ span {
+            	position: absolute;
+            	margin-top: 4px;
+            }
+
          .watermark-footer {		
            background-image: url("img/france2016/watermark.png");
            position: relative;
@@ -59,23 +71,6 @@
            height: 219px;
            width: 738px;
            margin: auto;
-        }
-
-        .extra_questions .points {
-          padding: 0.5px 6px 0.5px 6px;
-              background: #fa623f;
-              border-color: #fa5a35;
-              background-image: -webkit-linear-gradient(top, red, #fa623f);
-              background-image: -moz-linear-gradient(top, red, #fa623f);
-              background-image: -o-linear-gradient(top, red, #fa623f);
-              background-image: linear-gradient(to bottom, red, #fa623f);
-              margin-left: 3px;
-              margin-right: 3px;
-              margin-top: 3px;
-              color: white;
-              text-shadow: 0 1px rgba(0, 0, 0, 0.25);
-              border: 1px solid;
-              border-radius: 10px;
         }
 
        table {
@@ -153,7 +148,7 @@
     }
 
     #totals {
-      width: 50%;
+      width: 55%;
     }
 
     #total_points {
@@ -269,6 +264,7 @@
           <th>II</th>
           <th>III</th>
           <th>IV</th>
+          <th>PD</th>
           <th>Suma</th>
           </tr>
            <tr class="tipster_row gold">
@@ -278,7 +274,8 @@
             <td><span>10</span></td>
             <td id="round_winner"><span>11</span><img height="20" width="20" src="img/whisky.png"></td>
             <td><span>6</span></td>
-            <td class="points"><span id="total_points">45</span></td>
+            <td><span>4</span></td>
+            <td class="points"><span id="total_points">49</span></td>
           </tr>
           <tr class="tipster_row silver">
             <td>2</td>
@@ -287,7 +284,8 @@
             <td><span>9</span></td>
             <td><span>8</span></td>
             <td><span>8</span></td>
-            <td class="points"><span id="total_points">37</span></td>
+            <td><span>4</span></td>
+            <td class="points"><span id="total_points">41</span></td>
           </tr>
 		  <tr class="tipster_row brown">
             <td>3</td>
@@ -296,7 +294,8 @@
             <td id="round_winner"><span>16</span><img height="20" width="20" src="img/whisky.png"></td>
             <td><span>10</span></td>
             <td><span>2</span></td>
-            <td class="points"><span id="total_points">35</span></td>
+            <td><span>4</span></td>
+            <td class="points"><span id="total_points">39</span></td>
           </tr>
           <tr class="tipster_row">
             <td>4</td>
@@ -305,7 +304,8 @@
             <td><span>9</span></td>
             <td><span>10</span></td>
             <td><span>2</span></td>
-            <td rowspan="2" class="points"><span id="total_points">35</span></td>
+            <td><span>4</span></td>
+            <td rowspan="2" class="points"><span id="total_points">39</span></td>
           </tr>
           <tr class="tipster_row">
             <td></td>
@@ -314,6 +314,7 @@
             <td><span>10</span></td>
             <td><span>6</span></td>
             <td><span>6</span></td>
+            <td><span>4</span></td>
           </tr>
 		  <tr class="tipster_row">
             <td>6</td>
@@ -322,7 +323,8 @@
             <td><span>10</span></td>
             <td><span>10</span></td>
             <td><span>2</span></td>
-            <td class="points"><span id="total_points">34</span></td>
+            <td><span>4</span></td>
+            <td class="points"><span id="total_points">38</span></td>
           </tr>
            <tr class="tipster_row">
             <td>7</td>
@@ -331,7 +333,8 @@
             <td><span>8</span></td>
             <td><span>8</span></td>
             <td><span>4</span></td>
-            <td class="points"><span id="total_points">31</span></td>
+            <td><span>4</span></td>
+            <td class="points"><span id="total_points">35</span></td>
           </tr>
           <tr class="tipster_row">
             <td>8</td>
@@ -340,7 +343,8 @@
             <td><span>8</span></td>
             <td><span>6</span></td>
             <td><span>6</span></td>
-            <td rowspan="2" class="points"><span id="total_points">28</span></td>
+            <td><span>4</span></td>
+            <td rowspan="2" class="points"><span id="total_points">32</span></td>
           </tr>
           <tr class="tipster_row">
             <td></td>
@@ -349,6 +353,7 @@
             <td><span>8</span></td>
             <td><span>7</span></td>
             <td><span>3</span></td>
+            <td><span>4</span></td>
           </tr>
         </table>
         </div>
@@ -378,7 +383,7 @@
                   <th>4</th>
               </tr>
               <tr style="background-color: #fff;">
-                  <th></th>
+                  <th><img height="25" width="25" src="flags/france2016/france.png" /></th>
                   <th></th>
                   <th></th>
                   <th></th>
@@ -393,149 +398,149 @@
                   <th rowspan="2" class="points">Pkt</th>
               </tr>
           </thead>
-          <tr>
+          <tr class="tipster_row">
            <td>Ola</td>
-           <td><span style="color: #00A859;"><img height="25" width="25" src="flags/france2016/france.png"></img></span></td>
-           <td><span style="color: #00A859;"><img height="25" width="25" src="flags/france2016/england.png"></img></span></td>
-           <td><span style="color: #00A859;"><img height="25" width="25" src="flags/france2016/germany.png"></img></span></td>
-           <td><span style="color: #00A859;"><img height="25" width="25" src="flags/france2016/croatia.png"></img></span></td>
-           <td><span style="color: #00A859;"><img height="25" width="25" src="flags/france2016/italy.png"></img></span></td>
-           <td><span style="color: #00A859;"><img height="25" width="25" src="flags/france2016/portugal.png"></img></span></td>
-           <td><span style="color: #00A859;"><img height="25" width="25" src="flags/france2016/croatia.png"></img></span></td>
-           <td><span style="color: #00A859;"><img height="25" width="25" src="flags/france2016/portugal.png"></img></span></td>
-           <td><span style="color: #00A859;"><img height="25" width="25" src="flags/france2016/germany.png"></img></span></td>
-           <td><span style="color: #00A859;"><img height="25" width="25" src="flags/france2016/england.png"></img></span></td>
-           <td><span style="color: #00A859;"><img height="25" width="25" src="flags/france2016/germany.png"></img></span></td>
-           <td><span style="color: #00A859;"><img height="25" width="25" src="flags/france2016/germany.png"></img></span></td>
-           <td class="points"></td>
+           <td><img src="flags/france2016/france.png" /><span>4</span></td>
+           <td><img src="flags/france2016/england.png" /></td>
+           <td><img src="flags/france2016/germany.png" /></td>
+           <td><img src="flags/france2016/croatia.png" /></td>
+           <td><img src="flags/france2016/italy.png" /></td>
+           <td><img src="flags/france2016/portugal.png" /></td>
+           <td><img src="flags/france2016/croatia.png" /></td>
+           <td><img src="flags/france2016/portugal.png" /></td>
+           <td><img src="flags/france2016/germany.png" /></td>
+           <td><img src="flags/france2016/england.png" /></td>
+           <td><img src="flags/france2016/germany.png" /></td>
+           <td><img src="flags/france2016/germany.png" /></td>
+           <td class="points"><span>4</span></td>
        </tr>
-       <tr>
+       <tr class="tipster_row">
            <td>Dmin</td>
-           <td><span style="color: #00A859;"><img height="25" width="25" src="flags/france2016/france.png"></img></span></td>
-           <td><span style="color: #00A859;"><img height="25" width="25" src="flags/france2016/england.png"></img></span></td>
-           <td><span style="color: #00A859;"><img height="25" width="25" src="flags/france2016/poland.png"></img></span></td>
-           <td><span style="color: #00A859;"><img height="25" width="25" src="flags/france2016/spain.png"></img></span></td>
-           <td><span style="color: #00A859;"><img height="25" width="25" src="flags/france2016/italy.png"></img></span></td>
-           <td><span style="color: #00A859;"><img height="25" width="25" src="flags/france2016/portugal.png"></img></span></td>
-           <td><span style="color: #00A859;"><img height="25" width="25" src="flags/france2016/france.png"></img></span></td>
-           <td><span style="color: #00A859;"><img height="25" width="25" src="flags/france2016/spain.png"></img></span></td>
-           <td><span style="color: #00A859;"><img height="25" width="25" src="flags/france2016/germany.png"></img></span></td>
-           <td><span style="color: #00A859;"><img height="25" width="25" src="flags/france2016/poland.png"></img></span></td>
-           <td><span style="color: #00A859;"><img height="25" width="25" src="flags/france2016/germany.png"></img></span></td>
-           <td><span style="color: #00A859;"><img height="25" width="25" src="flags/france2016/poland.png"></img></span></td>
-           <td class="points"></td>
+           <td><img src="flags/france2016/france.png" /><span>4</span></td>
+           <td><img src="flags/france2016/england.png" /></td>
+           <td><img src="flags/france2016/poland.png" /></td>
+           <td><img src="flags/france2016/spain.png"/></td>
+           <td><img src="flags/france2016/italy.png"/></td>
+           <td><img src="flags/france2016/portugal.png"/></td>
+           <td><img src="flags/france2016/france.png"/></td>
+           <td><img src="flags/france2016/spain.png"/></td>
+           <td><img src="flags/france2016/germany.png"/></td>
+           <td><img src="flags/france2016/poland.png"/></td>
+           <td><img src="flags/france2016/germany.png"/></td>
+           <td><img src="flags/france2016/poland.png"/></td>
+           <td class="points"><span>4</span></td>
        </tr>
-       <tr>
+       <tr class="tipster_row">
            <td>Zajo</td>
-           <td><span style="color: #00A859;"><img height="25" width="25" src="flags/france2016/france.png"></span></td>
-           <td><span style="color: #00A859;"><img height="25" width="25" src="flags/france2016/england.png"></span></td>
-           <td><span style="color: #00A859;"><img height="25" width="25" src="flags/france2016/germany.png"></span></td>
-           <td><span style="color: #00A859;"><img height="25" width="25" src="flags/france2016/spain.png"></span></td>
-           <td><span style="color: #00A859;"><img height="25" width="25" src="flags/france2016/belgium.png"></span></td>
-           <td><span style="color: #00A859;"><img height="25" width="25" src="flags/france2016/portugal.png"></span></td>
-           <td><span style="color: #00A859;"><img height="25" width="25" src="flags/france2016/france.png"></span></td>
-           <td><span style="color: #00A859;"><img height="25" width="25" src="flags/france2016/spain.png"></span></td>
-           <td><span style="color: #00A859;"><img height="25" width="25" src="flags/france2016/germany.png"></span></td>
-           <td><span style="color: #00A859;"><img height="25" width="25" src="flags/france2016/england.png"></span></td>
-           <td><span style="color: #00A859;"><img height="25" width="25" src="flags/france2016/france.png"></span></td>
-           <td><span style="color: #00A859;"><img height="25" width="25" src="flags/france2016/france.png"></span></td>
-           <td class="points"></td>
+           <td><img src="flags/france2016/france.png"><span>4</span></td>
+           <td><img src="flags/france2016/england.png"></td>
+           <td><img src="flags/france2016/germany.png"></td>
+           <td><img src="flags/france2016/spain.png"></td>
+           <td><img src="flags/france2016/belgium.png"></td>
+           <td><img src="flags/france2016/portugal.png"></td>
+           <td><img src="flags/france2016/france.png"></td>
+           <td><img src="flags/france2016/spain.png"></td>
+           <td><img src="flags/france2016/germany.png"></td>
+           <td><img src="flags/france2016/england.png"></td>
+           <td><img src="flags/france2016/france.png"></td>
+           <td><img src="flags/france2016/france.png"></td>
+           <td class="points"><span>4</span></td>
        </tr>
-       <tr>
+       <tr class="tipster_row">
            <td>Asia</td>
-           <td><span style="color: #00A859;"><img height="25" width="25" src="flags/france2016/france.png"></span></td>
-           <td><span style="color: #00A859;"><img height="25" width="25" src="flags/france2016/russia.png"></span></td>
-           <td><span style="color: #00A859;"><img height="25" width="25" src="flags/france2016/germany.png"></span></td>
-           <td><span style="color: #00A859;"><img height="25" width="25" src="flags/france2016/spain.png"></span></td>
-           <td><span style="color: #00A859;"><img height="25" width="25" src="flags/france2016/belgium.png"></span></td>
-           <td><span style="color: #00A859;"><img height="25" width="25" src="flags/france2016/portugal.png"></span></td>
-           <td><span style="color: #00A859;"><img height="25" width="25" src="flags/france2016/france.png"></span></td>
-           <td><span style="color: #00A859;"><img height="25" width="25" src="flags/france2016/spain.png"></span></td>
-           <td><span style="color: #00A859;"><img height="25" width="25" src="flags/france2016/germany.png"></span></td>
-           <td><span style="color: #00A859;"><img height="25" width="25" src="flags/france2016/italy.png"></span></td>
-           <td><span style="color: #00A859;"><img height="25" width="25" src="flags/france2016/germany.png"></span></td>
-           <td><span style="color: #00A859;"><img height="25" width="25" src="flags/france2016/germany.png"></span></td>
-           <td class="points"></td>
+           <td><img src="flags/france2016/france.png"><span>4</span></td>
+           <td><img src="flags/france2016/russia.png"></td>
+           <td><img src="flags/france2016/germany.png"></td>
+           <td><img src="flags/france2016/spain.png"></td>
+           <td><img src="flags/france2016/belgium.png"></td>
+           <td><img src="flags/france2016/portugal.png"></td>
+           <td><img src="flags/france2016/france.png"></td>
+           <td><img src="flags/france2016/spain.png"></td>
+           <td><img src="flags/france2016/germany.png"></td>
+           <td><img src="flags/france2016/italy.png"></td>
+           <td><img src="flags/france2016/germany.png"></td>
+           <td><img src="flags/france2016/germany.png"></td>
+           <td class="points"><span>4</span></td>
        </tr>
-       <tr>
+       <tr class="tipster_row">
            <td>Zdre</td>
-           <td><span style="color: #00A859;"><img height="25" width="25" src="flags/france2016/france.png"></img></span></td>
-           <td><span style="color: #00A859;"><img height="25" width="25" src="flags/france2016/england.png"></img></span></td>
-           <td><span style="color: #00A859;"><img height="25" width="25" src="flags/france2016/germany.png"></img></span></td>
-           <td><span style="color: #00A859;"><img height="25" width="25" src="flags/france2016/spain.png"></img></span></td>
-           <td><span style="color: #00A859;"><img height="25" width="25" src="flags/france2016/belgium.png"></img></span></td>
-           <td><span style="color: #00A859;"><img height="25" width="25" src="flags/france2016/austria.png"></img></span></td>
-           <td><span style="color: #00A859;"><img height="25" width="25" src="flags/france2016/france.png"></img></span></td>
-           <td><span style="color: #00A859;"><img height="25" width="25" src="flags/france2016/spain.png"></img></span></td>
-           <td><span style="color: #00A859;"><img height="25" width="25" src="flags/france2016/germany.png"></img></span></td>
-           <td><span style="color: #00A859;"><img height="25" width="25" src="flags/france2016/italy.png"></img></span></td>
-           <td><span style="color: #00A859;"><img height="25" width="25" src="flags/france2016/spain.png"></img></span></td>
-           <td><span style="color: #00A859;"><img height="25" width="25" src="flags/france2016/portugal.png"></img></span></td>
-           <td class="points"></td>
+           <td><img src="flags/france2016/france.png"/><span>4</span></td>
+           <td><img src="flags/france2016/england.png"/></td>
+           <td><img src="flags/france2016/germany.png"/></td>
+           <td><img src="flags/france2016/spain.png"/></td>
+           <td><img src="flags/france2016/belgium.png"/></td>
+           <td><img src="flags/france2016/austria.png"/></td>
+           <td><img src="flags/france2016/france.png"/></td>
+           <td><img src="flags/france2016/spain.png"/></td>
+           <td><img src="flags/france2016/germany.png"/></td>
+           <td><img src="flags/france2016/italy.png"/></td>
+           <td><img src="flags/france2016/spain.png"/></td>
+           <td><img src="flags/france2016/portugal.png"/></td>
+           <td class="points"><span>4</span></td>
        </tr>
-       <tr>
-           <td><img height="20" width="20" src="img/crown.png" alt="">Kamiloss</td>
-           <td><span><img height="25" width="25" src="flags/france2016/france.png"></img></span></td>
-           <td><span><img height="25" width="25" src="flags/france2016/england.png"></img></span></td>
-           <td><span><img height="25" width="25" src="flags/france2016/germany.png"></img></span>
-           <td><span><img height="25" width="25" src="flags/france2016/spain.png"></img></span>
-           <td><span><img height="25" width="25" src="flags/france2016/italy.png"></img></span>
-           <td><span><img height="25" width="25" src="flags/france2016/portugal.png"></img></span>
-           <td><span><img height="25" width="25" src="flags/france2016/france.png"></img></span></td>
-           <td><span><img height="25" width="25" src="flags/france2016/spain.png"></img></span></td>
-           <td><span><img height="25" width="25" src="flags/france2016/germany.png"></img></span></td>
-           <td><span><img height="25" width="25" src="flags/france2016/italy.png"></img></span></td>
-           <td><span><img height="25" width="25" src="flags/france2016/france.png"></img></span></td>
-           <td><span><img height="25" width="25" src="flags/france2016/spain.png"></img></span></td>
-           <td class="points"></td>
+       <tr class="tipster_row">
+           <td><img src="img/crown.png">Kamiloss</td>
+           <td><img src="flags/france2016/france.png"/><span>4</span></td>
+           <td><img src="flags/france2016/england.png"/></td>
+           <td><img src="flags/france2016/germany.png"/></td>
+           <td><img src="flags/france2016/spain.png"/></td>
+           <td><img src="flags/france2016/italy.png"/></td>
+           <td><img src="flags/france2016/portugal.png"/></td>
+           <td><img src="flags/france2016/france.png"/><</td>
+           <td><img src="flags/france2016/spain.png"/></td>
+           <td><img src="flags/france2016/germany.png"/></td>
+           <td><img src="flags/france2016/italy.png"/></td>
+           <td><img src="flags/france2016/france.png"/></td>
+           <td><img src="flags/france2016/spain.png"/></td>
+           <td class="points"><span>4</span></td>
        </tr>
-       <tr>
+       <tr class="tipster_row">
            <td>Bojler</td>
-           <td><span style="color: #00A859;"><img height="25" width="25" src="flags/france2016/france.png"></span></td>
-           <td><span style="color: #00A859;"><img height="25" width="25" src="flags/france2016/england.png"></span></td>
-           <td><span style="color: #00A859;"><img height="25" width="25" src="flags/france2016/germany.png"></span></td>
-           <td><span style="color: #00A859;"><img height="25" width="25" src="flags/france2016/spain.png"></span></td>
-           <td><span style="color: #00A859;"><img height="25" width="25" src="flags/france2016/italy.png"></span></td>
-           <td><span style="color: #00A859;"><img height="25" width="25" src="flags/france2016/portugal.png"></span></td>
-           <td><span style="color: #00A859;"><img height="25" width="25" src="flags/france2016/france.png"></span></td>
-           <td><span style="color: #00A859;"><img height="25" width="25" src="flags/france2016/spain.png"></span></td>
-           <td><span style="color: #00A859;"><img height="25" width="25" src="flags/france2016/germany.png"></span></td>
-           <td><span style="color: #00A859;"><img height="25" width="25" src="flags/france2016/italy.png"></span></td>
-           <td><span style="color: #00A859;"><img height="25" width="25" src="flags/france2016/germany.png"></span></td>
-           <td><span style="color: #00A859;"><img height="25" width="25" src="flags/france2016/germany.png"></span></td>
-           <td class="points"></td>
+           <td><img src="flags/france2016/france.png"><span>4</span></td>
+           <td><img src="flags/france2016/england.png"></td>
+           <td><img src="flags/france2016/germany.png"></td>
+           <td><img src="flags/france2016/spain.png"></td>
+           <td><img src="flags/france2016/italy.png"></td>
+           <td><img src="flags/france2016/portugal.png"></td>
+           <td><img src="flags/france2016/france.png"></td>
+           <td><img src="flags/france2016/spain.png"></td>
+           <td><img src="flags/france2016/germany.png"></td>
+           <td><img src="flags/france2016/italy.png"></td>
+           <td><img src="flags/france2016/germany.png"></td>
+           <td><img src="flags/france2016/germany.png"></td>
+           <td class="points"><span>4</span></td>
        </tr>
-       <tr>
+       <tr class="tipster_row">
            <td>Iwan</td>
-           <td><span style="color: #00A859;"><img height="25" width="25" src="flags/france2016/france.png"></span></td>
-           <td><span style="color: #00A859;"><img height="25" width="25" src="flags/france2016/england.png"></span></td>
-           <td><span style="color: #00A859;"><img height="25" width="25" src="flags/france2016/germany.png"></span></td>
-           <td><span style="color: #00A859;"><img height="25" width="25" src="flags/france2016/spain.png"></span></td>
-           <td><span style="color: #00A859;"><img height="25" width="25" src="flags/france2016/italy.png"></span></td>
-           <td><span style="color: #00A859;"><img height="25" width="25" src="flags/france2016/portugal.png"></span></td>
-           <td><span style="color: #00A859;"><img height="25" width="25" src="flags/france2016/france.png"></span></td>
-           <td><span style="color: #00A859;"><img height="25" width="25" src="flags/france2016/spain.png"></span></td>
-           <td><span style="color: #00A859;"><img height="25" width="25" src="flags/france2016/germany.png"></span></td>
-           <td><span style="color: #00A859;"><img height="25" width="25" src="flags/france2016/italy.png"></span></td>
-           <td><span style="color: #00A859;"><img height="25" width="25" src="flags/france2016/france.png"></span></td>
-           <td><span style="color: #00A859;"><img height="25" width="25" src="flags/france2016/germany.png"></span></td>
-           <td class="points"></td>
+           <td><img src="flags/france2016/france.png"><span>4</span></td>
+           <td><img src="flags/france2016/england.png"></td>
+           <td><img src="flags/france2016/germany.png"></td>
+           <td><img src="flags/france2016/spain.png"></td>
+           <td><img src="flags/france2016/italy.png"></td>
+           <td><img src="flags/france2016/portugal.png"></td>
+           <td><img src="flags/france2016/france.png"></td>
+           <td><img src="flags/france2016/spain.png"></td>
+           <td><img src="flags/france2016/germany.png"></td>
+           <td><img src="flags/france2016/italy.png"></td>
+           <td><img src="flags/france2016/france.png"></td>
+           <td><img src="flags/france2016/germany.png"></td>
+           <td class="points"><span>4</span></td>
        </tr>
-       <tr>
+       <tr class="tipster_row">
            <td>Robo</td>
-           <td><span style="color: #00A859;"><img height="25" width="25" src="flags/france2016/france.png"></span></td>
-           <td><span style="color: #00A859;"><img height="25" width="25" src="flags/france2016/england.png"></span></td>
-           <td><span style="color: #00A859;"><img height="25" width="25" src="flags/france2016/germany.png"></span></td>
-           <td><span style="color: #00A859;"><img height="25" width="25" src="flags/france2016/spain.png"></span></td>
-           <td><span style="color: #00A859;"><img height="25" width="25" src="flags/france2016/belgium.png"></span></td>
-           <td><span style="color: #00A859;"><img height="25" width="25" src="flags/france2016/portugal.png"></span></td>
-           <td><span style="color: #00A859;"><img height="25" width="25" src="flags/france2016/france.png"></span></td>
-           <td><span style="color: #00A859;"><img height="25" width="25" src="flags/france2016/spain.png"></span></td>
-           <td><span style="color: #00A859;"><img height="25" width="25" src="flags/france2016/germany.png"></span></td>
-           <td><span style="color: #00A859;"><img height="25" width="25" src="flags/france2016/england.png"></span></td>
-           <td><span style="color: #00A859;"><img height="25" width="25" src="flags/france2016/france.png"></span></td>
-           <td><span style="color: #00A859;"><img height="25" width="25" src="flags/france2016/france.png"></span></td>
-           <td class="points"></td>
+           <td><img src="flags/france2016/france.png"><span>4</span></td>
+           <td><img src="flags/france2016/england.png"></td>
+           <td><img src="flags/france2016/germany.png"></td>
+           <td><img src="flags/france2016/spain.png"></td>
+           <td><img src="flags/france2016/belgium.png"></td>
+           <td><img src="flags/france2016/portugal.png"></td>
+           <td><img src="flags/france2016/france.png"></td>
+           <td><img src="flags/france2016/spain.png"></td>
+           <td><img src="flags/france2016/germany.png"></td>
+           <td><img src="flags/france2016/england.png"></td>
+           <td><img src="flags/france2016/france.png"></td>
+           <td><img src="flags/france2016/france.png"></td>
+           <td class="points"><span>4</span></td>
        </tr>
    </table>
 </div>
@@ -556,8 +561,8 @@
 		 <th><small>22.06, 21:00</small></th>
      </tr>
      <tr style="background-color: #ccc;">
-         <th><img height="18" width="18" src="flags/france2016/ukraine.png"></img>UKR</th>
-         <th><img height="18" width="18" src="flags/france2016/northern_ireland.png"></img>NIR</th>
+         <th><img height="18" width="18" src="flags/france2016/ukraine.png"/>UKR</th>
+         <th><img height="18" width="18" src="flags/france2016/northern_ireland.png"/>NIR</th>
          <th><img height="18" width="18" src="flags/france2016/croatia.png">CRO</th>
          <th><img height="18" width="18" src="flags/france2016/czech_republic.png">CZE</th>
          <th><img height="18" width="18" src="flags/france2016/hungary.png">HUN</th>
@@ -576,8 +581,8 @@
 		 <th>-</th>
      </tr>
      <tr style="background-color: #ccc;">
-         <th><img height="18" width="18" src="flags/france2016/poland.png"></img>POL</th>
-         <th><img height="18" width="18" src="flags/france2016/germany.png"></img>GER</th>
+         <th><img height="18" width="18" src="flags/france2016/poland.png"/>POL</th>
+         <th><img height="18" width="18" src="flags/france2016/germany.png"/>GER</th>
          <th><img height="18" width="18" src="flags/france2016/spain.png">SPA</th>
          <th><img height="18" width="18" src="flags/france2016/turkey.png">TUR</th>
          <th><img height="18" width="18" src="flags/france2016/portugal.png">POR</th>
@@ -724,8 +729,8 @@
          <th><small>20.06, 21:00</small></th>
      </tr>
      <tr style="background-color: #ccc;">
-         <th><img height="18" width="18" src="flags/france2016/belgium.png"></img>BEL</th>
-         <th><img height="18" width="18" src="flags/france2016/iceland.png"></img>ICE</th>
+         <th><img height="18" width="18" src="flags/france2016/belgium.png"/>BEL</th>
+         <th><img height="18" width="18" src="flags/france2016/iceland.png"/>ICE</th>
          <th><img height="18" width="18" src="flags/france2016/portugal.png">POR</th>
          <th><img height="18" width="18" src="flags/france2016/switzerland.png">SUI</th>
          <th><img height="18" width="18" src="flags/france2016/romania.png">ROU</th>
@@ -742,8 +747,8 @@
          <th>-</th>
      </tr>
      <tr style="background-color: #ccc;">
-         <th><img height="18" width="18" src="flags/france2016/ireland.png"></img>IRL</th>
-         <th><img height="18" width="18" src="flags/france2016/hungary.png"></img>HUN</th>
+         <th><img height="18" width="18" src="flags/france2016/ireland.png"/>IRL</th>
+         <th><img height="18" width="18" src="flags/france2016/hungary.png"/>HUN</th>
          <th><img height="18" width="18" src="flags/france2016/austria.png">AUT</th>
          <th><img height="18" width="18" src="flags/france2016/france.png">FRA</th>
          <th><img height="18" width="18" src="flags/france2016/albania.png">ALB</th>
@@ -1185,8 +1190,8 @@
          <th><small>12.06, 21:00</small></th>
      </tr>
      <tr style="background-color: #ccc;">
-         <th><img height="18" width="18" src="flags/france2016/france.png" alt=""></img>FRA</th>
-         <th><img height="18" width="18" src="flags/france2016/albania.png" alt=""></img>ALB</th>
+         <th><img height="18" width="18" src="flags/france2016/france.png" alt=""/>FRA</th>
+         <th><img height="18" width="18" src="flags/france2016/albania.png" alt=""/>ALB</th>
          <th><img height="18" width="18" src="flags/france2016/wales.png" alt="">WAL</th>
          <th><img height="18" width="18" src="flags/france2016/england.png" alt="">ENG</th>
          <th><img height="18" width="18" src="flags/france2016/turkey.png" alt="">TUR</th>
@@ -1203,8 +1208,8 @@
          <th>2-0</th>
      </tr>
      <tr style="background-color: #ccc;">
-         <th><img height="18" width="18" src="flags/france2016/romania.png" alt=""></img>ROU</th>
-         <th><img height="18" width="18" src="flags/france2016/switzerland.png" alt=""></img>SUI</th>
+         <th><img height="18" width="18" src="flags/france2016/romania.png" alt=""/>ROU</th>
+         <th><img height="18" width="18" src="flags/france2016/switzerland.png" alt=""/>SUI</th>
          <th><img height="18" width="18" src="flags/france2016/slovakia.png" alt="">SVK</th>
          <th><img height="18" width="18" src="flags/france2016/russia.png" alt="">RUS</th>
          <th><img height="18" width="18" src="flags/france2016/croatia.png" alt="">CRO</th>
