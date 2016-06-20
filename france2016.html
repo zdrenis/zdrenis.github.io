@@ -137,7 +137,7 @@
         width: 40%;
     }
 
-    .standings, .standings1, .standings2, .standings3, .standings4, .standings5 {
+    .standings, .standings1, .standings2, .standings3, .standings4, .standings5, .standingsExtra {
         position: relative;
         margin-top: 30px;
         margin-left: auto;
@@ -160,26 +160,6 @@
       width: 90%;
     }
 
-    .standingsExtra {
-        position: relative;
-        margin: auto;
-        margin-top: 40px;
-        padding: 2px;
-        border-radius: 25px;
-        background-color: white;
-        width: 90%;
-        text-align: left;
-    }
-
-    .standingsExtra table {
-      margin-left: 10px;
-      margin-right: 10px;
-    }
-
-    .standingsExtra .tipster_row + td {
-      text-align: center;
-    }
-
      .standingsExtra .tipster_row img {
       width: 18px;
       height: 18px;
@@ -187,11 +167,6 @@
 
      .standingsExtra .tipster_row img ~ span {
       font-size: x-small;
-      text-align: right;
-    }
-
-    .points {
-      text-align: center;
     }
 	
 	  #totals tr:nth-child(even) {background: #fff;}
@@ -395,11 +370,11 @@
          <table>
             <thead>
                <tr style="background-color: #fff;">
-                  <th rowspan="3" width="150" height="120" style="background-color: #fff;"><div class="vertical-text" ><span>PYTANIA DODATKOWE</span></div></th>
+                  <th rowspan="3" width="120" height="100" style="background-color: #fff;"><div class="vertical-text" ><span>PYTANIA DODATKOWE</span></div></th>
                   <th colspan="6">ZWYCIĘZCY GRUP</th>
                   <th colspan="4">PÓŁFINALIŚCI</th>
-                  <th rowspan="2" width="50">MISTRZ</th>
-                  <th rowspan="2" width="50">KRÓL STRZ.</th>
+                  <th rowspan="2" style="width: 5em">MISTRZ</th>
+                  <th rowspan="2" style="width: 5em">KRÓL STRZ.</th>
               </tr>
               <tr style="background-color: #ccc;">
                   <th>A</th>
@@ -426,7 +401,7 @@
                   <th></th>
                   <th></th>
                   <th></th>
-                  <th rowspan="2" class="points">Pkt</th>
+                  <th rowspan="2" style="width: 5em" class="points">Pkt</th>
               </tr>
           </thead>
           <tr class="tipster_row">
