@@ -42,6 +42,7 @@
               margin-left: 2px;
               margin-right: 2px;
               color: white;
+              text-align: left;
               text-shadow: 0 1px rgba(0, 0, 0, 0.25);
               border: 1px solid;
               border-radius: 10px;
@@ -76,8 +77,8 @@
        table {
         position: relative;
         width: 100%;
-        vertical-align: center;
-        border: 1px #black;
+        vertical-align: middle;
+        border: 1px black;
         text-align: center;
     }
 
@@ -87,7 +88,7 @@
 
     table th{
         padding: 2px;
-        vertical-align: center;
+        vertical-align: middle;
     }
     table td {
         color: #3E4095; // blue
@@ -156,20 +157,39 @@
     }
 
     .wider_standings {
-      width: 92%;
+      width: 90%;
     }
 
     .standingsExtra {
         position: relative;
         margin: auto;
         margin-top: 40px;
-        padding: 5px;
+        padding: 2px;
         border-radius: 25px;
         background-color: white;
-        width: 85%;
+        width: 90%;
+    }
+
+
+    .standingsExtra .tipster_row + td {
+      text-align: center;
+    }
+
+     .standingsExtra .tipster_row img {
+      width: 16px;
+      height: 16px;
+    }
+
+     .standingsExtra .tipster_row img ~ span {
+      font-size: x-small;
+      text-align: right;
+    }
+
+    .points {
+      text-align: center;
     }
 	
-	#totals tr:nth-child(even) {background: #fff;}
+	  #totals tr:nth-child(even) {background: #fff;}
     #totals tr:nth-child(odd) {background: #fff;}
 
       #winner {
@@ -374,7 +394,7 @@
                   <th colspan=6>ZWYCIĘZCY GRUP</th>
                   <th colspan=4>PÓŁFINALIŚCI</th>
                   <th rowspan=2>MISTRZ</th>
-                  <th rowspan=2>KRÓL STRZ.</th>
+                  <th rowspan=2>KRÓL</br>STRZ.</th>
               </tr>
               <tr style="background-color: #ccc;">
                   <th>A</th>
