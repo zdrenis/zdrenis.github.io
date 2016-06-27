@@ -141,6 +141,10 @@ body {
         background-color: white;
     }
 
+    .standingsQuarterFinals {
+      width: 50%;
+    }
+
     #totals {
       width: 65%;
     }
