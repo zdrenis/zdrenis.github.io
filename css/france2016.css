@@ -1,5 +1,5 @@
 body {
-          background: #007cba url("../img/bg_pattern.png");
+          background: #0055A4 url("../img/bg_pattern.png");
 				margin-bottom: 0px;
 			}
 
@@ -21,17 +21,17 @@ body {
 				transform: rotate(-45deg);
 			}
 			.vertical-text > span {
-             color: red;
+             color: #EF4135;
             }
 
             .tipster_row span {
               padding: 0.5px 6px 0.5px 6px;
               background: #fa623f;
               border-color: #fa5a35;
-              background-image: -webkit-linear-gradient(top, red, #fa623f);
-              background-image: -moz-linear-gradient(top, red, #fa623f);
-              background-image: -o-linear-gradient(top, red, #fa623f);
-              background-image: linear-gradient(to bottom, red, #fa623f);
+              background-image: -webkit-linear-gradient(top, #EF4135, #fa623f);
+              background-image: -moz-linear-gradient(top, #EF4135, #fa623f);
+              background-image: -o-linear-gradient(top, #EF4135, #fa623f);
+              background-image: linear-gradient(to bottom, #EF4135, #fa623f);
               margin-left: 2px;
               margin-right: 2px;
               color: white;
@@ -84,7 +84,7 @@ body {
         vertical-align: middle;
     }
     table td {
-        color: #3E4095; // blue
+        color: #0055A4; // blue
         display: inline-block;
     }
     .points {
@@ -94,7 +94,7 @@ body {
 
     input {
         text-align: center;
-        color: #3E4095; // blue
+        color: #0055A4; // blue
     }
     tr:nth-child(even) {background: #fff;}
     tr:nth-child(odd) {background: #ccc;}
@@ -112,7 +112,7 @@ body {
     }
     input, th, td, table, h1, h2, h3, h4, span {
         font-family: pfbeausanspro-regular,verdana;
-        color: #3E4095; // blue
+        color: #0055A4; // blue
     }
 
     a:link {
@@ -150,7 +150,7 @@ body {
     }
 
     #total_points {
-       background: blue;
+       background: #0055A4;
     }
 
     .wider_standings {
@@ -171,24 +171,24 @@ body {
 
       #winner {
         /* W3C Standard */
-        background: linear-gradient(bottom, blue, white);
+        background: linear-gradient(bottom, #0055A4, white);
         /* Safari and Google Chrome */
-        background: -webkit-linear-gradient(bottom, blue, white);
+        background: -webkit-linear-gradient(bottom, #0055A4, white);
         /* Firefox */
-        background: -moz-linear-gradient(bottom, blue, white);
+        background: -moz-linear-gradient(bottom, #0055A4, white);
         /* Internet Explorer */
-        background: -ms-linear-gradient(bottom, blue, white);
+        background: -ms-linear-gradient(bottom, #0055A4, white);
         }
 
       #totals #round_winner {
         /* W3C Standard */
-        background: linear-gradient(to right, blue, white, red);
+        background: linear-gradient(to right, #0055A4, white, #EF4135);
         /* Safari and Google Chrome */
-        background: -webkit-linear-gradient(to right, blue, white, red);
+        background: -webkit-linear-gradient(to right, #0055A4, white, #EF4135);
         /* Firefox */
-        background: -moz-linear-gradient(to right, blue, white, red);
+        background: -moz-linear-gradient(to right, #0055A4, white, #EF4135);
         /* Internet Explorer */
-        background: -ms-linear-gradient(to right, blue, white, red);
+        background: -ms-linear-gradient(to right, #0055A4, white, #EF4135);
      }
 	 
 	 .gold {
