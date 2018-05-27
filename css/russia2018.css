@@ -1,0 +1,252 @@
+body {
+          background: #0055A4 url("../img/russia2018/background.jpg");
+				margin-bottom: 0px;
+			}
+
+			footer {
+				color: white;
+				position: relative;
+				text-align: center;
+			}
+
+			.blink_me {
+			  animation: blinker 1s linear infinite;
+			}
+
+			@keyframes blinker {  
+			  50% { opacity: 0.0; }
+			}
+			
+			.vertical-text {
+				transform: rotate(-45deg);
+			}
+			.vertical-text > span {
+             color: #EF4135;
+            }
+
+            .tipster_row span {
+              padding: 0.5px 6px 0.5px 6px;
+              background: #fa623f;
+              border-color: #fa5a35;
+              background-image: -webkit-linear-gradient(top, #EF4135, #fa623f);
+              background-image: -moz-linear-gradient(top, #EF4135, #fa623f);
+              background-image: -o-linear-gradient(top, #EF4135, #fa623f);
+              background-image: linear-gradient(to bottom, #EF4135, #fa623f);
+              margin-left: 2px;
+              margin-right: 2px;
+              color: white;
+              text-align: left;
+              text-shadow: 0 1px rgba(0, 0, 0, 0.25);
+              border: 1px solid;
+              border-radius: 10px;
+            }
+
+            .tipster_row input {
+                width: 1em;
+            }
+
+            .tipster_row img {
+            	position: relative;
+            	width: 23px;
+            	height: 23px;
+            	margin-top: 3px;
+            	margin-bottom: 1px;
+            }
+
+            .standingsExtra .tipster_row img ~ span {
+            	position: absolute;
+            	margin-top: 4px;
+            }
+
+         .watermark-footer {		
+           background-image: url("../img/france2016/watermark.png");
+           position: relative;
+           background-size: 738px auto;
+           height: 219px;
+           width: 738px;
+           margin: auto;
+        }
+
+       table {
+        position: relative;
+        width: 100%;
+        vertical-align: middle;
+        border: 1px black;
+        text-align: center;
+    }
+
+     .bookie {
+        font-size: x-small;
+    }
+
+    table th {
+        padding: 2px;
+        vertical-align: middle;
+    }
+    table td {
+        color: #0055A4; // blue
+        display: inline-block;
+    }
+    .points {
+        color: black;
+        font-size: medium;
+    }
+
+    input {
+        text-align: center;
+        color: #0055A4; // blue
+    }
+    tr:nth-child(even) {background: #fff;}
+    tr:nth-child(odd) {background: #ccc;}
+
+    .main {
+        margin: auto;
+        bottom: 0;
+        margin-bottom: 0px;
+        width: 90%;
+        border: 1px #ccc;
+        opacity: 0.9;
+    }
+    body, p, ul, ol, textarea {
+        font-family: dusha_plusregular,verdana;
+    }
+    input, th, td, table, h1, h2, h3, h4, span {
+        font-family: dusha_plusregular,verdana;
+        color: #0055A4; // blue
+    }
+
+    a:link {
+        color: white;
+    }
+
+    .rules {
+        background-color: white;
+        border-radius: 25px;
+        position: relative;
+        color: #3E4095;
+        margin: auto;
+        margin-top: 40px;
+        padding: 15px;
+        width: 40%;
+    }
+
+    .standings, .standings1, .standings2, .standings3, .standings4, .standings5, .standings1of16, .standingsExtra {
+        position: relative;
+        margin-top: 30px;
+        margin-left: auto;
+        margin-right: auto;
+        border-radius: 25px;
+        width: 90%;
+        padding: 5px;
+        background-color: white;
+    }
+
+    .standingsQuarterFinals {
+      width: 60%;
+    }
+
+    .standingsFinals {
+      width: 55%;
+    }
+
+    #totals {
+      width: 70%;
+    }
+
+    #total_points {
+       background: #0055A4;
+    }
+
+    .wider_standings {
+      width: 90%;
+    }
+
+     .standingsExtra .tipster_row img {
+      width: 18px;
+      height: 18px;
+    }
+
+     .standingsExtra .tipster_row img ~ span {
+      font-size: x-small;
+    }
+	
+	  #totals tr:nth-child(even) {background: #fff;}
+    #totals tr:nth-child(odd) {background: #fff;}
+
+      #winner {
+        /* W3C Standard */
+        background: linear-gradient(bottom, #0055A4, white);
+        /* Safari and Google Chrome */
+        background: -webkit-linear-gradient(bottom, #0055A4, white);
+        /* Firefox */
+        background: -moz-linear-gradient(bottom, #0055A4, white);
+        /* Internet Explorer */
+        background: -ms-linear-gradient(bottom, #0055A4, white);
+        }
+
+      #totals #round_winner {
+        /* W3C Standard */
+        background: linear-gradient(to right, #0055A4, white, #EF4135);
+        /* Safari and Google Chrome */
+        background: -webkit-linear-gradient(to right, #0055A4, white, #EF4135);
+        /* Firefox */
+        background: -moz-linear-gradient(to right, #0055A4, white, #EF4135);
+        /* Internet Explorer */
+        background: -ms-linear-gradient(to right, #0055A4, white, #EF4135);
+     }
+	 
+	 .gold {
+		/* W3C Standard */
+		background: linear-gradient(top, white, gold) !important;
+		/* Safari and Google Chrome */
+		background: -webkit-linear-gradient(top, white, gold) !important;
+		/* Firefox */
+		background: -moz-linear-gradient(top, white, gold) !important;
+		/* Opera */
+		background: -o-linea-gradient(top, white, gold) !important;
+		/* Internet Explorer */
+		background: -ms-linear-gradient(top, white, gold) !important;
+	 }
+	 
+	 .silver {
+		/* W3C Standard */
+		background: linear-gradient(top, white, silver) !important;;
+		/* Safari and Google Chrome */
+		background: -webkit-linear-gradient(top, white, silver) !important;
+		/* Firefox */
+		background: -moz-linear-gradient(top, white, silver) !important;
+		/* Opera */
+		background: -o-linea-gradient(top, white, silver) !important;
+		/* Internet Explorer */
+		background: -ms-linear-gradient(top, white, silver) !important;
+	 }
+	 
+	 .brown {
+		background: -moz-linear-gradient(top, #f3e2c7 0%, #c19e67 50%, #b68d4c 51%, #e9d4b3 100%) !important; /* FF3.6-15 */
+		background: -webkit-linear-gradient(top, #f3e2c7 0%,#c19e67 50%,#b68d4c 51%,#e9d4b3 100%) !important; /* Chrome10-25,Safari5.1-6 */
+		background: linear-gradient(to bottom, #f3e2c7 0%,#c19e67 50%,#b68d4c 51%,#e9d4b3 100%) !important; /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	 }
+
+      #round_winner span {
+        background: white;
+        border: none;
+        color: black;
+      }
+
+      #round_winner img {
+       position: absolute;
+      }
+
+      #crown, #whisky {
+      	width: 16px;
+      	height: 16px;
+      	position: relative;
+      }
+
+
+    @font-face {
+        font-family: "dusha_plusregular";
+        src: url('../font/russia2018/Dusha_-_FIFA_World_Cup_2018.ttf') format('truetype');
+        font-weight: normal;
+        font-style: normal;
+    }

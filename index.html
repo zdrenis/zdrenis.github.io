@@ -1,54 +1,63 @@
 <html>
 <head>
 <style>
-/* Pen-specific styles */
-html, body, section {
-  height: 100%;
-  margin: 0;
+
+html, body, .container
+{
+    height: 100%; 
+    min-height: 100%;
+    text-align: center;
+    margin: 0;
+        vertical-align: middle;
+
 }
 
-body {
-  line-height: 150%;
-  text-align: center;
+.russia {
+    float: left;
+    width: 75%;
+    height: 100%;
+    background: #007cba url("img/russia2018/background.jpg") repeat center center / 100% auto;
 }
 
-div {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+.france{
+    float: right;
+    width: 25%;
+    height: 50%;
+    background: #007cba url("img/bg_pattern.png") repeat scroll center top / 100% auto;
 }
 
-/* Pattern styles */
-.container {
-  display: flex;
+
+.brazil{
+    float: right;
+    width: 25%;
+    height: 50%;
+    background: #007cba url("img/brazil2014/pattern6.jpg") repeat scroll center top / 100% auto;
+    background-color: black;
 }
 
-.left-half {
-  background: #007cba url("img/bg_pattern.png") repeat scroll center top / 100% auto;
-  //background-color: #ff9e2c;
-  flex: 1;
-  padding: 1rem;
-}
-
-.right-half {
-	background: #007cba url("img/brazil2014/pattern6.jpg") repeat scroll center top / 100% auto;
-   background-color: black;
-  flex: 1;
-  padding: 1rem;
+.russia img {
+    display: block;
+    margin-top: 10%; 
+    margin-left: auto;
+    margin-right: auto;
 }
 </style>
 </head>
 
 <body>
 
-
 <section class="container">
-  <div class="left-half">
+  <div class="russia">
+    <article>
+	  <a href="france2016.html"><img alt="Russia2018" width="600" height="662" src="img/russia2018/logo.png">
+    </article>
+  </div>
+  <div class="france">
     <article>
 	  <a href="france2016.html"><img alt="France2016" width="287" height="359" src="img/france2016/logo.svg">
     </article>
   </div>
-  <div class="right-half">
+  <div class="brazil">
     <article>
       <a href="brazil2014.html"><img border="0" alt="Brazil2014" src="img/brazil2014/logo.svg" height="359" width="287">
     </article>
