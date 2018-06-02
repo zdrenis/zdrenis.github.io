@@ -41,14 +41,14 @@ body {
               border-radius: 10px;
             }
 
-            .tipster_row input {
+          .tipster_row input {
                 width: 1em;
             }
 
-            .tipster_row img {
+           .tipster_row img {
             	position: relative;
-            	width: 23px;
-            	height: 23px;
+            	width: 32px;
+            	height: 16px;
             	margin-top: 3px;
             	margin-bottom: 1px;
             }
@@ -136,10 +136,15 @@ body {
         margin-left: auto;
         margin-right: auto;
         border-radius: 25px;
-        width: 90%;
+        width: 80%;
         padding: 5px;
         background-color: white;
     }
+
+    .standings2 {
+      width: 60%;
+    }
+
 
     .standingsQuarterFinals {
       width: 60%;
@@ -162,8 +167,8 @@ body {
     }
 
      .standingsExtra .tipster_row img {
-      width: 18px;
-      height: 18px;
+      width: 32px;
+      height: 16px;
     }
 
      .standingsExtra .tipster_row img ~ span {
