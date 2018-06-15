@@ -20,34 +20,36 @@ body {
 			.vertical-text {
 				transform: rotate(-45deg);
 			}
+			
 			.vertical-text > span {
              color: #EF4135;
             }
 
-            .tipster_row span:nth-of-type(2), .tip_points {
+            .tipster_row td span:nth-of-type(2), .tip_points {
               padding: 0.5px 6px 0.5px 6px;
               background: #fa623f;
-              border-color: #fa5a35;
               background-image: -webkit-linear-gradient(top, #EF4135, #fa623f);
               background-image: -moz-linear-gradient(top, #EF4135, #fa623f);
               background-image: -o-linear-gradient(top, #EF4135, #fa623f);
               background-image: linear-gradient(to bottom, #EF4135, #fa623f);
 			  float: right;
-			  margin-right: 20%;
-			  font-size: small;
+			  margin-right: 10%;
               color: white;
               text-align: left;
               text-shadow: 0 1px rgba(0, 0, 0, 0.25);
-              border: 1px solid;
               border-radius: 10px;
             }
+
+			.tipster_row td {
+			  height: 25px;
+            }
 			
-			.tipster_row span:nth-of-type(1) {
+			.tipster_row td span:nth-of-type(1) {
 			  text-align: right;
 			  margin-left: 5%;
             }
-
-           .tipster_row img {
+			
+			.tipster_row img {
             	position: relative;
             	width: 32px;
             	height: 16px;
@@ -82,7 +84,7 @@ body {
     }
 
     table th {
-        padding: 2px;
+        padding: 1.5px;
         vertical-align: middle;
     }
     table td {
@@ -91,8 +93,19 @@ body {
     }
 	
     .points {
-        color: black;
-        font-size: medium;
+             padding: 0.5px 6px 0.5px 6px;
+              background: #fa623f;
+              border-color: #fa5a35;
+              background-image: -webkit-linear-gradient(top, #EF4135, #fa623f);
+              background-image: -moz-linear-gradient(top, #EF4135, #fa623f);
+              background-image: -o-linear-gradient(top, #EF4135, #fa623f);
+              background-image: linear-gradient(to bottom, #EF4135, #fa623f);
+              color: white;
+              text-shadow: 0 1px rgba(0, 0, 0, 0.25);
+              border: 1px solid;
+              border-radius: 10px;
+			  -webkit-clip-path: polygon(20% 0%, 80% 0%, 100% 20%, 100% 80%, 80% 100%, 20% 100%, 0% 80%, 0% 20%);
+		clip-path: polygon(20% 0%, 80% 0%, 100% 20%, 100% 80%, 80% 100%, 20% 100%, 0% 80%, 0% 20%);
     }
 
     text-align: center;
@@ -134,7 +147,7 @@ body {
         width: 40%;
     }
 
-    .standings, .standings1, .standings2, .standings3, .standings4, .standings5, .standings1of16, .standingsExtra {
+    .standings, .standings1, .standings2, .standings3, .standings4, .standings5, .standings1of16, .standingsExtra, .standingsHorses {
         position: relative;
         margin-top: 30px;
         margin-left: auto;
@@ -149,6 +162,9 @@ body {
       width: 60%;
     }
 
+	.standingsHorses {
+      width: 15%;
+    }
 
     .standingsQuarterFinals {
       width: 60%;
