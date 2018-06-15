@@ -24,7 +24,7 @@ body {
              color: #EF4135;
             }
 
-            .tipster_row span {
+            .tipster_row td span:nth-of-type(2), .tip_points {
               padding: 0.5px 6px 0.5px 6px;
               background: #fa623f;
               border-color: #fa5a35;
@@ -32,17 +32,19 @@ body {
               background-image: -moz-linear-gradient(top, #EF4135, #fa623f);
               background-image: -o-linear-gradient(top, #EF4135, #fa623f);
               background-image: linear-gradient(to bottom, #EF4135, #fa623f);
-              margin-left: 2px;
-              margin-right: 0px;
+			  float: right;
+			  margin-right: 20%;
+			  font-size: small;
               color: white;
               text-align: left;
               text-shadow: 0 1px rgba(0, 0, 0, 0.25);
               border: 1px solid;
               border-radius: 10px;
             }
-
-          .tipster_row input {
-                width: 1em;
+			
+			.tipster_row td span:nth-of-type(1) {
+			  text-align: right;
+			  margin-left: 15%;
             }
 
            .tipster_row img {
@@ -87,15 +89,16 @@ body {
         color: #0055A4; // blue
         display: inline-block;
     }
+	
     .points {
         color: black;
         font-size: medium;
     }
 
-    input {
-        text-align: center;
+    text-align: center;
         color: #0055A4; // blue
     }
+	
     tr:nth-child(even) {background: #fff;}
     tr:nth-child(odd) {background: #ccc;}
 
@@ -107,12 +110,13 @@ body {
         border: 1px #ccc;
         opacity: 0.9;
     }
+	
     body, p, ul, ol, textarea {
         font-family: dusha_plusregular,verdana;
     }
+	
     input, th, td, table, h1, h2, h3, h4, span {
         font-family: dusha_plusregular,verdana;
-        color: #0055A4; // blue
     }
 
     a:link {
@@ -175,10 +179,10 @@ body {
       font-size: x-small;
     }
 	
-	  #totals tr:nth-child(even) {background: #fff;}
+	#totals tr:nth-child(even) {background: #fff;}
     #totals tr:nth-child(odd) {background: #fff;}
 
-      #winner {
+    #winner {
         /* W3C Standard */
         background: linear-gradient(bottom, #0055A4, white);
         /* Safari and Google Chrome */
@@ -189,7 +193,7 @@ body {
         background: -ms-linear-gradient(bottom, #0055A4, white);
         }
 
-      #totals #round_winner {
+    #totals #round_winner {
         /* W3C Standard */
         background: linear-gradient(to right, #0055A4, white, #EF4135);
         /* Safari and Google Chrome */
