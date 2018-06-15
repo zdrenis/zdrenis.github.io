@@ -24,7 +24,7 @@ body {
              color: #EF4135;
             }
 
-            .tipster_row td span:nth-of-type(2), .tip_points {
+            .tipster_row span:nth-of-type(2), .tip_points {
               padding: 0.5px 6px 0.5px 6px;
               background: #fa623f;
               border-color: #fa5a35;
@@ -42,9 +42,9 @@ body {
               border-radius: 10px;
             }
 			
-			.tipster_row td span:nth-of-type(1) {
+			.tipster_row span:nth-of-type(1) {
 			  text-align: right;
-			  margin-left: 15%;
+			  margin-left: 5%;
             }
 
            .tipster_row img {
