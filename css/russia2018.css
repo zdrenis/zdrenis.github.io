@@ -158,8 +158,13 @@ body {
         background-color: white;
     }
 
-    .standings2 {
+    .standings2, .standings3 {
       width: 60%;
+    }
+	
+	.standings3	img {
+      height: 16px;
+	  width: 32px;
     }
 
 	.standingsHorses {
