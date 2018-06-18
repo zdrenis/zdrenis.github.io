@@ -215,14 +215,6 @@ body {
         }
 
     #totals #round_winner {
-        /* W3C Standard */
-        background: linear-gradient(to right, #0055A4, white, #EF4135);
-        /* Safari and Google Chrome */
-        background: -webkit-linear-gradient(to right, #0055A4, white, #EF4135);
-        /* Firefox */
-        background: -moz-linear-gradient(to right, #0055A4, white, #EF4135);
-        /* Internet Explorer */
-        background: -ms-linear-gradient(to right, #0055A4, white, #EF4135);
      }
 	 
 	 .gold {
