@@ -167,10 +167,6 @@ body {
 	  width: 32px;
     }
 
-	.standingsHorses {
-      width: 15%;
-    }
-
     .standingsQuarterFinals {
       width: 60%;
     }
@@ -180,7 +176,7 @@ body {
     }
 
     #totals {
-      width: 30%;
+      width: 35%;
     }
 
     #total_points {
@@ -205,13 +201,13 @@ body {
 
     #winner {
         /* W3C Standard */
-        background: linear-gradient(bottom, #0055A4, white);
+        background: linear-gradient(bottom, #fa623f, white);
         /* Safari and Google Chrome */
-        background: -webkit-linear-gradient(bottom, #0055A4, white);
+        background: -webkit-linear-gradient(bottom, #fa623f, white);
         /* Firefox */
-        background: -moz-linear-gradient(bottom, #0055A4, white);
+        background: -moz-linear-gradient(bottom, #fa623f, white);
         /* Internet Explorer */
-        background: -ms-linear-gradient(bottom, #0055A4, white);
+        background: -ms-linear-gradient(bottom, #fa623f, white);
         }
 
     #totals #round_winner {
