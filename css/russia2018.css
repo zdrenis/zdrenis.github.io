@@ -153,13 +153,13 @@ body {
         margin-left: auto;
         margin-right: auto;
         border-radius: 25px;
-        width: 80%;
+        width: 83%;
         padding: 5px;
         background-color: white;
     }
 
     .standings2, .standings3 {
-      width: 65%;
+      width: 72%;
     }
 	
 	.standings3 img, .standings2 img {
@@ -176,7 +176,7 @@ body {
     }
 
     #totals {
-      width: 35%;
+      width: 40%;
     }
 
     #total_points {
