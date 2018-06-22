@@ -25,15 +25,15 @@ body {
              color: #EF4135;
             }
 
-            .tipster_row td span:nth-of-type(2), .tip_points {
+            .tipster_row td span:nth-of-type(2) {
               padding: 0.5px 6px 0.5px 6px;
               background: #fa623f;
               background-image: -webkit-linear-gradient(top, #EF4135, #fa623f);
               background-image: -moz-linear-gradient(top, #EF4135, #fa623f);
               background-image: -o-linear-gradient(top, #EF4135, #fa623f);
               background-image: linear-gradient(to bottom, #EF4135, #fa623f);
-			  float: right;
-			  margin-right: 10%;
+			       float: right;
+			       margin-right: 10%;
               color: white;
               text-align: left;
               text-shadow: 0 1px rgba(0, 0, 0, 0.25);
@@ -42,12 +42,12 @@ body {
 
 			.tipster_row td {
 			  height: 25px;
-            }
+      }
 			
 			.tipster_row td span:nth-of-type(1) {
 			  text-align: right;
 			  margin-left: 5%;
-            }
+       }
 			
 			.tipster_row img {
             	position: relative;
@@ -55,11 +55,6 @@ body {
             	height: 16px;
             	margin-top: 3px;
             	margin-bottom: 1px;
-            }
-
-            .standingsExtra .tipster_row img ~ span {
-            	position: absolute;
-            	margin-top: 4px;
             }
 
          .watermark-footer {		
@@ -161,6 +156,10 @@ body {
     .standings2, .standings3, .standings4, .standings5 {
       width: 72%;
     }
+
+    .standingsExtra {
+      width: 100%;
+    }
 	
 	 .standings4 img, .standings3 img, .standings2 img, .standings5 img {
       height: 16px;
@@ -192,10 +191,6 @@ body {
       height: 16px;
     }
 
-     .standingsExtra .tipster_row img ~ span {
-      font-size: x-small;
-    }
-	
 	#totals tr:nth-child(even) {background: #fff;}
     #totals tr:nth-child(odd) {background: #fff;}
 
