@@ -158,11 +158,11 @@ body {
         background-color: white;
     }
 
-    .standings2, .standings3, .standings4 {
+    .standings2, .standings3, .standings4, .standings5 {
       width: 72%;
     }
 	
-	 .standings4 img, .standings3 img, .standings2 img {
+	 .standings4 img, .standings3 img, .standings2 img, .standings5 img {
       height: 16px;
 	  width: 32px;
     }
