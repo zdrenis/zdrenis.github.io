@@ -259,7 +259,11 @@ body {
       	height: 18px;
       	position: relative;
       }
-
+      #redhead {
+      	width: 20px;
+      	height: 17px;
+      	position: relative;
+      }
 
     @font-face {
         font-family: "dusha_plusregular";
