@@ -49,7 +49,7 @@ body {
 			  margin-left: 5%;
        }
 			
-			.tipster_row img {
+	.tipster_row img {
             	position: relative;
             	width: 32px;
             	height: 16px;
@@ -165,7 +165,7 @@ body {
       width: 50%;
     }
 	
-	 .standings4 img, .standings3 img, .standings2 img, .standings5 img, .standings6 img {
+	 .standings4 img, .standings3 img, .standings2 img, .standings5 img, .standings6 img, .standings img {
       height: 16px;
 	  width: 32px;
     }
