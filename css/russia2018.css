@@ -158,14 +158,14 @@ body {
     }
 
     #standingsExtra1 {
-      width: 72%;
+      width: 80%;
     }
 
    #standingsExtra2 {
-      width: 50%;
+      width: 60%;
     }
 	
-	 .standings4 img, .standings3 img, .standings2 img, .standings5 img, .standings6 img, .standings img {
+   .standings4 img, .standings3 img, .standings2 img, .standings5 img, .standings6 img, .standings img {
       height: 16px;
 	  width: 32px;
     }
