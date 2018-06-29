@@ -49,9 +49,11 @@ body {
 			  margin-left: 5%;
        }
 
-	.hidden {
+	.hidden, .tipster_row td:nth-of-type(3) {
 	visibility:hidden;
        }
+
+
 			
 	.tipster_row img {
             	position: relative;
