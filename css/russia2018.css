@@ -50,8 +50,7 @@ body {
        }
 
 	#1of8 .tipster_row td span:nth-of-type(1) {
-			  text-align: right;
-			  margin-left: 5%;
+	visibility:hidden;
        }
 			
 	.tipster_row img {
