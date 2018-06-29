@@ -48,6 +48,11 @@ body {
 			  text-align: right;
 			  margin-left: 5%;
        }
+
+	#1of8 .tipster_row td span:nth-of-type(1) {
+			  text-align: right;
+			  margin-left: 5%;
+       }
 			
 	.tipster_row img {
             	position: relative;
