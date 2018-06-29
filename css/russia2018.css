@@ -53,7 +53,13 @@ body {
 	visibility:hidden;
        }
 
+	.standings1of8 .tipster_row td:nth-of-type(10) {
+	 visibility:visible;
+       }
 
+	.standings1of8 .tipster_row:nth-of-type(5) td {
+	 visibility:visible;
+       }
 			
 	.tipster_row img {
             	position: relative;
