@@ -49,7 +49,7 @@ body {
 			  margin-left: 5%;
        }
 
-	.hidden, .tipster_row td:nth-of-type(3) {
+	.hidden .tipster_row td:nth-of-type(n+2) {
 	visibility:hidden;
        }
 
