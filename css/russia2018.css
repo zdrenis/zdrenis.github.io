@@ -49,7 +49,7 @@ body {
 	  margin-left: 5%;
        }
 
-	.standings1of8 .tipster_row td:nth-of-type(n+5) {
+	.standings1of8 .tipster_row td:nth-of-type(n+4) {
 	visibility:hidden;
        }
 
