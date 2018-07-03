@@ -49,15 +49,15 @@ body {
 	  margin-left: 5%;
        }
 
-	.standings1of8 .tipster_row td:nth-of-type(n+10) {
+	.standingsQuarterFinals .tipster_row td:nth-of-type(n+10) {
 	visibility:hidden;
        }
 
-	.standings1of8 .tipster_row td:nth-of-type(10) {
+	.standingsQuarterFinals .tipster_row td:nth-of-type(10) {
 	 visibility:visible;
        }
 
-	.standings1of8 .tipster_row:nth-of-type(5) td {
+	.standingsQuarterFinals .tipster_row:nth-of-type(5) td {
 	 visibility:visible;
        }
 			
@@ -179,11 +179,11 @@ body {
 	
    .standings4 img, .standings3 img, .standings2 img, .standings5 img, .standings6 img, .standings img {
       height: 16px;
-	  width: 32px;
+      width: 32px;
     }
 
     .standingsQuarterFinals {
-      width: 60%;
+      width: 45%;
     }
 
     .standingsFinals {
