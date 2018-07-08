@@ -49,18 +49,6 @@ body {
 	  margin-left: 5%;
        }
 
-	.standingsQuarterFinals .tipster_row td:nth-of-type(n+10) {
-	visibility:hidden;
-       }
-
-	.standingsQuarterFinals .tipster_row td:nth-of-type(10) {
-	 visibility:visible;
-       }
-
-	.standingsQuarterFinals .tipster_row:nth-of-type(5) td {
-	 visibility:visible;
-       }
-			
 	.tipster_row img {
             	position: relative;
             	width: 32px;
@@ -182,12 +170,8 @@ body {
       width: 32px;
     }
 
-    .standingsQuarterFinals {
-      width: 45%;
-    }
-
-    .standingsFinals {
-      width: 35%;
+    .standingsQuarterFinals, .standingsFinals {
+      width: 50%;
     }
 
     #totals {
