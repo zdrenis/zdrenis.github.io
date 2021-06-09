@@ -1,0 +1,182 @@
+body {
+    background: #009bb4 url("../img/euro2020/background.png");
+    margin-bottom: 0px;
+}
+
+footer {
+    color: white;
+    position: relative;
+    text-align: center;
+}
+
+.blink_me {
+    animation: blinker 2s linear infinite;
+}
+
+@keyframes blinker {
+    50% {
+        opacity: 0.0;
+    }
+}
+
+.vertical-text {
+    transform: rotate(-45deg);
+}
+
+.tipster_row td {
+    height: 25px;
+}
+
+.tipster_row img {
+    position: relative;
+    width: 32px;
+    height: 16px;
+    margin-top: 3px;
+    margin-bottom: 1px;
+}
+
+table {
+    position: relative;
+    width: 100%;
+    vertical-align: middle;
+    border: 1px black;
+    text-align: center;
+}
+
+.column {
+    float: left;
+    width: 50%;
+    padding: 5px;
+}
+
+.bookie {
+    font-size: small;
+    font-family: beau_sans_pro;
+}
+
+table th {
+    padding: 1.5px;
+    height: 50px;
+    vertical-align: middle;
+    color: black;
+    font-family: beau_sans_pro;
+}
+
+table td {
+    vertical-align: middle;
+}
+
+tr:nth-child(even) {
+    background: #fff;
+}
+
+tr:nth-child(odd) {
+    background: #009bb4;
+    color: white;
+}
+
+.main {
+    margin: auto;
+    bottom: 0;
+    margin-bottom: 0px;
+    width: 90%;
+    border: 1px #ccc;
+    opacity: 0.9;
+}
+
+body,
+p,
+ul,
+ol,
+textarea {
+    font-family: beau_sans_pro;
+}
+
+input,
+th,
+td,
+table,
+h1,
+h2,
+h3,
+h4,
+span {
+    font-family: bridge_type, beau_sans_pro;
+}
+
+th span {
+    color: white;
+}
+
+a:link {
+    color: white;
+}
+
+.rules {
+    background-color: white;
+    border-radius: 25px;
+    position: relative;
+    color: #009bb4;
+    margin: auto;
+    margin-top: 40px;
+    padding: 15px;
+    width: 40%;
+}
+
+.standings,
+.standings1,
+.standingsExtra,
+.standingsHorses {
+    position: relative;
+    margin-top: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 25px;
+    width: 83%;
+    padding: 5px;
+    background-color: white;
+}
+
+#standingsExtra1 {
+    width: 70%;
+}
+
+.standings img {
+    height: 32px;
+    width: 32px;
+}
+
+.box {
+    display: flex;
+    align-items: center;
+    align-content: center;
+    vertical-align: middle;
+    text-align: center;
+    font-size: large;
+}
+
+.box span {
+    padding-left: 3%;
+    padding-right: 3%;
+}
+
+#crown,
+#bottle {
+    width: 16px;
+    height: 18px;
+    position: relative;
+}
+
+@font-face {
+    font-family: "bridge_type";
+    src: url('../font/euro2020/bridgetype-regular.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "beau_sans_pro";
+    src: url('../font/euro2020/PFBeauSansPro-Regular.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
