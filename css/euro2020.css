@@ -149,15 +149,7 @@ a:link {
 .box {
     display: flex;
     align-items: center;
-    align-content: center;
-    vertical-align: middle;
-    text-align: center;
     font-size: large;
-}
-
-.box span {
-    padding-left: 3%;
-    padding-right: 3%;
 }
 
 #crown,
