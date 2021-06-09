@@ -147,7 +147,7 @@ a:link {
 .box {
     display: flex;
     align-items: center;
-    font-size: large;
+    font-size: small;
 }
 
 #crown,
