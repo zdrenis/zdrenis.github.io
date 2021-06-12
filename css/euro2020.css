@@ -156,6 +156,10 @@ a:link {
     background-color: white;
 }
 
+#standings2 {
+    width: 60%;
+}
+
 #standingsExtra1 {
     width: 60%;
 }
