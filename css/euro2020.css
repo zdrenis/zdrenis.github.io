@@ -34,6 +34,10 @@ footer {
     animation: blinker 2s linear infinite;
 }
 
+.tipster_row td:nth-of-type(5) span:nth-of-type(2) {
+    animation: blinker 2s linear infinite;
+}
+
 .blink_me {
     animation: blinker 2s linear infinite;
 }
