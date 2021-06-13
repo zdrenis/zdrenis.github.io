@@ -46,11 +46,11 @@ footer {
     border-radius: 10px;
 }
 
-.tipster_row td:nth-of-type(7) span:nth-of-type(2) {
+.tipster_row td:nth-of-type(7) span:nth-of-type(2) {}
+
+.blink_me {
     animation: blinker 2s linear infinite;
 }
-
-.blink_me {}
 
 @keyframes blinker {
     50% {
