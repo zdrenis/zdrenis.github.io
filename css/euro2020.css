@@ -50,9 +50,7 @@ footer {
     animation: blinker 2s linear infinite;
 }
 
-.blink_me {
-    animation: blinker 2s linear infinite;
-}
+.blink_me {}
 
 @keyframes blinker {
     50% {
