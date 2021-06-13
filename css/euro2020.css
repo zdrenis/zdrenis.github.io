@@ -30,9 +30,7 @@ footer {
     border-radius: 10px;
 }
 
-.tipster_row td:nth-of-type(6) span:nth-of-type(2) {
-    animation: blinker 2s linear infinite;
-}
+.tipster_row td:nth-of-type(6) span:nth-of-type(2) {}
 
 .blink_me {
     animation: blinker 2s linear infinite;
