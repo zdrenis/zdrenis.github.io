@@ -14,7 +14,8 @@ footer {
     margin-left: 5%;
 }
 
-.points {
+.points,
+#round_winner td:nth-of-type(9) {
     padding: 0.5px 6px 0.5px 6px;
     background: #f7a600;
     border-color: #f7a600;
@@ -24,14 +25,18 @@ footer {
     background-image: linear-gradient(to bottom, #f7a600, #f7a600);
     color: white;
     text-shadow: 0 1px rgba(0, 0, 0, 0.25);
-    border: 1px solid;
-    border-radius: 10px;
+    border: 0px solid;
+    border-radius: 0px;
     -webkit-clip-path: polygon(20% 0%, 80% 0%, 100% 20%, 100% 80%, 80% 100%, 20% 100%, 0% 80%, 0% 20%);
     clip-path: polygon(20% 0%, 80% 0%, 100% 20%, 100% 80%, 80% 100%, 20% 100%, 0% 80%, 0% 20%);
 }
 
-#round_winner {
-    background-image: linear-gradient(to right, #6eab27, #95c23d 51%, #aecc53);
+#round_winner td {
+    background-image: linear-gradient(to bottom, #6eab27, #95c23d 51%, #aecc53);
+}
+
+#standings1 #round_winner td:nth-of-type(10) {
+    background-image: none;
 }
 
 .tipster_row td span:nth-of-type(2) {
@@ -117,21 +122,13 @@ table td {
     vertical-align: middle;
 }
 
-tr:nth-child(even) {
-    background: #fff;
+tr:nth-child(even) td {
+    background-color: #fff;
 }
 
-tr:nth-child(odd) {
-    background: #009bb4;
+tr:nth-child(odd) td {
+    background-color: #009bb4;
     color: white;
-}
-
-tr:last-child() {
-    background: white;
-}
-
-#round_winner tr:nth-last-child(1) {
-    background: white;
 }
 
 .main {
@@ -222,8 +219,7 @@ a:link {
     font-size: small;
 }
 
-#crown,
-#bottle {
+#crown {
     width: 13px;
     height: 11px;
     position: relative;
