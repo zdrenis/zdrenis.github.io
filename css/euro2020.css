@@ -216,8 +216,14 @@ a:link {
 
 #crown,
 #bottle {
-    width: 16px;
-    height: 18px;
+    width: 13px;
+    height: 11px;
+    position: relative;
+}
+
+#bottle {
+    width: 31px;
+    height: 26.5px;
     position: relative;
 }
 
