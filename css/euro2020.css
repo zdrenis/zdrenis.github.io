@@ -101,6 +101,7 @@ table {
     vertical-align: middle;
     border: 1px black;
     text-align: center;
+    box-shadow: 0 20px 10px -10px #6eab27;
 }
 
 .column {
@@ -132,6 +133,11 @@ tr:nth-child(even) td {
 tr:nth-child(odd) td {
     background-color: #009bb4;
     color: white;
+}
+
+tr:last-of-type {
+    margin-bottom: 0;
+    padding-bottom: 0;
 }
 
 .main {
@@ -192,7 +198,6 @@ a:link {
     border-radius: 25px;
     padding: 5px;
     background-color: white;
-    box-shadow: 0 20px 10px -10px #6eab27;
 }
 
 #standings2 {
