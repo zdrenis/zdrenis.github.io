@@ -184,8 +184,7 @@ a:link {
 
 .standings,
 .standings1,
-.standingsExtra,
-.standingsHorses {
+.standingsExtra {
     position: relative;
     margin-top: 30px;
     margin-left: auto;
@@ -193,6 +192,7 @@ a:link {
     border-radius: 25px;
     padding: 5px;
     background-color: white;
+    box-shadow: 0 20px 10px -10px #6eab27;
 }
 
 #standings2 {
@@ -232,6 +232,19 @@ a:link {
     width: 26px;
     height: 31px;
     position: relative;
+}
+
+.generic-horizontal-footer {
+    background-image: url("../img/euro2020/generic-horizontal.webp");
+}
+
+.watermark-footer {
+    background-image: url("../img/euro2020/generic-horizontal.webp");
+    position: relative;
+    background-size: 1680px auto;
+    height: 264px;
+    width: 1680px;
+    margin: auto;
 }
 
 @font-face {
