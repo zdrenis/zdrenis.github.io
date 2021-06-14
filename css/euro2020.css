@@ -37,6 +37,7 @@ footer {
 
 #standings1 #round_winner td:nth-of-type(10) {
     background-image: none;
+    width: 35px;
 }
 
 .tipster_row td span:nth-of-type(2) {
