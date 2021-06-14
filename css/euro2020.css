@@ -38,6 +38,8 @@ footer {
 #standings1 #round_winner td:nth-of-type(10) {
     background-image: none;
     width: 35px;
+    padding: 0 0 0 0;
+    margin: 0 0 0 0;
 }
 
 .tipster_row td span:nth-of-type(2) {
@@ -227,8 +229,8 @@ a:link {
 }
 
 #bottle {
-    width: 31px;
-    height: 26.5px;
+    width: 26px;
+    height: 31px;
     position: relative;
 }
 
