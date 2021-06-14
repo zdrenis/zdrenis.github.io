@@ -241,8 +241,10 @@ a:link {
 .watermark-footer {
     background-image: url("../img/euro2020/generic-horizontal.webp");
     position: relative;
+    background-size: 1107px auto;
     height: 180px;
-    width: 1680px;
+    background-repeat: no-repeat;
+    width: 840px;
     margin: auto;
 }
 
