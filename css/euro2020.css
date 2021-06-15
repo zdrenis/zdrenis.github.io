@@ -204,7 +204,10 @@ a:link {
     width: 70%;
 }
 
-#standings3 {
+#standings3,
+#standings4,
+#standings5,
+#standings6 {
     width: 80%;
 }
 
