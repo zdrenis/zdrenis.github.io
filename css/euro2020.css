@@ -216,6 +216,26 @@ a:link {
     width: 60%;
 }
 
+#totals {
+    width: 25%;
+}
+
+#totals td {
+    width: 25%;
+}
+
+#totals td:first-of-type {
+    background-color: #893772;
+    color: white;
+}
+
+#totals tr:nth-of-type(4) td:first-of-type,
+#totals tr:nth-of-type(6) td:first-of-type,
+#totals tr:nth-of-type(10) td:first-of-type {
+    background-color: white;
+    color: black;
+}
+
 .standings img {
     height: 32px;
     width: 32px;
