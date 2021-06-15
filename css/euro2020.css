@@ -220,11 +220,11 @@ a:link {
 }
 
 #totals {
-    width: 25%;
+    width: 35%;
 }
 
 #totals td {
-    width: 35%;
+    width: 30%;
 }
 
 #totals td:first-of-type {
