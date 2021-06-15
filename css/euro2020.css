@@ -230,6 +230,8 @@ a:link {
 #totals td:first-of-type {
     background-color: #893772;
     color: white;
+    width: 10%;
+    border-radius: 10px;
 }
 
 #totals tr:nth-of-type(4) td:first-of-type,
