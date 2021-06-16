@@ -255,6 +255,7 @@ a:link {
 }
 
 #totals tr:nth-of-type(5) td:first-of-type,
+#totals tr:nth-of-type(7) td:first-of-type,
 #totals tr:nth-of-type(11) td:first-of-type {
     background-color: #009bb4;
     color: white;
