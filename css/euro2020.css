@@ -254,14 +254,12 @@ a:link {
     border-radius: 10px;
 }
 
-#totals tr:nth-of-type(5) td:first-of-type,
-#totals tr:nth-of-type(11) td:first-of-type {
-    background-color: #009bb4;
-    color: white;
+#totals tr:nth-of-type(8) td:first-of-type,
+#totals tr:nth-of-type(10) td:first-of-type {
+    background-color: white;
+    color: black;
     border-radius: 0;
 }
-
-#totals tr:nth-of-type(5) td:first-of-type {}
 
 .standings img {
     height: 32px;
