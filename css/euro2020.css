@@ -58,21 +58,13 @@ footer {
     border-radius: 10px;
 }
 
-#standings3 .tipster_row td:nth-of-type(7) span:nth-of-type(2) {
-    animation: blinker 2s linear infinite;
-}
+#standings3 .tipster_row td:nth-of-type(7) span:nth-of-type(2) {}
 
-#standings3 thead tr:nth-of-type(3) th:nth-of-type(6) {
-    animation: blinker 2s linear infinite;
-}
+#standings3 thead tr:nth-of-type(3) th:nth-of-type(6) {}
 
-#standings3 .points {
-    animation: blinker 2s linear infinite;
-}
+#standings3 .points {}
 
-#standings3 .tipster_row td:last-of-type {
-    animation: blinker 2s linear infinite;
-}
+#standings3 .tipster_row td:last-of-type {}
 
 .standings thead tr:nth-of-type(3) th span {
     padding-left: 5px;
@@ -264,10 +256,16 @@ a:link {
     border-radius: 10px;
 }
 
-#totals tr:nth-of-type(8) td:first-of-type,
-#totals tr:nth-of-type(10) td:first-of-type {
+#totals tr:nth-of-type(6) td:first-of-type,
+#totals tr:nth-of-type(8) td:first-of-type {
     background-color: white;
     color: black;
+    border-radius: 0;
+}
+
+#totals tr:nth-of-type(11) td:first-of-type {
+    background-color: #009bb4;
+    color: white;
     border-radius: 0;
 }
 
