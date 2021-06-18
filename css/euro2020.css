@@ -231,6 +231,12 @@
         width: 30px;
     }
     
+    #totals th span {
+        font-size: small;
+        color: black;
+        font-family: beau_sans_pro;
+    }
+    
     #totals td:nth-of-type(2),
     #totals th:nth-of-type(2) {
         width: 20%;
