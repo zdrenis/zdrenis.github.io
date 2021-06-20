@@ -1,337 +1,335 @@
-    body {
-        background: #009bb4 url("../img/euro2020/background.png");
-        margin-bottom: 0px;
-    }
-    
-    footer {
-        color: white;
-        position: relative;
-        text-align: center;
-    }
-    
-    .tipster_row td span:nth-of-type(1) {
-        text-align: right;
-        margin-left: 5%;
-    }
-    
-    .points {
-        padding: 0.5px 6px 0.5px 6px;
-        background: #f7a600;
-        border-color: #f7a600;
-        background-image: -webkit-linear-gradient(top, #f7a600, #f7a600);
-        background-image: -moz-linear-gradient(top, #f7a600, #f7a600);
-        background-image: -o-linear-gradient(top, #f7a600, #f7a600);
-        background-image: linear-gradient(to bottom, #f7a600, #f7a600);
-        color: white;
-        text-shadow: 0 1px rgba(0, 0, 0, 0.25);
-        border: 0px solid;
-        border-radius: 0px;
-        -webkit-clip-path: polygon(20% 0%, 80% 0%, 100% 20%, 100% 80%, 80% 100%, 20% 100%, 0% 80%, 0% 20%);
-        clip-path: polygon(20% 0%, 80% 0%, 100% 20%, 100% 80%, 80% 100%, 20% 100%, 0% 80%, 0% 20%);
-    }
-    
-    #standings1 #round_winner td:nth-of-type(10) {
-        background-image: none;
-        width: 35px;
-        padding: 0 0 0 0;
-        margin: 0 0 0 0;
-    }
-    
-    .tipster_row td span:nth-of-type(2) {
-        padding: 0.5px 6px 0.5px 6px;
-        background: #f7a600;
-        border-color: #f7a600;
-        background-image: -webkit-linear-gradient(top, #f7a600, #f7a600);
-        background-image: -moz-linear-gradient(top, #f7a600, #f7a600);
-        background-image: -o-linear-gradient(top, #f7a600, #f7a600);
-        background-image: linear-gradient(to bottom, #f7a600, #f7a600);
-        margin-left: 2px;
-        margin-right: 2px;
-        font-size: 16px;
-        color: black;
-        text-align: left;
-        text-shadow: 0 1px rgba(0, 0, 0, 0.25);
-        border-radius: 10px;
-    }
-    
-    #standings4 .tipster_row td:nth-of-type(4) span:nth-of-type(2) {}
-    
-    #standings4 thead tr:nth-of-type(3) th:nth-of-type(3) {}
-    
-    #standings4 .points {}
-    
-    #standings4 .tipster_row td:last-of-type {}
-    
-    .standings thead tr:nth-of-type(3) th span {
-        padding-left: 5px;
-        padding-right: 5px;
-        color: white;
-        background-color: #893772;
-    }
-    
-    .blink_me {
-        animation: blinker 2s linear infinite;
-    }
-    
-    @keyframes blinker {
-        50% {
-            opacity: 0.0;
+        body {
+            background: #009bb4 url("../img/euro2020/background.png");
+            margin-bottom: 0px;
         }
-    }
-    
-    .vertical-text {
-        transform: rotate(-45deg);
-    }
-    
-    .tipster_row td {
-        height: 25px;
-    }
-    
-    .tipster_row img {
-        position: relative;
-        width: 32px;
-        height: 16px;
-        margin-top: 3px;
-        margin-bottom: 1px;
-    }
-    
-    table {
-        position: relative;
-        width: 100%;
-        vertical-align: middle;
-        border: 1px black;
-        text-align: center;
-        box-shadow: 0 20px 8px -8px #6eab27;
-    }
-    
-    .column {
-        float: left;
-        width: 50%;
-        padding: 5px;
-    }
-    
-    .bookie {
-        font-size: small;
-        font-family: beau_sans_pro;
-    }
-    
-    table th {
-        padding: 1.5px;
-        vertical-align: middle;
-        color: black;
-        font-family: beau_sans_pro;
-    }
-    
-    table td {
-        vertical-align: middle;
-    }
-    
-    tr:nth-child(even) td {
-        background-color: #fff;
-    }
-    
-    tr:nth-child(odd) td {
-        background-color: #009bb4;
-        color: white;
-    }
-    
-    tr:last-of-type {
-        margin-bottom: 0;
-        padding-bottom: 0;
-    }
-    
-    .main {
-        margin: auto;
-        bottom: 0;
-        margin-bottom: 0px;
-        width: 90%;
-        border: 1px #ccc;
-        opacity: 0.9;
-    }
-    
-    body,
-    p,
-    ul,
-    ol,
-    textarea {
-        font-family: beau_sans_pro;
-    }
-    
-    input,
-    th,
-    td,
-    table,
-    h1,
-    h2,
-    h3,
-    h4,
-    span {
-        font-family: bridge_type, beau_sans_pro;
-    }
-    
-    th span {
-        color: white;
-    }
-    
-    a:link {
-        color: white;
-    }
-    
-    .rules {
-        background-color: white;
-        border-radius: 25px;
-        position: relative;
-        color: #009bb4;
-        margin: auto;
-        margin-top: 40px;
-        padding: 15px;
-        width: 40%;
-    }
-    
-    .standings,
-    .standings1,
-    .standingsExtra {
-        position: relative;
-        margin-top: 30px;
-        margin-left: auto;
-        margin-right: auto;
-        border-radius: 25px;
-        padding: 5px;
-        background-color: white;
-    }
-    
-    #standings2 {
-        width: 70%;
-    }
-    
-    #standings3,
-    #standings4,
-    #standings5,
-    #standings6 {
-        width: 80%;
-    }
-    
-    #standingsExtra1 {
-        width: 80%;
-    }
-    
-    #standingsExtra2 {
-        width: 60%;
-    }
-    
-    #totals {
-        width: 45%;
-    }
-    
-    #totals td:first-of-type {
-        width: 30px;
-    }
-    
-    #totals th span {
-        font-size: small;
-        color: black;
-        font-family: beau_sans_pro;
-    }
-    
-    #totals td:nth-of-type(2),
-    #totals th:nth-of-type(2) {
-        width: 20%;
-    }
-    
-    #totals td:nth-of-type(3),
-    #totals th:nth-of-type(3),
-    #totals td:nth-of-type(4),
-    #totals th:nth-of-type(4),
-    #totals td:nth-of-type(5),
-    #totals th:nth-of-type(5),
-    #totals td:nth-of-type(6),
-    #totals th:nth-of-type(6) {
-        width: 16%;
-    }
-    
-    #totals td:last-of-type {
-        width: 40px;
-    }
-    
-    #totals td:first-of-type {
-        background-color: #893772;
-        color: white;
-        width: 10%;
-        border-radius: 10px;
-    }
-    
-    #totals tr:nth-of-type(8) td:first-of-type {
-        background-color: white;
-        color: black;
-        border-radius: 0;
-    }
-    
-    #totals tr:nth-of-type(9) td:first-of-type {
-        background-color: #009bb4;
-        color: white;
-        border-radius: 0;
-    }
-    
-    .standings img {
-        height: 32px;
-        width: 32px;
-    }
-    
-    .box {
-        display: flex;
-        align-items: center;
-        font-size: small;
-        text-align: left;
-    }
-    
-    #extraTip {
-        display: flex;
-        align-items: center;
-        font-size: small;
-        text-align: center;
-        padding-left: 30%;
-    }
-    
-    #extraTip span {
-        font-size: x-large;
-    }
-    
-    #crown {
-        width: 13px;
-        height: 11px;
-        position: relative;
-    }
-    
-    #bottle {
-        width: 26px;
-        height: 31px;
-        position: relative;
-    }
-    
-    .generic-horizontal-footer {
-        background-image: url("../img/euro2020/generic-horizontal.webp");
-    }
-    
-    .watermark-footer {
-        background-image: url("../img/euro2020/generic-horizontal.webp");
-        position: relative;
-        background-size: 1107px auto;
-        height: 180px;
-        background-repeat: no-repeat;
-        width: 840px;
-        margin: auto;
-    }
-    
-    @font-face {
-        font-family: "bridge_type";
-        src: url('../font/euro2020/bridgetype-regular.woff2') format('woff2');
-        font-weight: normal;
-        font-style: normal;
-    }
-    
-    @font-face {
-        font-family: "beau_sans_pro";
-        src: url('../font/euro2020/PFBeauSansPro-Regular.woff2') format('woff2');
-        font-weight: normal;
-        font-style: normal;
-    }
+        
+        footer {
+            color: white;
+            position: relative;
+            text-align: center;
+        }
+        
+        .tipster_row td span:nth-of-type(1) {
+            text-align: right;
+            margin-left: 5%;
+        }
+        
+        .points {
+            padding: 0.5px 6px 0.5px 6px;
+            background: #f7a600;
+            border-color: #f7a600;
+            background-image: -webkit-linear-gradient(top, #f7a600, #f7a600);
+            background-image: -moz-linear-gradient(top, #f7a600, #f7a600);
+            background-image: -o-linear-gradient(top, #f7a600, #f7a600);
+            background-image: linear-gradient(to bottom, #f7a600, #f7a600);
+            color: white;
+            text-shadow: 0 1px rgba(0, 0, 0, 0.25);
+            border: 0px solid;
+            border-radius: 0px;
+            -webkit-clip-path: polygon(20% 0%, 80% 0%, 100% 20%, 100% 80%, 80% 100%, 20% 100%, 0% 80%, 0% 20%);
+            clip-path: polygon(20% 0%, 80% 0%, 100% 20%, 100% 80%, 80% 100%, 20% 100%, 0% 80%, 0% 20%);
+        }
+        
+        #standings1 #round_winner td:nth-of-type(10) {
+            background-image: none;
+            width: 35px;
+            padding: 0 0 0 0;
+            margin: 0 0 0 0;
+        }
+        
+        .tipster_row td span:nth-of-type(2) {
+            padding: 0.5px 6px 0.5px 6px;
+            background: #f7a600;
+            border-color: #f7a600;
+            background-image: -webkit-linear-gradient(top, #f7a600, #f7a600);
+            background-image: -moz-linear-gradient(top, #f7a600, #f7a600);
+            background-image: -o-linear-gradient(top, #f7a600, #f7a600);
+            background-image: linear-gradient(to bottom, #f7a600, #f7a600);
+            margin-left: 2px;
+            margin-right: 2px;
+            font-size: 16px;
+            color: black;
+            text-align: left;
+            text-shadow: 0 1px rgba(0, 0, 0, 0.25);
+            border-radius: 10px;
+        }
+        
+        #standings4 .tipster_row td:nth-of-type(4) span:nth-of-type(2) {}
+        
+        #standings4 thead tr:nth-of-type(3) th:nth-of-type(3) {}
+        
+        #standings4 .points {}
+        
+        #standings4 .tipster_row td:last-of-type {}
+        
+        .standings thead tr:nth-of-type(3) th span {
+            padding-left: 5px;
+            padding-right: 5px;
+            color: white;
+            background-color: #893772;
+        }
+        
+        .blink_me {
+            animation: blinker 2s linear infinite;
+        }
+        
+        @keyframes blinker {
+            50% {
+                opacity: 0.0;
+            }
+        }
+        
+        .vertical-text {
+            transform: rotate(-45deg);
+        }
+        
+        .tipster_row td {
+            height: 25px;
+        }
+        
+        .tipster_row img {
+            position: relative;
+            width: 32px;
+            height: 16px;
+            margin-top: 3px;
+            margin-bottom: 1px;
+        }
+        
+        table {
+            position: relative;
+            width: 100%;
+            vertical-align: middle;
+            border: 1px black;
+            text-align: center;
+            box-shadow: 0 20px 8px -8px #6eab27;
+        }
+        
+        .column {
+            float: left;
+            width: 50%;
+            padding: 5px;
+        }
+        
+        .bookie {
+            font-size: small;
+            font-family: beau_sans_pro;
+        }
+        
+        table th {
+            padding: 1.5px;
+            vertical-align: middle;
+            color: black;
+            font-family: beau_sans_pro;
+        }
+        
+        table td {
+            vertical-align: middle;
+        }
+        
+        tr:nth-child(even) td {
+            background-color: #fff;
+        }
+        
+        tr:nth-child(odd) td {
+            background-color: #009bb4;
+            color: white;
+        }
+        
+        tr:last-of-type {
+            margin-bottom: 0;
+            padding-bottom: 0;
+        }
+        
+        .main {
+            margin: auto;
+            bottom: 0;
+            margin-bottom: 0px;
+            width: 90%;
+            border: 1px #ccc;
+            opacity: 0.9;
+        }
+        
+        body,
+        p,
+        ul,
+        ol,
+        textarea {
+            font-family: beau_sans_pro;
+        }
+        
+        input,
+        th,
+        td,
+        table,
+        h1,
+        h2,
+        h3,
+        h4,
+        span {
+            font-family: bridge_type, beau_sans_pro;
+        }
+        
+        th span {
+            color: white;
+        }
+        
+        a:link {
+            color: white;
+        }
+        
+        .rules {
+            background-color: white;
+            border-radius: 25px;
+            position: relative;
+            color: #009bb4;
+            margin: auto;
+            margin-top: 40px;
+            padding: 15px;
+            width: 40%;
+        }
+        
+        .standings,
+        .standings1,
+        .standingsExtra {
+            position: relative;
+            margin-top: 30px;
+            margin-left: auto;
+            margin-right: auto;
+            border-radius: 25px;
+            padding: 5px;
+            background-color: white;
+        }
+        
+        #standings2 {
+            width: 70%;
+        }
+        
+        #standings3,
+        #standings4,
+        #standings5,
+        #standings6 {
+            width: 80%;
+        }
+        
+        #standingsExtra1 {
+            width: 80%;
+        }
+        
+        #standingsExtra2 {
+            width: 60%;
+        }
+        
+        #totals {
+            width: 55%;
+        }
+        
+        #totals td:first-of-type {
+            width: 30px;
+        }
+        
+        #totals th span {
+            font-size: small;
+            color: black;
+            font-family: beau_sans_pro;
+        }
+        
+        #totals td:nth-of-type(2) {
+            width: 12%;
+        }
+        
+        #totals td:nth-of-type(3),
+        #totals td:nth-of-type(4),
+        #totals td:nth-of-type(5),
+        #totals td:nth-of-type(6),
+        #totals td:nth-of-type(7),
+        #totals td:nth-of-type(8) {
+            width: 12%;
+        }
+        
+        #totals td:last-of-type {
+            width: 20px;
+        }
+        
+        #totals td:first-of-type {
+            background-color: #893772;
+            color: white;
+            width: 8%;
+            border-radius: 10px;
+        }
+        
+        #totals tr:nth-of-type(12) td:first-of-type {
+            background-color: white;
+            color: black;
+            border-radius: 0;
+        }
+        
+        #totals tr:nth-of-type(7) td:first-of-type,
+        #totals tr:nth-of-type(9) td:first-of-type {
+            background-color: #009bb4;
+            color: white;
+            border-radius: 0;
+        }
+        
+        .standings img {
+            height: 32px;
+            width: 32px;
+        }
+        
+        .box {
+            display: flex;
+            align-items: center;
+            font-size: small;
+            text-align: left;
+        }
+        
+        #extraTip {
+            display: flex;
+            align-items: center;
+            font-size: small;
+            text-align: center;
+            padding-left: 30%;
+        }
+        
+        #extraTip span {
+            font-size: large;
+        }
+        
+        #crown {
+            width: 13px;
+            height: 11px;
+            position: relative;
+        }
+        
+        #bottle {
+            width: 26px;
+            height: 31px;
+            position: relative;
+        }
+        
+        .generic-horizontal-footer {
+            background-image: url("../img/euro2020/generic-horizontal.webp");
+        }
+        
+        .watermark-footer {
+            background-image: url("../img/euro2020/generic-horizontal.webp");
+            position: relative;
+            background-size: 1107px auto;
+            height: 180px;
+            background-repeat: no-repeat;
+            width: 840px;
+            margin: auto;
+        }
+        
+        @font-face {
+            font-family: "bridge_type";
+            src: url('../font/euro2020/bridgetype-regular.woff2') format('woff2');
+            font-weight: normal;
+            font-style: normal;
+        }
+        
+        @font-face {
+            font-family: "beau_sans_pro";
+            src: url('../font/euro2020/PFBeauSansPro-Regular.woff2') format('woff2');
+            font-weight: normal;
+            font-style: normal;
+        }
