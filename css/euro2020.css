@@ -292,6 +292,10 @@
         padding-left: 30%;
     }
     
+    #extraTip span {
+        font-size: x-large;
+    }
+    
     #crown {
         width: 13px;
         height: 11px;
