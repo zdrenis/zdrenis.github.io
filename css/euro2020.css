@@ -54,15 +54,23 @@
             border-radius: 10px;
         }
         
-        #standings5 .tipster_row td:nth-of-type(4) span:nth-of-type(2),
-        #standings5 .tipster_row td:nth-of-type(5) span:nth-of-type(2) {}
+        #standings5 .tipster_row td:nth-of-type(6) span:nth-of-type(2),
+        #standings5 .tipster_row td:nth-of-type(7) span:nth-of-type(2) {
+            animation: blinker 2s linear infinite;
+        }
         
-        #standings5 thead tr:nth-of-type(3) th:nth-of-type(3),
-        #standings5 thead tr:nth-of-type(3) th:nth-of-type(4) {}
+        #standings5 thead tr:nth-of-type(3) th:nth-of-type(5),
+        #standings5 thead tr:nth-of-type(3) th:nth-of-type(6) {
+            animation: blinker 2s linear infinite;
+        }
         
-        #standings5 .points {}
+        #standings5 .points {
+            animation: blinker 2s linear infinite;
+        }
         
-        #standings5 .tipster_row td:last-of-type {}
+        #standings5 .tipster_row td:last-of-type {
+            animation: blinker 2s linear infinite;
+        }
         
         .standings thead tr:nth-of-type(3) th span {
             padding-left: 5px;
