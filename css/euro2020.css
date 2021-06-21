@@ -55,18 +55,12 @@
         }
         
         #standings5 .tipster_row td:nth-of-type(4) span:nth-of-type(2),
-        #standings5 .tipster_row td:nth-of-type(5) span:nth-of-type(2) {
-            animation: blinker 2s linear infinite;
-        }
+        #standings5 .tipster_row td:nth-of-type(5) span:nth-of-type(2) {}
         
         #standings5 thead tr:nth-of-type(3) th:nth-of-type(3),
-        #standings5 thead tr:nth-of-type(3) th:nth-of-type(4) {
-            animation: blinker 2s linear infinite;
-        }
+        #standings5 thead tr:nth-of-type(3) th:nth-of-type(4) {}
         
-        #standings5 .points {
-            animation: blinker 2s linear infinite;
-        }
+        #standings5 .points {}
         
         #standings5 .tipster_row td:last-of-type {}
         
@@ -265,14 +259,14 @@
             border-radius: 10px;
         }
         
+        #totals tr:nth-of-type(10) td:first-of-type,
         #totals tr:nth-of-type(12) td:first-of-type {
             background-color: white;
             color: black;
             border-radius: 0;
         }
         
-        #totals tr:nth-of-type(7) td:first-of-type,
-        #totals tr:nth-of-type(9) td:first-of-type {
+        #totals tr:nth-of-type(3) td:first-of-type {
             background-color: #009bb4;
             color: white;
             border-radius: 0;
