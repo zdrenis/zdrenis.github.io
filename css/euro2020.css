@@ -235,6 +235,10 @@
             font-family: beau_sans_pro;
         }
         
+        #totals div {
+            font-family: beau_sans_pro;
+        }
+        
         #totals td:nth-of-type(2) {
             width: 12%;
         }
@@ -249,7 +253,7 @@
         }
         
         #totals td:last-of-type {
-            width: 20px;
+            width: 25px;
         }
         
         #totals td:first-of-type {
@@ -302,7 +306,7 @@
             position: relative;
         }
         
-        totals #bottle {
+        #totals #bottle {
             width: 26px;
             height: 31px;
             position: relative;
