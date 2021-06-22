@@ -235,7 +235,7 @@
             font-family: beau_sans_pro;
         }
         
-        #totals div {
+        .box {
             font-family: beau_sans_pro;
         }
         
@@ -307,14 +307,14 @@
         }
         
         #totals #bottle {
-            width: 26px;
-            height: 31px;
+            width: 21px;
+            height: 25px;
             position: relative;
         }
         
         #bottle {
-            width: 21px;
-            height: 25px;
+            width: 26px;
+            height: 31px;
             position: relative;
         }
         
