@@ -55,18 +55,12 @@
         }
         
         #standings6 .tipster_row td:nth-of-type(2) span:nth-of-type(2),
-        #standings6 .tipster_row td:nth-of-type(3) span:nth-of-type(2) {
-            animation: blinker 2s linear infinite;
-        }
+        #standings6 .tipster_row td:nth-of-type(3) span:nth-of-type(2) {}
         
         #standings6 thead tr:nth-of-type(3) th:nth-of-type(1),
-        #standings6 thead tr:nth-of-type(3) th:nth-of-type(2) {
-            animation: blinker 2s linear infinite;
-        }
+        #standings6 thead tr:nth-of-type(3) th:nth-of-type(2) {}
         
-        #standings6 .points {
-            animation: blinker 2s linear infinite;
-        }
+        #standings6 .points {}
         
         #standings6 .tipster_row td:last-of-type {}
         
@@ -228,7 +222,7 @@
         }
         
         #totals {
-            width: 55%;
+            width: 60%;
         }
         
         #totals td:first-of-type {
@@ -270,7 +264,7 @@
         }
         
         #totals tr:nth-of-type(8) td:first-of-type,
-        #totals tr:nth-of-type(12) td:first-of-type {
+        #totals tr:nth-of-type(0) td:first-of-type {
             background-color: white;
             color: black;
             border-radius: 0;
