@@ -55,22 +55,14 @@
         }
         
         #standings6 .tipster_row td:nth-of-type(6) span:nth-of-type(2),
-        #standings6 .tipster_row td:nth-of-type(7) span:nth-of-type(2) {
-            animation: blinker 2s linear infinite;
-        }
+        #standings6 .tipster_row td:nth-of-type(7) span:nth-of-type(2) {}
         
         #standings6 thead tr:nth-of-type(3) th:nth-of-type(5),
-        #standings6 thead tr:nth-of-type(3) th:nth-of-type(6) {
-            animation: blinker 2s linear infinite;
-        }
+        #standings6 thead tr:nth-of-type(3) th:nth-of-type(6) {}
         
-        #standings6 .points {
-            animation: blinker 2s linear infinite;
-        }
+        #standings6 .points {}
         
-        #standings6 .tipster_row td:last-of-type {
-            animation: blinker 2s linear infinite;
-        }
+        #standings6 .tipster_row td:last-of-type {}
         
         .standings thead tr:nth-of-type(3) th span {
             padding-left: 5px;
@@ -230,7 +222,7 @@
         }
         
         #totals {
-            width: 65%;
+            width: 70%;
         }
         
         #totals td:first-of-type {
@@ -256,7 +248,8 @@
         #totals td:nth-of-type(5),
         #totals td:nth-of-type(6),
         #totals td:nth-of-type(7),
-        #totals td:nth-of-type(8) {
+        #totals td:nth-of-type(8),
+        #totals td:nth-of-type(9) {
             width: 12%;
         }
         
@@ -271,7 +264,7 @@
             border-radius: 10px;
         }
         
-        #totals tr:nth-of-type(8) td:first-of-type,
+        #totals tr:nth-of-type(0) td:first-of-type,
         #totals tr:nth-of-type(0) td:first-of-type {
             background-color: white;
             color: black;
