@@ -214,7 +214,7 @@
         }
         
         #standingsExtra1 {
-            width: 75%;
+            width: 80%;
         }
         
         #standingsExtra2 {
@@ -290,8 +290,7 @@
         }
         
         #standingsExtra1 .tipster_row td:nth-child(9) {
-            margin: 0;
-            padding: 0;
+            width: 40px;
         }
         
         #extraTip {
