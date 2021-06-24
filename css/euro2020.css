@@ -218,7 +218,7 @@
         }
         
         #standings1of16 {
-            width: 100%;
+            width: 105%;
         }
         
         #standingsExtra2 {
@@ -250,7 +250,7 @@
         }
         
         #totals td:nth-of-type(10) {
-            width: 8%;
+            width: 10%;
         }
         
         #totals td:last-of-type {
