@@ -225,17 +225,9 @@
             width: 85%;
         }
         
-        #totals td:first-of-type {
-            width: 30px;
-        }
-        
         #totals th span {
             font-size: small;
             color: black;
-            font-family: beau_sans_pro;
-        }
-        
-        .box {
             font-family: beau_sans_pro;
         }
         
@@ -249,9 +241,12 @@
         #totals td:nth-of-type(6),
         #totals td:nth-of-type(7),
         #totals td:nth-of-type(8),
-        #totals td:nth-of-type(9),
-        #totals td:nth-of-type(10) {
+        #totals td:nth-of-type(9) {
             width: 10%;
+        }
+        
+        #totals td:nth-of-type(10) {
+            width: 8%;
         }
         
         #totals td:last-of-type {
@@ -261,7 +256,7 @@
         #totals td:first-of-type {
             background-color: #893772;
             color: white;
-            width: 8%;
+            width: 5%;
             border-radius: 10px;
         }
         
@@ -306,8 +301,12 @@
             font-size: large;
         }
         
+        #totals #extraTip {
+            padding-left: 10%;
+        }
+        
         #totals #extraTip span {
-            font-size: large;
+            font-size: medium;
             text-align: left;
         }
         
