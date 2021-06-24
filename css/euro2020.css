@@ -146,7 +146,7 @@
             margin: auto;
             bottom: 0;
             margin-bottom: 0px;
-            width: 90%;
+            width: 95%;
             border: 1px #ccc;
             opacity: 0.9;
         }
@@ -203,30 +203,30 @@
         }
         
         #standings2 {
-            width: 75%;
+            width: 70%;
         }
         
         #standings3,
         #standings4,
         #standings5,
         #standings6 {
-            width: 85%;
+            width: 80%;
         }
         
         #standingsExtra1 {
-            width: 90%;
+            width: 85%;
         }
         
         #standings1of16 {
-            width: 105%;
+            width: 100%;
         }
         
         #standingsExtra2 {
-            width: 75%;
+            width: 70%;
         }
         
         #totals {
-            width: 87%;
+            width: 82%;
         }
         
         #totals th span {
