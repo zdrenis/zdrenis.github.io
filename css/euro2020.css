@@ -222,7 +222,7 @@
         }
         
         #totals {
-            width: 70%;
+            width: 80%;
         }
         
         #totals td:first-of-type {
@@ -249,8 +249,9 @@
         #totals td:nth-of-type(6),
         #totals td:nth-of-type(7),
         #totals td:nth-of-type(8),
-        #totals td:nth-of-type(9) {
-            width: 12%;
+        #totals td:nth-of-type(9),
+        #totals td:nth-of-type(10) {
+            width: 10%;
         }
         
         #totals td:last-of-type {
@@ -303,6 +304,11 @@
         
         #extraTip span {
             font-size: large;
+        }
+        
+        #totals #extraTip span {
+            font-size: large;
+            text-align: left;
         }
         
         #crown {
