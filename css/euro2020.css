@@ -226,7 +226,7 @@
         }
         
         #totals {
-            width: 82%;
+            width: 70%;
         }
         
         #totals th span {
@@ -246,10 +246,14 @@
         #totals td:nth-of-type(7),
         #totals td:nth-of-type(8),
         #totals td:nth-of-type(9) {
-            width: 10%;
+            width: 8%;
         }
         
         #totals td:nth-of-type(10) {
+            width: 8%;
+        }
+        
+        #totals td:nth-of-type(11) {
             width: 10%;
         }
         
