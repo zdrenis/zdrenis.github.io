@@ -272,7 +272,7 @@
             border-radius: 10px;
         }
         
-        #totals tr:nth-of-type(0) td:first-of-type,
+        #totals tr:nth-of-type(6) td:first-of-type,
         #totals tr:nth-of-type(0) td:first-of-type {
             background-color: white;
             color: black;
