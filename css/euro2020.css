@@ -234,7 +234,7 @@
         }
         
         #totals {
-            width: 75%;
+            width: 80%;
         }
         
         #totals th span {
@@ -253,16 +253,15 @@
         #totals td:nth-of-type(6),
         #totals td:nth-of-type(7),
         #totals td:nth-of-type(8),
-        #totals td:nth-of-type(9) {
-            width: 8%;
+        #totals td:nth-of-type(9),
+        #totals td:nth-of-type(10),
+        #totals td:nth-of-type(11),
+        #totals td:nth-of-type(12) {
+            width: 7%;
         }
         
-        #totals td:nth-of-type(10) {
-            width: 8%;
-        }
-        
-        #totals td:nth-of-type(11) {
-            width: 10%;
+        #totals td:nth-of-type(13) {
+            width: 9%;
         }
         
         #totals td:last-of-type {
