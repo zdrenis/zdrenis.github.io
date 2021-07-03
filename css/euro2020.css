@@ -244,7 +244,7 @@
         }
         
         #totals td:nth-of-type(2) {
-            width: 12%;
+            width: 9%;
         }
         
         #totals td:nth-of-type(3),
@@ -261,6 +261,10 @@
         }
         
         #totals td:nth-of-type(13) {
+            width: 9%;
+        }
+        
+        #totals td:nth-of-type(14) {
             width: 9%;
         }
         
