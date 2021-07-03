@@ -228,7 +228,7 @@
         }
         
         #totals {
-            width: 80%;
+            width: 55%;
         }
         
         #totals th span {
@@ -238,28 +238,21 @@
         }
         
         #totals td:nth-of-type(2) {
-            width: 9%;
+            width: 18%;
         }
         
         #totals td:nth-of-type(3),
         #totals td:nth-of-type(4),
-        #totals td:nth-of-type(5),
-        #totals td:nth-of-type(6),
-        #totals td:nth-of-type(7),
-        #totals td:nth-of-type(8),
-        #totals td:nth-of-type(9),
-        #totals td:nth-of-type(10),
-        #totals td:nth-of-type(11),
-        #totals td:nth-of-type(12) {
-            width: 7%;
+        #totals td:nth-of-type(5) {
+            width: 17%;
         }
         
-        #totals td:nth-of-type(13) {
-            width: 9%;
+        #totals td:nth-of-type(6) {
+            width: 17%;
         }
         
-        #totals td:nth-of-type(14) {
-            width: 9%;
+        #totals td:nth-of-type(7) {
+            width: 12%;
         }
         
         #totals td:last-of-type {
@@ -269,7 +262,7 @@
         #totals td:first-of-type {
             background-color: #893772;
             color: white;
-            width: 5%;
+            width: 10%;
             border-radius: 10px;
         }
         
