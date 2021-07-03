@@ -295,7 +295,7 @@
             border-radius: 10px;
         }
         
-        #totals tr:nth-of-type(12) td:first-of-type,
+        #totals tr:nth-of-type(0) td:first-of-type,
         #totals tr:nth-of-type(0) td:first-of-type {
             background-color: white;
             color: black;
@@ -303,7 +303,7 @@
         }
         
         #totals tr:nth-of-type(5) td:first-of-type,
-        #totals tr:nth-of-type(9) td:first-of-type {
+        #totals tr:nth-of-type(0) td:first-of-type {
             background-color: #009bb4;
             color: white;
             border-radius: 0;
