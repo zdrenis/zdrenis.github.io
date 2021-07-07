@@ -54,11 +54,17 @@
             border-radius: 10px;
         }
         
-        #standingsSemifinals .tipster_row td:nth-of-type(2) span:nth-of-type(2) {}
+        #standingsSemifinals .tipster_row td:nth-of-type(3) span:nth-of-type(2) {
+            animation: blinker 2s linear infinite;
+        }
         
-        #standingsSemifinals thead tr:nth-of-type(3) th:nth-of-type(1) {}
+        #standingsSemifinals thead tr:nth-of-type(3) th:nth-of-type(2) {
+            animation: blinker 2s linear infinite;
+        }
         
-        #standingsSemifinals .points {}
+        #standingsSemifinals .points {
+            animation: blinker 2s linear infinite;
+        }
         
         #standingsSemifinals .tipster_row td:last-of-type {}
         
