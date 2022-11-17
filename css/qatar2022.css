@@ -1,0 +1,255 @@
+        body {
+            background: #eeeee4;
+            margin-bottom: 0px;
+        }
+        
+        footer {
+            color: white;
+            position: relative;
+            text-align: center;
+        }
+        
+        .tipster_row td span:nth-of-type(1) {
+            text-align: right;
+            margin-left: 5%;
+        }
+        
+        .points {
+            padding: 0.5px 6px 0.5px 6px;
+            background: #f7a600;
+            border-color: #f7a600;
+            background-image: -webkit-linear-gradient(top, #f7a600, #f7a600);
+            background-image: -moz-linear-gradient(top, #f7a600, #f7a600);
+            background-image: -o-linear-gradient(top, #f7a600, #f7a600);
+            background-image: linear-gradient(to bottom, #f7a600, #f7a600);
+            color: white;
+            text-shadow: 0 1px rgba(0, 0, 0, 0.25);
+            border: 0px solid;
+            border-radius: 0px;
+            -webkit-clip-path: polygon(20% 0%, 80% 0%, 100% 20%, 100% 80%, 80% 100%, 20% 100%, 0% 80%, 0% 20%);
+            clip-path: polygon(20% 0%, 80% 0%, 100% 20%, 100% 80%, 80% 100%, 20% 100%, 0% 80%, 0% 20%);
+        }
+        
+        #standings1 #round_winner td:nth-of-type(10) {
+            background-image: none;
+            width: 35px;
+            padding: 0 0 0 0;
+            margin: 0 0 0 0;
+        }
+        
+        .tipster_row td span:nth-of-type(2) {
+            padding: 0.5px 6px 0.5px 6px;
+            background: #f7a600;
+            border-color: #f7a600;
+            background-image: -webkit-linear-gradient(top, #f7a600, #f7a600);
+            background-image: -moz-linear-gradient(top, #f7a600, #f7a600);
+            background-image: -o-linear-gradient(top, #f7a600, #f7a600);
+            background-image: linear-gradient(to bottom, #f7a600, #f7a600);
+            margin-left: 2px;
+            margin-right: 2px;
+            font-size: 16px;
+            color: white;
+            text-align: left;
+            text-shadow: 0 1px rgba(0, 0, 0, 0.25);
+            border-radius: 10px;
+        }
+        
+        .blink_me {
+            animation: blinker 2s linear infinite;
+        }
+        
+        @keyframes blinker {
+            50% {
+                opacity: 0.0;
+            }
+        }
+        
+        .vertical-text {
+            transform: rotate(-45deg);
+        }
+        
+        .tipster_row td {
+            height: 25px;
+        }
+        
+        .tipster_row img {
+            position: relative;
+            width: 24px;
+            height: 12px;
+            margin-top: 2px;
+            margin-bottom: 1px;
+        }
+        
+        table {
+            position: relative;
+            width: 100%;
+            vertical-align: middle;
+            border: 1px white;
+            text-align: center;
+            background-color: #b4003c;
+        }
+        
+        .column {
+            float: left;
+            width: 25%;
+            padding: 5px;
+        }
+        
+        .bookie {
+            font-size: small;
+            font-family: Qatar2022;
+        }
+        
+        table th {
+            padding: 1.5px;
+            vertical-align: middle;
+            color: white;
+            font-family: Qatar2022;
+        }
+        
+        table td {
+            vertical-align: middle;
+        }
+        
+        tr:nth-child(even) td {
+            background-color: #b4003c;
+            color: white;
+        }
+        
+        tr:nth-child(odd) td {
+            background-color: #e5537f;
+            color: white;
+        }
+        
+        tr:last-of-type {
+            margin-bottom: 0;
+            padding-bottom: 0;
+        }
+        
+        .main {
+            margin: auto;
+            bottom: 0;
+            margin-bottom: 0px;
+            width: 95%;
+            border: 1px white;
+            opacity: 0.9;
+        }
+        
+        body,
+        p,
+        ul,
+        ol,
+        textarea {
+            font-family: Qatar2022;
+        }
+        
+        input,
+        th,
+        td,
+        table,
+        h1,
+        h2,
+        h3,
+        h4,
+        span {
+            font-family: Qatar2022Heavy;
+        }
+        
+        th span {
+            color: white;
+        }
+        
+        a:link {
+            color: #b61c4a;
+        }
+        
+        .rules {
+            background-color: #b4003c;
+            border-radius: 25px;
+            position: relative;
+            color: white;
+            margin: auto;
+            margin-top: 40px;
+            padding: 15px;
+            width: 40%;
+        }
+        
+        .standings,
+        .standings1,
+        .standingsExtra {
+            position: relative;
+            margin-top: 30px;
+            margin-left: auto;
+            margin-right: auto;
+            border-radius: 15px;
+            padding: 5px;
+            background-color: #b4003c;
+        }
+        
+        #standingsExtra2 {
+            width: 85%;
+        }
+        
+        .standings img {
+            height: 40px;
+            width: 40px;
+        }
+        
+        .box {
+            display: flex;
+            align-items: center;
+            font-size: small;
+            text-align: left;
+        }
+        
+        #extraTip {
+            display: flex;
+            align-items: center;
+            font-size: small;
+            text-align: center;
+            padding-left: 30%;
+        }
+        
+        #extraTip span {
+            font-size: large;
+        }
+        
+        #totals #extraTip {
+            padding-left: 10%;
+        }
+        
+        #totals #extraTip span {
+            font-size: medium;
+            text-align: left;
+        }
+        
+        .watermark-footer {
+            background-image: url("../img/qatar2022/footer-qatar-2022.jpg");
+            position: relative;
+            background-size: 1107px auto;
+            height: 180px;
+            background-repeat: no-repeat;
+            width: 840px;
+            margin: auto;
+        }
+        
+        @font-face {
+            font-family: "Qatar2022";
+            src: url('../font/qatar2022/Graphik\ Arabic\ Medium.otf');
+            font-weight: normal;
+            font-style: normal;
+        }
+        
+        @font-face {
+            font-family: "Qatar2022Bold";
+            src: url('../font/qatar2022/Qatar2022Arabic-Bold.ttf');
+            font-weight: normal;
+            font-style: normal;
+        }
+        
+        @font-face {
+            font-family: "Qatar2022Heavy";
+            src: url('../font/qatar2022/Qatar2022Arabic-Heavy.ttf');
+            font-weight: normal;
+            font-style: normal;
+        }
