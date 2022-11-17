@@ -47,7 +47,7 @@
             background-image: linear-gradient(to bottom, #f7a600, #f7a600);
             margin-left: 2px;
             margin-right: 2px;
-            font-size: 16px;
+            font-size: 20px;
             color: white;
             text-align: left;
             text-shadow: 0 1px rgba(0, 0, 0, 0.25);
@@ -66,18 +66,20 @@
         
         .vertical-text {
             transform: rotate(-45deg);
+            font-size: medium;
         }
         
         .tipster_row td {
-            height: 25px;
+            height: 30px;
+            width: fit-content;
         }
         
         .tipster_row img {
             position: relative;
-            width: 24px;
-            height: 12px;
+            width: 40px;
+            height: 40px;
             margin-top: 2px;
-            margin-bottom: 1px;
+            margin-bottom: 2px;
         }
         
         table {
@@ -91,12 +93,11 @@
         
         .column {
             float: left;
-            width: 25%;
             padding: 5px;
         }
         
         .bookie {
-            font-size: small;
+            font-size: smaller;
             font-family: Qatar2022;
         }
         
@@ -177,22 +178,19 @@
         .standings,
         .standings1,
         .standingsExtra {
+            width: 90%;
             position: relative;
             margin-top: 30px;
             margin-left: auto;
             margin-right: auto;
             border-radius: 15px;
-            padding: 5px;
+            padding: 10px;
             background-color: #b4003c;
         }
         
-        #standingsExtra2 {
-            width: 90%;
-        }
-        
         .standings img {
-            height: 20px;
-            width: 20px;
+            height: 32px;
+            width: 32px;
         }
         
         .box {
@@ -221,16 +219,6 @@
         #totals #extraTip span {
             font-size: medium;
             text-align: left;
-        }
-        
-        .watermark-footer {
-            background-image: url("../img/qatar2022/footer-qatar-2022.jpg");
-            position: relative;
-            background-size: 1107px auto;
-            height: 180px;
-            background-repeat: no-repeat;
-            width: 840px;
-            margin: auto;
         }
         
         @font-face {
