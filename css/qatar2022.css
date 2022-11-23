@@ -6,10 +6,6 @@
     animation: blinker 2s linear infinite;
 }
 
-#standings3 {
-    display: none;
-}
-
 body {
     background: #eeeee4;
     margin-bottom: 0px;
