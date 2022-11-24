@@ -1,3 +1,11 @@
+#standings2 thead tr:nth-of-type(3) th:nth-of-type(6) {
+    animation: blinker 2s linear infinite;
+}
+
+#standings2 .tipster_row td:nth-of-type(7) span:nth-of-type(2) {
+    animation: blinker 2s linear infinite;
+}
+
 body {
     background: #eeeee4;
     margin-bottom: 0px;
