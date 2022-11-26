@@ -192,7 +192,7 @@ a:link {
 }
 
 #totals {
-    width: 35%;
+    width: 45%;
 }
 
 #totals td:first-of-type {
@@ -201,7 +201,7 @@ a:link {
 }
 
 #totals tr:nth-of-type(6) td:nth-of-type(1),
-#totals tr:nth-of-type(7) td:nth-of-type(1),
+#totals tr:nth-of-type(8) td:nth-of-type(1),
 #totals tr:nth-of-type(12) td:nth-of-type(1),
 #totals tr:nth-of-type(14) td:nth-of-type(1) {
     background-color: #eeeee4;
