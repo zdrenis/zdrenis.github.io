@@ -1,3 +1,11 @@
+#standings3 thead tr:nth-of-type(3) th:nth-of-type(8) {
+    animation: blinker 2s linear infinite;
+}
+
+#standings3 .tipster_row td:nth-of-type(9) span:nth-of-type(2) {
+    animation: blinker 2s linear infinite;
+}
+
 body {
     background: #eeeee4;
     margin-bottom: 0px;
@@ -78,8 +86,6 @@ footer {
 
 .tipster_row img {
     position: relative;
-    width: 40px;
-    height: 40px;
     margin-top: 2px;
     margin-bottom: 2px;
 }
@@ -225,7 +231,12 @@ a:link {
 }
 
 #extraTip span {
-    font-size: large;
+    font-size: small;
+}
+
+#extraTip img {
+    height: 24px;
+    width: 24px;
 }
 
 #totals #extraTip {
