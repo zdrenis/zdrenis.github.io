@@ -19,6 +19,11 @@ footer {
     height: 16px;
 }
 
+#totals tr:nth-of-type(7) td:nth-of-type(1) {
+    background-color: #eeeee4;
+    color: #8a1538;
+}
+
 .points {
     padding: 0.5px 6px 0.5px 6px;
     background: #00cfb7;
@@ -209,7 +214,7 @@ a:link {
 }
 
 #totals {
-    width: 70%;
+    width: 75%;
 }
 
 #totals td:first-of-type {
