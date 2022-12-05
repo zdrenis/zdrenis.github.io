@@ -19,7 +19,9 @@ footer {
     height: 16px;
 }
 
-#totals tr:nth-of-type(7) td:nth-of-type(1) {
+#totals tr:nth-of-type(6) td:nth-of-type(1),
+#totals tr:nth-of-type(7) td:nth-of-type(1),
+#totals tr:nth-of-type(9) td:nth-of-type(1) {
     background-color: #eeeee4;
     color: #8a1538;
 }
@@ -224,11 +226,6 @@ a:link {
 
 #totals td:last-of-type {
     width: 25px;
-}
-
-#totals tr:nth-of-type(11) td:nth-of-type(1) {
-    background-color: #eeeee4;
-    color: #8a1538;
 }
 
 .box {
