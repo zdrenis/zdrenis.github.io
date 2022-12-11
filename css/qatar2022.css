@@ -196,7 +196,8 @@ a:link {
     background-color: #8a1538;
 }
 
-#standingsQuarterfinals {
+#standingsQuarterfinals,
+#standingsFinals {
     width: 65%;
 }
 
