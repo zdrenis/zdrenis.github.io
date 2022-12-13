@@ -1,11 +1,3 @@
-#standingsFinals thead tr:nth-of-type(3) th:nth-of-type(1) {
-    animation: blinker 2s linear infinite;
-}
-
-#standingsFinals .tipster_row td:nth-of-type(2) span:nth-of-type(2) {
-    animation: blinker 2s linear infinite;
-}
-
 body {
     background: #eeeee4;
     margin-bottom: 0px;
@@ -265,6 +257,11 @@ a:link {
 #extraTip img {
     height: 24px;
     width: 24px;
+}
+
+#totals tr:nth-of-type(11) td:nth-of-type(1) {
+    background-color: #eeeee4;
+    color: #8a1538;
 }
 
 @font-face {
