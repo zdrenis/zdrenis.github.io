@@ -44,11 +44,6 @@ footer {
     color: white;
 }
 
-#totals tr:nth-of-type(5) td:nth-of-type(1) {
-    background-color: #eeeee4;
-    color: #8a1538;
-}
-
 .tipster_row td span:nth-of-type(2) {
     padding: 0.5px 6px 0.5px 6px;
     background: #00cfb7;
@@ -257,11 +252,6 @@ a:link {
 #extraTip img {
     height: 24px;
     width: 24px;
-}
-
-#totals tr:nth-of-type(11) td:nth-of-type(1) {
-    background-color: #eeeee4;
-    color: #8a1538;
 }
 
 @font-face {
