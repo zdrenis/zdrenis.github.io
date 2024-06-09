@@ -1,90 +1,834 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+<meta http-equiv="Pragma" content="no-cache">
+<meta http-equiv="Expires" content="0">
 <html>
 
 <head>
-    <style>
-        html,
-        body,
-        .container {
-            height: 100%;
-            min-height: 100%;
-            text-align: center;
-            margin: 0;
-            vertical-align: middle;
-        }
-        
-        .qatar2022 {
-            float: left;
-            width: 70%;
-            height: 100%;
-            background: #eeeee4 center center / 100% auto;
-        }
-        
-        .euro2020 {
-            float: right;
-            width: 30%;
-            height: 25%;
-            background: #007cba url("img/euro2020/background.png") repeat center center / 100% auto;
-        }
-        
-        .russia {
-            float: right;
-            width: 30%;
-            height: 25%;
-            background: #007cba url("img/russia2018/background.jpg") repeat scroll center top / 100% auto;
-        }
-        
-        .france {
-            float: right;
-            width: 30%;
-            height: 25%;
-            background: #007cba url("img/bg_pattern.png") repeat scroll center top / 100% auto;
-        }
-        
-        .brazil {
-            float: right;
-            width: 30%;
-            height: 25%;
-            background: #007cba url("img/brazil2014/pattern6.jpg") repeat scroll center top / 100% auto;
-            background-color: black;
-        }
-        
-        .helper {
-            display: inline-block;
-            height: 100%;
-            vertical-align: middle;
-        }
-        
-        img {
-            vertical-align: middle;
-        }
-    </style>
+    <title>Liga Typerów</title>
+    <link href="css/germany2024.css" rel="stylesheet">
 </head>
 
 <body>
+    <div style="text-align: center;"><img style="vertical-align: middle;" width="400" height="440" src="img/euro2024/UEFA_Euro_2024_logo.svg"></div>
+    <h2 style="text-align: center; color: #143cdb;">Liga typerów Niemcy 2024</h2>
+    <div class='main'>
 
-    <section class="container">
-        <div class="qatar2022">
-            <span class="helper"></span>
-            <a href="qatar2022.html"><img alt="Qatar2022" width="600" height="600" src="img/qatar2022/world-cup-2022-logo.png" /></a>
+        <div id='standingsExtra2' class="standings">
+            <table>
+                <thead>
+                    <tr>
+                        <th rowspan="3" width="120" height="100">
+                            <div class="vertical-text"><span>Pytania dodatkowe #2</span></div>
+                        </th>
+                        <th colspan="4" style="font-family: UEFAEuro-HeavyNarrow;">PÓŁFINALIŚCI</th>
+                        <th rowspan="2" style="font-family: UEFAEuro-HeavyNarrow;">
+                            MISTRZ</th>
+                        <th rowspan="2" style="font-family: UEFAEuro-HeavyNarrow;">
+                            KRÓL<br />STRZ.</th>
+                        <th rowspan="2" style="font-family: UEFAEuro-HeavyNarrow;">
+                            CZARNY<br />KOŃ.</th>
+                        <th rowspan="2" style="font-family: UEFAEuro-HeavyNarrow;">
+                            BIAŁY<br />KOŃ</th>
+                    </tr>
+                    <tr>
+                        <th><span>1</span></th>
+                        <th><span>2</span></th>
+                        <th><span>3</span></th>
+                        <th><span>4</span></th>
+                    </tr>
+                    <tr>
+                        <th></th>
+                        <th></th>
+                        <th></th>
+                        <th></th>
+                        <th></th>
+                        <th></th>
+                        <th></th>
+                        <th></th>
+                        <th rowspan="2" style="width: 3em">Pkt</th>
+                    </tr>
+                </thead>
+                <tr class="tipster_row">
+                    <td>Asia</td>
+                    <td>
+                        <div id="extraTip" class="box"></div>
+                    </td>
+                    <td>
+                        <div id="extraTip" class="box"></div>
+                    </td>
+                    <td>
+                        <div id="extraTip" class="box"></div>
+                    </td>
+                    <td>
+                        <div id="extraTip" class="box"></div>
+                    </td>
+                    <td>
+                        <div id="extraTip" class="box"></div>
+                    </td>
+                    <td>
+                        <div id="extraTip" class="box"></div>
+                    </td>
+                    <td>
+                        <div id="extraTip" class="box"></div>
+                    </td>
+                    <td>
+                        <div id="extraTip" class="box"></div>
+                    </td>
+                    <td class="points"><span></span></td>
+                </tr>
+                <tr class="tipster_row">
+                    <td>Babela</td>
+                    <td>
+                        <div id="extraTip" class="box"></div>
+                    </td>
+                    <td>
+                        <div id="extraTip" class="box"></div>
+                    </td>
+                    <td>
+                        <div id="extraTip" class="box"></div>
+                    </td>
+                    <td>
+                        <div id="extraTip" class="box"></div>
+                    </td>
+                    <td>
+                        <div id="extraTip" class="box"></div>
+                    </td>
+                    <td>
+                        <div id="extraTip" class="box"></div>
+                    </td>
+                    <td>
+                        <div id="extraTip" class="box"></div>
+                    </td>
+                    <td>
+                        <div id="extraTip" class="box"></div>
+                    </td>
+                    <td class="points"><span></span></td>
+                </tr>
+                <tr class="tipster_row">
+                    <td>Bojler</td>
+                    <td>
+                        <div id="extraTip" class="box"></div>
+                    </td>
+                    <td>
+                        <div id="extraTip" class="box"></div>
+                    </td>
+                    <td>
+                        <div id="extraTip" class="box"></div>
+                    </td>
+                    <td>
+                        <div id="extraTip" class="box"></div>
+                    </td>
+                    <td>
+                        <div id="extraTip" class="box"></div>
+                    </td>
+                    <td>
+                        <div id="extraTip" class="box"></div>
+                    </td>
+                    <td>
+                        <div id="extraTip" class="box"></div>
+                    </td>
+                    <td>
+                        <div id="extraTip" class="box"></div>
+                    </td>
+                    <td class="points"><span></span></td>
+                </tr>
+                <tr class="tipster_row">
+                    <td>Dzidka</td>
+                    <td>
+                        <div id="extraTip" class="box"></div>
+                    </td>
+                    <td>
+                        <div id="extraTip" class="box"></div>
+                    </td>
+                    <td>
+                        <div id="extraTip" class="box"></div>
+                    </td>
+                    <td>
+                        <div id="extraTip" class="box"></div>
+                    </td>
+                    <td>
+                        <div id="extraTip" class="box"></div>
+                    </td>
+                    <td>
+                        <div id="extraTip" class="box"></div>
+                    </td>
+                    <td>
+                        <div id="extraTip" class="box"></div>
+                    </td>
+                    <td>
+                        <div id="extraTip" class="box"></div>
+                    </td>
+                    <td class="points"><span></span></td>
+                </tr>
+                <tr class="tipster_row">
+                    <td>Eliza</td>
+                    <td>
+                        <div id="extraTip" class="box"></div>
+                    </td>
+                    <td>
+                        <div id="extraTip" class="box"></div>
+                    </td>
+                    <td>
+                        <div id="extraTip" class="box"></div>
+                    </td>
+                    <td>
+                        <div id="extraTip" class="box"></div>
+                    </td>
+                    <td>
+                        <div id="extraTip" class="box"></div>
+                    </td>
+                    <td>
+                        <div id="extraTip" class="box"></div>
+                    </td>
+                    <td>
+                        <div id="extraTip" class="box"></div>
+                    </td>
+                    <td>
+                        <div id="extraTip" class="box"></div>
+                    </td>
+                    <td class="points"><span></span></td>
+                </tr>
+                <tr class="tipster_row">
+                    <td>Gocha</td>
+                    <td>
+                        <div id="extraTip" class="box"></div>
+                    </td>
+                    <td>
+                        <div id="extraTip" class="box"></div>
+                    </td>
+                    <td>
+                        <div id="extraTip" class="box"></div>
+                    </td>
+                    <td>
+                        <div id="extraTip" class="box"></div>
+                    </td>
+                    <td>
+                        <div id="extraTip" class="box"></div>
+                    </td>
+                    <td>
+                        <div id="extraTip" class="box"></div>
+                    </td>
+                    <td>
+                        <div id="extraTip" class="box"></div>
+                    </td>
+                    <td>
+                        <div id="extraTip" class="box"></div>
+                    </td>
+                    <td class="points"><span></span></td>
+                </tr>
+                <tr class="tipster_row">
+                    <td>Hanuta</td>
+                    <td>
+                        <div id="extraTip" class="box"></div>
+                    </td>
+                    <td>
+                        <div id="extraTip" class="box"></div>
+                    </td>
+                    <td>
+                        <div id="extraTip" class="box"></div>
+                    </td>
+                    <td>
+                        <div id="extraTip" class="box"></div>
+                    </td>
+                    <td>
+                        <div id="extraTip" class="box"></div>
+                    </td>
+                    <td>
+                        <div id="extraTip" class="box"></div>
+                    </td>
+                    <td>
+                        <div id="extraTip" class="box"></div>
+                    </td>
+                    <td>
+                        <div id="extraTip" class="box"></div>
+                    </td>
+                    <td class="points"><span></span></td>
+                </tr>
+                <tr class="tipster_row">
+                    <td>Ola</td>
+                    <td>
+                        <div id="extraTip" class="box"></div>
+                    </td>
+                    <td>
+                        <div id="extraTip" class="box"></div>
+                    </td>
+                    <td>
+                        <div id="extraTip" class="box"></div>
+                    </td>
+                    <td>
+                        <div id="extraTip" class="box"></div>
+                    </td>
+                    <td>
+                        <div id="extraTip" class="box"></div>
+                    </td>
+                    <td>
+                        <div id="extraTip" class="box"></div>
+                    </td>
+                    <td>
+                        <div id="extraTip" class="box"></div>
+                    </td>
+                    <td>
+                        <div id="extraTip" class="box"></div>
+                    </td>
+                    <td class="points"><span></span></td>
+                </tr>
+                <tr class="tipster_row">
+                    <td>Olek</td>
+                    <td>
+                        <div id="extraTip" class="box"></div>
+                    </td>
+                    <td>
+                        <div id="extraTip" class="box"></div>
+                    </td>
+                    <td>
+                        <div id="extraTip" class="box"></div>
+                    </td>
+                    <td>
+                        <div id="extraTip" class="box"></div>
+                    </td>
+                    <td>
+                        <div id="extraTip" class="box"></div>
+                    </td>
+                    <td>
+                        <div id="extraTip" class="box"></div>
+                    </td>
+                    <td>
+                        <div id="extraTip" class="box"></div>
+                    </td>
+                    <td>
+                        <div id="extraTip" class="box"></div>
+                    </td>
+                    <td class="points"><span></span></td>
+                </tr>
+                <tr class="tipster_row">
+                    <td>Stary Zdre</td>
+                    <td>
+                        <div id="extraTip" class="box"></div>
+                    </td>
+                    <td>
+                        <div id="extraTip" class="box"></div>
+                    </td>
+                    <td>
+                        <div id="extraTip" class="box"></div>
+                    </td>
+                    <td>
+                        <div id="extraTip" class="box"></div>
+                    </td>
+                    <td>
+                        <div id="extraTip" class="box"></div>
+                    </td>
+                    <td>
+                        <div id="extraTip" class="box"></div>
+                    </td>
+                    <td>
+                        <div id="extraTip" class="box"></div>
+                    </td>
+                    <td>
+                        <div id="extraTip" class="box"></div>
+                    </td>
+                    <td class="points"><span></span></td>
+                </tr>
+            </table>
         </div>
-        <div class="euro2020">
-            <span class="helper"></span>
-            <a href="euro2020.html"><img alt="Euro2020" width="216" height="220" src="img/euro2020/logo.png" /></a>
-        </div>
-        <div class="russia">
-            <span class="helper"></span>
-            <a href="russia2018.html"><img alt="Russia2018" width="216" height="220" src="img/russia2018/logo.png" /></a>
-        </div>
-        <div class="france">
-            <span class="helper"></span>
-            <a href="france2016.html"><img alt="France2016" width="216" height="220" src="img/france2016/logo.svg" /></a>
-        </div>
-        <div class="brazil">
-            <span class="helper"></span>
-            <a href="brazil2014.html"><img alt="Brazil2014" src="img/brazil2014/logo.svg" height="220" width="216" /></a>
-        </div>
-    </section>
 
+        <div id='standingsExtra1' class="standings">
+            <table>
+                <thead>
+                    <tr>
+                        <th rowspan="3" width="120" height="100">
+                            <div class="vertical-text"><span>Pytania dodatkowe #1</span></div>
+                        </th>
+                        <th colspan="8" style="font-family: Qatar2022Heavy;">Zwycięzcy grup</th>
+                    </tr>
+                    <tr>
+                        <th><span>A</span></th>
+                        <th><span>B</span></th>
+                        <th><span>C</span></th>
+                        <th><span>D</span></th>
+                        <th><span>E</span></th>
+                        <th><span>F</span></th>
+                    </tr>
+                    <tr>
+                        <th></th>
+                        <th></th>
+                        <th></th>
+                        <th></th>
+                        <th></th>
+                        <th></th>
+                        <th rowspan="2" style="width: 3em">Pkt</th>
+                    </tr>
+                </thead>
+                <tr class="tipster_row">
+                    <td>Asia</td>
+                    <td>
+                        <div id="extraTip" class="box"></div>
+                    </td>
+                    <td>
+                        <div id="extraTip" class="box"></div>
+                    </td>
+                    <td>
+                        <div id="extraTip" class="box"></div>
+                    </td>
+                    <td>
+                        <div id="extraTip" class="box"></div>
+                    </td>
+                    <td>
+                        <div id="extraTip" class="box"></div>
+                    </td>
+                    <td>
+                        <div id="extraTip" class="box"></div>
+                    </td>
+                    <td class="points"><span></span></td>
+                </tr>
+                <tr class="tipster_row">
+                    <td>Babela</td>
+                    <td>
+                        <div id="extraTip" class="box"></div>
+                    </td>
+                    <td>
+                        <div id="extraTip" class="box"></div>
+                    </td>
+                    <td>
+                        <div id="extraTip" class="box"></div>
+                    </td>
+                    <td>
+                        <div id="extraTip" class="box"></div>
+                    </td>
+                    <td>
+                        <div id="extraTip" class="box"></div>
+                    </td>
+                    <td>
+                        <div id="extraTip" class="box"></div>
+                    </td>
+                    <td class="points"><span></span></td>
+                </tr>
+                <tr class="tipster_row">
+                    <td>Bojler</td>
+                    <td>
+                        <div id="extraTip" class="box"></div>
+                    </td>
+                    <td>
+                        <div id="extraTip" class="box"></div>
+                    </td>
+                    <td>
+                        <div id="extraTip" class="box"></div>
+                    </td>
+                    <td>
+                        <div id="extraTip" class="box"></div>
+                    </td>
+                    <td>
+                        <div id="extraTip" class="box"></div>
+                    </td>
+                    <td>
+                        <div id="extraTip" class="box"></div>
+                    </td>
+                    <td class="points"><span></span></td>
+                </tr>
+                <tr class="tipster_row">
+                    <td>Dzidka</td>
+                    <td>
+                        <div id="extraTip" class="box"></div>
+                    </td>
+                    <td>
+                        <div id="extraTip" class="box"></div>
+                    </td>
+                    <td>
+                        <div id="extraTip" class="box"></div>
+                    </td>
+                    <td>
+                        <div id="extraTip" class="box"></div>
+                    </td>
+                    <td>
+                        <div id="extraTip" class="box"></div>
+                    </td>
+                    <td>
+                        <div id="extraTip" class="box"></div>
+                    </td>
+                    <td class="points"><span></span></td>
+                </tr>
+                <tr class="tipster_row">
+                    <td>Eliza</td>
+                    <td>
+                        <div id="extraTip" class="box"></div>
+                    </td>
+                    <td>
+                        <div id="extraTip" class="box"></div>
+                    </td>
+                    <td>
+                        <div id="extraTip" class="box"></div>
+                    </td>
+                    <td>
+                        <div id="extraTip" class="box"></div>
+                    </td>
+                    <td>
+                        <div id="extraTip" class="box"></div>
+                    </td>
+                    <td>
+                        <div id="extraTip" class="box"></div>
+                    </td>
+                    <td class="points"><span></span></td>
+                </tr>
+                <tr class="tipster_row">
+                    <td>Gocha</td>
+                    <td>
+                        <div id="extraTip" class="box"></div>
+                    </td>
+                    <td>
+                        <div id="extraTip" class="box"></div>
+                    </td>
+                    <td>
+                        <div id="extraTip" class="box"></div>
+                    </td>
+                    <td>
+                        <div id="extraTip" class="box"></div>
+                    </td>
+                    <td>
+                        <div id="extraTip" class="box"></div>
+                    </td>
+                    <td>
+                        <div id="extraTip" class="box"></div>
+                    </td>
+                    <td class="points"><span></span></td>
+                </tr>
+                <tr class="tipster_row">
+                    <td>Hanuta</td>
+                    <td>
+                        <div id="extraTip" class="box"></div>
+                    </td>
+                    <td>
+                        <div id="extraTip" class="box"></div>
+                    </td>
+                    <td>
+                        <div id="extraTip" class="box"></div>
+                    </td>
+                    <td>
+                        <div id="extraTip" class="box"></div>
+                    </td>
+                    <td>
+                        <div id="extraTip" class="box"></div>
+                    </td>
+                    <td>
+                        <div id="extraTip" class="box"></div>
+                    </td>
+                    <td class="points"><span></span></td>
+                </tr>
+                <tr class="tipster_row">
+                    <td>Ola</td>
+                    <td>
+                        <div id="extraTip" class="box"></div>
+                    </td>
+                    <td>
+                        <div id="extraTip" class="box"></div>
+                    </td>
+                    <td>
+                        <div id="extraTip" class="box"></div>
+                    </td>
+                    <td>
+                        <div id="extraTip" class="box"></div>
+                    </td>
+                    <td>
+                        <div id="extraTip" class="box"></div>
+                    </td>
+                    <td>
+                        <div id="extraTip" class="box"></div>
+                    </td>
+                    <td class="points"><span></span></td>
+                </tr>
+                <tr class="tipster_row">
+                    <td>Olek</td>
+                    <td>
+                        <div id="extraTip" class="box"></div>
+                    </td>
+                    <td>
+                        <div id="extraTip" class="box"></div>
+                    </td>
+                    <td>
+                        <div id="extraTip" class="box"></div>
+                    </td>
+                    <td>
+                        <div id="extraTip" class="box"></div>
+                    </td>
+                    <td>
+                        <div id="extraTip" class="box"></div>
+                    </td>
+                    <td>
+                        <div id="extraTip" class="box"></div>
+                    </td>
+                    <td class="points"><span></span></td>
+                </tr>
+                <tr class="tipster_row">
+                    <td>Stary Zdre</td>
+                    <td>
+                        <div id="extraTip" class="box"></div>
+                    </td>
+                    <td>
+                        <div id="extraTip" class="box"></div>
+                    </td>
+                    <td>
+                        <div id="extraTip" class="box"></div>
+                    </td>
+                    <td>
+                        <div id="extraTip" class="box"></div>
+                    </td>
+                    <td>
+                        <div id="extraTip" class="box"></div>
+                    </td>
+                    <td>
+                        <div id="extraTip" class="box"></div>
+                    </td>
+                    <td class="points"><span></span></td>
+                </tr>
+            </table>
+        </div>
+
+        <div id="standings1" class="standings">
+            <table>
+                <thead>
+                    <tr style="font-size: small;">
+                        <th rowspan="5" width="120" height="100">
+                            <div class="vertical-text">
+                                <h3>Runda 1</h3>
+                            </div>
+                        </th>
+                        <th><small>14.06, 21:00<br>Monachium</small></th>
+                        <th><small>15.06, 15:00<br>Kolonia</small></th>
+                        <th><small>15.06, 18:00<br>Berlin</small></th>
+                        <th><small>15.06, 21:00<br>Dortmund</small></th>
+                        <th><small>16.06, 15:00<br>Hamburg</small></th>
+                        <th><small>16.06, 18:00<br>Stuttgart</small></th>
+                        <th><small>16.06, 21:00<br>Gelsenkirchen</small></th>
+                    </tr>
+                    <tr>
+                        <th>
+                            <div class="box"><img src="flags/euro2024/GER.png" /><span>GER</span></div>
+                        </th>
+                        <th>
+                            <div class="box"><img src="flags/euro2024/HUN.png" /><span>HUN</span></div>
+                        </th>
+                        <th>
+                            <div class="box"><img src="flags/euro2024/ESP.png" /><span>ESP</span></div>
+                        </th>
+                        <th>
+                            <div class="box"><img src="flags/euro2024/ITA.png" /><span>ITA</span></div>
+                        </th>
+                        <th>
+                            <div class="box"><img src="flags/euro2024/POL.png" /><span>POL</span></div>
+                        </th>
+                        <th>
+                            <div class="box"><img src="flags/euro2024/SVN.png" /><span>SVN</span></div>
+                        </th>
+                        <th>
+                            <div class="box"><img src="flags/euro2024/SRB.png" /><span>SRB</span></div>
+                        </th>
+                    </tr>
+                    <tr style="background-color: #f9bf4b; color: black;">
+                        <th><span>-</span></th>
+                        <th><span>-</span></th>
+                        <th><span>-</span></th>
+                        <th><span>-</span></th>
+                        <th><span>-</span></th>
+                        <th><span>-</span></th>
+                        <th><span>-</span></th>
+                    </tr>
+                    <tr>
+                        <th>
+                            <div class="box"><img src="flags/euro2024/SCO.png" /><span>SCO</span></div>
+                        </th>
+                        <th>
+                            <div class="box"><img src="flags/euro2024/SUI.png" /><span>SCO</span></div>
+                        </th>
+                        <th>
+                            <div class="box"><img src="flags/euro2024/CRO.png" /><span>SCO</span></div>
+                        </th>
+                        <th>
+                            <div class="box"><img src="flags/euro2024/ALB.png" /><span>SCO</span></div>
+                        </th>
+                        <th>
+                            <div class="box"><img src="flags/euro2024/NED.png" /><span>SCO</span></div>
+                        </th>
+                        <th>
+                            <div class="box"><img src="flags/euro2024/DEN.png" /><span>SCO</span></div>
+                        </th>
+                        <th>
+                            <div class="box"><img src="flags/euro2024/ENG.png" /><span>SCO</span></div>
+                        </th>
+                    </tr>
+                    <tr class="bookie" style="font-family: UEFAEuro; font-size: small;">
+                        <th> 1.27 / 5.80 / 11.00 </th>
+                        <th> 3.45 / 3.35 / 2.17 </th>
+                        <th> 1.82 / 3.50 / 4.65 </th>
+                        <th> 1.38 / 4.65 / 9.05 </th>
+                        <th> 5.40 / 3.90 / 1.67 </th>
+                        <th> 5.15 / 3.60 / 1.73 </th>
+                        <th> 6.75 / 4.50 / 1.47 </th>
+                        <th rowspan="5" style="width: 3em">Pkt</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="tipster_row">
+                        <td>Asia</td>
+                        <td><span></span></td>
+                        <td><span></span></td>
+                        <td><span></span></td>
+                        <td><span></span></td>
+                        <td><span></span></td>
+                        <td><span></span></td>
+                        <td><span></span></td>
+                        <td class="points"><span></span></td>
+                    </tr>
+                    <tr class="tipster_row">
+                        <td>Babela</td>
+                        <td><span></span></td>
+                        <td><span></span></td>
+                        <td><span></span></td>
+                        <td><span></span></td>
+                        <td><span></span></td>
+                        <td><span></span></td>
+                        <td><span></span></td>
+                        <td class="points"><span></span></td>
+                    </tr>
+                    <tr class="tipster_row">
+                        <td>Bojler</td>
+                        <td><span></span></td>
+                        <td><span></span></td>
+                        <td><span></span></td>
+                        <td><span></span></td>
+                        <td><span></span></td>
+                        <td><span></span></td>
+                        <td><span></span></td>
+                        <td class="points"><span></span></td>
+                    </tr>
+                    <tr class="tipster_row">
+                        <td>Dzidka</td>
+                        <td><span></span></td>
+                        <td><span></span></td>
+                        <td><span></span></td>
+                        <td><span></span></td>
+                        <td><span></span></td>
+                        <td><span></span></td>
+                        <td><span></span></td>
+                        <td class="points"><span></span></td>
+                    </tr>
+                    <tr class="tipster_row">
+                        <td>Eliza</td>
+                        <td><span></span></td>
+                        <td><span></span></td>
+                        <td><span></span></td>
+                        <td><span></span></td>
+                        <td><span></span></td>
+                        <td><span></span></td>
+                        <td><span></span></td>
+                        <td class="points"><span></span></td>
+                    </tr>
+                    <tr class="tipster_row">
+                        <td>Gocha</td>
+                        <td><span></span></td>
+                        <td><span></span></td>
+                        <td><span></span></td>
+                        <td><span></span></td>
+                        <td><span></span></td>
+                        <td><span></span></td>
+                        <td><span></span></td>
+                        <td class="points"><span></span></td>
+                    </tr>
+                    <tr class="tipster_row">
+                        <td>Hanuta</td>
+                        <td><span></span></td>
+                        <td><span></span></td>
+                        <td><span></span></td>
+                        <td><span></span></td>
+                        <td><span></span></td>
+                        <td><span></span></td>
+                        <td><span></span></td>
+                        <td class="points"><span></span></td>
+                    </tr>
+                    <tr class="tipster_row">
+                        <td>Ola</td>
+                        <td><span></span></td>
+                        <td><span></span></td>
+                        <td><span></span></td>
+                        <td><span></span></td>
+                        <td><span></span></td>
+                        <td><span></span></td>
+                        <td><span></span></td>
+                        <td class="points"><span></span></td>
+                    </tr>
+                    <tr class="tipster_row">
+                        <td>Olek</td>
+                        <td><span></span></td>
+                        <td><span></span></td>
+                        <td><span></span></td>
+                        <td><span></span></td>
+                        <td><span></span></td>
+                        <td><span></span></td>
+                        <td><span></span></td>
+                        <td class="points"><span></span></td>
+                    </tr>
+                    <tr class="tipster_row">
+                        <td>Stary Zdre</td>
+                        <td><span></span></td>
+                        <td><span></span></td>
+                        <td><span></span></td>
+                        <td><span></span></td>
+                        <td><span></span></td>
+                        <td><span></span></td>
+                        <td><span></span></td>
+                        <td class="points"><span></span></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="rules" style="text-align: left;">
+            <b>Zasady:</b>
+            <br>
+            <img height="15" width="15" src="img/france2016/ball.png">
+            <img height="15" width="15" src="img/france2016/ball.png">
+            <img height="15" width="15" src="img/france2016/ball.png">
+            <img height="15" width="15" src="img/france2016/ball.png"> - dokładne trafienie wyniku
+            <br>
+            <img height="15" width="15" src="img/france2016/ball.png">
+            <img height="15" width="15" src="img/france2016/ball.png">
+            <img height="15" width="15" src="img/france2016/ball.png"> - trafienie zwycięzcy i różnicy bramek
+            <br>
+            <img height="15" width="15" src="img/france2016/ball.png">
+            <img height="15" width="15" src="img/france2016/ball.png"> - trafienie zwycięzcy z błędną różnicą bramkową
+            <br> W przypadku remisu:
+            <br>
+            <img height="15" width="15" src="img/france2016/ball.png">
+            <img height="15" width="15" src="img/france2016/ball.png">
+            <img height="15" width="15" src="img/france2016/ball.png">
+            <img height="15" width="15" src="img/france2016/ball.png"> - dokładne trafienie wyniku
+            <br>
+            <img height="15" width="15" src="img/france2016/ball.png">
+            <img height="15" width="15" src="img/france2016/ball.png"> - trafienie remisu z błędną liczbą bramek
+            <br>
+            <br> W przypadku takiej samej liczby punktów w tabeli, wyższe miejsce zajmuje typer(ka) z większą liczbą odznak (wygranych rund).
+        </div>
+        <footer>
+            <p style="color: black">Mailto: <a href="mailto:zdrenis@gmail.com">
+                    zdrenis@gmail.com</a>
+            </p>
+        </footer>
+    </div>
+    <script>
+        (function(i, s, o, g, r, a, m) {
+            i['GoogleAnalyticsObject'] = r;
+            i[r] = i[r] || function() {
+                (i[r].q = i[r].q || []).push(arguments)
+            }, i[r].l = 1 * new Date();
+            a = s.createElement(o),
+                m = s.getElementsByTagName(o)[0];
+            a.async = 1;
+            a.src = g;
+            m.parentNode.insertBefore(a, m)
+        })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+
+        ga('create', 'UA-51714890-1', 'zdrenis.github.io');
+        ga('send', 'pageview');
+    </script>
 </body>
 
 </html>
