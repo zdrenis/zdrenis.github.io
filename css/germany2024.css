@@ -200,8 +200,12 @@ th span {
     background-color: #143cdb;
 }
 
-#standingsExtra2, #standingsExtra1 {
+#standingsExtra1 {
     width: 70%;
+}
+
+#standingsExtra2 {
+    width: 80%;
 }
 
 #standingsQuarterfinals,
