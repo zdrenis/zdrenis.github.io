@@ -62,6 +62,8 @@ footer {
     text-align: left;
     text-shadow: 0 1px rgba(0, 0, 0, 0.25);
     border-radius: 10px;
+    font-family: Virgil;
+    font-weight: bold;
 }
 
 .blink_me {
@@ -186,6 +188,8 @@ span {
     font-family: UEFAEuro-HeavyNarrow;
 }
 
+
+
 th span {
     color: white;
 }
@@ -286,6 +290,13 @@ th span {
 @font-face {
     font-family: "UEFAEuro";
     src: url('../font/germany2024/UEFAEuro-Medium.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Virgil";
+    src: url('../font/Virgil.woff2');
     font-weight: normal;
     font-style: normal;
 }
