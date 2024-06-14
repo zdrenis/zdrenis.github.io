@@ -1,3 +1,11 @@
+#standings1 .tipster_row td:nth-of-type(2) span:nth-of-type(2) {
+    animation: blinker 2s linear infinite;
+}
+
+#standings1 thead tr:nth-of-type(3) th:nth-of-type(1) {
+    animation: blinker 2s linear infinite;
+}
+
 body {
     background: #eeeee4;
     margin-bottom: 0px;
@@ -50,7 +58,7 @@ footer {
     margin-left: 2px;
     margin-right: 2px;
     font-size: 20px;
-    color: white;
+    color: black;
     text-align: left;
     text-shadow: 0 1px rgba(0, 0, 0, 0.25);
     border-radius: 10px;
@@ -124,6 +132,10 @@ table th {
     vertical-align: middle;
     color: white;
     font-family: UEFAEuro;
+}
+
+table thead tr:nth-child(3) th span {
+    color: black;
 }
 
 table td {
