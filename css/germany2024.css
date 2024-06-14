@@ -135,7 +135,7 @@ table th {
 }
 
 table thead tr:nth-child(3) th span {
-    color: black;
+    color: #143cdb;
 }
 
 table td {
@@ -191,7 +191,7 @@ th span {
 }
 
 .rules {
-    background-color: #143cdb;
+    background-color: 143cdb;
     border-radius: 25px;
     position: relative;
     color: white;
