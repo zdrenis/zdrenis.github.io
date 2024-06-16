@@ -45,6 +45,7 @@ footer {
 .points span {
     color: black;
     font-family: Virgil;
+    font-weight: bold;
 }
 
 .tipster_row td span:nth-of-type(2) {
@@ -63,7 +64,6 @@ footer {
     text-shadow: 0 1px rgba(0, 0, 0, 0.25);
     border-radius: 10px;
     font-family: Virgil;
-    font-weight: bold;
 }
 
 .blink_me {
