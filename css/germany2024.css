@@ -1,11 +1,11 @@
-/*
-#standings2 .tipster_row td:nth-of-type(8) span:nth-of-type(2) {
+
+#standings2 .tipster_row td:nth-of-type(9) span:nth-of-type(2) {
     animation: blinker 2s linear infinite;
 }
-*/
+
 
 body {
-    background: #eeeee4;
+    background: white;
     margin-bottom: 0px;
 }
 
@@ -69,7 +69,7 @@ footer {
 .blink_me {
     animation: blinker 2s linear infinite;
 }
-
+/*
 #totals tr:nth-of-type(2) td:first-of-type {
     background-color: gold;
     color: white;
@@ -87,7 +87,7 @@ footer {
     color: white;
     width: 5%;
 }
-
+*/
 @keyframes blinker {
     50% {
         opacity: 0.0;
@@ -145,12 +145,12 @@ table td {
 }
 
 tr:nth-child(even) td {
-    background-color: #eeeee4;
+    background-color: white;
     color: #143cdb;
 }
 
 tr:nth-child(odd) td {
-    background-color: #eeeee4;
+    background-color: white;
     color: #143cdb;
 }
 
@@ -255,11 +255,11 @@ th span {
 }
 
 #totals {
-    width: 90%;
+    width: 35%;
 }
 
 #totals td:first-of-type {
-    background-color: #ff004c;
+    background-color: #213690;
     color: white;
 }
 
