@@ -1,8 +1,8 @@
-/*
-#standings3 .tipster_row td:nth-of-type(2) span:nth-of-type(2) {
+
+#standings3 .tipster_row td:nth-of-type(3) span:nth-of-type(2) {
     animation: blinker 2s linear infinite;
 }
-*/
+
 
 body {
     background: white;
@@ -221,7 +221,7 @@ th span {
 }
 
 #standings3 {
-    width: 70%;
+    width: 80%;
 }
 
 #standingsExtra1 {
