@@ -1,8 +1,8 @@
-/*
-#standings2 .tipster_row td:nth-of-type(9) span:nth-of-type(2) {
+
+#standings3 .tipster_row td:nth-of-type(2) span:nth-of-type(2) {
     animation: blinker 2s linear infinite;
 }
-*/
+
 
 body {
     background: white;
@@ -229,7 +229,7 @@ th span {
 }
 
 #standingsExtra2 {
-    width: 80%;
+    width: 70%;
 }
 
 #standingsQuarterfinals,
