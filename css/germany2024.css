@@ -217,7 +217,7 @@ th span {
 }
 
 #standings2 {
-    width: 98%;
+    width: 100%;
 }
 
 #standings3 {
@@ -244,9 +244,9 @@ th span {
 
 #badge {
     position: relative;
-    height: 32px;
-    width: 32px;
-    margin-right: -10px;
+    height: 24px;
+    width: 24px;
+    margin-right: 2px;
     font-size: small;
 }
 
