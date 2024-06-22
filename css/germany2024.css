@@ -224,6 +224,10 @@ th span {
     width: 80%;
 }
 
+#standings4 {
+    width: 87%;
+}
+
 #standingsExtra1 {
     width: 70%;
 }
@@ -255,7 +259,7 @@ th span {
 }
 
 #totals {
-    width: 65%;
+    width: 68%;
 }
 
 #totals .tipster_row td {
