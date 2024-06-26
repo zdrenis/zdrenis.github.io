@@ -1,9 +1,9 @@
-/*
-#standings5 .tipster_row td:nth-of-type(6) span:nth-of-type(2),
-#standings5 .tipster_row td:nth-of-type(7) span:nth-of-type(2) {
+
+#standings5 .tipster_row td:nth-of-type(8) span:nth-of-type(2),
+#standings5 .tipster_row td:nth-of-type(9) span:nth-of-type(2) {
     animation: blinker 2s linear infinite;
 }
-*/
+
 
 body {
     background: white;
