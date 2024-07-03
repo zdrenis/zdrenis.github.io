@@ -228,17 +228,15 @@ th span {
     width: 90%;
 }
 
-#standingsExtra1 {
-    width: 70%;
-}
-
+#standingsExtra1,
 #standingsExtra2 {
     width: 70%;
 }
 
+
 #standingsQuarterfinals,
 #standingsFinals {
-    width: 65%;
+    width: 60%;
 }
 
 .standings img {
