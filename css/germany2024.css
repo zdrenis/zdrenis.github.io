@@ -1,8 +1,8 @@
-
+/*
 #standingsFinals .tipster_row td:nth-of-type(2) span:nth-of-type(2) {
     animation: blinker 2s linear infinite;
 }
-
+*/
 
 body {
     background: white;
@@ -261,7 +261,7 @@ th span {
 }
 
 #totals {
-    width: 85%;
+    width: 88%;
 }
 
 #totals .tipster_row td {
