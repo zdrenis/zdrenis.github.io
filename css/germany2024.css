@@ -239,6 +239,10 @@ th span {
     width: 60%;
 }
 
+#standingsFinals {
+    width: 50%;
+}
+
 .standings img {
     height: 32px;
     width: 32px;
