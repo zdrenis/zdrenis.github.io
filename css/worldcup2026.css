@@ -211,6 +211,10 @@ th span {
     color: white;
 }
 
+#standings1 thead tr:nth-child(3) th span {
+    color: #07164b;
+}
+
 .rules {
     background-color: #07164b;
     border-radius: 25px;
