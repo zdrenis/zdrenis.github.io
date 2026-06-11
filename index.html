@@ -593,6 +593,7 @@
 
             function hideCell(cell, placeholder) {
                 if (!cell) return;
+                if (cell.querySelector('#extraTip') && !cell.querySelector('img')) return;
                 hidden.push({ cell: cell, original: cell.innerHTML });
                 cell.innerHTML = placeholder;
             }
