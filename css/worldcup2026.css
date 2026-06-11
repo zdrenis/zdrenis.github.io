@@ -215,6 +215,15 @@ th span {
     color: #07164b;
 }
 
+#standings1 thead tr:nth-child(3) th.live-score-cell {
+    background-color: #3ddbc4;
+}
+
+#standings1 thead tr:nth-child(3) th.live-score-cell span {
+    color: black;
+    font-weight: bold;
+}
+
 .rules {
     background-color: #07164b;
     border-radius: 25px;
