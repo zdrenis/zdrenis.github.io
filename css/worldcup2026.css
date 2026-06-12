@@ -22,12 +22,12 @@ footer {
 
 .points {
     padding: 0.5px 6px 0.5px 6px;
-    background: #f9bf4b;
-    border-color: #f9bf4b;
-    background-image: -webkit-linear-gradient(top, #f9bf4b, #f9bf4b);
-    background-image: -moz-linear-gradient(top, #f9bf4b, #f9bf4b);
-    background-image: -o-linear-gradient(top, #f9bf4b, #f9bf4b);
-    background-image: linear-gradient(to bottom, #f9bf4b, #f9bf4b);
+    background: #3ddbc4;
+    border-color: #3ddbc4;
+    background-image: -webkit-linear-gradient(top, #3ddbc4, #3ddbc4);
+    background-image: -moz-linear-gradient(top, #3ddbc4, #3ddbc4);
+    background-image: -o-linear-gradient(top, #3ddbc4, #3ddbc4);
+    background-image: linear-gradient(to bottom, #3ddbc4, #3ddbc4);
     color: black;
     text-shadow: 0 1px rgba(0, 0, 0, 0.25);
     border: 0px solid;
@@ -50,12 +50,12 @@ footer {
 
 .tipster_row td span:nth-of-type(2) {
     padding: 0.5px 6px 0.5px 6px;
-    background: #f9bf4b;
-    border-color: #f9bf4b;
-    background-image: -webkit-linear-gradient(top, #f9bf4b, #f9bf4b);
-    background-image: -moz-linear-gradient(top, #f9bf4b, #f9bf4b);
-    background-image: -o-linear-gradient(top, #f9bf4b, #f9bf4b);
-    background-image: linear-gradient(to bottom, #f9bf4b, #f9bf4b);
+    background: #3ddbc4;
+    border-color: #3ddbc4;
+    background-image: -webkit-linear-gradient(top, #3ddbc4, #3ddbc4);
+    background-image: -moz-linear-gradient(top, #3ddbc4, #3ddbc4);
+    background-image: -o-linear-gradient(top, #3ddbc4, #3ddbc4);
+    background-image: linear-gradient(to bottom, #3ddbc4, #3ddbc4);
     margin-left: 2px;
     margin-right: 2px;
     font-size: 20px;
