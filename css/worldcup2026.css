@@ -246,7 +246,7 @@ th span {
     background-color: #07164b;
 }
 
-#standings2, #standings5, #standings1of16 {
+#standings5, #standings1of16 {
     width: 100%;
 }
 
@@ -259,6 +259,7 @@ th span {
 }
 
 #standings1,
+#standings2,
 #standingsExtra1,
 #standingsExtra2 {
     width: 95%;
