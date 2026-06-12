@@ -16,15 +16,6 @@
     <div style="text-align: center; color: #07164b; font-size: 0.95em; margin-bottom: 10px; font-style: italic;">
         Nocny dyżur i przeliczanie punktów na żywo pełni Klaudiusz (AI) 🤖<br>Klaudiusz pozdrawia planszówkową rodzinkę 👋
     </div>
-    <div id="tips-countdown" style="text-align: center; color: #07164b; font-size: 1.2em; margin-bottom: 10px;">
-        Typy na mecz Meksyk - Afryka Południowa i na pytania dodatkowe zostaną ujawnione za <span id="tips-countdown-timer"></span>
-    </div>
-    <div id="tips-countdown-2" style="text-align: center; color: #07164b; font-size: 1.2em; margin-bottom: 10px;">
-        Typy na mecz Korea Południowa - Czechy zostaną ujawnione za <span id="tips-countdown-timer-2"></span>
-    </div>
-    <div id="tips-countdown-3" style="text-align: center; color: #07164b; font-size: 1.2em; margin-bottom: 10px;">
-        Typy na mecz Kanada - Bośnia i Hercegowina zostaną ujawnione za <span id="tips-countdown-timer-3"></span>
-    </div>
     <div id="tips-countdown-4" style="text-align: center; color: #07164b; font-size: 1.2em; margin-bottom: 10px;">
         Typy na mecz Stany Zjednoczone - Paragwaj zostaną ujawnione za <span id="tips-countdown-timer-4"></span>
     </div>
@@ -1264,79 +1255,6 @@
                 tick();
                 var interval = setInterval(tick, 1000);
             }
-
-            createReveal({
-                revealTime: new Date(2026, 5, 11, 21, 0, 0), // 11.06.2026 21:00
-                countdownEl: document.getElementById('tips-countdown'),
-                timerEl: document.getElementById('tips-countdown-timer'),
-                setup: function (hideCell) {
-                    var matchPlaceholder = '<span><img class="tip-pending" src="img/mario_question_mark.gif"></span>';
-                    var extraPlaceholder = '<div id="extraTip" class="box"><span><img class="tip-pending" src="img/mario_question_block2.gif"></span></div>';
-
-                    rowsToHide('#standings1').forEach(function (row) {
-                        hideCell(row.cells[1], matchPlaceholder);
-                    });
-                    rowsToHide('#standingsExtra1').forEach(function (row) {
-                        for (var i = 1; i <= 12; i++) hideCell(row.cells[i], extraPlaceholder);
-                    });
-                    rowsToHide('#standingsExtra2').forEach(function (row) {
-                        for (var i = 1; i <= 10; i++) hideCell(row.cells[i], extraPlaceholder);
-                    });
-
-                    hideCell(document.getElementById('match1LiveResult'), '<span>-</span>');
-
-                    var zdresPoints = document.getElementById('zdresMatch1Points');
-                    if (zdresPoints) zdresPoints.style.display = 'none';
-                },
-                onReveal: function () {
-                    var zdresPoints = document.getElementById('zdresMatch1Points');
-                    if (zdresPoints) zdresPoints.style.display = '';
-                }
-            });
-
-            createReveal({
-                revealTime: new Date(2026, 5, 12, 4, 0, 0), // 12.06.2026 04:00
-                countdownEl: document.getElementById('tips-countdown-2'),
-                timerEl: document.getElementById('tips-countdown-timer-2'),
-                setup: function (hideCell) {
-                    var matchPlaceholder = '<span><img class="tip-pending" src="img/mario_question_mark.gif"></span>';
-
-                    rowsToHide('#standings1').forEach(function (row) {
-                        hideCell(row.cells[2], matchPlaceholder);
-                    });
-
-                    hideCell(document.getElementById('match2LiveResult'), '<span>-</span>');
-
-                    var zdresPoints = document.getElementById('zdresMatch2Points');
-                    if (zdresPoints) zdresPoints.style.display = 'none';
-                },
-                onReveal: function () {
-                    var zdresPoints = document.getElementById('zdresMatch2Points');
-                    if (zdresPoints) zdresPoints.style.display = '';
-                }
-            });
-
-            createReveal({
-                revealTime: new Date(2026, 5, 12, 21, 0, 0), // 12.06.2026 21:00
-                countdownEl: document.getElementById('tips-countdown-3'),
-                timerEl: document.getElementById('tips-countdown-timer-3'),
-                setup: function (hideCell) {
-                    var matchPlaceholder = '<span><img class="tip-pending" src="img/mario_question_mark.gif"></span>';
-
-                    rowsToHide('#standings1').forEach(function (row) {
-                        hideCell(row.cells[3], matchPlaceholder);
-                    });
-                },
-                onReveal: function () {
-                    var liveResult = document.getElementById('match3LiveResult');
-                    if (liveResult) {
-                        liveResult.className = 'live-score-cell';
-                        liveResult.innerHTML = '<span>1</span><span style="margin-left: 10px; margin-right: 10px;">|</span><span>1</span>';
-                    }
-                    var zdresPoints = document.getElementById('zdresMatch3Points');
-                    if (zdresPoints) zdresPoints.style.display = '';
-                }
-            });
 
             createReveal({
                 revealTime: new Date(2026, 5, 13, 3, 0, 0), // 13.06.2026 03:00
