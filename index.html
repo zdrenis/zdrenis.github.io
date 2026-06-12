@@ -74,7 +74,7 @@
                     <tr style="background-color: white;">
                         <th id="match1LiveResult" class="live-score-cell"><span>2</span><span style="margin-left: 10px; margin-right: 10px;">|</span><span>0</span></th>
                         <th id="match2LiveResult" class="live-score-cell"><span>2</span><span style="margin-left: 10px; margin-right: 10px;">|</span><span>1</span></th>
-                        <th id="match3LiveResult"><span>-</span></th>
+                        <th id="match3LiveResult" class="live-score-cell"><span class="blink_me">0</span><span style="margin-left: 10px; margin-right: 10px;">|</span><span class="blink_me">1</span></th>
                         <th><span>-</span></th>
                         <th><span>-</span></th>
                         <th><span>-</span></th>
@@ -160,7 +160,7 @@
                         <td>Dzidka</td>
                         <td><span>3-1</span><span>3</span></td>
                         <td><span>2-1</span><span>4+1</span></td>
-                        <td><span>1-1</span><span class="blink_me">2+1</span></td>
+                        <td><span>1-1</span><span class="blink_me">0</span></td>
                         <td><span><img class="tip-pending" src="img/mario_question_mark.gif"></span></td>
                         <td><span><img class="tip-pending" src="img/mario_question_mark.gif"></span></td>
                         <td><span></span></td>
@@ -196,7 +196,7 @@
                         <td>Karol</td>
                         <td><span>1-1</span><span>0</span></td>
                         <td><span>1-2</span><span>0</span></td>
-                        <td><span>2-2</span><span class="blink_me">2+1</span></td>
+                        <td><span>2-2</span><span class="blink_me">0</span></td>
                         <td><span><img class="tip-pending" src="img/mario_question_mark.gif"></span></td>
                         <td><span><img class="tip-pending" src="img/mario_question_mark.gif"></span></td>
                         <td><span><img class="tip-pending" src="img/mario_question_mark.gif"></span></td>
@@ -220,7 +220,7 @@
                         <td>Zdres &amp; Pies</td>
                         <td><span>2-1</span><span id="zdresMatch1Points">2</span></td>
                         <td><span>1-1</span><span id="zdresMatch2Points">0</span></td>
-                        <td><span>1-0</span><span id="zdresMatch3Points" class="blink_me" style="display: none;">0</span></td>
+                        <td><span>1-0</span><span id="zdresMatch3Points" class="blink_me">0</span></td>
                         <td><span>1-1</span></td>
                         <td><span>0-1</span></td>
                         <td><span>1-1</span></td>
@@ -1328,7 +1328,7 @@
                     var liveResult = document.getElementById('match3LiveResult');
                     if (liveResult) {
                         liveResult.className = 'live-score-cell';
-                        liveResult.innerHTML = '<span class="blink_me">0</span><span style="margin-left: 10px; margin-right: 10px;">|</span><span class="blink_me">0</span>';
+                        liveResult.innerHTML = '<span class="blink_me">0</span><span style="margin-left: 10px; margin-right: 10px;">|</span><span class="blink_me">1</span>';
                     }
                     var zdresPoints = document.getElementById('zdresMatch3Points');
                     if (zdresPoints) zdresPoints.style.display = '';
