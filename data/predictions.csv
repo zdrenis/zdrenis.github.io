@@ -1,10 +1,10 @@
-Player,Match1_MEX-RSA,Match2_KOR-CZE,Match3_CAN-BIH,Match4_USA-PAR,Match5_QAT-SUI,Match6_BRA-MAR,Match7_HAI-SCO,Match8_AUS-TUR,Match9_GER-CUW,Match10_NED-JPN
-Ada,4-0,1-2,2-1,3-1,2-2,2-1,0-2,1-2,3-0,2-2
-Babela,2-0,0-1,2-0,1-0,0-2,2-0,0-2,0-1,2-0,2-0
-Karol,1-1,1-2,2-2,1-1,2-3,2-1,0-1,1-0,2-1,3-1
-Bojler,2-0,1-1,2-1,1-1,0-2,2-1,0-2,1-2,3-0,2-1
-Gocha,3-0,2-2,2-1,1-3,0-2,2-2,0-2,1-3,4-0,2-1
-Hanuta,2-1,1-1,2-0,2-1,0-2,2-1,0-3,1-2,4-0,2-0
-Ola,2-1,2-1,2-0,1-0,0-2,1-1,0-2,1-2,3-0,1-2
-Zdres & Pies,2-1,1-1,1-0,1-1,0-1,1-1,0-1,0-1,4-0,1-1
-Dzidka,3-1,2-1,1-1,2-1,0-3,,,,,
+Player,Match1_MEX-RSA,Match2_KOR-CZE,Match3_CAN-BIH,Match4_USA-PAR,Match5_QAT-SUI,Match6_BRA-MAR,Match7_HAI-SCO,Match8_AUS-TUR,Match9_GER-CUW,Match10_NED-JPN,Match11_CIV-ECU,Match12_SWE-TUN,Match13_ESP-CPV,Match14_BEL-EGY,Match15_SAU-URU,Match16_IRN-NZL,Match17_FRA-SEN,Match18_IRQ-NOR,Match19_ARG-ALG,Match20_AUT-JOR
+Ada,4-0,1-2,2-1,3-1,2-2,2-1,0-2,1-2,3-0,2-2,,,,,,,,,,
+Babela,2-0,0-1,2-0,1-0,0-2,2-0,0-2,0-1,2-0,2-0,,,,,,,,,,
+Karol,1-1,1-2,2-2,1-1,2-3,2-1,0-1,1-0,2-1,3-1,,,,,,,,,,
+Bojler,2-0,1-1,2-1,1-1,0-2,2-1,0-2,1-2,3-0,2-1,,,,,,,,,,
+Gocha,3-0,2-2,2-1,1-3,0-2,2-2,0-2,1-3,4-0,2-1,,,,,,,,,,
+Hanuta,2-1,1-1,2-0,2-1,0-2,2-1,0-3,1-2,4-0,2-0,1-1,2-0,4-0,3-1,0-2,1-0,2-1,0-3,3-0,2-0
+Ola,2-1,2-1,2-0,1-0,0-2,1-1,0-2,1-2,3-0,1-2,,,,,,,,,,
+Zdres & Pies,2-1,1-1,1-0,1-1,0-1,1-1,0-1,0-1,4-0,1-1,,,,,,,,,,
+Dzidka,3-1,2-1,1-1,2-1,0-3,,,,,,,,,,,,,,,
