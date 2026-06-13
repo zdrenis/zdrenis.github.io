@@ -49,7 +49,7 @@ footer {
 }
 
 .tipster_row td span:nth-of-type(2) {
-    padding: 0.5px 6px 0.5px 6px;
+    padding: 0.5px 4px 0.5px 4px;
     background: #3ddbc4;
     border-color: #3ddbc4;
     background-image: -webkit-linear-gradient(top, #3ddbc4, #3ddbc4);
@@ -257,6 +257,10 @@ th span {
 #standingsExtra1,
 #standingsExtra2 {
     width: 95%;
+}
+
+#standings1 {
+    width: 97%;
 }
 
 #standingsExtra2 table {
