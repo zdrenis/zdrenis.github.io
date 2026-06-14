@@ -50,6 +50,7 @@ footer {
 
 .tipster_row td span:nth-of-type(2) {
     padding: 0.5px 4px 0.5px 4px;
+    white-space: nowrap;
     background: #3ddbc4;
     border-color: #3ddbc4;
     background-image: -webkit-linear-gradient(top, #3ddbc4, #3ddbc4);
