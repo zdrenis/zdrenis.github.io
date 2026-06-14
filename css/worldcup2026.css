@@ -163,6 +163,8 @@ tr:nth-child(odd) td {
 
 #standings1 .tipster_row td:last-child {
     background-color: #07164b;
+    padding: 0;
+    text-align: center;
 }
 
 .tipster_row td:first-child {
