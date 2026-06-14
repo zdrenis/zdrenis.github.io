@@ -220,15 +220,18 @@ th span {
     color: white;
 }
 
-#standings1 thead tr:nth-child(3) th span {
+#standings1 thead tr:nth-child(3) th span,
+#standings2 thead tr:nth-child(3) th span {
     color: #07164b;
 }
 
-#standings1 thead tr:nth-child(3) th.live-score-cell {
+#standings1 thead tr:nth-child(3) th.live-score-cell,
+#standings2 thead tr:nth-child(3) th.live-score-cell {
     background-color: #3ddbc4;
 }
 
-#standings1 thead tr:nth-child(3) th.live-score-cell span {
+#standings1 thead tr:nth-child(3) th.live-score-cell span,
+#standings2 thead tr:nth-child(3) th.live-score-cell span {
     color: black;
     font-weight: bold;
 }
