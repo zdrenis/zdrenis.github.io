@@ -303,11 +303,11 @@ th span {
 }
 
 #round_winner_icon {
-    height: 18px;
-    width: 18px;
+    height: 16px;
+    width: 16px;
     position: relative;
     vertical-align: middle;
-    margin-right: 4px;
+    margin-left: 4px;
 }
 
 #badge span {
