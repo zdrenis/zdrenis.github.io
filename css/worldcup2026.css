@@ -302,6 +302,14 @@ th span {
     font-size: small;
 }
 
+#round_winner_icon {
+    height: 18px;
+    width: 18px;
+    position: relative;
+    vertical-align: middle;
+    margin-right: 4px;
+}
+
 #badge span {
     font-size: small;
 }
