@@ -332,6 +332,7 @@ th span {
 
 #totals td:last-of-type {
     width: 25px;
+    background-color: #07164b;
 }
 
 .box {
