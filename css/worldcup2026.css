@@ -311,8 +311,16 @@ th span {
 }
 
 #totals table {
-    border-collapse: separate;
-    border-spacing: 5px 0;
+    border-collapse: collapse;
+}
+
+#totals td, #totals th {
+    border-left: 5px solid #07164b;
+    border-right: 5px solid #07164b;
+}
+
+#totals thead tr:last-child th {
+    border-bottom: 2px solid #07164b;
 }
 
 #totals .tipster_row td {
@@ -324,12 +332,12 @@ th span {
     color: white;
 }
 
-#totals .tipster_row td {
-    border-bottom: 2px solid #07164b;
+#totals .tipster_row + .tipster_row td {
+    border-top: 2px solid #07164b;
 }
 
-#totals .tipster_row.tied-upper td {
-    border-bottom: none;
+#totals .tipster_row.tied-upper + .tipster_row td {
+    border-top: none;
 }
 
 #totals .tipster_row td:first-child:not(.name-col) {
