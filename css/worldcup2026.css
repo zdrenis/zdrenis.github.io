@@ -161,7 +161,8 @@ tr:nth-child(odd) td {
     color: #07164b;
 }
 
-#standings1 .tipster_row td:last-child {
+#standings1 .tipster_row td:last-child,
+#standings2 .tipster_row td:last-child {
     background-color: #07164b;
     padding: 0;
     padding-left: 5px;
