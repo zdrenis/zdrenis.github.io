@@ -19,9 +19,7 @@
     <div id="tips-countdown-17" style="text-align: center; color: #07164b; font-size: 1.2em; margin-bottom: 10px;">
         Typy na mecz Francja - Senegal zostaną ujawnione za <span id="tips-countdown-timer-17"></span>
     </div>
-    <div id="tips-countdown-21" style="text-align: center; color: #07164b; font-size: 1.2em; margin-bottom: 10px;">
-        Typy na mecze 21-24 zostaną ujawnione za <span id="tips-countdown-timer-21"></span>
-    </div>
+
     <div class='main'>
 
         <div id="totals" class="standings">
@@ -1378,8 +1376,8 @@
 
             createReveal({
                 revealTime: new Date(2026, 5, 17, 19, 0, 0), // 17.06.2026 19:00 CEST (M21 POR-DRC)
-                countdownEl: document.getElementById('tips-countdown-21'),
-                timerEl: document.getElementById('tips-countdown-timer-21'),
+                countdownEl: null,
+                timerEl: null,
                 setup: function (hideCell) {
                     var matchPlaceholder = '<span><img class="tip-pending" src="img/mario_question_mark.gif"></span>';
                     rowsToHide('#standings3').forEach(function (row) {
