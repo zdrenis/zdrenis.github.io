@@ -72,23 +72,6 @@ footer {
     animation: blinker 2s linear infinite;
 }
 
-#totals tr:nth-of-type(2) td:first-of-type {
-    background-color: gold;
-    color: white;
-    width: 5%;
-}
-
-#totals tr:nth-of-type(3) td:first-of-type {
-    background-color: silver;
-    color: white;
-    width: 5%;
-}
-
-#totals tr:nth-of-type(4) td:first-of-type {
-    background-color: brown;
-    color: white;
-    width: 5%;
-}
 
 @keyframes blinker {
     50% {
