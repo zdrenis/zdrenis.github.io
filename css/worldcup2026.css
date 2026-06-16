@@ -324,6 +324,11 @@ th span {
     color: white;
 }
 
+#totals .tipster_row td:first-child:not(.name-col) {
+    background-image: none;
+    background-color: #07164b;
+}
+
 #totals .tipster_row td.name-col {
     color: white;
     background-color: #07164b;
@@ -333,6 +338,7 @@ th span {
     padding-left: 20px;
     padding-right: 20px;
     white-space: nowrap;
+    text-align: left;
 }
 
 #totals td:last-of-type {
