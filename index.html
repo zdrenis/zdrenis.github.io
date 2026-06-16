@@ -521,6 +521,10 @@
         </div>
 
 
+        <div id="tips-countdown-25" style="text-align: center; color: #07164b; font-size: 1.2em; margin-bottom: 10px;">
+            Typy na mecze rundy 4 zostaną ujawnione za <span id="tips-countdown-timer-25"></span>
+        </div>
+
         <div id="standings4" class="standings">
             <table>
                 <thead>
@@ -1368,6 +1372,20 @@
 
                     rowsToHide('#standings3').forEach(function (row) {
                         hideCell(row.cells[1], matchPlaceholder);
+                    });
+                }
+            });
+
+            createReveal({
+                revealTime: new Date(2026, 5, 18, 18, 0, 0), // 18.06.2026 18:00 CEST (M25)
+                countdownEl: document.getElementById('tips-countdown-25'),
+                timerEl: document.getElementById('tips-countdown-timer-25'),
+                setup: function (hideCell) {
+                    var matchPlaceholder = '<span><img class="tip-pending" src="img/mario_question_mark.gif"></span>';
+                    rowsToHide('#standings4').forEach(function (row) {
+                        for (var i = 1; i <= 8; i++) {
+                            hideCell(row.cells[i], matchPlaceholder);
+                        }
                     });
                 }
             });
