@@ -225,7 +225,7 @@ th span {
 #standings4 thead tr:nth-child(3) th.live-score-cell span {
     color: black;
     font-weight: bold;
-    margin: 0 2px;
+    margin: 0 5px;
 }
 
 .rules {
