@@ -321,6 +321,12 @@ th span {
     width: 45%;
 }
 
+@media (max-width: 600px) {
+    #totals {
+        width: 95%;
+    }
+}
+
 #totals table {
     border-collapse: separate;
     border-spacing: 5px 2px;
