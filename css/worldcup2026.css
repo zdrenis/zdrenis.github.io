@@ -321,7 +321,7 @@ th span {
     width: 45%;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 768px) {
     #totals {
         width: 95%;
     }
