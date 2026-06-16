@@ -312,7 +312,7 @@ th span {
 
 #totals table {
     border-collapse: separate;
-    border-spacing: 5px 2px;
+    border-spacing: 5px 0;
 }
 
 #totals .tipster_row td {
@@ -324,9 +324,19 @@ th span {
     color: white;
 }
 
+#totals .tipster_row td {
+    border-bottom: 2px solid #07164b;
+}
+
+#totals .tipster_row.tied-upper td {
+    border-bottom: none;
+}
+
 #totals .tipster_row td:first-child:not(.name-col) {
     background-image: none;
     background-color: #07164b;
+    padding-left: 8px;
+    padding-right: 8px;
 }
 
 #totals .tipster_row td.name-col {
@@ -335,8 +345,8 @@ th span {
     background-image: linear-gradient(#2f3c6c, #2f3c6c);
     background-size: calc(100% - 8px) 100%;
     background-repeat: no-repeat;
-    padding-left: 20px;
-    padding-right: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
     white-space: nowrap;
     text-align: left;
 }
