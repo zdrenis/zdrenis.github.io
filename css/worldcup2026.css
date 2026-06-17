@@ -325,6 +325,8 @@ th span {
 #totals td, #totals th {
     border-left: 5px solid #07164b;
     border-right: 5px solid #07164b;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
 #totals thead tr:last-child th {
