@@ -357,7 +357,7 @@ th span {
 }
 
 #totals .tipster_row:nth-child(5) td:first-child:not(.name-col) {
-    background-color: #cd7f32;
+    background: linear-gradient(135deg, #7a4a1a, #cd7f32, #f0c070, #cd7f32, #7a4a1a);
     color: white;
 }
 
