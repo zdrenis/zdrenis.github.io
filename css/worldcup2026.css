@@ -346,6 +346,21 @@ th span {
     color: white;
 }
 
+#totals .tipster_row:nth-child(3) td:first-child:not(.name-col) {
+    background-color: gold;
+    color: #07164b;
+}
+
+#totals .tipster_row:nth-child(4) td:first-child:not(.name-col) {
+    background-color: silver;
+    color: #07164b;
+}
+
+#totals .tipster_row:nth-child(5) td:first-child:not(.name-col) {
+    background-color: #cd7f32;
+    color: white;
+}
+
 #totals .tipster_row + .tipster_row td {
     border-top: 2px solid #07164b;
 }
