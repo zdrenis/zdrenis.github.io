@@ -1382,6 +1382,42 @@
             });
 
             createReveal({
+                revealTime: new Date(2026, 5, 17, 22, 0, 0), // 17.06.2026 22:00 CEST (M22 ENG-CRO)
+                countdownEl: null,
+                timerEl: null,
+                setup: function (hideCell) {
+                    var matchPlaceholder = '<span><img class="tip-pending" src="img/mario_question_mark.gif"></span>';
+                    rowsToHide('#standings3').forEach(function (row) {
+                        hideCell(row.cells[6], matchPlaceholder);
+                    });
+                }
+            });
+
+            createReveal({
+                revealTime: new Date(2026, 5, 18, 1, 0, 0), // 18.06.2026 01:00 CEST (M23 GHA-PAN)
+                countdownEl: null,
+                timerEl: null,
+                setup: function (hideCell) {
+                    var matchPlaceholder = '<span><img class="tip-pending" src="img/mario_question_mark.gif"></span>';
+                    rowsToHide('#standings3').forEach(function (row) {
+                        hideCell(row.cells[7], matchPlaceholder);
+                    });
+                }
+            });
+
+            createReveal({
+                revealTime: new Date(2026, 5, 18, 4, 0, 0), // 18.06.2026 04:00 CEST (M24)
+                countdownEl: null,
+                timerEl: null,
+                setup: function (hideCell) {
+                    var matchPlaceholder = '<span><img class="tip-pending" src="img/mario_question_mark.gif"></span>';
+                    rowsToHide('#standings3').forEach(function (row) {
+                        hideCell(row.cells[8], matchPlaceholder);
+                    });
+                }
+            });
+
+            createReveal({
                 revealTime: new Date(2026, 5, 18, 18, 0, 0), // 18.06.2026 18:00 CEST (M25)
                 countdownEl: null,
                 timerEl: null,
