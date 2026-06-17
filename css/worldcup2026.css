@@ -347,12 +347,12 @@ th span {
 }
 
 #totals .tipster_row:nth-child(3) td:first-child:not(.name-col) {
-    background-color: gold;
+    background: linear-gradient(135deg, #b8860b, #ffd700, #fffacd, #ffd700, #b8860b);
     color: #07164b;
 }
 
 #totals .tipster_row:nth-child(4) td:first-child:not(.name-col) {
-    background-color: silver;
+    background: linear-gradient(135deg, #707070, #c0c0c0, #f0f0f0, #c0c0c0, #707070);
     color: #07164b;
 }
 
