@@ -309,12 +309,12 @@ th span {
 }
 
 #totals {
-    width: 45%;
+    width: 50%;
 }
 
 @media (max-width: 768px) {
     #totals {
-        width: 95%;
+        width: 100%;
     }
 }
 
@@ -408,29 +408,38 @@ th span {
 
 @media (max-width: 768px) {
     #totals {
-        font-size: 13px;
+        font-size: 11px;
     }
 
     #totals td,
     #totals th {
-        border-left: 2px solid #07164b;
-        border-right: 2px solid #07164b;
+        border-left: 1px solid #07164b;
+        border-right: 1px solid #07164b;
     }
 
     #totals table tr:nth-child(2) th:nth-child(n+3):nth-child(-n+6),
     #totals .tipster_row td:not(.name-col):not(.points):not(:last-child):not(:first-child) {
-        padding-left: 3px;
-        padding-right: 3px;
+        padding-left: 1px;
+        padding-right: 1px;
     }
 
     #totals .tipster_row td.name-col {
-        padding-left: 6px;
-        padding-right: 6px;
+        padding-left: 4px;
+        padding-right: 4px;
     }
 
     #totals .tipster_row td:first-child:not(.name-col) {
-        padding-left: 4px;
-        padding-right: 4px;
+        padding-left: 2px;
+        padding-right: 2px;
+    }
+
+    #totals td:last-of-type {
+        width: 16px;
+    }
+
+    #totals td:last-of-type img {
+        width: 16px;
+        height: 15px;
     }
 }
 
