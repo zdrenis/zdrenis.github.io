@@ -327,7 +327,7 @@ th span {
     border-right: 5px solid #07164b;
 }
 
-#totals table tr:nth-child(2) th:nth-child(n+3):nth-child(-n+5),
+#totals table tr:nth-child(2) th:nth-child(n+3):nth-child(-n+6),
 #totals .tipster_row td:not(.name-col):not(.points):not(:last-child):not(:first-child) {
     padding-left: 10px;
     padding-right: 10px;
