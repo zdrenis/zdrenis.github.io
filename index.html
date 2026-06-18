@@ -24,9 +24,10 @@
     <div style="text-align: center; color: #07164b; font-size: 0.95em; margin-bottom: 6px; font-style: italic;">
         Czuwanie nad meczami i przeliczanie punktów na żywo: Klaudiusz (AI) 🤖
     </div>
-    <div id="live-commentary" style="display: none; justify-content: center; align-items: center; gap: 10px; margin-bottom: 10px;">
+    <div id="live-commentary" style="display: flex; justify-content: center; align-items: center; gap: 10px; margin-bottom: 10px;">
         <span style="font-size: 2.2em; line-height: 1;">🤖</span>
         <div id="live-commentary-bubble" style="position: relative; background: #eef6fb; border: 2px solid #07164b; border-radius: 14px; padding: 7px 14px; font-style: italic; color: #07164b; font-size: 0.95em; max-width: 400px;">
+            ⚽ Gol! Czechy prowadzą 1:0 z RPA! Na razie najlepiej obstawili Bojler, Dzidka, Gocha i Ola (3 pkt każdy).
             <div style="position: absolute; left: -11px; top: 50%; transform: translateY(-50%); width: 0; height: 0; border-top: 8px solid transparent; border-bottom: 8px solid transparent; border-right: 11px solid #07164b;"></div>
             <div style="position: absolute; left: -8px; top: 50%; transform: translateY(-50%); width: 0; height: 0; border-top: 7px solid transparent; border-bottom: 7px solid transparent; border-right: 9px solid #eef6fb;"></div>
         </div>
@@ -211,7 +212,7 @@
                         </th>
                     </tr>
                     <tr style="background-color: white;">
-                        <th><span>-</span></th>
+                        <th id="match25LiveResult" class="live-score-cell"><span class="blink_me">1</span><span>|</span><span class="blink_me">0</span></th>
                         <th><span>-</span></th>
                         <th><span>-</span></th>
                         <th><span>-</span></th>
@@ -261,7 +262,7 @@
                 <tbody>
                     <tr class="tipster_row">
                         <td>Ada</td>
-                        <td><span>2-0</span></td>
+                        <td><span>2-0</span><span class="blink_me">2</span></td>
                         <td><span>2-1</span></td>
                         <td><span>2-1</span></td>
                         <td><span>2-1</span></td>
@@ -269,11 +270,11 @@
                         <td><span>1-2</span></td>
                         <td><span></span></td>
                         <td><span></span></td>
-                        <td class="points"><span></span></td>
+                        <td class="points"><span class="blink_me">2</span></td>
                     </tr>
                     <tr class="tipster_row">
                         <td>Babela</td>
-                        <td><span>1-1</span></td>
+                        <td><span>1-1</span><span class="blink_me">0</span></td>
                         <td><span>2-1</span></td>
                         <td><span>2-0</span></td>
                         <td><span>1-1</span></td>
@@ -281,11 +282,11 @@
                         <td><span>0-1</span></td>
                         <td><span></span></td>
                         <td><span></span></td>
-                        <td class="points"><span></span></td>
+                        <td class="points"><span class="blink_me">0</span></td>
                     </tr>
                     <tr class="tipster_row">
                         <td>Bojler</td>
-                        <td><span>2-1</span></td>
+                        <td><span>2-1</span><span class="blink_me">3</span></td>
                         <td><span>2-1</span></td>
                         <td><span>2-0</span></td>
                         <td><span>1-1</span></td>
@@ -293,11 +294,11 @@
                         <td><span>0-1</span></td>
                         <td><span>3-0</span></td>
                         <td><span>2-1</span></td>
-                        <td class="points"><span></span></td>
+                        <td class="points"><span class="blink_me">3</span></td>
                     </tr>
                     <tr class="tipster_row">
                         <td>Dzidka</td>
-                        <td><span>2-1</span></td>
+                        <td><span>2-1</span><span class="blink_me">3</span></td>
                         <td><span>1-1</span></td>
                         <td><span>2-1</span></td>
                         <td><span>2-3</span></td>
@@ -305,11 +306,11 @@
                         <td><span></span></td>
                         <td><span></span></td>
                         <td><span></span></td>
-                        <td class="points"><span></span></td>
+                        <td class="points"><span class="blink_me">3</span></td>
                     </tr>
                     <tr class="tipster_row">
                         <td>Gocha</td>
-                        <td><span>2-1</span></td>
+                        <td><span>2-1</span><span class="blink_me">3</span></td>
                         <td><span>1-2</span></td>
                         <td><span>2-0</span></td>
                         <td><span>2-2</span></td>
@@ -317,11 +318,11 @@
                         <td><span>2-2</span></td>
                         <td><span></span></td>
                         <td><span></span></td>
-                        <td class="points"><span></span></td>
+                        <td class="points"><span class="blink_me">3</span></td>
                     </tr>
                     <tr class="tipster_row">
                         <td>Hanuta</td>
-                        <td><span>1-1</span></td>
+                        <td><span>1-1</span><span class="blink_me">0</span></td>
                         <td><span>1-1</span></td>
                         <td><span>2-1</span></td>
                         <td><span>2-2</span></td>
@@ -329,11 +330,11 @@
                         <td><span>1-2</span></td>
                         <td><span></span></td>
                         <td><span></span></td>
-                        <td class="points"><span></span></td>
+                        <td class="points"><span class="blink_me">0</span></td>
                     </tr>
                     <tr class="tipster_row">
                         <td>Karol</td>
-                        <td><span>2-2</span></td>
+                        <td><span>2-2</span><span class="blink_me">0</span></td>
                         <td><span>3-1</span></td>
                         <td><span>1-1</span></td>
                         <td><span>2-1</span></td>
@@ -341,11 +342,11 @@
                         <td><span>2-1</span></td>
                         <td><span>2-0</span></td>
                         <td><span>3-1</span></td>
-                        <td class="points"><span></span></td>
+                        <td class="points"><span class="blink_me">0</span></td>
                     </tr>
                     <tr class="tipster_row">
                         <td>Ola</td>
-                        <td><span>2-1</span></td>
+                        <td><span>2-1</span><span class="blink_me">3</span></td>
                         <td><span>2-0</span></td>
                         <td><span>3-0</span></td>
                         <td><span>1-1</span></td>
@@ -353,11 +354,11 @@
                         <td><span>1-1</span></td>
                         <td><span></span></td>
                         <td><span></span></td>
-                        <td class="points"><span></span></td>
+                        <td class="points"><span class="blink_me">3</span></td>
                     </tr>
                     <tr class="tipster_row">
                         <td>Zdres &amp; Pies</td>
-                        <td><span>1-1</span></td>
+                        <td><span>1-1</span><span class="blink_me">0</span></td>
                         <td><span>1-0</span></td>
                         <td><span>2-0</span></td>
                         <td><span>1-1</span></td>
@@ -365,7 +366,7 @@
                         <td><span>0-1</span></td>
                         <td><span>3-0</span></td>
                         <td><span>1-1</span></td>
-                        <td class="points"><span></span></td>
+                        <td class="points"><span class="blink_me">0</span></td>
                     </tr>
                 </tbody>
             </table>
