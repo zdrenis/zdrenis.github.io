@@ -145,7 +145,9 @@ tr:nth-child(odd) td {
 }
 
 #standings1 .tipster_row td:last-child,
-#standings2 .tipster_row td:last-child {
+#standings2 .tipster_row td:last-child,
+#standings3 .tipster_row td:last-child,
+#standings4 .tipster_row td:last-child {
     background-color: #07164b;
     padding: 0;
     padding-left: 5px;
@@ -359,6 +361,19 @@ th span {
 #totals .tipster_row:nth-child(5) td:first-child:not(.name-col) {
     background: linear-gradient(135deg, #7a4a1a, #cd7f32, #f0c070, #cd7f32, #7a4a1a);
     color: white;
+}
+
+#totals .tipster_row.tied-upper:nth-child(4) td:first-child:not(.name-col) {
+    background: linear-gradient(135deg,
+        #707070 0%,
+        #c0c0c0 20%,
+        #f0f0f0 35%,
+        #c0c0c0 50%,
+        #cd7f32 72%,
+        #f0c070 85%,
+        #cd7f32 93%,
+        #7a4a1a 100%);
+    color: #07164b;
 }
 
 #totals .tipster_row + .tipster_row td {
