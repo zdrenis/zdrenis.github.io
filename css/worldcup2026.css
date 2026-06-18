@@ -382,6 +382,10 @@ th span {
     border-top: none;
 }
 
+#totals .tipster_row.tied-cont td {
+    border-top: none;
+}
+
 #totals .tipster_row td:first-child:not(.name-col) {
     background-image: none;
     background-color: #07164b;
