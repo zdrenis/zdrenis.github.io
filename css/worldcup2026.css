@@ -406,6 +406,34 @@ th span {
     background-color: #07164b;
 }
 
+@media (max-width: 768px) {
+    #totals {
+        font-size: 13px;
+    }
+
+    #totals td,
+    #totals th {
+        border-left: 2px solid #07164b;
+        border-right: 2px solid #07164b;
+    }
+
+    #totals table tr:nth-child(2) th:nth-child(n+3):nth-child(-n+6),
+    #totals .tipster_row td:not(.name-col):not(.points):not(:last-child):not(:first-child) {
+        padding-left: 3px;
+        padding-right: 3px;
+    }
+
+    #totals .tipster_row td.name-col {
+        padding-left: 6px;
+        padding-right: 6px;
+    }
+
+    #totals .tipster_row td:first-child:not(.name-col) {
+        padding-left: 4px;
+        padding-right: 4px;
+    }
+}
+
 .box {
     display: flex;
     align-items: center;
