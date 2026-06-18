@@ -16,8 +16,8 @@
     <div style="text-align: center; color: #07164b; font-size: 0.95em; margin-bottom: 10px; font-style: italic;">
         Nocny dyżur i przeliczanie punktów na żywo pełni Klaudiusz (AI) 🤖<br>Klaudiusz pozdrawia planszówkową rodzinkę 👋
     </div>
-    <div id="tips-countdown-21" style="text-align: center; color: #07164b; font-size: 1.2em; margin-bottom: 10px;">
-        Typy na mecz Portugalia - DR Kongo zostaną ujawnione za <span id="tips-countdown-timer-21"></span>
+    <div id="tips-countdown-25" style="text-align: center; color: #07164b; font-size: 1.2em; margin-bottom: 10px;">
+        Typy na mecz Czechy - RPA zostaną ujawnione za <span id="tips-countdown-timer-25"></span>
     </div>
 
     <div class='main'>
@@ -1429,8 +1429,8 @@
 
             createReveal({
                 revealTime: new Date(2026, 5, 18, 18, 0, 0), // 18.06.2026 18:00 CEST (M25)
-                countdownEl: null,
-                timerEl: null,
+                countdownEl: document.getElementById('tips-countdown-25'),
+                timerEl: document.getElementById('tips-countdown-timer-25'),
                 setup: function (hideCell) {
                     var matchPlaceholder = '<span><img class="tip-pending" src="img/mario_question_mark.gif"></span>';
                     rowsToHide('#standings4').forEach(function (row) {
