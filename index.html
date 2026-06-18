@@ -502,9 +502,9 @@
                     </tr>
                     <tr class="tipster_row">
                         <td>Dzidka</td>
-                        <td><span></span></td>
-                        <td><span></span></td>
-                        <td><span></span></td>
+                        <td><span>2-1</span></td>
+                        <td><span>1-1</span></td>
+                        <td><span>2-1</span></td>
                         <td><span></span></td>
                         <td><span></span></td>
                         <td><span></span></td>
@@ -1621,63 +1621,97 @@
             }
 
             createReveal({
-                revealTime: new Date(2026, 5, 17, 19, 0, 0), // 17.06.2026 19:00 CEST (M21 POR-COD)
-                countdownEl: document.getElementById('tips-countdown-21'),
-                timerEl: document.getElementById('tips-countdown-timer-21'),
+                revealTime: new Date(2026, 5, 18, 18, 0, 0), // 18.06.2026 18:00 CEST (M25 CZE-RSA)
+                countdownEl: document.getElementById('tips-countdown-25'),
+                timerEl: document.getElementById('tips-countdown-timer-25'),
                 setup: function (hideCell) {
                     var matchPlaceholder = '<span><img class="tip-pending" src="img/mario_question_mark.gif"></span>';
-                    rowsToHide('#standings3').forEach(function (row) {
+                    rowsToHide('#standings4').forEach(function (row) {
+                        hideCell(row.cells[1], matchPlaceholder);
+                    });
+                }
+            });
+
+            createReveal({
+                revealTime: new Date(2026, 5, 18, 21, 0, 0), // 18.06.2026 21:00 CEST (M26 SUI-BIH)
+                countdownEl: null,
+                timerEl: null,
+                setup: function (hideCell) {
+                    var matchPlaceholder = '<span><img class="tip-pending" src="img/mario_question_mark.gif"></span>';
+                    rowsToHide('#standings4').forEach(function (row) {
+                        hideCell(row.cells[2], matchPlaceholder);
+                    });
+                }
+            });
+
+            createReveal({
+                revealTime: new Date(2026, 5, 19, 0, 0, 0), // 19.06.2026 00:00 CEST (M27 CAN-QAT)
+                countdownEl: null,
+                timerEl: null,
+                setup: function (hideCell) {
+                    var matchPlaceholder = '<span><img class="tip-pending" src="img/mario_question_mark.gif"></span>';
+                    rowsToHide('#standings4').forEach(function (row) {
+                        hideCell(row.cells[3], matchPlaceholder);
+                    });
+                }
+            });
+
+            createReveal({
+                revealTime: new Date(2026, 5, 19, 3, 0, 0), // 19.06.2026 03:00 CEST (M28 MEX-KOR)
+                countdownEl: null,
+                timerEl: null,
+                setup: function (hideCell) {
+                    var matchPlaceholder = '<span><img class="tip-pending" src="img/mario_question_mark.gif"></span>';
+                    rowsToHide('#standings4').forEach(function (row) {
+                        hideCell(row.cells[4], matchPlaceholder);
+                    });
+                }
+            });
+
+            createReveal({
+                revealTime: new Date(2026, 5, 19, 21, 0, 0), // 19.06.2026 21:00 CEST (M29 USA-AUS)
+                countdownEl: null,
+                timerEl: null,
+                setup: function (hideCell) {
+                    var matchPlaceholder = '<span><img class="tip-pending" src="img/mario_question_mark.gif"></span>';
+                    rowsToHide('#standings4').forEach(function (row) {
                         hideCell(row.cells[5], matchPlaceholder);
                     });
                 }
             });
 
             createReveal({
-                revealTime: new Date(2026, 5, 17, 22, 0, 0), // 17.06.2026 22:00 CEST (M22 ENG-CRO)
+                revealTime: new Date(2026, 5, 20, 0, 0, 0), // 20.06.2026 00:00 CEST (M30 SCO-MAR)
                 countdownEl: null,
                 timerEl: null,
                 setup: function (hideCell) {
                     var matchPlaceholder = '<span><img class="tip-pending" src="img/mario_question_mark.gif"></span>';
-                    rowsToHide('#standings3').forEach(function (row) {
+                    rowsToHide('#standings4').forEach(function (row) {
                         hideCell(row.cells[6], matchPlaceholder);
                     });
                 }
             });
 
             createReveal({
-                revealTime: new Date(2026, 5, 18, 1, 0, 0), // 18.06.2026 01:00 CEST (M23 GHA-PAN)
+                revealTime: new Date(2026, 5, 20, 2, 30, 0), // 20.06.2026 02:30 CEST (M31 BRA-HAI)
                 countdownEl: null,
                 timerEl: null,
                 setup: function (hideCell) {
                     var matchPlaceholder = '<span><img class="tip-pending" src="img/mario_question_mark.gif"></span>';
-                    rowsToHide('#standings3').forEach(function (row) {
+                    rowsToHide('#standings4').forEach(function (row) {
                         hideCell(row.cells[7], matchPlaceholder);
                     });
                 }
             });
 
             createReveal({
-                revealTime: new Date(2026, 5, 18, 4, 0, 0), // 18.06.2026 04:00 CEST (M24)
+                revealTime: new Date(2026, 5, 20, 5, 0, 0), // 20.06.2026 05:00 CEST (M32 TUR-PAR)
                 countdownEl: null,
                 timerEl: null,
                 setup: function (hideCell) {
                     var matchPlaceholder = '<span><img class="tip-pending" src="img/mario_question_mark.gif"></span>';
-                    rowsToHide('#standings3').forEach(function (row) {
-                        hideCell(row.cells[8], matchPlaceholder);
-                    });
-                }
-            });
-
-            createReveal({
-                revealTime: new Date(2026, 5, 18, 18, 0, 0), // 18.06.2026 18:00 CEST (M25)
-                countdownEl: document.getElementById('tips-countdown-25'),
-                timerEl: document.getElementById('tips-countdown-timer-25'),
-                setup: function (hideCell) {
-                    var matchPlaceholder = '<span><img class="tip-pending" src="img/mario_question_mark.gif"></span>';
                     rowsToHide('#standings4').forEach(function (row) {
-                        for (var i = 1; i <= 8; i++) {
-                            hideCell(row.cells[i], matchPlaceholder);
-                        }
+                        hideCell(row.cells[8], matchPlaceholder);
                     });
                 }
             });
