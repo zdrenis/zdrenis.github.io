@@ -32,10 +32,10 @@
             <div style="position: absolute; left: -8px; top: 50%; transform: translateY(-50%); width: 0; height: 0; border-top: 7px solid transparent; border-bottom: 7px solid transparent; border-right: 9px solid #eef6fb;"></div>
         </div>
     </div>
-    <div id="tips-countdown-28" style="display: flex; justify-content: center; align-items: center; gap: 10px; margin-bottom: 10px;">
+    <div id="tips-countdown-29" style="display: flex; justify-content: center; align-items: center; gap: 10px; margin-bottom: 10px;">
         <span style="font-size: 2.2em; line-height: 1;">🤖</span>
         <div style="position: relative; background: #eef6fb; border: 2px solid #07164b; border-radius: 14px; padding: 7px 14px; font-style: italic; color: #07164b; font-size: 1em; max-width: 340px;">
-            Typy na mecz Meksyk - Korea Południowa zostaną ujawnione za <span id="tips-countdown-timer-28"></span>
+            Typy na mecz Stany Zjednoczone - Australia zostaną ujawnione za <span id="tips-countdown-timer-29"></span>
             <div style="position: absolute; left: -11px; top: 50%; transform: translateY(-50%); width: 0; height: 0; border-top: 8px solid transparent; border-bottom: 8px solid transparent; border-right: 11px solid #07164b;"></div>
             <div style="position: absolute; left: -8px; top: 50%; transform: translateY(-50%); width: 0; height: 0; border-top: 7px solid transparent; border-bottom: 7px solid transparent; border-right: 9px solid #eef6fb;"></div>
         </div>
@@ -1666,8 +1666,8 @@
 
             createReveal({
                 revealTime: new Date(2026, 5, 19, 21, 0, 0), // 19.06.2026 21:00 CEST (M29 USA-AUS)
-                countdownEl: null,
-                timerEl: null,
+                countdownEl: document.getElementById('tips-countdown-29'),
+                timerEl: document.getElementById('tips-countdown-timer-29'),
                 setup: function (hideCell) {
                     var matchPlaceholder = '<span><img class="tip-pending" src="img/mario_question_mark.gif"></span>';
                     rowsToHide('#standings4').forEach(function (row) {
