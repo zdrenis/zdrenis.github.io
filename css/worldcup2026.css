@@ -447,8 +447,7 @@ th span {
     }
 }
 
-#live-commentary-bubble strong,
-#standings-buzz strong {
+.bubble-text strong {
     color: #c0392b;
     font-weight: bold;
 }
