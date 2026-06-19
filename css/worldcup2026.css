@@ -447,6 +447,12 @@ th span {
     }
 }
 
+#live-commentary-bubble strong,
+#standings-buzz strong {
+    color: #c0392b;
+    font-weight: bold;
+}
+
 .box {
     display: flex;
     align-items: center;
