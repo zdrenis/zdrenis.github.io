@@ -366,19 +366,16 @@
                                 <h3>Runda 5</h3>
                             </div>
                         </th>
-                        <th><small>35<br>20.06, 19:00<br>Houston</small></th>
                         <th><small>33<br>20.06, 22:00<br>Toronto</small></th>
                         <th><small>34<br>21.06, 02:00<br>Kansas City</small></th>
+                        <th><small>35<br>20.06, 19:00<br>Houston</small></th>
                         <th><small>36<br>21.06, 06:00<br>Monterrey</small></th>
+                        <th><small>37<br>22.06, 00:00<br>Miami</small></th>
                         <th><small>38<br>21.06, 18:00<br>Atlanta</small></th>
                         <th><small>39<br>21.06, 21:00<br>Los Angeles</small></th>
-                        <th><small>37<br>22.06, 00:00<br>Miami</small></th>
                         <th><small>40<br>22.06, 03:00<br>Vancouver</small></th>
                     </tr>
                     <tr>
-                        <th>
-                            <div class="box"><img src="flags/worldcup2026/NED.svg" /><span>NED</span></div>
-                        </th>
                         <th>
                             <div class="box"><img src="flags/worldcup2026/GER.svg" /><span>GER</span></div>
                         </th>
@@ -386,16 +383,19 @@
                             <div class="box"><img src="flags/worldcup2026/ECU.svg" /><span>ECU</span></div>
                         </th>
                         <th>
+                            <div class="box"><img src="flags/worldcup2026/NED.svg" /><span>NED</span></div>
+                        </th>
+                        <th>
                             <div class="box"><img src="flags/worldcup2026/TUN.svg" /><span>TUN</span></div>
+                        </th>
+                        <th>
+                            <div class="box"><img src="flags/worldcup2026/URU.svg" /><span>URU</span></div>
                         </th>
                         <th>
                             <div class="box"><img src="flags/worldcup2026/ESP.svg" /><span>ESP</span></div>
                         </th>
                         <th>
                             <div class="box"><img src="flags/worldcup2026/BEL.svg" /><span>BEL</span></div>
-                        </th>
-                        <th>
-                            <div class="box"><img src="flags/worldcup2026/URU.svg" /><span>URU</span></div>
                         </th>
                         <th>
                             <div class="box"><img src="flags/worldcup2026/NZL.svg" /><span>NZL</span></div>
@@ -413,16 +413,19 @@
                     </tr>
                     <tr>
                         <th>
-                            <div class="box"><img src="flags/worldcup2026/SWE.svg" /><span>SWE</span></div>
-                        </th>
-                        <th>
                             <div class="box"><img src="flags/worldcup2026/CIV.svg" /><span>CIV</span></div>
                         </th>
                         <th>
                             <div class="box"><img src="flags/worldcup2026/CUW.svg" /><span>CUW</span></div>
                         </th>
                         <th>
+                            <div class="box"><img src="flags/worldcup2026/SWE.svg" /><span>SWE</span></div>
+                        </th>
+                        <th>
                             <div class="box"><img src="flags/worldcup2026/JPN.svg" /><span>JPN</span></div>
+                        </th>
+                        <th>
+                            <div class="box"><img src="flags/worldcup2026/CPV.svg" /><span>CPV</span></div>
                         </th>
                         <th>
                             <div class="box"><img src="flags/worldcup2026/SAU.svg" /><span>SAU</span></div>
@@ -431,20 +434,17 @@
                             <div class="box"><img src="flags/worldcup2026/IRN.svg" /><span>IRN</span></div>
                         </th>
                         <th>
-                            <div class="box"><img src="flags/worldcup2026/CPV.svg" /><span>CPV</span></div>
-                        </th>
-                        <th>
                             <div class="box"><img src="flags/worldcup2026/EGY.svg" /><span>EGY</span></div>
                         </th>
                     </tr>
                     <tr style="font-size: x-small;">
-                        <th>1.67 / 4.00 / 5.00</th>
                         <th>1.57 / 4.50 / 6.00</th>
                         <th>1.10 / 11.00 / 27.00</th>
+                        <th>1.67 / 4.00 / 5.00</th>
                         <th>5.50 / 3.50 / 1.67</th>
+                        <th>1.45 / 4.33 / 7.00</th>
                         <th>1.08 / 10.00 / 23.00</th>
                         <th>1.40 / 4.75 / 7.00</th>
-                        <th>1.45 / 4.33 / 7.00</th>
                         <th>5.00 / 3.50 / 1.72</th>
                         <th rowspan="5" style="width: 3em">Pkt</th>
                     </tr>
@@ -524,13 +524,13 @@
                     </tr>
                     <tr class="tipster_row">
                         <td>Karol</td>
-                        <td><span>2-2</span></td>
                         <td><span>3-1</span></td>
                         <td><span>0-0</span></td>
+                        <td><span>2-2</span></td>
                         <td><span>1-2</span></td>
+                        <td><span>2-2</span></td>
                         <td><span>6-1</span></td>
                         <td><span>3-1</span></td>
-                        <td><span>2-2</span></td>
                         <td><span>2-1</span></td>
                         <td class="points"><span></span></td>
                     </tr>
@@ -1719,7 +1719,7 @@
                 setup: function (hideCell) {
                     var matchPlaceholder = '<span><img class="tip-pending" src="img/mario_question_mark.gif"></span>';
                     rowsToHide('#standings5').forEach(function (row) {
-                        hideCell(row.cells[1], matchPlaceholder);
+                        hideCell(row.cells[3], matchPlaceholder);
                     });
                 }
             });
@@ -1731,7 +1731,7 @@
                 setup: function (hideCell) {
                     var matchPlaceholder = '<span><img class="tip-pending" src="img/mario_question_mark.gif"></span>';
                     rowsToHide('#standings5').forEach(function (row) {
-                        hideCell(row.cells[2], matchPlaceholder);
+                        hideCell(row.cells[1], matchPlaceholder);
                     });
                 }
             });
@@ -1743,7 +1743,7 @@
                 setup: function (hideCell) {
                     var matchPlaceholder = '<span><img class="tip-pending" src="img/mario_question_mark.gif"></span>';
                     rowsToHide('#standings5').forEach(function (row) {
-                        hideCell(row.cells[3], matchPlaceholder);
+                        hideCell(row.cells[2], matchPlaceholder);
                     });
                 }
             });
@@ -1767,7 +1767,7 @@
                 setup: function (hideCell) {
                     var matchPlaceholder = '<span><img class="tip-pending" src="img/mario_question_mark.gif"></span>';
                     rowsToHide('#standings5').forEach(function (row) {
-                        hideCell(row.cells[5], matchPlaceholder);
+                        hideCell(row.cells[6], matchPlaceholder);
                     });
                 }
             });
@@ -1779,7 +1779,7 @@
                 setup: function (hideCell) {
                     var matchPlaceholder = '<span><img class="tip-pending" src="img/mario_question_mark.gif"></span>';
                     rowsToHide('#standings5').forEach(function (row) {
-                        hideCell(row.cells[6], matchPlaceholder);
+                        hideCell(row.cells[7], matchPlaceholder);
                     });
                 }
             });
@@ -1791,7 +1791,7 @@
                 setup: function (hideCell) {
                     var matchPlaceholder = '<span><img class="tip-pending" src="img/mario_question_mark.gif"></span>';
                     rowsToHide('#standings5').forEach(function (row) {
-                        hideCell(row.cells[7], matchPlaceholder);
+                        hideCell(row.cells[5], matchPlaceholder);
                     });
                 }
             });
