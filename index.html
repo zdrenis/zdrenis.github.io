@@ -24,7 +24,7 @@
     <div style="text-align: center; color: #07164b; font-size: 0.95em; margin-bottom: 6px; font-style: italic;">
         Czuwanie nad meczami i przeliczanie punktów na żywo: Klaudiusz (AI) 🤖
     </div>
-    <div id="live-commentary" style="display: flex; justify-content: center; align-items: center; gap: 10px; margin-bottom: 10px;">
+    <div id="live-commentary" style="display: none; justify-content: center; align-items: center; gap: 10px; margin-bottom: 10px;">
         <span style="font-size: 2.2em; line-height: 1;">🤖</span>
         <div id="live-commentary-bubble" style="position: relative; background: #eef6fb; border: 2px solid #07164b; border-radius: 14px; padding: 7px 14px; font-style: italic; color: #07164b; font-size: 0.95em; max-width: 400px;">
             🏁 Koniec meczu! Kanada demoluje Katar 6:0. Większość typerów złapała po 2 pkt za trafiony wynik. W tabeli totals Ada i Ola wskakują na podzielone 3. miejsce z 38 pkt - Dzidka (43) i Babela (40) wciąż na czele!
@@ -32,10 +32,10 @@
             <div style="position: absolute; left: -8px; top: 50%; transform: translateY(-50%); width: 0; height: 0; border-top: 7px solid transparent; border-bottom: 7px solid transparent; border-right: 9px solid #eef6fb;"></div>
         </div>
     </div>
-    <div id="tips-countdown-27" style="display: flex; justify-content: center; align-items: center; gap: 10px; margin-bottom: 10px;">
+    <div id="tips-countdown-28" style="display: flex; justify-content: center; align-items: center; gap: 10px; margin-bottom: 10px;">
         <span style="font-size: 2.2em; line-height: 1;">🤖</span>
         <div style="position: relative; background: #eef6fb; border: 2px solid #07164b; border-radius: 14px; padding: 7px 14px; font-style: italic; color: #07164b; font-size: 1em; max-width: 340px;">
-            Typy na mecz Kanada - Katar zostaną ujawnione za <span id="tips-countdown-timer-27"></span>
+            Typy na mecz Meksyk - Korea Południowa zostaną ujawnione za <span id="tips-countdown-timer-28"></span>
             <div style="position: absolute; left: -11px; top: 50%; transform: translateY(-50%); width: 0; height: 0; border-top: 8px solid transparent; border-bottom: 8px solid transparent; border-right: 11px solid #07164b;"></div>
             <div style="position: absolute; left: -8px; top: 50%; transform: translateY(-50%); width: 0; height: 0; border-top: 7px solid transparent; border-bottom: 7px solid transparent; border-right: 9px solid #eef6fb;"></div>
         </div>
@@ -1652,8 +1652,8 @@
 
             createReveal({
                 revealTime: new Date(2026, 5, 19, 3, 0, 0), // 19.06.2026 03:00 CEST (M28 MEX-KOR)
-                countdownEl: null,
-                timerEl: null,
+                countdownEl: document.getElementById('tips-countdown-28'),
+                timerEl: document.getElementById('tips-countdown-timer-28'),
                 setup: function (hideCell) {
                     var matchPlaceholder = '<span><img class="tip-pending" src="img/mario_question_mark.gif"></span>';
                     rowsToHide('#standings4').forEach(function (row) {
