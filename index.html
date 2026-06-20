@@ -32,38 +32,6 @@
             <div style="position: absolute; left: -8px; top: 50%; transform: translateY(-50%); width: 0; height: 0; border-top: 7px solid transparent; border-bottom: 7px solid transparent; border-right: 9px solid #eef6fb;"></div>
         </div>
     </div>
-    <div id="tips-countdown-33" style="display: flex; justify-content: center; align-items: center; gap: 10px; margin-bottom: 10px;">
-        <span style="font-size: 2.2em; line-height: 1;">🤖</span>
-        <div class="bubble-text" style="position: relative; background: #eef6fb; border: 2px solid #07164b; border-radius: 14px; padding: 7px 14px; font-style: italic; color: #07164b; font-size: 1em; max-width: 340px;">
-            Runda 5 startuje meczem Holandia - Szwecja. Typy zostaną ujawnione za <span id="tips-countdown-timer-33"></span>
-            <div style="position: absolute; left: -11px; top: 50%; transform: translateY(-50%); width: 0; height: 0; border-top: 8px solid transparent; border-bottom: 8px solid transparent; border-right: 11px solid #07164b;"></div>
-            <div style="position: absolute; left: -8px; top: 50%; transform: translateY(-50%); width: 0; height: 0; border-top: 7px solid transparent; border-bottom: 7px solid transparent; border-right: 9px solid #eef6fb;"></div>
-        </div>
-    </div>
-    <div id="tips-countdown-31" style="display: flex; justify-content: center; align-items: center; gap: 10px; margin-bottom: 10px;">
-        <span style="font-size: 2.2em; line-height: 1;">🤖</span>
-        <div class="bubble-text" style="position: relative; background: #eef6fb; border: 2px solid #07164b; border-radius: 14px; padding: 7px 14px; font-style: italic; color: #07164b; font-size: 1em; max-width: 340px;">
-            Typy na mecz Brazylia - Haiti zostaną ujawnione za <span id="tips-countdown-timer-31"></span>
-            <div style="position: absolute; left: -11px; top: 50%; transform: translateY(-50%); width: 0; height: 0; border-top: 8px solid transparent; border-bottom: 8px solid transparent; border-right: 11px solid #07164b;"></div>
-            <div style="position: absolute; left: -8px; top: 50%; transform: translateY(-50%); width: 0; height: 0; border-top: 7px solid transparent; border-bottom: 7px solid transparent; border-right: 9px solid #eef6fb;"></div>
-        </div>
-    </div>
-    <div id="tips-countdown-30" style="display: flex; justify-content: center; align-items: center; gap: 10px; margin-bottom: 10px;">
-        <span style="font-size: 2.2em; line-height: 1;">🤖</span>
-        <div class="bubble-text" style="position: relative; background: #eef6fb; border: 2px solid #07164b; border-radius: 14px; padding: 7px 14px; font-style: italic; color: #07164b; font-size: 1em; max-width: 340px;">
-            Typy na mecz Szkocja - Maroko zostaną ujawnione za <span id="tips-countdown-timer-30"></span>
-            <div style="position: absolute; left: -11px; top: 50%; transform: translateY(-50%); width: 0; height: 0; border-top: 8px solid transparent; border-bottom: 8px solid transparent; border-right: 11px solid #07164b;"></div>
-            <div style="position: absolute; left: -8px; top: 50%; transform: translateY(-50%); width: 0; height: 0; border-top: 7px solid transparent; border-bottom: 7px solid transparent; border-right: 9px solid #eef6fb;"></div>
-        </div>
-    </div>
-    <div id="tips-countdown-29" style="display: flex; justify-content: center; align-items: center; gap: 10px; margin-bottom: 10px;">
-        <span style="font-size: 2.2em; line-height: 1;">🤖</span>
-        <div class="bubble-text" style="position: relative; background: #eef6fb; border: 2px solid #07164b; border-radius: 14px; padding: 7px 14px; font-style: italic; color: #07164b; font-size: 1em; max-width: 340px;">
-            Typy na mecz Stany Zjednoczone - Australia zostaną ujawnione za <span id="tips-countdown-timer-29"></span>
-            <div style="position: absolute; left: -11px; top: 50%; transform: translateY(-50%); width: 0; height: 0; border-top: 8px solid transparent; border-bottom: 8px solid transparent; border-right: 11px solid #07164b;"></div>
-            <div style="position: absolute; left: -8px; top: 50%; transform: translateY(-50%); width: 0; height: 0; border-top: 7px solid transparent; border-bottom: 7px solid transparent; border-right: 9px solid #eef6fb;"></div>
-        </div>
-    </div>
     <div class='main'>
 
         <div id="totals" class="standings">
@@ -1713,8 +1681,8 @@
 
             createReveal({
                 revealTime: new Date(2026, 5, 19, 21, 0, 0), // 19.06.2026 21:00 CEST (M29 USA-AUS)
-                countdownEl: document.getElementById('tips-countdown-29'),
-                timerEl: document.getElementById('tips-countdown-timer-29'),
+                countdownEl: null,
+                timerEl: null,
                 setup: function (hideCell) {
                     var matchPlaceholder = '<span><img class="tip-pending" src="img/mario_question_mark.gif"></span>';
                     rowsToHide('#standings4').forEach(function (row) {
@@ -1725,8 +1693,8 @@
 
             createReveal({
                 revealTime: new Date(2026, 5, 20, 0, 0, 0), // 20.06.2026 00:00 CEST (M30 SCO-MAR)
-                countdownEl: document.getElementById('tips-countdown-30'),
-                timerEl: document.getElementById('tips-countdown-timer-30'),
+                countdownEl: null,
+                timerEl: null,
                 setup: function (hideCell) {
                     var matchPlaceholder = '<span><img class="tip-pending" src="img/mario_question_mark.gif"></span>';
                     rowsToHide('#standings4').forEach(function (row) {
@@ -1737,8 +1705,8 @@
 
             createReveal({
                 revealTime: new Date(2026, 5, 20, 2, 30, 0), // 20.06.2026 02:30 CEST (M31 BRA-HAI)
-                countdownEl: document.getElementById('tips-countdown-31'),
-                timerEl: document.getElementById('tips-countdown-timer-31'),
+                countdownEl: null,
+                timerEl: null,
                 setup: function (hideCell) {
                     var matchPlaceholder = '<span><img class="tip-pending" src="img/mario_question_mark.gif"></span>';
                     rowsToHide('#standings4').forEach(function (row) {
@@ -1761,8 +1729,8 @@
 
             createReveal({
                 revealTime: new Date(2026, 5, 20, 19, 0, 0), // 20.06.2026 19:00 CEST (M33 NED-SWE)
-                countdownEl: document.getElementById('tips-countdown-33'),
-                timerEl: document.getElementById('tips-countdown-timer-33'),
+                countdownEl: null,
+                timerEl: null,
                 setup: function (hideCell) {
                     var matchPlaceholder = '<span><img class="tip-pending" src="img/mario_question_mark.gif"></span>';
                     rowsToHide('#standings5').forEach(function (row) {
