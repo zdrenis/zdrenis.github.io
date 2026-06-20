@@ -258,23 +258,40 @@ th span {
 #standings4,
 #standings5,
 #standings1of16,
-#standingsExtra1,
 #standingsExtra2 {
     width: 95%;
+}
+
+#standingsExtra1 {
+    width: 99%;
 }
 
 #standings1 {
     width: 97%;
 }
 
+#standingsExtra1 table,
 #standingsExtra2 table {
     table-layout: fixed;
 }
 
+#standingsExtra1 .tipster_row td:first-child,
 #standingsExtra2 .tipster_row td:first-child {
     padding-left: 8px;
     padding-right: 8px;
     white-space: normal;
+    font-size: small;
+}
+
+#standingsExtra1 .tipster_row td:not(:first-child):not(:last-child) {
+    padding-left: 1px;
+    padding-right: 1px;
+}
+
+#standingsExtra1 .tipster_row td span:nth-of-type(2) {
+    padding: 0.5px 2px 0.5px 2px;
+    margin-left: 1px;
+    margin-right: 1px;
 }
 
 
@@ -467,9 +484,10 @@ th span {
 #extraTip {
     display: flex;
     align-items: center;
+    justify-content: center;
     font-size: small;
     text-align: center;
-    padding-left: 25%;
+    padding-left: 0;
 }
 
 #extraTip span {
@@ -477,8 +495,8 @@ th span {
 }
 
 #extraTip img {
-    height: 16px;
-    width: 24px;
+    height: 13px;
+    width: 19px;
 }
 
 #extraTip img.tip-pending {
