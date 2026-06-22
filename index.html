@@ -32,6 +32,14 @@
             <div style="position: absolute; left: -8px; top: 50%; transform: translateY(-50%); width: 0; height: 0; border-top: 7px solid transparent; border-bottom: 7px solid transparent; border-right: 9px solid #eef6fb;"></div>
         </div>
     </div>
+    <div id="next-match-countdown" style="display: flex; justify-content: center; align-items: center; gap: 10px; margin-bottom: 10px;">
+        <span style="font-size: 2.2em; line-height: 1;">⏳</span>
+        <div class="bubble-text" style="position: relative; background: #eef6fb; border: 2px solid #07164b; border-radius: 14px; padding: 7px 14px; font-style: italic; color: #07164b; font-size: 1em; max-width: 340px;">
+            Następny mecz: <strong>Argentyna - Austria</strong> za <span id="next-match-countdown-timer"></span>
+            <div style="position: absolute; left: -11px; top: 50%; transform: translateY(-50%); width: 0; height: 0; border-top: 8px solid transparent; border-bottom: 8px solid transparent; border-right: 11px solid #07164b;"></div>
+            <div style="position: absolute; left: -8px; top: 50%; transform: translateY(-50%); width: 0; height: 0; border-top: 7px solid transparent; border-bottom: 7px solid transparent; border-right: 9px solid #eef6fb;"></div>
+        </div>
+    </div>
     <div id="tips-countdown-40" style="display: flex; justify-content: center; align-items: center; gap: 10px; margin-bottom: 10px;">
         <span style="font-size: 2.2em; line-height: 1;">🤖</span>
         <div class="bubble-text" style="position: relative; background: #eef6fb; border: 2px solid #07164b; border-radius: 14px; padding: 7px 14px; font-style: italic; color: #07164b; font-size: 1em; max-width: 340px;">
@@ -1797,6 +1805,30 @@
             function pad(n) {
                 return n < 10 ? '0' + n : n;
             }
+
+            function startCountdown(targetTime, timerEl, containerEl) {
+                function tick() {
+                    var diff = targetTime - new Date();
+                    if (diff <= 0) {
+                        if (containerEl) containerEl.style.display = 'none';
+                        clearInterval(interval);
+                        return;
+                    }
+                    var days = Math.floor(diff / 86400000);
+                    var hours = Math.floor((diff % 86400000) / 3600000);
+                    var minutes = Math.floor((diff % 3600000) / 60000);
+                    var seconds = Math.floor((diff % 60000) / 1000);
+                    if (timerEl) timerEl.textContent = (days > 0 ? days + 'd ' : '') + pad(hours) + ':' + pad(minutes) + ':' + pad(seconds);
+                }
+                tick();
+                var interval = setInterval(tick, 1000);
+            }
+
+            startCountdown(
+                new Date(2026, 5, 22, 19, 0, 0), // 22.06.2026 19:00 CEST (M41 ARG-AUT)
+                document.getElementById('next-match-countdown-timer'),
+                document.getElementById('next-match-countdown')
+            );
 
             function rowsToHide(tableSelector) {
                 return Array.prototype.filter.call(
