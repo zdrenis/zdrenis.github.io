@@ -495,7 +495,7 @@ th span {
     border-collapse: collapse;
 }
 
-#bonusRanking .tipster_row td:nth-child(3) {
+#bonusRanking .tipster_row td:nth-child(2) {
     width: 60px;
 }
 
@@ -506,13 +506,6 @@ th span {
 
 #bonusRanking .tipster_row td {
     color: black;
-}
-
-#bonusRanking .tipster_row td:first-child:not(.name-col) {
-    background-image: none;
-    background-color: #07164b;
-    padding-left: 8px;
-    padding-right: 8px;
 }
 
 #bonusRanking .tipster_row td.name-col {
@@ -553,11 +546,6 @@ th span {
     #bonusRanking .tipster_row td.name-col {
         padding-left: 4px;
         padding-right: 4px;
-    }
-
-    #bonusRanking .tipster_row td:first-child:not(.name-col) {
-        padding-left: 2px;
-        padding-right: 2px;
     }
 }
 
