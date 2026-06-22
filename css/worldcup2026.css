@@ -147,7 +147,8 @@ tr:nth-child(odd) td {
 #standings1 .tipster_row td:last-child,
 #standings2 .tipster_row td:last-child,
 #standings3 .tipster_row td:last-child,
-#standings4 .tipster_row td:last-child {
+#standings4 .tipster_row td:last-child,
+#standings5 .tipster_row td:last-child {
     background-color: #07164b;
     padding: 0;
     padding-left: 5px;
