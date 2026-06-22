@@ -481,6 +481,86 @@ th span {
     }
 }
 
+#bonusRanking {
+    width: 30%;
+}
+
+@media (max-width: 768px) {
+    #bonusRanking {
+        width: 100%;
+    }
+}
+
+#bonusRanking table {
+    border-collapse: collapse;
+}
+
+#bonusRanking .tipster_row td:nth-child(3) {
+    width: 60px;
+}
+
+#bonusRanking td, #bonusRanking th {
+    border-left: 5px solid #07164b;
+    border-right: 5px solid #07164b;
+}
+
+#bonusRanking .tipster_row td {
+    color: black;
+}
+
+#bonusRanking .tipster_row td:first-child:not(.name-col) {
+    background-image: none;
+    background-color: #07164b;
+    padding-left: 8px;
+    padding-right: 8px;
+}
+
+#bonusRanking .tipster_row td.name-col {
+    color: white;
+    background-color: #07164b;
+    background-image: linear-gradient(#2f3c6c, #2f3c6c);
+    background-size: calc(100% - 8px) 100%;
+    background-repeat: no-repeat;
+    padding-left: 10px;
+    padding-right: 10px;
+    white-space: nowrap;
+    text-align: left;
+}
+
+#bonusRanking .tipster_row + .tipster_row td {
+    border-top: 2px solid #07164b;
+}
+
+#bonusRanking .tipster_row.tied-upper + .tipster_row td {
+    border-top: none;
+}
+
+#bonusRanking .tipster_row.tied-cont td {
+    border-top: none;
+}
+
+@media (max-width: 768px) {
+    #bonusRanking {
+        font-size: 11px;
+    }
+
+    #bonusRanking td,
+    #bonusRanking th {
+        border-left: 1px solid #07164b;
+        border-right: 1px solid #07164b;
+    }
+
+    #bonusRanking .tipster_row td.name-col {
+        padding-left: 4px;
+        padding-right: 4px;
+    }
+
+    #bonusRanking .tipster_row td:first-child:not(.name-col) {
+        padding-left: 2px;
+        padding-right: 2px;
+    }
+}
+
 .bubble-text strong {
     color: #c0392b;
     font-weight: bold;
