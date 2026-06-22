@@ -350,9 +350,9 @@ th span {
 #totals .tipster_row td:nth-child(3),
 #totals .tipster_row td:nth-child(4),
 #totals .tipster_row td:nth-child(5),
-#totals table tr:nth-child(2) th:nth-child(3),
-#totals table tr:nth-child(2) th:nth-child(4),
-#totals table tr:nth-child(2) th:nth-child(5) {
+#totals table tr:nth-child(3) th:nth-child(3),
+#totals table tr:nth-child(3) th:nth-child(4),
+#totals table tr:nth-child(3) th:nth-child(5) {
     width: 60px;
 }
 
@@ -361,7 +361,7 @@ th span {
     border-right: 5px solid #07164b;
 }
 
-#totals table tr:nth-child(2) th:nth-child(n+3):nth-child(-n+5),
+#totals table tr:nth-child(3) th:nth-child(n+3):nth-child(-n+5),
 #totals .tipster_row td:not(.name-col):not(.points):not(:last-child):not(:first-child) {
     padding-left: 10px;
     padding-right: 10px;
@@ -380,22 +380,22 @@ th span {
     color: white;
 }
 
-#totals .tipster_row:nth-child(3) td:first-child:not(.name-col) {
+#totals .tipster_row:nth-child(4) td:first-child:not(.name-col) {
     background: linear-gradient(135deg, #b8860b, #ffd700, #fffacd, #ffd700, #b8860b);
     color: #07164b;
 }
 
-#totals .tipster_row:nth-child(4) td:first-child:not(.name-col) {
+#totals .tipster_row:nth-child(5) td:first-child:not(.name-col) {
     background: linear-gradient(135deg, #707070, #c0c0c0, #f0f0f0, #c0c0c0, #707070);
     color: #07164b;
 }
 
-#totals .tipster_row:nth-child(5) td:first-child:not(.name-col) {
+#totals .tipster_row:nth-child(6) td:first-child:not(.name-col) {
     background: linear-gradient(135deg, #7a4a1a, #cd7f32, #f0c070, #cd7f32, #7a4a1a);
     color: white;
 }
 
-#totals .tipster_row.tied-upper:nth-child(4) td:first-child:not(.name-col) {
+#totals .tipster_row.tied-upper:nth-child(5) td:first-child:not(.name-col) {
     background: linear-gradient(135deg,
         #707070 0%,
         #c0c0c0 20%,
@@ -455,7 +455,7 @@ th span {
         border-right: 1px solid #07164b;
     }
 
-    #totals table tr:nth-child(2) th:nth-child(n+3):nth-child(-n+5),
+    #totals table tr:nth-child(3) th:nth-child(n+3):nth-child(-n+5),
     #totals .tipster_row td:not(.name-col):not(.points):not(:last-child):not(:first-child) {
         padding-left: 1px;
         padding-right: 1px;
