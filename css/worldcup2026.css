@@ -212,7 +212,8 @@ th span {
 #standings3 thead tr:nth-child(3) th span,
 #standings4 thead tr:nth-child(3) th span,
 #standings5 thead tr:nth-child(3) th span,
-#standings6 thead tr:nth-child(3) th span {
+#standings6 thead tr:nth-child(3) th span,
+#standings7 thead tr:nth-child(3) th span {
     color: #07164b;
 }
 
@@ -221,7 +222,8 @@ th span {
 #standings3 thead tr:nth-child(3) th.live-score-cell,
 #standings4 thead tr:nth-child(3) th.live-score-cell,
 #standings5 thead tr:nth-child(3) th.live-score-cell,
-#standings6 thead tr:nth-child(3) th.live-score-cell {
+#standings6 thead tr:nth-child(3) th.live-score-cell,
+#standings7 thead tr:nth-child(3) th.live-score-cell {
     background-color: #3ddbc4 !important;
     color: black !important;
 }
@@ -231,7 +233,8 @@ th span {
 #standings3 thead tr:nth-child(3) th.live-score-cell span,
 #standings4 thead tr:nth-child(3) th.live-score-cell span,
 #standings5 thead tr:nth-child(3) th.live-score-cell span,
-#standings6 thead tr:nth-child(3) th.live-score-cell span {
+#standings6 thead tr:nth-child(3) th.live-score-cell span,
+#standings7 thead tr:nth-child(3) th.live-score-cell span {
     color: black;
     font-weight: bold;
     margin: 0 5px;
@@ -265,6 +268,7 @@ th span {
 #standings4,
 #standings5,
 #standings6,
+#standings7,
 #standings1of16,
 #standingsExtra2 {
     width: 95%;
