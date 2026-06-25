@@ -365,8 +365,8 @@
                         <td><span>1-1</span><span>0</span></td>
                         <td><span>0-2</span><span>0</span></td>
                         <td><span>0-2</span><span>2</span></td>
-                        <td><span>1-1</span><span>4</span></td>
-                        <td class="points"><span>13</span></td>
+                        <td><span>1-1</span><span>4+1</span></td>
+                        <td class="points"><span>14</span></td>
                     </tr>
                     <tr class="tipster_row">
                         <td>Karol</td>
@@ -401,8 +401,8 @@
                         <td><span>0-1</span><span>2</span></td>
                         <td><span>0-1</span><span>0</span></td>
                         <td><span>0-2</span><span>2</span></td>
-                        <td><span>1-1</span><span>4</span></td>
-                        <td class="points"><span>16</span></td>
+                        <td><span>1-1</span><span>4+1</span></td>
+                        <td class="points"><span>17</span></td>
                     </tr>
                 </tbody>
             </table>
@@ -2305,7 +2305,7 @@
             }
 
             startCountdown(
-                new Date(2026, 5, 26, 2, 0, 0), // 26.06.2026 02:00 CEST (M57 JPN-SWE / M58 TUN-NED)
+                new Date(2026, 5, 26, 1, 0, 0), // 26.06.2026 01:00 CEST (M57 JPN-SWE / M58 TUN-NED)
                 document.getElementById('next-match-countdown-timer'),
                 document.getElementById('next-match-countdown')
             );
@@ -2834,6 +2834,21 @@
                         hideCell(row.cells[8], matchPlaceholder);
                     });
                 }
+            });
+        })();
+
+        // Blink live match points for M55 (col 7) and M56 (col 8) in standings7
+        (function() {
+            document.querySelectorAll('#standings7 tbody .tipster_row').forEach(function(row) {
+                [7, 8].forEach(function(colIdx) {
+                    var cell = row.cells[colIdx];
+                    if (cell) {
+                        var spans = cell.querySelectorAll('span');
+                        if (spans.length >= 2) spans[1].classList.add('blink_me');
+                    }
+                });
+                var ptsCell = row.querySelector('td.points span');
+                if (ptsCell) ptsCell.classList.add('blink_me');
             });
         })();
     </script>
