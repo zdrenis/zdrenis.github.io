@@ -221,26 +221,26 @@ th span {
     color: #07164b;
 }
 
-#standings1 thead tr:nth-child(3) th.live-score-cell,
-#standings2 thead tr:nth-child(3) th.live-score-cell,
-#standings3 thead tr:nth-child(3) th.live-score-cell,
-#standings4 thead tr:nth-child(3) th.live-score-cell,
-#standings5 thead tr:nth-child(3) th.live-score-cell,
-#standings6 thead tr:nth-child(3) th.live-score-cell,
-#standings7 thead tr:nth-child(3) th.live-score-cell,
-#standings8 thead tr:nth-child(3) th.live-score-cell {
+#standings1 thead tr:nth-child(3) th.score-cell,
+#standings2 thead tr:nth-child(3) th.score-cell,
+#standings3 thead tr:nth-child(3) th.score-cell,
+#standings4 thead tr:nth-child(3) th.score-cell,
+#standings5 thead tr:nth-child(3) th.score-cell,
+#standings6 thead tr:nth-child(3) th.score-cell,
+#standings7 thead tr:nth-child(3) th.score-cell,
+#standings8 thead tr:nth-child(3) th.score-cell {
     background-color: #3ddbc4 !important;
     color: black !important;
 }
 
-#standings1 thead tr:nth-child(3) th.live-score-cell span,
-#standings2 thead tr:nth-child(3) th.live-score-cell span,
-#standings3 thead tr:nth-child(3) th.live-score-cell span,
-#standings4 thead tr:nth-child(3) th.live-score-cell span,
-#standings5 thead tr:nth-child(3) th.live-score-cell span,
-#standings6 thead tr:nth-child(3) th.live-score-cell span,
-#standings7 thead tr:nth-child(3) th.live-score-cell span,
-#standings8 thead tr:nth-child(3) th.live-score-cell span {
+#standings1 thead tr:nth-child(3) th.score-cell span,
+#standings2 thead tr:nth-child(3) th.score-cell span,
+#standings3 thead tr:nth-child(3) th.score-cell span,
+#standings4 thead tr:nth-child(3) th.score-cell span,
+#standings5 thead tr:nth-child(3) th.score-cell span,
+#standings6 thead tr:nth-child(3) th.score-cell span,
+#standings7 thead tr:nth-child(3) th.score-cell span,
+#standings8 thead tr:nth-child(3) th.score-cell span {
     color: black;
     font-weight: bold;
     margin: 0 5px;
