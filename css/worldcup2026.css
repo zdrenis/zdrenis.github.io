@@ -220,7 +220,8 @@ th span {
 #standings6 thead tr:nth-child(3) th span,
 #standings7 thead tr:nth-child(3) th span,
 #standings8 thead tr:nth-child(3) th span,
-#standings9 thead tr:nth-child(3) th span {
+#standings9 thead tr:nth-child(3) th span,
+#standings10 thead tr:nth-child(3) th span {
     color: #07164b;
 }
 
@@ -232,7 +233,8 @@ th span {
 #standings6 thead tr:nth-child(3) th.score-cell,
 #standings7 thead tr:nth-child(3) th.score-cell,
 #standings8 thead tr:nth-child(3) th.score-cell,
-#standings9 thead tr:nth-child(3) th.score-cell {
+#standings9 thead tr:nth-child(3) th.score-cell,
+#standings10 thead tr:nth-child(3) th.score-cell {
     background-color: #3ddbc4 !important;
     color: black !important;
 }
@@ -245,7 +247,8 @@ th span {
 #standings6 thead tr:nth-child(3) th.score-cell span,
 #standings7 thead tr:nth-child(3) th.score-cell span,
 #standings8 thead tr:nth-child(3) th.score-cell span,
-#standings9 thead tr:nth-child(3) th.score-cell span {
+#standings9 thead tr:nth-child(3) th.score-cell span,
+#standings10 thead tr:nth-child(3) th.score-cell span {
     color: black;
     font-weight: bold;
     margin: 0 5px;
@@ -282,6 +285,7 @@ th span {
 #standings7,
 #standings8,
 #standings9,
+#standings10,
 #standings1of16,
 #standingsExtra2 {
     width: 95%;
