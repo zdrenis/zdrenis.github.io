@@ -390,20 +390,17 @@ th span {
 
 #totals table {
     border-collapse: collapse;
-    table-layout: fixed;
-    width: 100%;
 }
 
-/* table-layout: fixed — column widths driven by row-2 th cells */
-#totals table tr:nth-child(2) th:nth-child(1) { width: 12px; }
-/* th:nth-child(2) = name — no explicit width, takes all remaining space */
-#totals table tr:nth-child(2) th:nth-child(3) { width: 55px; }
-#totals table tr:nth-child(2) th:nth-child(4) { width: 55px; }
-#totals table tr:nth-child(2) th:nth-child(5) { width: 55px; }
-#totals table tr:nth-child(2) th:nth-child(6) { width: 110px; } /* colspan=2 → 55px each */
-#totals table tr:nth-child(2) th:nth-child(7) { width: 55px; }
-#totals table tr:nth-child(2) th:nth-child(8) { width: 55px; }
-#totals table tr:nth-child(2) th:nth-child(9) { width: 25px; }
+/* Fixed widths only on fg→WK data cells; rank/name/Suma/stars size to content */
+#totals .tipster_row td:nth-child(3),
+#totals .tipster_row td:nth-child(4),
+#totals .tipster_row td:nth-child(5),
+#totals .tipster_row td:nth-child(6),
+#totals .tipster_row td:nth-child(7),
+#totals .tipster_row td:nth-child(8) {
+    width: 55px;
+}
 
 #totals table tr:nth-child(2) th:nth-child(3),
 #totals table tr:nth-child(2) th:nth-child(4),
