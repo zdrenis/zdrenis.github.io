@@ -322,8 +322,7 @@ th span {
     font-size: small;
 }
 
-#standingsExtra2 .tipster_row td:first-child,
-#standings1of32part1 .tipster_row td:first-child {
+#standingsExtra2 .tipster_row td:first-child {
     padding-left: 6px;
     padding-right: 6px;
     white-space: normal;
