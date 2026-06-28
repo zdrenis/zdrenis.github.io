@@ -85,7 +85,8 @@ footer {
 }
 
 #standingsExtra1 .vertical-text,
-#standingsExtra2 .vertical-text {
+#standingsExtra2 .vertical-text,
+#roundOf32part1 .vertical-text {
     font-size: small;
 }
 
@@ -153,7 +154,7 @@ tr:nth-child(odd) td {
 #standings7 .tipster_row td:last-child,
 #standings8 .tipster_row td:last-child,
 #standings9 .tipster_row td:last-child,
-#standings10 .tipster_row td:last-child {
+#roundOf32part1 .tipster_row td:last-child {
     background-color: #07164b;
     padding: 0;
     padding-left: 5px;
@@ -221,7 +222,7 @@ th span {
 #standings7 thead tr:nth-child(3) th span,
 #standings8 thead tr:nth-child(3) th span,
 #standings9 thead tr:nth-child(3) th span,
-#standings10 thead tr:nth-child(3) th span {
+#roundOf32part1 thead tr:nth-child(3) th span {
     color: #07164b;
 }
 
@@ -234,7 +235,7 @@ th span {
 #standings7 thead tr:nth-child(3) th.score-cell,
 #standings8 thead tr:nth-child(3) th.score-cell,
 #standings9 thead tr:nth-child(3) th.score-cell,
-#standings10 thead tr:nth-child(3) th.score-cell {
+#roundOf32part1 thead tr:nth-child(3) th.score-cell {
     background-color: #3ddbc4 !important;
     color: black !important;
 }
@@ -248,7 +249,7 @@ th span {
 #standings7 thead tr:nth-child(3) th.score-cell span,
 #standings8 thead tr:nth-child(3) th.score-cell span,
 #standings9 thead tr:nth-child(3) th.score-cell span,
-#standings10 thead tr:nth-child(3) th.score-cell span {
+#roundOf32part1 thead tr:nth-child(3) th.score-cell span {
     color: black;
     font-weight: bold;
     margin: 0 5px;
@@ -285,13 +286,17 @@ th span {
 #standings7,
 #standings8,
 #standings9,
-#standings10,
-#standings1of16,
-#standingsExtra2 {
+#roundOf32part1,
+#standings1of16 {
     width: 95%;
 }
 
-#standingsExtra1 {
+#standingsExtra2 {
+    width: 80%;
+}
+
+#standingsExtra1,
+#roundOf32part1 {
     width: 99%;
 }
 
@@ -300,30 +305,40 @@ th span {
 }
 
 #standingsExtra1 table,
-#standingsExtra2 table {
+#standingsExtra2 table,
+#roundOf32part1 table {
     table-layout: fixed;
 }
 
 #standingsExtra1 .tipster_row td:first-child,
-#standingsExtra2 .tipster_row td:first-child {
+#roundOf32part1 .tipster_row td:first-child {
     padding-left: 6px;
     padding-right: 6px;
     white-space: normal;
     font-size: small;
 }
 
-#standingsExtra1 .tipster_row td:not(:first-child):not(:last-child) {
+#standingsExtra2 .tipster_row td:first-child {
+    padding-left: 6px;
+    padding-right: 6px;
+    white-space: normal;
+}
+
+#standingsExtra1 .tipster_row td:not(:first-child):not(:last-child),
+#roundOf32part1 .tipster_row td:not(:first-child):not(:last-child) {
     padding-left: 0;
     padding-right: 0;
 }
 
-#standingsExtra1 .tipster_row td span:nth-of-type(2) {
+#standingsExtra1 .tipster_row td span:nth-of-type(2),
+#roundOf32part1 .tipster_row td span:nth-of-type(2) {
     padding: 0.5px 3px 0.5px 3px;
     margin-left: 0;
     margin-right: 0;
 }
 
-#standingsExtra1 .box {
+#standingsExtra1 .box,
+#roundOf32part1 .box {
     gap: 2px;
 }
 
@@ -379,6 +394,13 @@ th span {
 #totals table tr:nth-child(3) th:nth-child(4),
 #totals table tr:nth-child(3) th:nth-child(5) {
     width: 60px;
+}
+
+#totals .tipster_row td:nth-child(6),
+#totals .tipster_row td:nth-child(7),
+#totals table tr:nth-child(3) th:nth-child(6),
+#totals table tr:nth-child(3) th:nth-child(7) {
+    width: 55px;
 }
 
 #totals td, #totals th {
@@ -607,6 +629,11 @@ th span {
 #extraTip img {
     height: 14px;
     width: 19px;
+}
+
+#standingsExtra2 #extraTip img {
+    height: 22px;
+    width: 33px;
 }
 
 #extraTip img.tip-pending {
