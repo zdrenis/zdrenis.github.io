@@ -91,7 +91,7 @@ footer {
 }
 
 #roundOf32part1 .vertical-text h3 {
-    font-size: revert;
+    font-size: 1.6em;
 }
 
 .tipster_row td {
@@ -615,6 +615,10 @@ th span {
 #totals #extraTip span {
     font-size: medium;
     text-align: left;
+}
+
+#totals #extraTip img {
+    vertical-align: middle;
 }
 
 #extraTip {
