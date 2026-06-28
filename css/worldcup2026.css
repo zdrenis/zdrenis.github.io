@@ -333,8 +333,7 @@ th span {
     padding-right: 0;
 }
 
-#standingsExtra1 .tipster_row td span:nth-of-type(2),
-#standings1of32part1 .tipster_row td span:nth-of-type(2) {
+#standingsExtra1 .tipster_row td span:nth-of-type(2) {
     padding: 0.5px 3px 0.5px 3px;
     margin-left: 0;
     margin-right: 0;
@@ -395,22 +394,25 @@ th span {
 
 #totals .tipster_row td:nth-child(3),
 #totals .tipster_row td:nth-child(4),
+#totals .tipster_row td:nth-child(5),
 #totals table tr:nth-child(2) th:nth-child(3),
+#totals table tr:nth-child(2) th:nth-child(4),
 #totals table tr:nth-child(3) th:nth-child(3) {
     width: 60px;
 }
 
 #totals table tr:nth-child(2) th:nth-child(3),
+#totals table tr:nth-child(2) th:nth-child(4),
 #totals table tr:nth-child(3) th:nth-child(3),
 #totals table tr:nth-child(3) th:nth-child(4),
 #totals table tr:nth-child(3) th:nth-child(5) {
     font-size: 0.75em;
 }
 
-#totals .tipster_row td:nth-child(5),
 #totals .tipster_row td:nth-child(6),
 #totals .tipster_row td:nth-child(7),
-#totals table tr:nth-child(2) th:nth-child(6),
+#totals .tipster_row td:nth-child(8),
+#totals table tr:nth-child(2) th:nth-child(7),
 #totals table tr:nth-child(3) th:nth-child(4),
 #totals table tr:nth-child(3) th:nth-child(5) {
     width: 55px;
