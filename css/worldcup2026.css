@@ -391,11 +391,12 @@ th span {
 #totals table {
     border-collapse: collapse;
     table-layout: fixed;
+    width: 100%;
 }
 
 /* table-layout: fixed — column widths driven by row-2 th cells */
 #totals table tr:nth-child(2) th:nth-child(1) { width: 24px; }
-#totals table tr:nth-child(2) th:nth-child(2) { width: 130px; }
+/* th:nth-child(2) = name — no explicit width, takes all remaining space */
 #totals table tr:nth-child(2) th:nth-child(3) { width: 55px; }
 #totals table tr:nth-child(2) th:nth-child(4) { width: 55px; }
 #totals table tr:nth-child(2) th:nth-child(5) { width: 55px; }
@@ -493,7 +494,6 @@ th span {
     padding-right: 14px;
     white-space: nowrap;
     text-align: left;
-    width: 130px;
 }
 
 #totals td:last-of-type {
