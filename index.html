@@ -2801,18 +2801,29 @@
                 var interval = setInterval(tick, 1000);
             }
 
-            createReveal({
-                revealTime: new Date(2026, 5, 28, 21, 0, 0), // 28.06.2026 21:00 CEST (M73 RSA-CAN)
-                countdownEl: null,
-                timerEl: null,
-                setup: function (hideCell) {
-                    var matchPlaceholder = '<span><img class="tip-pending" src="img/mario_question_mark.gif"></span>';
-                    rowsToHide('#standings1of32part1').forEach(function (row) {
-                        for (var i = 2; i <= 8; i++) {
-                            if (row.cells[i] && row.cells[i].textContent.trim() !== '-') hideCell(row.cells[i], matchPlaceholder);
-                        }
-                    });
-                }
+            // M74-M80: reveal at each match's kickoff (Zdres always visible via rowsToHide exclusion)
+            [
+                { col: 2, t: new Date(2026, 5, 29, 19,  0, 0) }, // M74 BRA-JPN  29.06 19:00
+                { col: 3, t: new Date(2026, 5, 29, 22, 30, 0) }, // M75 GER-PAR  29.06 22:30
+                { col: 4, t: new Date(2026, 5, 30,  3,  0, 0) }, // M76 NED-MAR  30.06 03:00
+                { col: 5, t: new Date(2026, 5, 30, 19,  0, 0) }, // M77 CIV-NOR  30.06 19:00
+                { col: 6, t: new Date(2026, 5, 30, 23,  0, 0) }, // M78 FRA-SWE  30.06 23:00
+                { col: 7, t: new Date(2026, 6,  1,  3,  0, 0) }, // M79 MEX-ECU  01.07 03:00
+                { col: 8, t: new Date(2026, 6,  1, 18,  0, 0) }, // M80 ENG-COD  01.07 18:00
+            ].forEach(function (m) {
+                createReveal({
+                    revealTime: m.t,
+                    countdownEl: null,
+                    timerEl: null,
+                    setup: (function (col) {
+                        return function (hideCell) {
+                            var matchPlaceholder = '<span><img class="tip-pending" src="img/mario_question_mark.gif"></span>';
+                            rowsToHide('#standings1of32part1').forEach(function (row) {
+                                if (row.cells[col] && row.cells[col].textContent.trim() !== '-') hideCell(row.cells[col], matchPlaceholder);
+                            });
+                        };
+                    })(m.col)
+                });
             });
 
         })();
