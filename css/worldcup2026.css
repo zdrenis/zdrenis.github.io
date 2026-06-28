@@ -397,6 +397,11 @@ th span {
     width: 60px;
 }
 
+#totals table tr:nth-child(2) th:nth-child(3),
+#totals table tr:nth-child(3) th:nth-child(3) {
+    font-size: 0.75em;
+}
+
 #totals .tipster_row td:nth-child(5),
 #totals .tipster_row td:nth-child(6),
 #totals .tipster_row td:nth-child(7),
