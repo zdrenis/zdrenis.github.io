@@ -392,13 +392,10 @@ th span {
     border-collapse: collapse;
 }
 
-#totals .tipster_row td:nth-child(3),
-#totals .tipster_row td:nth-child(4),
-#totals .tipster_row td:nth-child(5),
-#totals table tr:nth-child(2) th:nth-child(3),
-#totals table tr:nth-child(2) th:nth-child(4),
-#totals table tr:nth-child(3) th:nth-child(3) {
-    width: 60px;
+#totals .tipster_row td:not(.name-col):not(:first-child):not(:last-child),
+#totals table tr:nth-child(2) th:not(:first-child):not(:last-child),
+#totals table tr:nth-child(3) th:not(:first-child):not(:last-child) {
+    width: 55px;
 }
 
 #totals table tr:nth-child(2) th:nth-child(3),
@@ -407,19 +404,6 @@ th span {
 #totals table tr:nth-child(3) th:nth-child(4),
 #totals table tr:nth-child(3) th:nth-child(5) {
     font-size: 0.75em;
-}
-
-#totals .tipster_row td:nth-child(6),
-#totals .tipster_row td:nth-child(7),
-#totals .tipster_row td:nth-child(8),
-#totals table tr:nth-child(2) th:nth-child(7),
-#totals table tr:nth-child(3) th:nth-child(4),
-#totals table tr:nth-child(3) th:nth-child(5) {
-    width: 55px;
-}
-
-#totals .tipster_row td.points {
-    width: 40px;
 }
 
 #totals td, #totals th {
