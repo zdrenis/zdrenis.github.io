@@ -392,17 +392,15 @@ th span {
 
 #totals .tipster_row td:nth-child(3),
 #totals .tipster_row td:nth-child(4),
-#totals .tipster_row td:nth-child(5),
-#totals table tr:nth-child(3) th:nth-child(3),
-#totals table tr:nth-child(3) th:nth-child(4),
-#totals table tr:nth-child(3) th:nth-child(5) {
+#totals table tr:nth-child(2) th:nth-child(3),
+#totals table tr:nth-child(3) th:nth-child(3) {
     width: 60px;
 }
 
+#totals .tipster_row td:nth-child(5),
 #totals .tipster_row td:nth-child(6),
-#totals .tipster_row td:nth-child(7),
-#totals table tr:nth-child(3) th:nth-child(6),
-#totals table tr:nth-child(3) th:nth-child(7) {
+#totals table tr:nth-child(3) th:nth-child(4),
+#totals table tr:nth-child(3) th:nth-child(5) {
     width: 55px;
 }
 
@@ -411,7 +409,7 @@ th span {
     border-right: 5px solid #07164b;
 }
 
-#totals table tr:nth-child(3) th:nth-child(n+3):nth-child(-n+5),
+#totals table tr:nth-child(3) th:nth-child(n+3),
 #totals .tipster_row td:not(.name-col):not(.points):not(:last-child):not(:first-child) {
     padding-left: 10px;
     padding-right: 10px;
@@ -633,6 +631,11 @@ th span {
     height: 14px;
     width: 19px;
     vertical-align: middle;
+}
+
+#totals #extraTip img {
+    height: 18px;
+    width: 27px;
 }
 
 #standingsExtra2 #extraTip img {
