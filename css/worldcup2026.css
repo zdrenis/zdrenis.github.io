@@ -393,11 +393,16 @@ th span {
     table-layout: fixed;
 }
 
-#totals .tipster_row td:not(.name-col):not(:first-child):not(:last-child),
-#totals table tr:nth-child(2) th:not(:first-child):not(:last-child),
-#totals table tr:nth-child(3) th:not(:first-child):not(:last-child) {
-    width: 55px;
-}
+/* table-layout: fixed — column widths driven by row-2 th cells */
+#totals table tr:nth-child(2) th:nth-child(1) { width: 24px; }
+#totals table tr:nth-child(2) th:nth-child(2) { width: 130px; }
+#totals table tr:nth-child(2) th:nth-child(3) { width: 55px; }
+#totals table tr:nth-child(2) th:nth-child(4) { width: 55px; }
+#totals table tr:nth-child(2) th:nth-child(5) { width: 55px; }
+#totals table tr:nth-child(2) th:nth-child(6) { width: 110px; } /* colspan=2 → 55px each */
+#totals table tr:nth-child(2) th:nth-child(7) { width: 55px; }
+#totals table tr:nth-child(2) th:nth-child(8) { width: 55px; }
+#totals table tr:nth-child(2) th:nth-child(9) { width: 25px; }
 
 #totals table tr:nth-child(2) th:nth-child(3),
 #totals table tr:nth-child(2) th:nth-child(4),
