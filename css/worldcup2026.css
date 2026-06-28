@@ -90,6 +90,10 @@ footer {
     font-size: small;
 }
 
+#roundOf32part1 .vertical-text h3 {
+    font-size: revert;
+}
+
 .tipster_row td {
     height: 30px;
     width: fit-content;
