@@ -398,7 +398,9 @@ th span {
 }
 
 #totals table tr:nth-child(2) th:nth-child(3),
-#totals table tr:nth-child(3) th:nth-child(3) {
+#totals table tr:nth-child(3) th:nth-child(3),
+#totals table tr:nth-child(3) th:nth-child(4),
+#totals table tr:nth-child(3) th:nth-child(5) {
     font-size: 0.75em;
 }
 
