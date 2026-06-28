@@ -616,10 +616,6 @@ th span {
     text-align: left;
 }
 
-#totals #extraTip img {
-    vertical-align: middle;
-}
-
 #extraTip {
     display: flex;
     align-items: center;
@@ -636,6 +632,7 @@ th span {
 #extraTip img {
     height: 14px;
     width: 19px;
+    vertical-align: middle;
 }
 
 #standingsExtra2 #extraTip img {
