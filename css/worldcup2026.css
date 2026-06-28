@@ -341,6 +341,10 @@ th span {
     margin-right: 0;
 }
 
+#standings1of32part1 .tipster_row td span:nth-of-type(1) {
+    font-size: 1.05em;
+}
+
 #standingsExtra1 .box {
     gap: 2px;
 }
