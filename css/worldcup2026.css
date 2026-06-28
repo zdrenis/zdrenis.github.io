@@ -402,6 +402,10 @@ th span {
     width: 55px;
 }
 
+#totals .tipster_row td:nth-child(9) {
+    width: 40px;
+}
+
 #totals table tr:nth-child(2) th:nth-child(3),
 #totals table tr:nth-child(2) th:nth-child(4),
 #totals table tr:nth-child(3) th:nth-child(3),
