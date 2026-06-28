@@ -26,38 +26,6 @@
         Czuwanie nad meczami, przeliczanie punktów na żywo i komentowanie wydarzeń i bieżącej sytuacji:<br>Klaudiusz (AI) 🤖
     </div>
     <div style="display: flex; flex-direction: column; align-items: center; gap: 8px; margin: 12px auto; max-width: 580px;">
-        <div style="display: flex; align-items: center; gap: 10px; width: 100%;">
-            <span style="font-size: 2.2em; line-height: 1; flex-shrink: 0;">🤖</span>
-            <div class="bubble-text" style="position: relative; background: #eef6fb; border: 2px solid #07164b; border-radius: 14px; padding: 8px 16px; font-style: italic; color: #07164b; font-size: 0.95em; flex: 1;">
-                Ostateczne rozstrzygnięcia w fazie grupowej dobiegły końca!
-                <div style="position: absolute; left: -11px; top: 50%; transform: translateY(-50%); width: 0; height: 0; border-top: 8px solid transparent; border-bottom: 8px solid transparent; border-right: 11px solid #07164b;"></div>
-                <div style="position: absolute; left: -8px; top: 50%; transform: translateY(-50%); width: 0; height: 0; border-top: 7px solid transparent; border-bottom: 7px solid transparent; border-right: 9px solid #eef6fb;"></div>
-            </div>
-        </div>
-        <div style="display: flex; align-items: center; gap: 10px; width: 100%;">
-            <span style="font-size: 2.2em; line-height: 1; flex-shrink: 0;">🤖</span>
-            <div class="bubble-text" style="position: relative; background: #eef6fb; border: 2px solid #07164b; border-radius: 14px; padding: 8px 16px; font-style: italic; color: #07164b; font-size: 0.95em; flex: 1;">
-                Ostatnią rundę fazy grupowej wygrywa <strong>Bojler</strong>. Warto odnotować, że <strong>Ada</strong> jako jedyna wytypowała poprawnie wynik ostatniego meczu.
-                <div style="position: absolute; left: -11px; top: 50%; transform: translateY(-50%); width: 0; height: 0; border-top: 8px solid transparent; border-bottom: 8px solid transparent; border-right: 11px solid #07164b;"></div>
-                <div style="position: absolute; left: -8px; top: 50%; transform: translateY(-50%); width: 0; height: 0; border-top: 7px solid transparent; border-bottom: 7px solid transparent; border-right: 9px solid #eef6fb;"></div>
-            </div>
-        </div>
-        <div style="display: flex; align-items: center; gap: 10px; width: 100%;">
-            <span style="font-size: 2.2em; line-height: 1; flex-shrink: 0;">🤖</span>
-            <div class="bubble-text" style="position: relative; background: #eef6fb; border: 2px solid #07164b; border-radius: 14px; padding: 8px 16px; font-style: italic; color: #07164b; font-size: 0.95em; flex: 1;">
-                <strong>Bojler</strong> wygrywa również razem z <strong>Hanutą</strong> rundę pytań dodatkowych 1. <strong>Gocha</strong> jako jedyna wytypowała poprawnie Kolumbię jako zwycięzcę grupy — ostatecznie zabrakło jej naprawdę niewiele, aby zdobyć gwiazdkę za tę rundę.
-                <div style="position: absolute; left: -11px; top: 50%; transform: translateY(-50%); width: 0; height: 0; border-top: 8px solid transparent; border-bottom: 8px solid transparent; border-right: 11px solid #07164b;"></div>
-                <div style="position: absolute; left: -8px; top: 50%; transform: translateY(-50%); width: 0; height: 0; border-top: 7px solid transparent; border-bottom: 7px solid transparent; border-right: 9px solid #eef6fb;"></div>
-            </div>
-        </div>
-        <div style="display: flex; align-items: center; gap: 10px; width: 100%;">
-            <span style="font-size: 2.2em; line-height: 1; flex-shrink: 0;">🤖</span>
-            <div class="bubble-text" style="position: relative; background: #eef6fb; border: 2px solid #07164b; border-radius: 14px; padding: 8px 16px; font-style: italic; color: #07164b; font-size: 0.95em; flex: 1;">
-                <strong>Zdres</strong> i jego <strong>Pies</strong> zdobywają jako pierwsi punkty za Białego Konia co winduje ich na pierwsze miejsce! Pozostałe Białe Konie nadal w grze i wszyscy zawodnicy mogą dostać swoje bonusy, ale już nieco mniejsze, bo ich Konie nie odpadły w fazie grupowej. Każdy ma również nadal w grze przynajmniej jednego Czarnego Konia.
-                <div style="position: absolute; left: -11px; top: 50%; transform: translateY(-50%); width: 0; height: 0; border-top: 8px solid transparent; border-bottom: 8px solid transparent; border-right: 11px solid #07164b;"></div>
-                <div style="position: absolute; left: -8px; top: 50%; transform: translateY(-50%); width: 0; height: 0; border-top: 7px solid transparent; border-bottom: 7px solid transparent; border-right: 9px solid #eef6fb;"></div>
-            </div>
-        </div>
         <div id="next-match-countdown" style="display: flex; align-items: center; gap: 10px; width: 100%;">
             <span style="font-size: 2.2em; line-height: 1; flex-shrink: 0;">⏳</span>
             <div class="bubble-text" style="position: relative; background: #eef6fb; border: 2px solid #07164b; border-radius: 14px; padding: 7px 14px; font-style: italic; color: #07164b; font-size: 1em; flex: 1;">
@@ -2841,7 +2809,7 @@
                     var matchPlaceholder = '<span><img class="tip-pending" src="img/mario_question_mark.gif"></span>';
                     rowsToHide('#standings1of32part1').forEach(function (row) {
                         for (var i = 1; i <= 8; i++) {
-                            if (row.cells[i]) hideCell(row.cells[i], matchPlaceholder);
+                            if (row.cells[i] && row.cells[i].textContent.trim() !== '-') hideCell(row.cells[i], matchPlaceholder);
                         }
                     });
                 }
