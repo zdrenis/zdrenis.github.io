@@ -305,7 +305,7 @@
                     </tr>
                     <tr class="tipster_row">
                         <td>Babela</td>
-                        <td><span>-</span></td>
+                        <td><span>1-2</span></td>
                         <td><span>-</span></td>
                         <td><span>-</span></td>
                         <td><span>-</span></td>
@@ -318,26 +318,26 @@
                     </tr>
                     <tr class="tipster_row">
                         <td>Bojler</td>
-                        <td><span>-</span></td>
-                        <td><span>-</span></td>
-                        <td><span>-</span></td>
-                        <td><span>-</span></td>
-                        <td><span>-</span></td>
-                        <td><span>-</span></td>
-                        <td><span>-</span></td>
-                        <td><span>-</span></td>
+                        <td><span>1-2</span></td>
+                        <td><span>2-0</span></td>
+                        <td><span>2-1</span></td>
+                        <td><span>2-1</span></td>
+                        <td><span>2-1</span></td>
+                        <td><span>2-0</span></td>
+                        <td><span>2-0</span></td>
+                        <td><span>2-0</span></td>
                         <td class="points"><span>0</span></td>
                         <td style="background-color: #07164b;"></td>
                     </tr>
                     <tr class="tipster_row">
                         <td>Dzidka</td>
-                        <td><span>-</span></td>
-                        <td><span>-</span></td>
-                        <td><span>-</span></td>
-                        <td><span>-</span></td>
-                        <td><span>-</span></td>
-                        <td><span>-</span></td>
-                        <td><span>-</span></td>
+                        <td><span>0-2</span></td>
+                        <td><span>3-2</span></td>
+                        <td><span>3-1</span></td>
+                        <td><span>1-2</span></td>
+                        <td><span>1-2</span></td>
+                        <td><span>3-1</span></td>
+                        <td><span>2-0</span></td>
                         <td><span>-</span></td>
                         <td class="points"><span>0</span></td>
                         <td style="background-color: #07164b;"></td>
@@ -357,14 +357,14 @@
                     </tr>
                     <tr class="tipster_row">
                         <td>Hanuta</td>
-                        <td><span>-</span></td>
-                        <td><span>-</span></td>
-                        <td><span>-</span></td>
-                        <td><span>-</span></td>
-                        <td><span>-</span></td>
-                        <td><span>-</span></td>
-                        <td><span>-</span></td>
-                        <td><span>-</span></td>
+                        <td><span>0-2</span></td>
+                        <td><span>3-1</span></td>
+                        <td><span>2-0</span></td>
+                        <td><span>2-0</span></td>
+                        <td><span>1-1↑</span></td>
+                        <td><span>3-1</span></td>
+                        <td><span>1-0</span></td>
+                        <td><span>2-1</span></td>
                         <td class="points"><span>0</span></td>
                         <td style="background-color: #07164b;"></td>
                     </tr>
@@ -383,14 +383,14 @@
                     </tr>
                     <tr class="tipster_row">
                         <td>Ola</td>
-                        <td><span>-</span></td>
-                        <td><span>-</span></td>
-                        <td><span>-</span></td>
-                        <td><span>-</span></td>
-                        <td><span>-</span></td>
-                        <td><span>-</span></td>
-                        <td><span>-</span></td>
-                        <td><span>-</span></td>
+                        <td><span>1-2</span></td>
+                        <td><span>↑1-1</span></td>
+                        <td><span>2-0</span></td>
+                        <td><span>1-1↑</span></td>
+                        <td><span>1-2</span></td>
+                        <td><span>3-1</span></td>
+                        <td><span>1-0</span></td>
+                        <td><span>↑0-0</span></td>
                         <td class="points"><span>0</span></td>
                         <td style="background-color: #07164b;"></td>
                     </tr>
@@ -2832,6 +2832,20 @@
                 tick();
                 var interval = setInterval(tick, 1000);
             }
+
+            createReveal({
+                revealTime: new Date(2026, 5, 28, 21, 0, 0), // 28.06.2026 21:00 CEST (M73 RSA-CAN)
+                countdownEl: null,
+                timerEl: null,
+                setup: function (hideCell) {
+                    var matchPlaceholder = '<span><img class="tip-pending" src="img/mario_question_mark.gif"></span>';
+                    rowsToHide('#standings1of32part1').forEach(function (row) {
+                        for (var i = 1; i <= 8; i++) {
+                            if (row.cells[i]) hideCell(row.cells[i], matchPlaceholder);
+                        }
+                    });
+                }
+            });
 
         })();
 
