@@ -395,7 +395,7 @@ th span {
 }
 
 /* table-layout: fixed — column widths driven by row-2 th cells */
-#totals table tr:nth-child(2) th:nth-child(1) { width: 24px; }
+#totals table tr:nth-child(2) th:nth-child(1) { width: 12px; }
 /* th:nth-child(2) = name — no explicit width, takes all remaining space */
 #totals table tr:nth-child(2) th:nth-child(3) { width: 55px; }
 #totals table tr:nth-child(2) th:nth-child(4) { width: 55px; }
