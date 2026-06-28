@@ -2808,7 +2808,7 @@
                 setup: function (hideCell) {
                     var matchPlaceholder = '<span><img class="tip-pending" src="img/mario_question_mark.gif"></span>';
                     rowsToHide('#standings1of32part1').forEach(function (row) {
-                        for (var i = 1; i <= 8; i++) {
+                        for (var i = 2; i <= 8; i++) {
                             if (row.cells[i] && row.cells[i].textContent.trim() !== '-') hideCell(row.cells[i], matchPlaceholder);
                         }
                     });
