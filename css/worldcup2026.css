@@ -310,15 +310,15 @@ th span {
     table-layout: fixed;
 }
 
-#standingsExtra1 .tipster_row td:first-child,
-#roundOf32part1 .tipster_row td:first-child {
+#standingsExtra1 .tipster_row td:first-child {
     padding-left: 6px;
     padding-right: 6px;
     white-space: normal;
     font-size: small;
 }
 
-#standingsExtra2 .tipster_row td:first-child {
+#standingsExtra2 .tipster_row td:first-child,
+#roundOf32part1 .tipster_row td:first-child {
     padding-left: 6px;
     padding-right: 6px;
     white-space: normal;
