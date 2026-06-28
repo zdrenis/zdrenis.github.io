@@ -309,7 +309,7 @@ th span {
     padding-left: 6px;
     padding-right: 6px;
     white-space: normal;
-    font-size: x-small;
+    font-size: small;
 }
 
 #standingsExtra1 .tipster_row td:not(:first-child):not(:last-child) {
