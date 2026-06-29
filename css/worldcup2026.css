@@ -380,7 +380,6 @@ th span {
 
 #totals {
     width: 82.5%;
-    max-width: 650px;
 }
 
 @media (max-width: 768px) {
@@ -512,7 +511,6 @@ th span {
 @media (max-width: 768px) {
     #totals {
         font-size: 11px;
-        width: 98%;
     }
 
     #totals td,
