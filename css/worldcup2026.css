@@ -382,6 +382,12 @@ th span {
     width: 82.5%;
 }
 
+@media (min-width: 769px) {
+    #totals {
+        width: 72.5%;
+    }
+}
+
 @media (max-width: 768px) {
     #totals {
         width: 100%;
