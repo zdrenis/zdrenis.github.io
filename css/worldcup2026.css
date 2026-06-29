@@ -382,12 +382,6 @@ th span {
     width: 82.5%;
 }
 
-@media (min-width: 769px) {
-    #totals {
-        width: 70%;
-    }
-}
-
 @media (max-width: 768px) {
     #totals {
         width: 100%;
@@ -396,7 +390,6 @@ th span {
 
 #totals table {
     border-collapse: collapse;
-    width: 100%;
 }
 
 /* Fixed widths only on fg→WK data cells; rank/name/Suma/stars size to content */
@@ -518,7 +511,6 @@ th span {
 @media (max-width: 768px) {
     #totals {
         font-size: 11px;
-        width: 95%;
     }
 
     #totals td,
