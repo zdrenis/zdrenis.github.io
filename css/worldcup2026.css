@@ -380,6 +380,7 @@ th span {
 
 #totals {
     width: 82.5%;
+    max-width: 650px;
 }
 
 @media (max-width: 768px) {
