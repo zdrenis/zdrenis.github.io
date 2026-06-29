@@ -396,6 +396,7 @@ th span {
 
 #totals table {
     border-collapse: collapse;
+    width: 100%;
 }
 
 /* Fixed widths only on fg→WK data cells; rank/name/Suma/stars size to content */
