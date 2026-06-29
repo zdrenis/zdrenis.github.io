@@ -86,11 +86,13 @@ footer {
 
 #standingsExtra1 .vertical-text,
 #standingsExtra2 .vertical-text,
-#standings1of32part1 .vertical-text {
+#standings1of32part1 .vertical-text,
+#standings1of32part2 .vertical-text {
     font-size: small;
 }
 
-#standings1of32part1 .vertical-text h3 {
+#standings1of32part1 .vertical-text h3,
+#standings1of32part2 .vertical-text h3 {
     font-size: 1.6em;
 }
 
@@ -158,7 +160,8 @@ tr:nth-child(odd) td {
 #standings7 .tipster_row td:last-child,
 #standings8 .tipster_row td:last-child,
 #standings9 .tipster_row td:last-child,
-#standings1of32part1 .tipster_row td:last-child {
+#standings1of32part1 .tipster_row td:last-child,
+#standings1of32part2 .tipster_row td:last-child {
     background-color: #07164b;
     padding: 0;
     padding-left: 5px;
@@ -226,7 +229,8 @@ th span {
 #standings7 thead tr:nth-child(3) th span,
 #standings8 thead tr:nth-child(3) th span,
 #standings9 thead tr:nth-child(3) th span,
-#standings1of32part1 thead tr:nth-child(3) th span {
+#standings1of32part1 thead tr:nth-child(3) th span,
+#standings1of32part2 thead tr:nth-child(3) th span {
     color: #07164b;
 }
 
@@ -239,7 +243,8 @@ th span {
 #standings7 thead tr:nth-child(3) th.score-cell,
 #standings8 thead tr:nth-child(3) th.score-cell,
 #standings9 thead tr:nth-child(3) th.score-cell,
-#standings1of32part1 thead tr:nth-child(3) th.score-cell {
+#standings1of32part1 thead tr:nth-child(3) th.score-cell,
+#standings1of32part2 thead tr:nth-child(3) th.score-cell {
     background-color: #3ddbc4 !important;
     color: black !important;
 }
@@ -253,7 +258,8 @@ th span {
 #standings7 thead tr:nth-child(3) th.score-cell span,
 #standings8 thead tr:nth-child(3) th.score-cell span,
 #standings9 thead tr:nth-child(3) th.score-cell span,
-#standings1of32part1 thead tr:nth-child(3) th.score-cell span {
+#standings1of32part1 thead tr:nth-child(3) th.score-cell span,
+#standings1of32part2 thead tr:nth-child(3) th.score-cell span {
     color: black;
     font-weight: bold;
     margin: 0 5px;
@@ -290,6 +296,7 @@ th span {
 #standings7,
 #standings8,
 #standings1of32part1,
+#standings1of32part2,
 #standings1of16 {
     width: 95%;
 }
@@ -339,7 +346,8 @@ th span {
     margin-right: 0;
 }
 
-#standings1of32part1 .tipster_row td span:nth-of-type(1) {
+#standings1of32part1 .tipster_row td span:nth-of-type(1),
+#standings1of32part2 .tipster_row td span:nth-of-type(1) {
     font-size: 1.2em;
 }
 
