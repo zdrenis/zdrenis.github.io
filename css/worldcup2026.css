@@ -517,6 +517,7 @@ th span {
 @media (max-width: 768px) {
     #totals {
         font-size: 11px;
+        width: 95%;
     }
 
     #totals td,
