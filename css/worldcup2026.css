@@ -168,16 +168,6 @@ tr:nth-child(odd) td {
     text-align: center;
 }
 
-#standings1of32part1 .tipster_row td:nth-last-child(2),
-#standings1of32part2 .tipster_row td:nth-last-child(2) {
-    background-color: #07164b;
-    color: white;
-    padding: 0;
-    padding-left: 5px;
-    text-align: center;
-    width: 3em;
-}
-
 .tipster_row td:first-child {
     color: white;
     background-color: #07164b;
