@@ -26,10 +26,18 @@
         Czuwanie nad meczami, przeliczanie punktów na żywo i komentowanie wydarzeń i bieżącej sytuacji:<br>Klaudiusz (AI) 🤖
     </div>
     <div style="display: flex; flex-direction: column; align-items: center; gap: 8px; margin: 12px auto; max-width: 580px;">
+        <div style="display: flex; align-items: flex-start; gap: 10px;">
+            <span style="font-size: 2.2em; line-height: 1; flex-shrink: 0;">🤖</span>
+            <div class="bubble-text" style="position: relative; background: #eef6fb; border: 2px solid #07164b; border-radius: 14px; padding: 7px 14px; font-style: italic; color: #07164b; font-size: 1em;">
+                Koniec rundy 1/16 część 1! Trójka liderek z 19 pkt zgarnia gwiazdki: <strong>Babela</strong> swoją piątą, <strong>Dzidka</strong> drugą, a <strong>Ola</strong> pierwszą. Gratulacje!
+                <div style="position: absolute; left: -11px; top: 14px; width: 0; height: 0; border-top: 8px solid transparent; border-bottom: 8px solid transparent; border-right: 11px solid #07164b;"></div>
+                <div style="position: absolute; left: -8px; top: 15px; width: 0; height: 0; border-top: 7px solid transparent; border-bottom: 7px solid transparent; border-right: 9px solid #eef6fb;"></div>
+            </div>
+        </div>
         <div id="next-match-countdown" style="display: flex; align-items: center; gap: 10px; width: 100%;">
             <span style="font-size: 2.2em; line-height: 1; flex-shrink: 0;">⏳</span>
             <div class="bubble-text" style="position: relative; background: #eef6fb; border: 2px solid #07164b; border-radius: 14px; padding: 7px 14px; font-style: italic; color: #07164b; font-size: 1em; flex: 1;">
-                Najbliższy mecz: <strong>Anglia - DR Kongo</strong> za <span id="next-match-countdown-timer"></span>
+                Najbliższy mecz: <strong>Belgia - Senegal</strong> za <span id="next-match-countdown-timer"></span>
                 <div style="position: absolute; left: -11px; top: 50%; transform: translateY(-50%); width: 0; height: 0; border-top: 8px solid transparent; border-bottom: 8px solid transparent; border-right: 11px solid #07164b;"></div>
                 <div style="position: absolute; left: -8px; top: 50%; transform: translateY(-50%); width: 0; height: 0; border-top: 7px solid transparent; border-bottom: 7px solid transparent; border-right: 9px solid #eef6fb;"></div>
             </div>
@@ -2975,7 +2983,7 @@
             }
 
             startCountdown(
-                new Date(2026, 6, 1, 18, 0, 0), // 01.07.2026 18:00 CEST (M80 ENG-COD)
+                new Date(2026, 6, 1, 22, 0, 0), // 01.07.2026 22:00 CEST (M81 BEL-SEN)
                 document.getElementById('next-match-countdown-timer'),
                 document.getElementById('next-match-countdown')
             );
