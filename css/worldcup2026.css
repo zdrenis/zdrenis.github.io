@@ -295,10 +295,13 @@ th span {
 #standings6,
 #standings7,
 #standings8,
-#standings1of32part1,
 #standings1of32part2,
 #standings1of16 {
     width: 95%;
+}
+
+#standings1of32part1 {
+    width: 97%;
 }
 
 #standings9 {
