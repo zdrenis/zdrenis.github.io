@@ -390,12 +390,12 @@ th span {
 }
 
 #totals {
-    width: 82.5%;
+    width: 87.5%;
 }
 
 @media (min-width: 1024px) {
     #totals {
-        width: 72.5%;
+        width: 77.5%;
     }
 }
 
@@ -415,16 +415,18 @@ th span {
 #totals .tipster_row td:nth-child(5),
 #totals .tipster_row td:nth-child(6),
 #totals .tipster_row td:nth-child(7),
-#totals .tipster_row td:nth-child(8) {
+#totals .tipster_row td:nth-child(8),
+#totals .tipster_row td:nth-child(9) {
     width: 55px;
 }
 
-#totals .tipster_row td:nth-child(9) {
+#totals .tipster_row td:nth-child(10) {
     width: 30px;
 }
 
 #totals table tr:nth-child(2) th:nth-child(3),
 #totals table tr:nth-child(2) th:nth-child(4),
+#totals table tr:nth-child(2) th:nth-child(5),
 #totals table tr:nth-child(3) th:nth-child(3),
 #totals table tr:nth-child(3) th:nth-child(4),
 #totals table tr:nth-child(3) th:nth-child(5) {
