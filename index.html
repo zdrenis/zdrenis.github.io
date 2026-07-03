@@ -3055,34 +3055,8 @@
                 var interval = setInterval(tick, 1000);
             }
 
-            // M78-M80: reveal at each match's kickoff (Zdres always visible via rowsToHide exclusion)
+            // M86-M88: reveal at each match kickoff
             [
-                { col: 6, t: new Date(2026, 5, 30, 23,  0, 0) }, // M78 FRA-SWE  30.06 23:00
-                { col: 7, t: new Date(2026, 6,  1,  3,  0, 0) }, // M79 MEX-ECU  01.07 03:00
-                { col: 8, t: new Date(2026, 6,  1, 18,  0, 0) }, // M80 ENG-COD  01.07 18:00
-            ].forEach(function (m) {
-                createReveal({
-                    revealTime: m.t,
-                    countdownEl: null,
-                    timerEl: null,
-                    setup: (function (col) {
-                        return function (hideCell) {
-                            var matchPlaceholder = '<span><img class="tip-pending" src="img/mario_question_mark.gif"></span>';
-                            rowsToHide('#standings1of32part1').forEach(function (row) {
-                                if (row.cells[col] && row.cells[col].textContent.trim() !== '-') hideCell(row.cells[col], matchPlaceholder);
-                            });
-                        };
-                    })(m.col)
-                });
-            });
-
-            // M81-M88: reveal at each match kickoff
-            [
-                { col: 1, t: new Date(2026, 6,  1, 22,  0, 0) }, // M81 BEL-SEN  01.07 22:00
-                { col: 2, t: new Date(2026, 6,  2,  2,  0, 0) }, // M82 USA-BIH  02.07 02:00
-                { col: 3, t: new Date(2026, 6,  2, 21,  0, 0) }, // M83 ESP-AUT  02.07 21:00
-                { col: 4, t: new Date(2026, 6,  3,  1,  0, 0) }, // M84 POR-CRO  03.07 01:00
-                { col: 5, t: new Date(2026, 6,  3,  5,  0, 0) }, // M85 SUI-ALG  03.07 05:00
                 { col: 6, t: new Date(2026, 6,  3, 20,  0, 0) }, // M86 AUS-EGY  03.07 20:00
                 { col: 7, t: new Date(2026, 6,  4,  0,  0, 0) }, // M87 ARG-CPV  04.07 00:00
                 { col: 8, t: new Date(2026, 6,  4,  3, 30, 0) }, // M88 COL-GHA  04.07 03:30
