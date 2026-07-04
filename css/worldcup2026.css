@@ -244,7 +244,8 @@ th span {
 #standings8 thead tr:nth-child(3) th.score-cell,
 #standings9 thead tr:nth-child(3) th.score-cell,
 #standings1of32part1 thead tr:nth-child(3) th.score-cell,
-#standings1of32part2 thead tr:nth-child(3) th.score-cell {
+#standings1of32part2 thead tr:nth-child(3) th.score-cell,
+#standings1of16 thead tr:nth-child(3) th.score-cell {
     background-color: #3ddbc4 !important;
     color: black !important;
 }
@@ -259,7 +260,8 @@ th span {
 #standings8 thead tr:nth-child(3) th.score-cell span,
 #standings9 thead tr:nth-child(3) th.score-cell span,
 #standings1of32part1 thead tr:nth-child(3) th.score-cell span,
-#standings1of32part2 thead tr:nth-child(3) th.score-cell span {
+#standings1of32part2 thead tr:nth-child(3) th.score-cell span,
+#standings1of16 thead tr:nth-child(3) th.score-cell span {
     color: black;
     font-weight: bold;
     margin: 0 5px;
