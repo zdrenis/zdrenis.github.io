@@ -245,7 +245,8 @@ th span {
 #standings9 thead tr:nth-child(3) th.score-cell,
 #standings1of32part1 thead tr:nth-child(3) th.score-cell,
 #standings1of32part2 thead tr:nth-child(3) th.score-cell,
-#standings1of16 thead tr:nth-child(3) th.score-cell {
+#standings1of16 thead tr:nth-child(3) th.score-cell,
+#standingsQuarterfinals thead tr:nth-child(3) th.score-cell {
     background-color: #3ddbc4 !important;
     color: black !important;
 }
@@ -261,7 +262,8 @@ th span {
 #standings9 thead tr:nth-child(3) th.score-cell span,
 #standings1of32part1 thead tr:nth-child(3) th.score-cell span,
 #standings1of32part2 thead tr:nth-child(3) th.score-cell span,
-#standings1of16 thead tr:nth-child(3) th.score-cell span {
+#standings1of16 thead tr:nth-child(3) th.score-cell span,
+#standingsQuarterfinals thead tr:nth-child(3) th.score-cell span {
     color: black;
     font-weight: bold;
     margin: 0 5px;
@@ -304,6 +306,10 @@ th span {
 
 #standings1of32part1 {
     width: 98%;
+}
+
+#standingsQuarterfinals {
+    width: 60%;
 }
 
 #standings9 {
