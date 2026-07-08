@@ -249,6 +249,7 @@ th span {
 #standingsQuarterfinals thead tr:nth-child(3) th.score-cell {
     background-color: #3ddbc4 !important;
     color: black !important;
+    white-space: nowrap;
 }
 
 #standings1 thead tr:nth-child(3) th.score-cell span,
