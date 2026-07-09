@@ -515,19 +515,19 @@
                     </tr>
                     <tr class="tipster_row">
                         <td>Hanuta</td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
+                        <td><span>3-1</span></td>
+                        <td><span>1-1↑</span></td>
+                        <td><span>3-1</span></td>
+                        <td><span>3-0</span></td>
                         <td class="points"><span></span></td>
                         <td style="background-color: #07164b;"></td>
                     </tr>
                     <tr class="tipster_row">
                         <td>Karol</td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
+                        <td><span>2-0</span></td>
+                        <td><span>2-2↑</span></td>
+                        <td><span>2-1</span></td>
+                        <td><span>3-1</span></td>
                         <td class="points"><span></span></td>
                         <td style="background-color: #07164b;"></td>
                     </tr>
@@ -3452,6 +3452,28 @@
                         return function (hideCell) {
                             var matchPlaceholder = '<span><img class="tip-pending" src="img/mario_question_mark.gif"></span>';
                             rowsToHide('#standings1of16').forEach(function (row) {
+                                if (row.cells[col] && row.cells[col].textContent.trim() !== '-') hideCell(row.cells[col], matchPlaceholder);
+                            });
+                        };
+                    })(m.col)
+                });
+            });
+
+            // M97-M100: reveal at each match kickoff
+            [
+                { col: 1, t: new Date(2026, 6,  9, 22,  0, 0) }, // M97 FRA-MAR  09.07 22:00
+                { col: 2, t: new Date(2026, 6, 10, 21,  0, 0) }, // M98 NOR-ENG  10.07 21:00
+                { col: 3, t: new Date(2026, 6, 11, 23,  0, 0) }, // M99 ESP-BEL  11.07 23:00
+                { col: 4, t: new Date(2026, 6, 12,  3,  0, 0) }, // M100 ARG-SUI 12.07 03:00
+            ].forEach(function (m) {
+                createReveal({
+                    revealTime: m.t,
+                    countdownEl: null,
+                    timerEl: null,
+                    setup: (function (col) {
+                        return function (hideCell) {
+                            var matchPlaceholder = '<span><img class="tip-pending" src="img/mario_question_mark.gif"></span>';
+                            rowsToHide('#standingsQuarterfinals').forEach(function (row) {
                                 if (row.cells[col] && row.cells[col].textContent.trim() !== '-') hideCell(row.cells[col], matchPlaceholder);
                             });
                         };
