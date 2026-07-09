@@ -26,6 +26,14 @@
         Czuwanie nad meczami, przeliczanie punktów na żywo i komentowanie wydarzeń i bieżącej sytuacji:<br>Klaudiusz (AI) 🤖
     </div>
     <div style="display: flex; flex-direction: column; align-items: center; gap: 8px; margin: 12px auto; max-width: 580px;">
+        <div style="display: flex; align-items: flex-start; gap: 10px; width: 100%;">
+            <span style="font-size: 2.2em; line-height: 1; flex-shrink: 0;">🤖</span>
+            <div class="bubble-text" style="position: relative; background: #eef6fb; border: 2px solid #07164b; border-radius: 14px; padding: 7px 14px; font-style: italic; color: #07164b; font-size: 1em;">
+                M97 Francja - Maroko trwa! Na razie 0:0 — nikt nie typował remisu, więc wszyscy mają po 0 pkt. Siedmioro na wygraną Francji: <strong>Babela</strong> (2-0), <strong>Bojler</strong> (1-0), <strong>Dzidka</strong> (2-1), <strong>Hanuta</strong> (3-1), <strong>Karol</strong> (2-0), <strong>Ola</strong> (2-1), <strong>Zdres</strong> (2-1). Dwoje na Maroko: <strong>Ada</strong> i <strong>Gocha</strong> (1-2). Czekamy na gole!
+                <div style="position: absolute; left: -11px; top: 14px; width: 0; height: 0; border-top: 8px solid transparent; border-bottom: 8px solid transparent; border-right: 11px solid #07164b;"></div>
+                <div style="position: absolute; left: -8px; top: 15px; width: 0; height: 0; border-top: 7px solid transparent; border-bottom: 7px solid transparent; border-right: 9px solid #eef6fb;"></div>
+            </div>
+        </div>
         <div id="next-match-countdown" style="display: flex; align-items: center; gap: 10px; width: 100%;">
             <span style="font-size: 2.2em; line-height: 1; flex-shrink: 0;">⏳</span>
             <div class="bubble-text" style="position: relative; background: #eef6fb; border: 2px solid #07164b; border-radius: 14px; padding: 7px 14px; font-style: italic; color: #07164b; font-size: 1em; flex: 1;">
@@ -220,7 +228,7 @@
                         <th rowspan="5" style="width: 3em">Pkt</th>
                     </tr>
                     <tr style="background-color: white;">
-                        <th id="match97Result"><span>-</span></th>
+                        <th id="match97Result"><span class="blink_me">0</span>|<span class="blink_me">0</span></th>
                         <th id="match98Result"><span>-</span></th>
                         <th id="match99Result"><span>-</span></th>
                         <th id="match100Result"><span>-</span></th>
@@ -249,83 +257,83 @@
                 <tbody>
                     <tr class="tipster_row">
                         <td>Ada</td>
-                        <td><span>1-2</span></td>
+                        <td><span>1-2</span><span class="blink_me" style="padding: 0 4px;">0</span></td>
                         <td><span>1-2</span></td>
                         <td><span>1-0</span></td>
                         <td><span>2-1</span></td>
-                        <td class="points"><span></span></td>
+                        <td class="points"><span class="blink_me">0</span></td>
                         <td style="background-color: #07164b;"></td>
                     </tr>
                     <tr class="tipster_row">
                         <td>Babela</td>
-                        <td><span>2-0</span></td>
+                        <td><span>2-0</span><span class="blink_me" style="padding: 0 4px;">0</span></td>
                         <td><span>1-2</span></td>
                         <td><span>2-1</span></td>
                         <td><span>2-0</span></td>
-                        <td class="points"><span></span></td>
+                        <td class="points"><span class="blink_me">0</span></td>
                         <td style="background-color: #07164b;"></td>
                     </tr>
                     <tr class="tipster_row">
                         <td>Bojler</td>
-                        <td><span>1-0</span></td>
+                        <td><span>1-0</span><span class="blink_me" style="padding: 0 4px;">0</span></td>
                         <td><span>1-2</span></td>
                         <td><span>2-1</span></td>
                         <td><span>3-0</span></td>
-                        <td class="points"><span></span></td>
+                        <td class="points"><span class="blink_me">0</span></td>
                         <td style="background-color: #07164b;"></td>
                     </tr>
                     <tr class="tipster_row">
                         <td>Dzidka</td>
-                        <td><span>2-1</span></td>
+                        <td><span>2-1</span><span class="blink_me" style="padding: 0 4px;">0</span></td>
                         <td><span>1-1↑</span></td>
                         <td><span>2-0</span></td>
                         <td><span>2-1</span></td>
-                        <td class="points"><span></span></td>
+                        <td class="points"><span class="blink_me">0</span></td>
                         <td style="background-color: #07164b;"></td>
                     </tr>
                     <tr class="tipster_row">
                         <td>Gocha</td>
-                        <td><span>1-2</span></td>
+                        <td><span>1-2</span><span class="blink_me" style="padding: 0 4px;">0</span></td>
                         <td><span>↑2-2</span></td>
                         <td><span>3-1</span></td>
                         <td><span>2-0</span></td>
-                        <td class="points"><span></span></td>
+                        <td class="points"><span class="blink_me">0</span></td>
                         <td style="background-color: #07164b;"></td>
                     </tr>
                     <tr class="tipster_row">
                         <td>Hanuta</td>
-                        <td><span>3-1</span></td>
+                        <td><span>3-1</span><span class="blink_me" style="padding: 0 4px;">0</span></td>
                         <td><span>1-1↑</span></td>
                         <td><span>3-1</span></td>
                         <td><span>3-0</span></td>
-                        <td class="points"><span></span></td>
+                        <td class="points"><span class="blink_me">0</span></td>
                         <td style="background-color: #07164b;"></td>
                     </tr>
                     <tr class="tipster_row">
                         <td>Karol</td>
-                        <td><span>2-0</span></td>
+                        <td><span>2-0</span><span class="blink_me" style="padding: 0 4px;">0</span></td>
                         <td><span>2-2↑</span></td>
                         <td><span>2-1</span></td>
                         <td><span>3-1</span></td>
-                        <td class="points"><span></span></td>
+                        <td class="points"><span class="blink_me">0</span></td>
                         <td style="background-color: #07164b;"></td>
                     </tr>
                     <tr class="tipster_row">
                         <td>Ola</td>
-                        <td><span>2-1</span></td>
+                        <td><span>2-1</span><span class="blink_me" style="padding: 0 4px;">0</span></td>
                         <td><span>2-1</span></td>
                         <td><span>3-0</span></td>
                         <td><span>↑2-2</span></td>
-                        <td class="points"><span></span></td>
+                        <td class="points"><span class="blink_me">0</span></td>
                         <td style="background-color: #07164b;"></td>
                     </tr>
                     <tr class="tipster_row">
                         <td>Zdres &amp; Pies</td>
-                        <td><span>2-1</span></td>
+                        <td><span>2-1</span><span class="blink_me" style="padding: 0 4px;">0</span></td>
                         <td><span>1-2</span></td>
                         <td><span>1-0</span></td>
                         <td><span>↑0-0</span></td>
-                        <td class="points"><span></span></td>
+                        <td class="points"><span class="blink_me">0</span></td>
                         <td style="background-color: #07164b;"></td>
                     </tr>
                 </tbody>
