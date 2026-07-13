@@ -467,7 +467,7 @@ th span {
 }
 
 #totals table tr:nth-child(3) th:nth-child(n+3),
-#totals .tipster_row td:not(.name-col):not(.points):not(:last-child):not(:first-child) {
+#totals .tipster_row td:not(.name-col):not(.points):not(:last-child):not(:first-child):not(:nth-child(8)):not(:nth-child(9)):not(:nth-child(10)) {
     padding-left: 10px;
     padding-right: 10px;
 }
