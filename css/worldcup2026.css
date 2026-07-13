@@ -419,6 +419,12 @@ th span {
     border-collapse: collapse;
 }
 
+#totals table tr:nth-child(1),
+#totals table tr:nth-child(2),
+#totals table tr:nth-child(3) {
+    font-size: 0.93em;
+}
+
 /* Fixed widths only on fg→WK data cells; rank/name/Suma/stars size to content */
 #totals .tipster_row td:nth-child(3),
 #totals .tipster_row td:nth-child(4),
