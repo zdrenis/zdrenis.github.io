@@ -400,6 +400,7 @@ th span {
 
 #totals {
     width: 90.5%;
+    overflow-x: auto;
 }
 
 @media (min-width: 1024px) {
@@ -438,6 +439,7 @@ th span {
 #totals table tr:nth-child(3) th:nth-child(5) {
     font-size: 0.75em;
 }
+
 
 #totals table tr:nth-child(3) th:nth-child(6) {
     font-size: 0.7em;
