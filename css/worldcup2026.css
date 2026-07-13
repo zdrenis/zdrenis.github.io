@@ -411,7 +411,7 @@ th span {
 
 @media (max-width: 768px) {
     #totals {
-        width: 103%;
+        width: 100%;
     }
 }
 
@@ -441,10 +441,18 @@ th span {
 }
 
 
+#totals table tr:nth-child(3) th:nth-child(5),
 #totals table tr:nth-child(3) th:nth-child(6) {
     font-size: 0.7em;
     padding-left: 3px;
     padding-right: 3px;
+}
+
+#totals .tipster_row td:nth-child(8),
+#totals .tipster_row td:nth-child(9),
+#totals .tipster_row td:nth-child(10) {
+    padding-left: 4px;
+    padding-right: 4px;
 }
 
 #totals td, #totals th {
