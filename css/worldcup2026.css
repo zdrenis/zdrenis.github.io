@@ -270,6 +270,17 @@ th span {
     margin: 0 5px;
 }
 
+#standingsFinals thead tr:nth-child(3) th.score-cell {
+    background-color: #3ddbc4 !important;
+    color: black !important;
+    white-space: nowrap;
+}
+#standingsFinals thead tr:nth-child(3) th.score-cell span {
+    color: black;
+    font-weight: bold;
+    margin: 0 5px;
+}
+
 .rules {
     background-color: #07164b;
     border-radius: 25px;
